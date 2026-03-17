@@ -1,0 +1,2587 @@
+[
+  {
+    "question": "Welke van de volgende is een voorbeeld van een End-Device (eindapparaat) in een netwerk?",
+    "options": [
+      "Router",
+      "Switch",
+      "PC / Laptop",
+      "Access Point"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat slaat Cisco IOS op in het Flash-geheugen?",
+    "options": [
+      "De running-configuratie",
+      "De startup-configuratie",
+      "De IOS-software zelf",
+      "Het werkgeheugen (RAM)"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Waar wordt de running-config opgeslagen op een Cisco-apparaat?",
+    "options": [
+      "Flash",
+      "NVRAM",
+      "RAM",
+      "ROM"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Waar wordt de startup-config opgeslagen op een Cisco-apparaat?",
+    "options": [
+      "RAM",
+      "Flash",
+      "ROM",
+      "NVRAM"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is het verschil tussen een fysieke topologietekening en een logische topologietekening?",
+    "options": [
+      "Fysiek toont IP-adressen; logisch toont kabels",
+      "Fysiek toont locaties en kabels (L1/L2); logisch toont adressen en poorten (L3+)",
+      "Ze zijn identiek",
+      "Logisch toont alleen draadloze verbindingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is een LAN?",
+    "options": [
+      "Een netwerk dat continenten verbindt",
+      "Een netwerk over een klein geografisch gebied",
+      "Een draadloos netwerk buiten een gebouw",
+      "Een verbinding tussen twee providers"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welk Cisco IOS-commando versleutelt alle wachtwoorden in de configuratie?",
+    "options": [
+      "enable secret",
+      "password encryption",
+      "service password-encryption",
+      "encrypt all"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welk commando gebruik je om de interface-status op een Cisco-apparaat snel te controleren?",
+    "options": [
+      "show version",
+      "show ip interface brief",
+      "show running-config",
+      "ipconfig"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat doet het commando 'ping' in een netwerk?",
+    "options": [
+      "Het zoekt MAC-adressen op",
+      "Het test de end-to-end verbinding door ICMP-pakketten te sturen",
+      "Het configureert een IP-adres",
+      "Het herstart een interface"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welke laag van het OSI-model is verantwoordelijk voor het routeren van pakketten?",
+    "options": [
+      "Laag 1 – Fysiek",
+      "Laag 2 – Datalink",
+      "Laag 3 – Netwerk",
+      "Laag 4 – Transport"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is een Switched Virtual Interface (SVI) op een switch?",
+    "options": [
+      "Een fysieke uplink-poort",
+      "Een virtuele interface die een IP-adres draagt voor remote beheer",
+      "Een VLAN-trunk",
+      "Een loopback naar de router"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welke Windows Server-installatie heeft een volledige grafische interface (GUI)?",
+    "options": [
+      "Nano Server",
+      "Server Core",
+      "Desktop Experience",
+      "Hyper-V Server"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Welke bewering is JUIST over Windows Server Core?",
+    "options": [
+      "Server Core is een speciaal OS",
+      "Server Core is een minimale installatie-optie van Windows Server 2008 of later",
+      "Server Core is alleen te installeren op ARM",
+      "Server Core heeft een volledig grafische interface"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat is een Linux-distributie?",
+    "options": [
+      "Alleen de Linux-kernel",
+      "De Linux-kernel gecombineerd met andere software tot een compleet OS",
+      "Een versie van Windows voor servers",
+      "Een type hypervisor"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Welke distributie is een zakelijke variant afgeleid van Red Hat Enterprise Linux (RHEL)?",
+    "options": [
+      "Ubuntu",
+      "Fedora",
+      "Rocky Linux",
+      "openSUSE"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat is een voordeel van Server Core ten opzichte van de Desktop Experience?",
+    "options": [
+      "Betere grafische ondersteuning",
+      "Kleiner aanvalsoppervlak (reduced attack surface)",
+      "Hogere RAM-vereisten",
+      "Betere gaming-prestaties"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Welke twee commando's herstart een Windows Server Core-systeem? (kies het meest complete antwoord)",
+    "options": [
+      "restart-computer en reboot",
+      "restart-computer en shutdown -r -t 0",
+      "shutdown --now en reboot",
+      "poweroff en shutdown /r"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Welk menu-gestuurd commando helpt bij de basisconfiguratie van Server Core?",
+    "options": [
+      "mmc",
+      "mms",
+      "sconfig",
+      "script"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat is het doel van Sysprep bij virtuele machines?",
+    "options": [
+      "Het verwijderen van alle gebruikersdata",
+      "Het standaardiseren van een VM-image zodat klonen unieke identiteiten krijgen",
+      "Het vergroten van de RAM-toewijzing",
+      "Het installeren van drivers"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Hoeveel bits heeft een IPv4-adres?",
+    "options": [
+      "8",
+      "16",
+      "32",
+      "64"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat is het netwerkadres van 192.168.10.10 /24?",
+    "options": [
+      "192.168.10.1",
+      "192.168.10.0",
+      "192.168.10.255",
+      "192.168.0.0"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat is het broadcast-adres van het netwerk 192.168.10.0 /24?",
+    "options": [
+      "192.168.10.0",
+      "192.168.10.1",
+      "192.168.10.254",
+      "192.168.10.255"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Welke privé-adressen horen bij het 10.0.0.0/8-blok?",
+    "options": [
+      "10.0.0.0 – 10.0.255.255",
+      "10.0.0.0 – 10.255.255.255",
+      "10.0.0.0 – 10.0.0.255",
+      "10.0.0.0 – 10.10.255.255"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat is het subnetmasker bij een /26 prefix?",
+    "options": [
+      "255.255.255.0",
+      "255.255.255.128",
+      "255.255.255.192",
+      "255.255.255.224"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Hoeveel bruikbare hostadressen heeft een /26-subnet?",
+    "options": [
+      "30",
+      "62",
+      "126",
+      "254"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat betekent VLSM?",
+    "options": [
+      "Virtual LAN Subnet Method",
+      "Variable Length Subnet Mask",
+      "Very Large Switch Module",
+      "Virtual Link Subnet Management"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat is de eerste stap bij het ontwerpen met VLSM?",
+    "options": [
+      "Bepaal het subnetmasker",
+      "Sorteer de subnetten van groot naar klein",
+      "Wijs IP-adressen toe aan hosts",
+      "Kies het standaard-gateway-adres"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Welk speciaal IPv4-adres wordt gebruikt voor loopback-tests?",
+    "options": [
+      "192.168.0.1",
+      "172.16.0.1",
+      "127.0.0.1",
+      "169.254.0.1"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat is het link-local adresblok (APIPA)?",
+    "options": [
+      "127.0.0.0/8",
+      "192.168.0.0/16",
+      "169.254.0.0/16",
+      "10.0.0.0/8"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat doet de standaard output-redirection operator '>' in Linux?",
+    "options": [
+      "Verwijst de uitvoer naar een ander programma (pipe)",
+      "Stuurt de uitvoer naar een bestand en overschrijft dit",
+      "Leest invoer vanuit een bestand",
+      "Verwijdert het bestand"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welk Linux-commando navigeert naar de home-directory van de huidige gebruiker?",
+    "options": [
+      "cd /",
+      "cd ..",
+      "cd ~",
+      "cd /home"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat doet het commando 'grep error /var/log/messages'?",
+    "options": [
+      "Verwijdert regels met 'error' uit het bestand",
+      "Toont alle regels in het bestand waar 'error' in voorkomt",
+      "Kopieert het bestand naar /error",
+      "Start de error-log service"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welk commando maakt een lege directory aan in Linux?",
+    "options": [
+      "touch",
+      "mkdir",
+      "mkfile",
+      "newdir"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welk commando verwijdert een directory inclusief alle subdirectories in Linux?",
+    "options": [
+      "rmdir",
+      "rm -r",
+      "del -r",
+      "remove -all"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat is het verschil tussen de shells 'bash' en 'sh'?",
+    "options": [
+      "Bash is alleen voor root; sh is voor gewone gebruikers",
+      "Bash (Bourne Again Shell) is een uitgebreidere versie van de originele Bourne Shell (sh)",
+      "Sh is uitgebreider dan bash",
+      "Ze zijn identiek"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Hoeveel lagen heeft het OSI-model?",
+    "options": [
+      "4",
+      "5",
+      "7",
+      "9"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welke OSI-laag is verantwoordelijk voor het segmenteren en hermonteren van data?",
+    "options": [
+      "Laag 2 – Datalink",
+      "Laag 3 – Netwerk",
+      "Laag 4 – Transport",
+      "Laag 5 – Sessie"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welk TCP/IP-model laag komt overeen met OSI-lagen 5, 6 en 7?",
+    "options": [
+      "Network Access",
+      "Internet",
+      "Transport",
+      "Application"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is de functie van de Presentatielaag (laag 6) in het OSI-model?",
+    "options": [
+      "Zorgt voor fysieke verbindingen",
+      "Biedt gemeenschappelijke datarepresentatie (codering, compressie, versleuteling)",
+      "Beheert sessies tussen apparaten",
+      "Routeert pakketten tussen netwerken"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welk Cisco IOS-commando stel je in om een wachtwoord te vereisen bij het inloggen via de console?",
+    "options": [
+      "enable secret cisco",
+      "line vty 0 15 → password → login",
+      "line console 0 → password → login",
+      "service password-encryption"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is het verschil tussen 'enable password' en 'enable secret' in Cisco IOS?",
+    "options": [
+      "Ze zijn identiek",
+      "Enable secret slaat het wachtwoord op in plaintext; enable password versleutelt het",
+      "Enable secret versleutelt het wachtwoord met MD5; enable password slaat het op in plaintext",
+      "Enable password werkt alleen op routers"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welke toetsencombinatie breekt een lopende ping of traceroute af in Cisco IOS?",
+    "options": [
+      "Ctrl-C",
+      "Ctrl-Z",
+      "Ctrl-Shift-6",
+      "Esc"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is de functie van de Tab-toets in de Cisco IOS CLI?",
+    "options": [
+      "Gaat terug naar privileged EXEC mode",
+      "Vult een gedeeltelijk ingevoerd commando aan",
+      "Toont alle beschikbare commando's",
+      "Slaat de configuratie op"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Hoe sla je de running-config op als startup-config in Cisco IOS?",
+    "options": [
+      "save running-config",
+      "copy startup-config running-config",
+      "copy running-config startup-config",
+      "write startup"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is een unicast-bericht?",
+    "options": [
+      "Een bericht naar alle hosts op het netwerk",
+      "Een bericht naar een specifieke groep hosts",
+      "Een bericht van één afzender naar één specifieke ontvanger",
+      "Een bericht dat automatisch wordt doorgestuurd"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is een broadcast-bericht?",
+    "options": [
+      "Een bericht van één afzender naar één ontvanger",
+      "Een bericht naar alle hosts in het netwerk",
+      "Een bericht naar een geselecteerde groep",
+      "Een versleuteld bericht"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welke laag van het OSI-model beheert de fysieke verbinding (kabels, spanning)?",
+    "options": [
+      "Laag 2 – Datalink",
+      "Laag 1 – Fysiek",
+      "Laag 3 – Netwerk",
+      "Laag 4 – Transport"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is de maximale grootte van een Ethernet-frame (payload)?",
+    "options": [
+      "512 bytes",
+      "1024 bytes",
+      "1500 bytes",
+      "9000 bytes"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welk commando toon je de MAC-adrestabel van een Cisco-switch?",
+    "options": [
+      "show ip arp",
+      "show mac address-table",
+      "show vlan brief",
+      "show interfaces"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is de decimale waarde van het binaire getal 11001000?",
+    "options": [
+      "192",
+      "200",
+      "208",
+      "224"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat is de binaire representatie van decimaal 192?",
+    "options": [
+      "10110000",
+      "11000000",
+      "11000100",
+      "11010000"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Hoeveel subnetten kun je maken met een /26-masker in een /24-netwerk?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Welk subnetmasker hoort bij een /28 prefix?",
+    "options": [
+      "255.255.255.224",
+      "255.255.255.240",
+      "255.255.255.248",
+      "255.255.255.252"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Hoeveel bruikbare hostadressen heeft een /30-subnet?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat is het doel van subnetting?",
+    "options": [
+      "Het verhogen van de bandbreedte",
+      "Het opdelen van een groot netwerk in kleinere, beheersbare subnetten",
+      "Het versleutelen van IP-pakketten",
+      "Het toewijzen van MAC-adressen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Welk adres is een geldig privé-adres?",
+    "options": [
+      "172.32.0.1",
+      "192.169.1.1",
+      "10.0.0.1",
+      "8.8.8.8"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat is het netwerkadres van 172.16.5.10 /16?",
+    "options": [
+      "172.16.5.0",
+      "172.16.0.0",
+      "172.0.0.0",
+      "172.16.5.255"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Een router is nodig voor communicatie tussen twee hosts als …",
+    "options": [
+      "ze hetzelfde MAC-adres hebben",
+      "ze in verschillende subnetten zitten",
+      "ze hetzelfde IP-adres hebben",
+      "ze via WiFi verbonden zijn"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat is het verschil tussen een enterprise Linux-distributie en een hobbyistendistributie?",
+    "options": [
+      "Enterprise distributies zijn altijd gratis; hobbyisten betalen",
+      "Enterprise distributies prioriteren stabiliteit en langdurige ondersteuning; hobbyisten prioriteren nieuwe software",
+      "Enterprise distributies hebben geen grafische interface",
+      "Hobbyisten distributies zijn veiliger"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Welke package manager wordt gebruikt door RHEL/Rocky Linux?",
+    "options": [
+      "apt",
+      "dnf/yum",
+      "pacman",
+      "zypper"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat is een package in de context van Linux software-installatie?",
+    "options": [
+      "Een map met bestanden",
+      "Een verzameling bestanden en scripts met versieinformatie en afhankelijkheden",
+      "Een ISO-image",
+      "Een configuratiebestand"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat is een repository in Linux?",
+    "options": [
+      "Een lokale map met logbestanden",
+      "Een online bibliotheek van softwarepakketten voor een distributie",
+      "Een type partitie",
+      "Een back-uplocatie"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat is het doel van Logical Volume Management (LVM) bij een Linux-installatie?",
+    "options": [
+      "Het versleutelen van de harde schijf",
+      "Het flexibel beheren van opslagruimte zonder strikte partitiegrenzen",
+      "Het installeren van de bootloader",
+      "Het beheren van gebruikersaccounts"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Welke partitie is VERPLICHT bij een Linux UEFI-systeem?",
+    "options": [
+      "/home",
+      "/var",
+      "/boot/efi",
+      "/tmp"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Waarvoor dient de /boot-partitie?",
+    "options": [
+      "Voor gebruikers-homedirectories",
+      "Voor het opslaan van de kernel en bootbestanden",
+      "Voor tijdelijke bestanden",
+      "Voor applicatiedata"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat is het aanbevolen swap-volume op een server met 4 GB RAM?",
+    "options": [
+      "2 GB",
+      "8 GB",
+      "4 GB (vuistregel: 2x RAM, maar max 4 GB op servers)",
+      "16 GB"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Welke Windows Server-installatie heeft de kleinste aanvalsoppervlakte?",
+    "options": [
+      "Desktop Experience",
+      "Server Core",
+      "Nano Server",
+      "Hyper-V Server"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat is een Linked Clone in VMware?",
+    "options": [
+      "Een volledige kopie van een VM die onafhankelijk werkt",
+      "Een VM die verwijzingen behoudt naar de originele base disk en zo schijfruimte bespaart",
+      "Een VM-snapshot",
+      "Een VM die draait in de cloud"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Welk commando toont de inhoud van een directory in Linux?",
+    "options": [
+      "pwd",
+      "cd",
+      "ls",
+      "cat"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat doet het commando 'cat /etc/passwd'?",
+    "options": [
+      "Verwijdert het passwd-bestand",
+      "Toont de inhoud van /etc/passwd op het scherm",
+      "Zoekt naar gebruikers in het passwd-bestand",
+      "Bewerkt het passwd-bestand"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat doet de pipe-operator '|' in Linux?",
+    "options": [
+      "Stuurt uitvoer naar een bestand",
+      "Verbindt de uitvoer van één commando met de invoer van een volgend commando",
+      "Verwijdert een bestand",
+      "Maakt een nieuwe directory aan"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welk commando zoekt recursief naar alle .log-bestanden op het systeem?",
+    "options": [
+      "grep '*.log' /",
+      "ls -R *.log",
+      "find / -name '*.log'",
+      "search / *.log"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat toont het commando 'echo $PATH'?",
+    "options": [
+      "De inhoud van de home-directory",
+      "Het zoekpad voor uitvoerbare bestanden",
+      "De naam van de huidige gebruiker",
+      "De hostnaam van het systeem"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat is het verschil tussen 'more' en 'less' in Linux?",
+    "options": [
+      "Ze zijn identiek",
+      "'less' is een uitgebreidere versie van 'more' waarmee je ook terug kunt bladeren",
+      "'more' is nieuwer dan 'less'",
+      "'less' toont alleen de eerste pagina"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welk commando hernoemt een bestand in Linux?",
+    "options": [
+      "rename",
+      "rn",
+      "mv",
+      "cp"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat doet 'cp -r /etc ~/etc.backup'?",
+    "options": [
+      "Verplaatst /etc naar ~/etc.backup",
+      "Kopieert de directory /etc inclusief alle subdirectories naar ~/etc.backup",
+      "Maakt een link van /etc naar ~/etc.backup",
+      "Synchroniseert /etc met ~/etc.backup"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat doet '2>' bij output-redirection?",
+    "options": [
+      "Stuurt standaardinvoer om",
+      "Stuurt standaarduitvoer om",
+      "Stuurt foutmeldingen (stderr) om naar een bestand",
+      "Voegt toe aan een bestand"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welk commando geeft alle omgevingsvariabelen (environment variables) weer?",
+    "options": [
+      "env of set",
+      "vars",
+      "echo $ALL",
+      "printenv --all"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat is de functie van het commando 'man' in Linux?",
+    "options": [
+      "Het beheren van gebruikers",
+      "Het tonen van de handleiding (manual page) van een commando",
+      "Het aanmaken van mappen",
+      "Het monitoren van processen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welk commando zoek je om te weten welk commando bij 'copy' hoort?",
+    "options": [
+      "man copy",
+      "help copy",
+      "man -k copy",
+      "find copy"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat is een login shell in Linux?",
+    "options": [
+      "Een shell die gestart wordt door een ander programma",
+      "Een shell die gestart wordt bij het inloggen en de volledige configuratie laadt",
+      "Een shell die alleen root mag gebruiken",
+      "Een shell zonder configuratiebestanden"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welk configuratiebestand geldt voor alle gebruikers bij een bash login shell?",
+    "options": [
+      "~/.bashrc",
+      "~/.bash_profile",
+      "/etc/profile",
+      "/etc/bashrc"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welke IOS-modus gebruik je voor het configureren van een interface?",
+    "options": [
+      "User EXEC mode",
+      "Privileged EXEC mode",
+      "Global Configuration mode",
+      "Interface Configuration mode"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Hoe kom je vanuit Global Configuration mode naar Privileged EXEC mode?",
+    "options": [
+      "exit",
+      "end of Ctrl-Z",
+      "disable",
+      "quit"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is het commando om een hostname in te stellen op een Cisco-apparaat?",
+    "options": [
+      "set hostname SW1",
+      "hostname SW1",
+      "name SW1",
+      "device-name SW1"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welk commando configureert een IP-adres op een Cisco router-interface?",
+    "options": [
+      "set ip address 192.168.1.1 255.255.255.0",
+      "ip address 192.168.1.1 255.255.255.0",
+      "interface ip 192.168.1.1/24",
+      "assign ip 192.168.1.1 mask 255.255.255.0"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is SSH in vergelijking met Telnet?",
+    "options": [
+      "SSH is langzamer maar eenvoudiger",
+      "SSH is versleuteld en veiliger; Telnet verstuurt data in plaintext",
+      "Telnet is veiliger dan SSH",
+      "Ze zijn functioneel identiek"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is het verschil tussen een WAN en een LAN qua beheer?",
+    "options": [
+      "Een LAN wordt beheerd door een provider; een WAN door één organisatie",
+      "Een LAN wordt beheerd door één organisatie; een WAN door één of meer providers",
+      "Beide worden altijd beheerd door een provider",
+      "Er is geen verschil in beheer"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is een loopback-interface op een router?",
+    "options": [
+      "Een fysieke interface voor WAN-verbindingen",
+      "Een virtuele interface die nooit down gaat en gebruikt wordt voor testen en protocollen zoals OSPF",
+      "Een interface die alleen voor console-toegang dient",
+      "Een back-upinterface die actief wordt als een andere interface uitvalt"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welk IOS-commando configureert een 'banner of the day' (MOTD)?",
+    "options": [
+      "banner login #tekst#",
+      "banner motd #tekst#",
+      "motd banner #tekst#",
+      "set banner #tekst#"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Welke toegangsmethode gebruik je voor de EERSTE configuratie van een Cisco-apparaat zonder netwerk?",
+    "options": [
+      "SSH",
+      "Telnet",
+      "Console",
+      "HTTP"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is goodput?",
+    "options": [
+      "De theoretische maximale bandbreedte van een medium",
+      "De gemeten overdrachtssnelheid inclusief overhead",
+      "De hoeveelheid bruikbare data die per tijdseenheid wordt overgedragen (throughput minus overhead)",
+      "De latency van een verbinding"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is segmentering in netwerkcommunicatie?",
+    "options": [
+      "Het opdelen van een netwerk in subnetten",
+      "Het opsplitsen van een groot bericht in kleinere stukken voor verzending",
+      "Het versleutelen van data voor transport",
+      "Het samenvoegen van meerdere frames tot één pakket"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is multicast?",
+    "options": [
+      "Een bericht van één afzender naar alle hosts",
+      "Een bericht van één afzender naar één specifieke ontvanger",
+      "Een bericht van één afzender naar een specifieke groep ontvangers",
+      "Een bericht dat automatisch wordt doorgestuurd door routers"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1"
+  },
+  {
+    "question": "Wat is de functie van het TTL-veld in een IPv4-pakketheader?",
+    "options": [
+      "Het geeft de versie van het IP-protocol aan",
+      "Het beperkt de levensduur van een pakket door het te verminderen bij elke router; bij 0 wordt het pakket verwijderd",
+      "Het identificeert het bovenliggende protocol (TCP/UDP)",
+      "Het geeft de prioriteit van het pakket aan"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Welk veld in de IPv4-header identificeert het bovenliggende protocol (bijv. TCP of UDP)?",
+    "options": [
+      "Version",
+      "TTL",
+      "Protocol",
+      "DS (Differentiated Services)"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Waarvoor dient het TEST-NET adresblok 192.0.2.0/24?",
+    "options": [
+      "Voor privé-netwerken thuis",
+      "Voor documentatie en leermateriaal, niet voor echt gebruik",
+      "Voor multicast-toepassingen",
+      "Voor ISP-backbone-verbindingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Tot welke klasse behoort het adres 172.20.0.1 in het classful adresseringssysteem?",
+    "options": [
+      "Klasse A",
+      "Klasse B",
+      "Klasse C",
+      "Klasse D"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat zijn de vier basisoperaties van de netwerklaag (OSI L3)?",
+    "options": [
+      "Framing, adressering, foutdetectie, stroomregeling",
+      "Adressering, inkapseling, routering, de-inkapseling",
+      "Segmentering, sessie, presentatie, applicatie",
+      "Codering, modulatie, transmissie, decodering"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2"
+  },
+  {
+    "question": "Wat is Nano Server in Windows?",
+    "options": [
+      "Een nog minimalistischere installatie dan Core, alleen beschikbaar als container",
+      "Een Windows Server voor kleine bedrijven",
+      "De naam van Windows Server Core vóór 2016",
+      "Een Linux-gebaseerde servervariant van Microsoft"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat is Kickstart bij Linux-installaties?",
+    "options": [
+      "Een tool om de bootloader te installeren",
+      "Een methode voor volledig geautomatiseerde (unattended) Linux-installaties",
+      "Een package manager voor Red Hat",
+      "Een tool om VM-snapshots te maken"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat lost een package manager op bij software-installatie?",
+    "options": [
+      "Het compileren van broncode",
+      "Onderlinge afhankelijkheden tussen pakketten (dependencies)",
+      "Het aanmaken van gebruikersaccounts",
+      "Het partitioneren van de harde schijf"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Welke distributies zijn afgeleid van Debian?",
+    "options": [
+      "Fedora en openSUSE",
+      "Ubuntu en Ubuntu LTS",
+      "Rocky Linux en Oracle Linux",
+      "SLES en openSUSE"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat is een OS release in de context van Linux-versiebeheer?",
+    "options": [
+      "Een nieuwe versie van de Linux-kernel",
+      "Een momentopname van alle beschikbare softwarepakketten waarvan de versies intern consistent zijn",
+      "Een beveiligingsupdate voor het besturingssysteem",
+      "Een nieuwe distributie gebaseerd op bestaande code"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 1"
+  },
+  {
+    "question": "Wat doet het commando 'touch bestand.txt' in Linux?",
+    "options": [
+      "Opent het bestand in een teksteditor",
+      "Maakt een leeg bestand aan (of past de timestamp aan als het al bestaat)",
+      "Geeft de rechten van het bestand weer",
+      "Verwijdert het bestand"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat is het verschil tussen '>' en '>>' bij output-redirection?",
+    "options": [
+      "'>' voegt toe aan het einde; '>>' overschrijft het bestand",
+      "'>' overschrijft het bestand; '>>' voegt toe aan het einde van het bestand",
+      "Ze zijn identiek",
+      "'>' werkt alleen voor stderr; '>>' voor stdout"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat doet '>&' bij output-redirection in Linux?",
+    "options": [
+      "Stuurt alleen stderr om",
+      "Stuurt stdout én stderr tegelijk om naar dezelfde bestemming",
+      "Stuurt stdin om",
+      "Maakt een bidirectionele verbinding"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat doet het 'export'-commando in Linux?",
+    "options": [
+      "Exporteert bestanden naar een andere server",
+      "Maakt een lokale shell-variabele beschikbaar als omgevingsvariabele voor kindprocessen",
+      "Maakt een back-up van de omgevingsvariabelen",
+      "Kopieert variabelen naar /etc/profile"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat is PowerShell Remoting en welk commando gebruik je om verbinding te maken?",
+    "options": [
+      "Een VPN-verbinding; commando: vpn-connect",
+      "Remote beheer via WinRM; commando: Enter-PSSession -computername <naam>",
+      "Remote desktop; commando: mstsc /v:<naam>",
+      "SSH-toegang tot Windows; commando: ssh administrator@<naam>"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welk commando configureert een statisch IP-adres op een Windows Server Core via netsh?",
+    "options": [
+      "netsh interface ipv4 set address name=<id> source=static address=<ip> mask=<mask> gateway=<gw>",
+      "ipconfig /setip <id> <ip> <mask>",
+      "set-netipaddress -ip <ip> -mask <mask>",
+      "netsh ip set static <id> <ip> <mask>"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Welk commando verwijdert een lege directory in Linux?",
+    "options": [
+      "rm -r",
+      "rmdir",
+      "del",
+      "remove"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 2"
+  },
+  {
+    "question": "Wat is authenticatie?",
+    "options": [
+      "Het toewijzen van rechten aan een gebruiker",
+      "Het controleren of iemand is wie hij/zij beweert te zijn",
+      "Het versleutelen van wachtwoorden",
+      "Het aanmaken van een gebruikersaccount"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat is autorisatie?",
+    "options": [
+      "Het verifiëren van een gebruikersidentiteit",
+      "Het controleren of een geauthenticeerde gebruiker toegang heeft tot een resource",
+      "Het aanmaken van een SID",
+      "Het synchroniseren van wachtwoorden"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welke Windows Server-rol moet geïnstalleerd zijn voor Active Directory?",
+    "options": [
+      "DHCP",
+      "DNS",
+      "AD DS (Active Directory Domain Services)",
+      "IIS"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat wordt er automatisch aangemaakt bij het aanmaken van een gebruikersaccount in een domein?",
+    "options": [
+      "MAC-adres",
+      "DHCP-adres",
+      "SID",
+      "Ticket"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat staat er NIET op een Access Token in Windows?",
+    "options": [
+      "User SID",
+      "Group SID",
+      "List of privileges",
+      "Computer SID"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Waarvoor staat de afkorting DACL?",
+    "options": [
+      "Domain Access Control List",
+      "Discretionary Access Control List",
+      "Dynamic Access Control Layer",
+      "Default Access Control Limit"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Waarvoor staat de afkorting SACL?",
+    "options": [
+      "System Access Control List",
+      "Secure Access Control Layer",
+      "Standard Access Control List",
+      "Share Access Control Limit"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat is de functie van een SACL?",
+    "options": [
+      "Toegangsrechten beheren voor gebruikers en groepen",
+      "Toegangs- en wijzigingspogingen monitoren en auditen",
+      "Netwerkverbindingen beveiligen",
+      "Bestands- en mapstructuren organiseren"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat is geen geldige objectnaam in Active Directory?",
+    "options": [
+      "User Logon name: Henk",
+      "UPN: Ali@bmc.local",
+      "Authentication Name",
+      "LDAP Distinguished Name"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Waar staat CN voor in een LDAP Distinguished Name?",
+    "options": [
+      "Client Name",
+      "Common Name",
+      "Cursor Name",
+      "Coupled Name"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Waar staat DC voor in een LDAP Distinguished Name?",
+    "options": [
+      "Domain Controller",
+      "Domain name",
+      "Domain Client",
+      "Domain Component"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welke tool importeert gebruikers vanuit een CSV-bestand in Active Directory?",
+    "options": [
+      "LDIFDE",
+      "DSMove",
+      "CSVDE",
+      "DSQuery"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Kan CSVDE wachtwoorden importeren?",
+    "options": [
+      "Ja, altijd",
+      "Nee, CSVDE ondersteunt geen wachtwoorden",
+      "Ja, maar alleen versleuteld",
+      "Ja, via een beveiligd kanaal"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welke optie gebruik je bij CSVDE om door te gaan bij een fout?",
+    "options": [
+      "-v",
+      "-b",
+      "-k",
+      "-F"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat kan LDIFDE wat CSVDE NIET kan?",
+    "options": [
+      "Gebruikers importeren",
+      "Bestaande objecten wijzigen en verwijderen",
+      "Wachtwoorden importeren",
+      "Verbinding maken met een domein"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat kan DSADD NIET aanmaken?",
+    "options": [
+      "Users",
+      "OU's",
+      "Groups",
+      "DHCP-scope"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welk commando maakt een OU aan in PowerShell?",
+    "options": [
+      "MakeOU studenten",
+      "New-ADOrganizationalUnit studenten",
+      "MkOU Studenten",
+      "Create-OU studenten"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welk profiel gaat mee ongeacht op welke computer je inlogt?",
+    "options": [
+      "Local profile",
+      "Remote profile",
+      "Roaming profile",
+      "Mandatory profile"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welk profiel kan een gewone gebruiker NIET zelf aanpassen?",
+    "options": [
+      "Local profile",
+      "Remote profile",
+      "Roaming profile",
+      "Mandatory profile"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat is geen Windows-accounttype?",
+    "options": [
+      "Domain account",
+      "Local account",
+      "Superuser account",
+      "Builtin account"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Hoe heet een OU die binnen een andere OU staat?",
+    "options": [
+      "Child OU",
+      "Tree OU",
+      "Nested OU",
+      "Parent OU"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welke OU wordt automatisch aangemaakt bij het promoveren van een server tot DC?",
+    "options": [
+      "Users OU",
+      "Client OU",
+      "Domain Controllers OU",
+      "Everyone OU"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welk UID heeft het root-account onder Linux?",
+    "options": [
+      "0",
+      "1",
+      "500",
+      "1000"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "In welk bestand staan de versleutelde wachtwoorden onder Linux?",
+    "options": [
+      "/etc/group",
+      "/etc/passwd",
+      "/etc/shadow",
+      "/etc/users"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Welk commando wisselt van gebruiker in de Linux-commandline?",
+    "options": [
+      "switch",
+      "su",
+      "move",
+      "change"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Van welke groep moet je lid zijn om sudo te gebruiken?",
+    "options": [
+      "wheel",
+      "sudo",
+      "root",
+      "administrators"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Welk commando voegt een gebruiker toe aan een secundaire groep?",
+    "options": [
+      "adduser",
+      "useradd",
+      "usermod",
+      "groupadd"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Welk commando past het wachtwoord van gebruiker 'henk' aan?",
+    "options": [
+      "passwd -u henk",
+      "chpasswd henk",
+      "usermod -p henk",
+      "passwd henk"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Welk bestand bevat de sudo-configuratie?",
+    "options": [
+      "/etc/passwd",
+      "/etc/sudoers",
+      "/etc/group",
+      "/etc/shadow"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Welk commando maakt een nieuwe groep aan in Linux?",
+    "options": [
+      "groupadd",
+      "newgroup",
+      "addgroup",
+      "creategroup"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Wat is GEEN geldig Linux-gebruikerstype?",
+    "options": [
+      "Systeemgebruiker",
+      "Gewone/eindgebruiker",
+      "Root",
+      "Sudo"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Welk Linux-commando vraagt de eigenaar van een bestand op?",
+    "options": [
+      "LsOwner",
+      "show Owner",
+      "cat owner",
+      "ls -l"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Welke laag van het OSI-model gebruikt MAC-adressen?",
+    "options": [
+      "Laag 1",
+      "Laag 2",
+      "Laag 3",
+      "Laag 4"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is ARP?",
+    "options": [
+      "Een protocol om IP-adressen toe te wijzen",
+      "Een protocol om IPv4-adressen te vertalen naar MAC-adressen",
+      "Een protocol voor domeinnaambeheer",
+      "Een beveiligingsprotocol voor WiFi"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is de maximale lengte van een UTP-kabel-segment?",
+    "options": [
+      "50 m",
+      "100 m",
+      "150 m",
+      "200 m"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Welk type UTP-kabel verbindt twee gelijkwaardige apparaten (bijv. switch–switch)?",
+    "options": [
+      "Straight-through",
+      "Crossover",
+      "Rollover",
+      "Coaxiaal"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is full-duplex communicatie?",
+    "options": [
+      "Slechts één kant kan tegelijk zenden",
+      "Beide kanten kunnen gelijktijdig zenden en ontvangen",
+      "Alleen ontvangen is mogelijk",
+      "Communicatie via satelliet"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Hoe geeft een switch op welke poort een MAC-adres bereikbaar is?",
+    "options": [
+      "Via een routing-table",
+      "Via een MAC-adrestabel (CAM-table)",
+      "Via ARP-cache",
+      "Via de NVRAM"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat doet CSMA/CD?",
+    "options": [
+      "Voorkomt botsingen door te wachten voor het zenden (WiFi)",
+      "Detecteert botsingen op een gedeeld medium en herzendt daarna",
+      "Versleutelt data op laag 2",
+      "Wijst MAC-adressen toe"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Welke NTFS-permissie is de meest uitgebreide?",
+    "options": [
+      "Modify",
+      "Read & Execute",
+      "Full Control",
+      "Write"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Welke NTFS-permissie geldt ALLEEN voor een map, NIET voor een bestand?",
+    "options": [
+      "Full Control",
+      "Modify",
+      "Read & Execute",
+      "List Folder Contents"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wat is geen kenmerk bij NTFS-permissies?",
+    "options": [
+      "Inherit",
+      "Explicit",
+      "Cumulatief",
+      "Reverse"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wat zijn NTFS geërfde (inherited) permissies?",
+    "options": [
+      "Permissies die automatisch worden toegepast op alle gebruikers in een domein",
+      "Permissies die worden overgenomen van de bovenliggende map",
+      "Permissies die alleen gelden voor specifieke gebruikers",
+      "Permissies die zijn ingesteld door de systeembeheerder en niet gewijzigd kunnen worden"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wint een Deny ALTIJD van een Allow bij NTFS-permissies?",
+    "options": [
+      "Ja, altijd zonder uitzondering",
+      "Nee, een explicit allow heeft voorrang op een inherited deny",
+      "Ja, tenzij de gebruiker domeinadmin is",
+      "Nee, het hangt af van de volgorde"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Welke permissies zijn cumulatief (optelbaar) in Windows?",
+    "options": [
+      "Alleen share-permissies",
+      "Alleen NTFS-permissies",
+      "Zowel share- als NTFS-permissies",
+      "Alleen OS-permissies"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wat is de standaard share-permissie voor de groep 'Everyone'?",
+    "options": [
+      "Full Control",
+      "All",
+      "Read",
+      "Read & Write"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Als share-permissie 'Read' is maar NTFS 'Full Control', wat mag de gebruiker?",
+    "options": [
+      "Bestanden lezen, maar niet wijzigen of verwijderen",
+      "Alles: lezen, wijzigen, verwijderen en aanmaken",
+      "Niets, want share-permissie is beperkend",
+      "Alleen bestandsnamen zien"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Waarvoor staat UNC?",
+    "options": [
+      "Unique Network Connection",
+      "Unified Network Communication",
+      "Uniform Network Control",
+      "Universal Naming Convention"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wat is de juiste UNC-syntaxis?",
+    "options": [
+      "\\server\\share\\file",
+      "//server/share/file",
+      "server.share.file",
+      "\\\\server\\share"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wat is het nieuwste Windows-bestandssysteem?",
+    "options": [
+      "NTFSv3",
+      "Share64",
+      "ReFS",
+      "FAT64"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wat is een beperking van ReFS?",
+    "options": [
+      "Je kunt geen share-permissies gebruiken",
+      "Je kunt er niet van booten",
+      "Je kunt er geen Linux VM's op zetten",
+      "Je kunt de disk niet indelen in partities"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wat is een journaling filesystem?",
+    "options": [
+      "Een bestandssysteem dat dagboekbestanden bijhoudt",
+      "Een bestandssysteem dat logboeken genereert van uitgevoerde taken",
+      "Een bestandssysteem dat een journaal gebruikt om onvoltooide wijzigingen bij te houden",
+      "Een bestandssysteem voor journalisten"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Welk bestandssysteem heeft GEEN journaling-mogelijkheid?",
+    "options": [
+      "ext2",
+      "xfs",
+      "ext3",
+      "ext4"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wat betekenen de klasieke rechten u, g, o onder Linux?",
+    "options": [
+      "Ze geven aan voor welk bestand de permissies gelden",
+      "Ze geven aan voor wie de rechten gelden: user, group, other",
+      "UGO staat voor Users Get Ownership",
+      "U=Read, G=Write, O=Ownership"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welke tool pas je het meest aan om Linux-permissies te wijzigen?",
+    "options": [
+      "chmod",
+      "chown",
+      "grep",
+      "ls"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat vertegenwoordigt de permissie '640' in Linux?",
+    "options": [
+      "Owner lees en schrijfrechten, groep leesrechten, others niets",
+      "Owner alles, groep schrijfrechten, others leesrechten",
+      "Owner lees en uitvoerrechten, groep schrijfrechten, others niets",
+      "Owner alles, groep niets, others leesrechten"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Hoeveel bits gebruikt Linux voor permissies (permission bits)?",
+    "options": [
+      "Acht bits (000–777)",
+      "Negen bits (000–777)",
+      "Tien bits (0000–7777)",
+      "Zeven bits (000–777)"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat is het startpunt van het Linux-bestandssysteem?",
+    "options": [
+      "/",
+      "~",
+      "/root",
+      "/home"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat is het verschil tussen een absoluut pad en een relatief pad?",
+    "options": [
+      "Absoluut begint bij home (~); relatief bij root (/)",
+      "Absoluut begint bij root (/); relatief begint bij de huidige directory",
+      "Ze zijn hetzelfde",
+      "Absoluut bevat geen slash (/)"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando vraagt de huidige directory op in Linux?",
+    "options": [
+      "ls",
+      "dir",
+      "cd",
+      "pwd"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando koppelt een disk of partitie aan het OS in Linux?",
+    "options": [
+      "attach",
+      "connect",
+      "mount",
+      "link"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "In welk bestand worden gekoppelde partities (mounts) opgeslagen?",
+    "options": [
+      "/etc/mounts",
+      "/etc/mounttable",
+      "/etc/fstab",
+      "/etc/partitions"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welke twee typen partitietabellen kom je tegen op een harde schijf?",
+    "options": [
+      "FAT en NTFS",
+      "Primary en Extended",
+      "MBR en GPT",
+      "Swap en Root"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat is een voordeel van Logical Volume Management (LVM)?",
+    "options": [
+      "Betere beveiliging tegen virussen",
+      "Hogere rekenprestaties",
+      "LV's groter of kleiner maken zonder dataverlies (on the fly)",
+      "Verhoogde netwerkstabiliteit"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando maakt een nieuw logical volume aan in LVM?",
+    "options": [
+      "lvcreate",
+      "pvcreate",
+      "vgcreate",
+      "lvextend"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando toont de physical volumes in LVM?",
+    "options": [
+      "pvview",
+      "vgdisplay",
+      "pvdisplay",
+      "lvdisplay"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Kun je na het partitioneren direct bestanden schrijven op een harde schijf?",
+    "options": [
+      "Ja, zodra partities zijn aangemaakt",
+      "Nee, je moet eerst een bestandssysteem aanmaken (mkfs)",
+      "Ja, maar alleen na defragmentatie",
+      "Ja, als de partitie NTFS of FAT32 is"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando geeft een partitie een bestandssysteem onder Linux?",
+    "options": [
+      "fscreate -t <fstype> <device>",
+      "formatfs <fstype> <partition>",
+      "mkfs -t <fstype> <device>",
+      "fssetup <fstype> <partition>"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando controleert en repareert een bestandssysteem in Linux?",
+    "options": [
+      "chkdisk",
+      "fsck",
+      "diskutil",
+      "scandisk"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk veelgebruikt Linux-bestandssysteem is een moderne keuze?",
+    "options": [
+      "NTFS",
+      "FAT32",
+      "ext4",
+      "HFS+"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando maakt een hard link in Linux?",
+    "options": [
+      "ln",
+      "link",
+      "hardlink",
+      "mklink"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat voor soort referentie is een symbolische link in Linux?",
+    "options": [
+      "Een directe referentie",
+      "Een indirecte referentie",
+      "Een absolute referentie",
+      "Een dynamische referentie"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando toont bestandsinformatie inclusief inode-details?",
+    "options": [
+      "ls",
+      "cd",
+      "mkdir",
+      "stat"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat doet het chown-commando?",
+    "options": [
+      "Wijzigt het bestandstype",
+      "Wijzigt de bestandsnaam",
+      "Wijzigt de bestandspermissies",
+      "Wijzigt de eigenaar en/of groep van een bestand"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando toont beschikbare schijven en partities?",
+    "options": [
+      "lsblock",
+      "df",
+      "du",
+      "fdisk -l of lsblk --fs"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "In welke directory vind je de device-bestanden van harde schijven?",
+    "options": [
+      "/dev/",
+      "/var",
+      "/etc",
+      "/home"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Waarvoor wordt de swap-partitie gebruikt?",
+    "options": [
+      "Voor logbestanden",
+      "Als virtueel geheugen",
+      "Voor tijdelijke bestanden",
+      "Voor gebruikers-homedirectories"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat staat er in een Ethernet-frame als bestemmingsadres?",
+    "options": [
+      "Het IP-adres van de bestemming",
+      "Het MAC-adres van de bestemmings-NIC",
+      "Het poortnummer van de bestemming",
+      "De TTL-waarde"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is de minimale grootte van een geldig Ethernet-frame?",
+    "options": [
+      "32 bytes",
+      "48 bytes",
+      "64 bytes",
+      "128 bytes"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is een 'runt frame' in Ethernet?",
+    "options": [
+      "Een frame groter dan 1518 bytes",
+      "Een frame kleiner dan 64 bytes",
+      "Een frame met een CRC-fout",
+      "Een frame zonder bestemmingsadres"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Waarvoor staat LLC in de Datalink-laag?",
+    "options": [
+      "Link Layer Control",
+      "Logical Link Control",
+      "Local Link Connection",
+      "Layered Link Communication"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is de functie van de MAC-sublaag?",
+    "options": [
+      "Communicatie met de bovenliggende lagen",
+      "Data-inkapseling en mediatoegangsbeheer",
+      "Versleuteling van frames",
+      "Routebepaling tussen netwerken"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat doet een switch als hij een frame ontvangt met een onbekend bestemmings-MAC-adres?",
+    "options": [
+      "Het frame verwijderen",
+      "Het frame terugsturen naar de afzender",
+      "Het frame flooden naar alle poorten behalve de inkomende poort",
+      "Een ARP-verzoek sturen"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is het multicast MAC-adresprefix voor IPv4?",
+    "options": [
+      "FF-FF-FF-FF-FF-FF",
+      "01-00-5E",
+      "00-00-00",
+      "AA-BB-CC"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is het broadcast MAC-adres in Ethernet?",
+    "options": [
+      "00-00-00-00-00-00",
+      "FF-FF-FF-FF-FF-FF",
+      "01-00-5E-00-00-00",
+      "AA-AA-AA-AA-AA-AA"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is de functie van Auto-MDIX op een switch?",
+    "options": [
+      "Automatisch VLANs configureren",
+      "Automatisch het kabeltype detecteren en de interface aanpassen",
+      "Automatisch een IP-adres toewijzen",
+      "Automatisch de duplex-instelling bepalen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is het verschil tussen bandbreedte en throughput?",
+    "options": [
+      "Ze zijn hetzelfde",
+      "Bandbreedte is de theoretische capaciteit; throughput is de werkelijk gemeten overdrachtssnelheid",
+      "Throughput is altijd hoger dan bandbreedte",
+      "Bandbreedte meet latency; throughput meet pakketgrootte"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat is CSMA/CA en waar wordt het gebruikt?",
+    "options": [
+      "Collision detection op bedrade netwerken (Ethernet)",
+      "Collision avoidance op draadloze netwerken (WiFi/802.11)",
+      "Een methode om MAC-adressen toe te wijzen",
+      "Een encryptieprotocol voor WiFi"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Welk voordeel heeft glasvezel (fiber optic) ten opzichte van koper?",
+    "options": [
+      "Goedkoper en eenvoudiger te installeren",
+      "Grotere afstanden, minder demping en immuun voor elektromagnetische storing (EMI)",
+      "Hogere weerstand tegen elektrische stroom",
+      "Eenvoudiger te repareren"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Waarvoor wordt een rollover-kabel (consolekabel) gebruikt?",
+    "options": [
+      "Het verbinden van twee switches met elkaar",
+      "Het verbinden van een PC met de consolepoort van een router of switch",
+      "Het verbinden van een router met een WAN-provider",
+      "Het verbinden van twee routers back-to-back"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Welk WiFi-standaard (IEEE) wordt het meest gebruikt voor draadloze netwerken?",
+    "options": [
+      "IEEE 802.15",
+      "IEEE 802.11",
+      "IEEE 802.16",
+      "IEEE 802.3"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Welk IEEE-standaard hoort bij Bluetooth?",
+    "options": [
+      "802.11",
+      "802.15",
+      "802.16",
+      "802.3"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Welk commando toont de ARP-tabel op een Windows-pc?",
+    "options": [
+      "show ip arp",
+      "arp -a",
+      "ipconfig /arp",
+      "netstat -a"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Welk commando toont de ARP-tabel op een Cisco IOS-apparaat?",
+    "options": [
+      "show arp table",
+      "show ip arp",
+      "display arp",
+      "arp -a"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Wat stuurt een host wanneer hij het MAC-adres van een bestemmingshost niet kent?",
+    "options": [
+      "Een ICMP-pakket naar de router",
+      "Een ARP Request als broadcast naar alle hosts in het subnet",
+      "Een DNS-verzoek naar de DNS-server",
+      "Een TCP SYN-pakket naar de bestemming"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Welk veld in een Ethernet-frame wordt gebruikt voor foutdetectie?",
+    "options": [
+      "Type-veld",
+      "Start Frame Delimiter",
+      "Frame Check Sequence (FCS) / CRC",
+      "Preamble"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3"
+  },
+  {
+    "question": "Waarom is DNS vereist voor Active Directory?",
+    "options": [
+      "DNS versleutelt de AD-communicatie",
+      "AD gebruikt DNS voor het lokaliseren van domeincontrollers en services; zonder DNS werkt AD niet",
+      "DNS beheert de gebruikersaccounts in AD",
+      "DNS is alleen nodig voor internetverbindingen, niet voor AD"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat is een Domain Functional Level (DFL) in Active Directory?",
+    "options": [
+      "Het aantal gebruikers dat een domein kan bevatten",
+      "Een instelling die bepaalt welke AD-functies beschikbaar zijn op basis van de minimale DC-versie",
+      "De maximale grootte van de AD-database",
+      "Het beveiligingsniveau van wachtwoordversleuteling"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat is SYSVOL in Active Directory?",
+    "options": [
+      "Een beveiligingsprotocol voor DC-communicatie",
+      "Een gedeelde map op DC's die scripts en Group Policy-bestanden bevat en gerepliceerd wordt",
+      "De locatie van de AD-database (ntds.dit)",
+      "Een tool voor het beheren van AD-objecten"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welk commando voegt een computer toe aan een domein via de command prompt (netdom)?",
+    "options": [
+      "netdom join Server1 /d:domein.local /reboot",
+      "netdom add Server1 /domain:domein.local",
+      "domain join Server1 /d:domein.local",
+      "netsh join Server1 /domain:domein.local"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat is de Global Catalog in Active Directory?",
+    "options": [
+      "Een lijst van alle Group Policy Objects",
+      "Een gedeeltelijke, alleen-lezen kopie van alle objecten in het forest, gebruikt voor snelle zoekopdrachten",
+      "De volledige database van één domein",
+      "Een back-up van de AD-database"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Wat doet DSMOD?",
+    "options": [
+      "Zoekt objecten in Active Directory",
+      "Verplaatst objecten binnen Active Directory",
+      "Wijzigt eigenschappen van bestaande objecten in Active Directory",
+      "Verwijdert objecten uit Active Directory"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Aan hoeveel van de vier wachtwoordcomplexiteitseisen moet een AD-wachtwoord standaard voldoen?",
+    "options": [
+      "Aan alle vier",
+      "Aan minimaal drie van de vier",
+      "Aan minimaal twee van de vier",
+      "Aan minimaal één"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Hoe ziet een UPN (User Principal Name) eruit in Active Directory?",
+    "options": [
+      "DOMEIN\\gebruikersnaam",
+      "gebruikersnaam@domein.com",
+      "CN=gebruiker,DC=domein,DC=com",
+      "gebruikersnaam.domein"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welk well-known SID hoort bij het Administrator-account?",
+    "options": [
+      "S-1-3-0",
+      "S-1-5-2",
+      "S-1-5-11",
+      "S-1-5-domein-500"
+    ],
+    "correct": 3,
+    "topic": "Platformen – Week 3"
+  },
+  {
+    "question": "Welke drie bestanden zijn belangrijk voor gebruikers- en groepsbeheer onder Linux?",
+    "options": [
+      "/etc/users, /etc/groups, /etc/passwords",
+      "/etc/passwd, /etc/shadow, /etc/group",
+      "/etc/accounts, /etc/shadow, /etc/sudoers",
+      "/etc/passwd, /etc/shadow, /etc/sudoers"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Wat bevat het bestand /etc/group onder Linux?",
+    "options": [
+      "De versleutelde wachtwoorden van gebruikers",
+      "De groepsnamen, groeps-ID's (GID) en groepsleden",
+      "De sudo-configuratie",
+      "De home-directories van gebruikers"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Wat is een GID onder Linux?",
+    "options": [
+      "Een Global Identifier voor AD-objecten",
+      "Een uniek numeriek ID dat aan een groep wordt toegewezen",
+      "Een encryptiesleutel voor wachtwoorden",
+      "De naam van de primaire groep van een gebruiker"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Wat is het GECOS-veld in /etc/passwd?",
+    "options": [
+      "Het versleutelde wachtwoord",
+      "Een veld voor aanvullende persoonlijke informatie over de gebruiker (naam, telefoon, etc.)",
+      "De home-directory van de gebruiker",
+      "De standaard shell van de gebruiker"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Wat is het doel van /etc/skel?",
+    "options": [
+      "Het bevat schaduwkopieën van systeembestanden",
+      "Het is een sjabloon: bestanden hierin worden gekopieerd naar de home-directory van elke nieuwe gebruiker",
+      "Het bevat tijdelijke bestanden",
+      "Het bevat de sudo-configuratie"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Wat is het verschil tussen 'useradd' en 'adduser'?",
+    "options": [
+      "Ze zijn volledig identiek",
+      "'useradd' is een laagniveau systeemcommando; 'adduser' is een gebruiksvriendelijker script dat meer stappen automatiseert",
+      "'adduser' werkt alleen op Debian; 'useradd' alleen op Red Hat",
+      "'useradd' maakt ook automatisch een home-directory aan; 'adduser' niet"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Welk commando verwijdert een gebruikersaccount onder Linux?",
+    "options": [
+      "usermod --delete",
+      "userdel",
+      "rmuser",
+      "deluser --system"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Welk commando stel je de maximale wachtwoordgeldigheid in voor een gebruiker onder Linux?",
+    "options": [
+      "chmod",
+      "passwdmod",
+      "chage",
+      "usermod --maxage"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 3 Linux"
+  },
+  {
+    "question": "Wat is een ACE (Access Control Entry)?",
+    "options": [
+      "Een foutmelding bij een geweigerde toegang",
+      "Eén regel in een DACL die aangeeft welke rechten een specifieke gebruiker of groep heeft op een object",
+      "Een versleutelingsmethode voor NTFS",
+      "Een type gebruikersaccount in Windows"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wat gebeurt er met NTFS-permissies als je een bestand kopieert naar een andere NTFS-partitie?",
+    "options": [
+      "De permissies blijven exact hetzelfde",
+      "Het bestand erft de permissies van de doelmap",
+      "Alle permissies worden verwijderd",
+      "Alleen de eigenaar-permissie blijft behouden"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Als share-permissie 'Change' is en NTFS-permissie 'Full Control', wat zijn de effectieve permissies?",
+    "options": [
+      "Full Control, want NTFS wint altijd",
+      "Change, want de meest beperkende van share en NTFS geldt",
+      "Read Only, want veiligheid gaat voor",
+      "Geen toegang, want de permissies conflicteren"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4"
+  },
+  {
+    "question": "Wat is de sticky bit op een directory?",
+    "options": [
+      "Geeft alle gebruikers volledige toegang",
+      "Zorgt ervoor dat alleen de eigenaar (of root) zijn eigen bestanden in die directory kan verwijderen",
+      "Maakt de directory verborgen",
+      "Geeft de groep schrijfrechten op de directory"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat doet de setuid-bit op een uitvoerbaar bestand?",
+    "options": [
+      "Het bestand wordt uitgevoerd met de rechten van de eigenaar, ongeacht wie het uitvoert",
+      "Het bestand kan niet worden verwijderd",
+      "Het bestand wordt versleuteld bij uitvoering",
+      "Het bestand krijgt automatisch uitvoerrechten"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando toont het schijfgebruik per directory in Linux?",
+    "options": [
+      "df",
+      "du",
+      "lsblk",
+      "fdisk -l"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welk commando toont de beschikbare schijfruimte op gemounte bestandssystemen?",
+    "options": [
+      "du",
+      "df",
+      "lsblk",
+      "mount -l"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat is een inode in een Linux-bestandssysteem?",
+    "options": [
+      "Een type harde schijf",
+      "Een datastructuur die metadata van een bestand opslaat (rechten, eigenaar, grootte, locatie op schijf)",
+      "Een directory-entry",
+      "Een type symbolische link"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat is het verschil tussen ext2 en ext3?",
+    "options": [
+      "ext3 is sneller dan ext2",
+      "ext3 heeft journaling toegevoegd ten opzichte van ext2",
+      "ext2 ondersteunt grotere bestanden dan ext3",
+      "Er is geen praktisch verschil"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Wat betekent de permissie '777' op een bestand of directory?",
+    "options": [
+      "Alleen de eigenaar heeft alle rechten",
+      "Eigenaar, groep én anderen hebben alle rechten (lezen, schrijven, uitvoeren)",
+      "Niemand heeft rechten",
+      "Alleen root heeft alle rechten"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 4 Linux"
+  },
+  {
+    "question": "Welke van de zeven Linux-bestandstypes is een symbolische link?",
+    "options": [
+      "regular file",
+      "directory",
+      "symbolic link",
+      "block device file"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 4 Linux"
+  }
+]
