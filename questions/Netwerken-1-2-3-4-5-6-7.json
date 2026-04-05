@@ -1,0 +1,4523 @@
+[
+  {
+    "question": "Wat zijn de drie categorieën van netwerkcomponenten?",
+    "options": [
+      "Devices, Media, Services",
+      "Routers, Switches, Kabels",
+      "Hardware, Software, Firmware",
+      "LAN, WAN, MAN"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 1: Netwerkbegrippen"
+  },
+  {
+    "question": "Welk apparaat is een voorbeeld van een intermediary device?",
+    "options": [
+      "Laptop",
+      "Printer",
+      "Router",
+      "Server"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: Netwerkbegrippen"
+  },
+  {
+    "question": "Wat is het verschil tussen een straight-through kabel en een crossover kabel?",
+    "options": [
+      "Straight-through verbindt RX met TX; crossover verbindt RX met RX en TX met TX",
+      "Straight-through verbindt RX met RX; crossover verbindt RX met TX",
+      "Straight-through is voor WAN; crossover is voor LAN",
+      "Er is geen verschil, beide zijn identiek"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Kabels"
+  },
+  {
+    "question": "Welk type kabel gebruik je bij een rollover-verbinding (Cisco console)?",
+    "options": [
+      "Pin 1 naar pin 1, 2 naar 2, etc.",
+      "Pin 1 naar pin 8, 2 naar 7, 3 naar 6, etc.",
+      "Pin 1 naar pin 4, 2 naar 5, etc.",
+      "Pin 1 naar pin 3, 2 naar 6, etc."
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Kabels"
+  },
+  {
+    "question": "Wat toont een physical topology diagram?",
+    "options": [
+      "IP-adressen en routingprotocollen",
+      "De fysieke locatie van apparaten en kabelinstallatie (OSI laag 1 en 2)",
+      "Logische adressering en poortnummers",
+      "Alleen de VLANs in het netwerk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Topologie"
+  },
+  {
+    "question": "Wat is een LAN?",
+    "options": [
+      "Een netwerk dat grote geografische gebieden verbindt",
+      "Een netwerk dat beperkt is tot een klein geografisch gebied zoals een kantoor of thuis",
+      "Een netwerk dat alleen draadloze verbindingen gebruikt",
+      "Een netwerk beheerd door een serviceprovider"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Netwerktypen"
+  },
+  {
+    "question": "Wat is een WAN?",
+    "options": [
+      "Een netwerk binnen één gebouw",
+      "Een draadloos netwerk",
+      "Een netwerkinfrastructuur die grote geografische gebieden verbindt, zoals tussen bedrijven en datacenters",
+      "Een netwerk voor maximaal 10 apparaten"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: Netwerktypen"
+  },
+  {
+    "question": "Waar wordt de startup-config opgeslagen op een Cisco-apparaat?",
+    "options": [
+      "RAM",
+      "Flash",
+      "NVRAM",
+      "ROM"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: Cisco IOS"
+  },
+  {
+    "question": "Waar wordt de running-config opgeslagen op een Cisco-apparaat?",
+    "options": [
+      "NVRAM",
+      "Flash",
+      "ROM",
+      "RAM"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 1: Cisco IOS"
+  },
+  {
+    "question": "Waar wordt Cisco IOS opgeslagen wanneer het apparaat is uitgeschakeld?",
+    "options": [
+      "RAM",
+      "NVRAM",
+      "Flash",
+      "Cache"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: Cisco IOS"
+  },
+  {
+    "question": "Welke toegangsmethode voor de CLI biedt veilige remote toegang (versleuteld)?",
+    "options": [
+      "Console",
+      "Telnet",
+      "SSH",
+      "AUX"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: CLI-toegang"
+  },
+  {
+    "question": "Welk Cisco IOS-modus geeft toegang tot slechts een beperkt aantal basismonitoring-commando's?",
+    "options": [
+      "Privileged EXEC mode",
+      "Global configuration mode",
+      "User EXEC mode",
+      "Interface configuration mode"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: IOS-modi"
+  },
+  {
+    "question": "Welk commando gebruik je om naar privileged EXEC mode te gaan?",
+    "options": [
+      "conf t",
+      "enable",
+      "login",
+      "sudo"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: IOS-modi"
+  },
+  {
+    "question": "Welk commando gebruik je om van privileged EXEC mode naar global configuration mode te gaan?",
+    "options": [
+      "enable",
+      "configure terminal",
+      "interface vlan 1",
+      "login"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: IOS-modi"
+  },
+  {
+    "question": "Wat doet de Tab-toets in de Cisco IOS CLI?",
+    "options": [
+      "Gaat naar de volgende regel",
+      "Toont alle beschikbare commando's",
+      "Vult een gedeeltelijk ingevoerd commando aan",
+      "Annuleert het huidige commando"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: CLI-shortcuts"
+  },
+  {
+    "question": "Welke toetscombinatie breekt een lopende ping of traceroute af in Cisco IOS?",
+    "options": [
+      "Ctrl-C",
+      "Ctrl-Z",
+      "Ctrl-Shift-6",
+      "Ctrl-X"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: CLI-shortcuts"
+  },
+  {
+    "question": "Welk commando versleutelt alle plaintext wachtwoorden in de running-config?",
+    "options": [
+      "enable secret",
+      "password encryption",
+      "service password-encryption",
+      "crypto key generate"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: Beveiliging"
+  },
+  {
+    "question": "Welk commando stel je in om een wachtwoord op de console-lijn in te stellen?",
+    "options": [
+      "line vty 0 15 → password cisco → login",
+      "line console 0 → password cisco → login",
+      "enable secret cisco",
+      "interface vlan 1 → password cisco"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Beveiliging"
+  },
+  {
+    "question": "Wat is het verschil tussen 'enable password' en 'enable secret'?",
+    "options": [
+      "Ze zijn identiek",
+      "enable secret gebruikt sterkere versleuteling (MD5), enable password is plaintext of zwak versleuteld",
+      "enable password werkt alleen in user EXEC mode",
+      "enable secret is alleen voor SSH"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Beveiliging"
+  },
+  {
+    "question": "Welk commando sla je de running-config op als startup-config?",
+    "options": [
+      "copy running-config startup-config",
+      "save config",
+      "write startup",
+      "store running-config"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 1: Configuratiebeheer"
+  },
+  {
+    "question": "Wat is een SVI (Switch Virtual Interface)?",
+    "options": [
+      "Een fysieke poort op een switch",
+      "Een virtuele interface die wordt gebruikt om de switch via IP remote te benaderen",
+      "Een subinterface op een router",
+      "Een loopback-interface op een switch"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Switch"
+  },
+  {
+    "question": "Wat is een loopback interface?",
+    "options": [
+      "Een fysieke interface voor testverbindingen",
+      "Een virtuele interface die altijd up is, gebruikt voor testen en routingprotocollen",
+      "Een interface die automatisch kabels detecteert",
+      "Een interface die alleen multicast verwerkt"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Interfaces"
+  },
+  {
+    "question": "Welk commando toont een beknopt overzicht van alle interfaces en hun IP-adressen op een Cisco-apparaat?",
+    "options": [
+      "show interfaces",
+      "show ip route",
+      "show ip interface brief",
+      "show version"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: Verificatie"
+  },
+  {
+    "question": "Wat zijn de drie componenten van communicatie?",
+    "options": [
+      "Bron, medium, bestemming",
+      "Encoder, kanaal, decoder",
+      "Sender, receiver, protocol",
+      "Bron, kanaal, bestemming"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 1: Communicatie"
+  },
+  {
+    "question": "Wat is unicast-communicatie?",
+    "options": [
+      "Van 1 naar iedereen",
+      "Van 1 naar een groep",
+      "Van 1 naar 1",
+      "Van meerdere naar 1"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: Communicatie"
+  },
+  {
+    "question": "Hoeveel lagen heeft het OSI-model?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 1: OSI-model"
+  },
+  {
+    "question": "Welke laag van het OSI-model is verantwoordelijk voor routing?",
+    "options": [
+      "Laag 1 – Physical",
+      "Laag 2 – Data Link",
+      "Laag 3 – Network",
+      "Laag 4 – Transport"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: OSI-model"
+  },
+  {
+    "question": "Welke laag van het OSI-model is verantwoordelijk voor MAC-adressen en framing?",
+    "options": [
+      "Laag 1 – Physical",
+      "Laag 2 – Data Link",
+      "Laag 3 – Network",
+      "Laag 5 – Session"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: OSI-model"
+  },
+  {
+    "question": "Welke laag van het OSI-model segmenteert data en zorgt voor betrouwbare overdracht?",
+    "options": [
+      "Laag 2 – Data Link",
+      "Laag 3 – Network",
+      "Laag 4 – Transport",
+      "Laag 7 – Application"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: OSI-model"
+  },
+  {
+    "question": "Hoeveel lagen heeft het TCP/IP-model?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: TCP/IP-model"
+  },
+  {
+    "question": "Welke TCP/IP-laag correspondeert met de OSI-lagen 5, 6 en 7?",
+    "options": [
+      "Network Access",
+      "Internet",
+      "Transport",
+      "Application"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 1: TCP/IP-model"
+  },
+  {
+    "question": "Wat is een PDU (Protocol Data Unit) op de transportlaag?",
+    "options": [
+      "Frame",
+      "Packet",
+      "Segment",
+      "Bit"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Encapsulatie"
+  },
+  {
+    "question": "Wat is een PDU op de netwerklaag?",
+    "options": [
+      "Frame",
+      "Packet",
+      "Segment",
+      "Bit"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Encapsulatie"
+  },
+  {
+    "question": "Wat is een PDU op de datalinklaag?",
+    "options": [
+      "Frame",
+      "Packet",
+      "Segment",
+      "Bit"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2: Encapsulatie"
+  },
+  {
+    "question": "Wat doet ARP?",
+    "options": [
+      "Zet domeinnamen om naar IP-adressen",
+      "Zet IPv4-adressen om naar MAC-adressen",
+      "Versleutelt datapakketten",
+      "Wijst IP-adressen dynamisch toe"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: ARP"
+  },
+  {
+    "question": "Welk commando toont de ARP-tabel op een Cisco IOS-apparaat?",
+    "options": [
+      "show mac-address-table",
+      "show ip arp",
+      "arp -a",
+      "show arp table"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: ARP"
+  },
+  {
+    "question": "Welk commando toont de ARP-tabel op een Windows-pc?",
+    "options": [
+      "show ip arp",
+      "ipconfig /all",
+      "arp -a",
+      "netstat -r"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: ARP"
+  },
+  {
+    "question": "Wat is het MAC-adres bij een broadcast?",
+    "options": [
+      "00:00:00:00:00:00",
+      "FF:FF:FF:FF:FF:FF",
+      "01:00:5E:00:00:01",
+      "00:0A:BC:12:34:56"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Ethernet"
+  },
+  {
+    "question": "Met welke waarde begint een IPv4 multicast MAC-adres?",
+    "options": [
+      "FF-FF-FF",
+      "00-00-5E",
+      "01-00-5E",
+      "00-0A-BC"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Ethernet"
+  },
+  {
+    "question": "Wat is het IPv4 multicast adresbereik?",
+    "options": [
+      "192.168.0.0 – 192.168.255.255",
+      "172.16.0.0 – 172.31.255.255",
+      "224.0.0.0 – 239.255.255.255",
+      "240.0.0.0 – 255.255.255.255"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Ethernet"
+  },
+  {
+    "question": "Wat is half-duplex?",
+    "options": [
+      "Beide kanten kunnen tegelijk zenden en ontvangen",
+      "Slechts één kant kan tegelijk zenden",
+      "Alleen ontvangen is mogelijk",
+      "Communicatie zonder kabel"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Datalinklaag"
+  },
+  {
+    "question": "Welk media access control-protocol gebruikt Wi-Fi (802.11)?",
+    "options": [
+      "CSMA/CD",
+      "CSMA/CA",
+      "Token Ring",
+      "TDMA"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Datalinklaag"
+  },
+  {
+    "question": "Welk media access control-protocol wordt gebruikt bij bedraad Ethernet?",
+    "options": [
+      "CSMA/CA",
+      "CSMA/CD",
+      "Token Passing",
+      "FDMA"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Datalinklaag"
+  },
+  {
+    "question": "Wat zijn de twee sublagen van de datalinklaag?",
+    "options": [
+      "TCP en UDP",
+      "LLC en MAC",
+      "IP en ARP",
+      "Physical en Network"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Datalinklaag"
+  },
+  {
+    "question": "Wat is de maximale lengte van een UTP-kabel segment (100BASE-TX)?",
+    "options": [
+      "50 meter",
+      "100 meter",
+      "150 meter",
+      "500 meter"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Fysieke laag"
+  },
+  {
+    "question": "Wat is attenuation bij koperkabels?",
+    "options": [
+      "Interferentie door andere kabels",
+      "Het verzwakken van het elektrisch signaal over een lange afstand",
+      "Het versleutelen van data",
+      "Terugkaatsing van het signaal"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Fysieke laag"
+  },
+  {
+    "question": "Waartegen beschermt het 'twisting' van paren in een UTP-kabel?",
+    "options": [
+      "Attenuation",
+      "Crosstalk en EMI/RFI",
+      "Waterindringing",
+      "Overbelasting"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Fysieke laag"
+  },
+  {
+    "question": "Welke kabelstandaard gebruik je voor een verbinding van host naar switch?",
+    "options": [
+      "Crossover",
+      "Rollover",
+      "Straight-through",
+      "Coaxiaal"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Kabels"
+  },
+  {
+    "question": "Welke kabelstandaard gebruik je voor host-naar-host of switch-naar-switch?",
+    "options": [
+      "Straight-through",
+      "Rollover",
+      "Crossover",
+      "Fiber"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Kabels"
+  },
+  {
+    "question": "Wat doet Auto-MDIX op een switch?",
+    "options": [
+      "Versleutelt het verkeer automatisch",
+      "Detecteert het kabeltype en configureert de interface automatisch",
+      "Schakelt automatisch naar full-duplex",
+      "Wijst automatisch VLANs toe aan poorten"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Switch"
+  },
+  {
+    "question": "Wat is bandwidth?",
+    "options": [
+      "De vertraging in het netwerk",
+      "De capaciteit van een medium om data te transporteren",
+      "De hoeveelheid bruikbare data overgedragen",
+      "De snelheid van lichtgolven"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Fysieke laag"
+  },
+  {
+    "question": "Wat is het verschil tussen throughput en goodput?",
+    "options": [
+      "Er is geen verschil",
+      "Throughput is de totale bitoverdracht; goodput is throughput minus overhead (headers, ACKs, etc.)",
+      "Goodput is altijd hoger dan throughput",
+      "Throughput is voor draadloos, goodput voor bedraad"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Fysieke laag"
+  },
+  {
+    "question": "Welk IEEE-standaard hoort bij Bluetooth?",
+    "options": [
+      "802.11",
+      "802.15",
+      "802.16",
+      "802.3"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Draadloos"
+  },
+  {
+    "question": "Welk IEEE-standaard hoort bij Wi-Fi?",
+    "options": [
+      "802.15",
+      "802.16",
+      "802.11",
+      "802.3"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Draadloos"
+  },
+  {
+    "question": "Wat is een voordeel van glasvezelkabel ten opzichte van koperkabel?",
+    "options": [
+      "Goedkoper",
+      "Makkelijker te installeren",
+      "Immuun voor EMI en RFI, minder attenuation, grotere afstand",
+      "Hogere stroomsterkte"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Fysieke laag"
+  },
+  {
+    "question": "Hoeveel bits heeft een IPv4-adres?",
+    "options": [
+      "16",
+      "32",
+      "64",
+      "128"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4"
+  },
+  {
+    "question": "Wat is een octet in een IPv4-adres?",
+    "options": [
+      "16 bits",
+      "8 bits (1 byte)",
+      "4 bits",
+      "32 bits"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4"
+  },
+  {
+    "question": "Wat doet het subnetmasker?",
+    "options": [
+      "Versleutelt het IP-adres",
+      "Geeft aan welk deel van het IP-adres het netwerkgedeelte is en welk het hostgedeelte",
+      "Wijst automatisch IP-adressen toe",
+      "Bepaalt de routeringsprotocollen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4"
+  },
+  {
+    "question": "Wat is het netwerkadres van 192.168.10.50/24?",
+    "options": [
+      "192.168.10.1",
+      "192.168.10.0",
+      "192.168.10.255",
+      "192.168.0.0"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Wat is het broadcastadres van 192.168.10.0/24?",
+    "options": [
+      "192.168.10.0",
+      "192.168.10.1",
+      "192.168.10.254",
+      "192.168.10.255"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Hoeveel bruikbare hostadressen heeft een /24-netwerk?",
+    "options": [
+      "254",
+      "255",
+      "256",
+      "252"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Welk subnetmasker hoort bij /26?",
+    "options": [
+      "255.255.255.0",
+      "255.255.255.128",
+      "255.255.255.192",
+      "255.255.255.224"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Hoeveel subnetten krijg je als je 2 bits leent in een /24-netwerk (/26)?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Hoeveel bruikbare hostadressen heeft een /26-subnet?",
+    "options": [
+      "30",
+      "62",
+      "64",
+      "126"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Wat zijn privé IPv4-adressen?",
+    "options": [
+      "Adressen die alleen door ISPs worden gebruikt",
+      "Adressen die niet via internet bereikbaar zijn: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16",
+      "Adressen gereserveerd voor multicast",
+      "Adressen voor loopback-tests"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4 adressering"
+  },
+  {
+    "question": "Wat is het loopback-adres van IPv4?",
+    "options": [
+      "169.254.0.1",
+      "192.0.2.1",
+      "127.0.0.1",
+      "10.0.0.1"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: IPv4 speciale adressen"
+  },
+  {
+    "question": "Wat zijn APIPA-adressen (Automatic Private IP Addressing)?",
+    "options": [
+      "10.0.0.0/8",
+      "169.254.0.0/16",
+      "192.168.0.0/16",
+      "127.0.0.0/8"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4 speciale adressen"
+  },
+  {
+    "question": "Waarom wordt subnetting gebruikt?",
+    "options": [
+      "Om het netwerk te versleutelen",
+      "Om broadcast-verkeer te verminderen, beveiliging te verbeteren en prestaties te optimaliseren",
+      "Om IPv6 te vervangen",
+      "Om MAC-adressen te vergrendelen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Wat is VLSM (Variable Length Subnet Mask)?",
+    "options": [
+      "Een enkelvoudig subnetmasker voor alle subnetten",
+      "Het gebruik van verschillende subnetmaskers voor verschillende subnetten in hetzelfde netwerk",
+      "Een IPv6-adresseringsschema",
+      "Een routingprotocol voor draadloze netwerken"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: VLSM"
+  },
+  {
+    "question": "Wat is de eerste stap bij VLSM-subnetting?",
+    "options": [
+      "Kies het kleinste subnet eerst",
+      "Sorteer de subnetbehoeften van groot naar klein",
+      "Kies willekeurige subnetmaskers",
+      "Begin met het broadcastadres"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: VLSM"
+  },
+  {
+    "question": "Hoe schrijf je /25 in decimaal subnetmasker?",
+    "options": [
+      "255.255.255.0",
+      "255.255.255.128",
+      "255.255.255.192",
+      "255.255.255.224"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Hoe schrijf je /27 in decimaal subnetmasker?",
+    "options": [
+      "255.255.255.128",
+      "255.255.255.192",
+      "255.255.255.224",
+      "255.255.255.240"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Hoeveel bruikbare hosts heeft een /30-subnet?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Welk subnetmasker gebruik je typisch voor point-to-point verbindingen tussen routers?",
+    "options": [
+      "/24",
+      "/28",
+      "/30",
+      "/16"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Hoe lang is een IPv6-adres?",
+    "options": [
+      "32 bits",
+      "64 bits",
+      "128 bits",
+      "256 bits"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: IPv6"
+  },
+  {
+    "question": "Hoe wordt een IPv6-adres genoteerd?",
+    "options": [
+      "Vier decimale octetten gescheiden door punten",
+      "Acht hexadecimale groepen van 16 bits, gescheiden door dubbele punten",
+      "Binaire reeks van 128 bits",
+      "Zes hexadecimale groepen van 8 bits"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6"
+  },
+  {
+    "question": "Welk commando zet IPv6 unicast routing aan op een Cisco router?",
+    "options": [
+      "ip routing",
+      "ipv6 unicast-routing",
+      "ipv6 enable",
+      "router ipv6"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6"
+  },
+  {
+    "question": "Hoe configureer je een IPv6-adres op een router-interface in Cisco IOS?",
+    "options": [
+      "ip address 2001::1/64",
+      "ipv6 address 2001::1/64",
+      "ipv6 set 2001::1 255.255.255.0",
+      "address ipv6 2001::1/64"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6"
+  },
+  {
+    "question": "Welk commando start RIPng voor IPv6 op een Cisco router?",
+    "options": [
+      "router rip version 6",
+      "ipv6 router rip 1",
+      "router ripng 1",
+      "ipv6 rip start"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6 routing"
+  },
+  {
+    "question": "Welk commando controleer je de IPv6 routing-tabel?",
+    "options": [
+      "show ip route",
+      "show ipv6 route",
+      "show ipv6 table",
+      "show route ipv6"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6 routing"
+  },
+  {
+    "question": "Wat is het doel van een loopback-interface bij IPv6 RIPng?",
+    "options": [
+      "Verbinding met internet",
+      "Simuleren van een LAN-netwerk en stabiel routeradres voor routingprotocollen",
+      "Versleuteling van verkeer",
+      "Alleen voor testpingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6 routing"
+  },
+  {
+    "question": "Wat is het standaard VLAN op een Cisco switch?",
+    "options": [
+      "VLAN 0",
+      "VLAN 1",
+      "VLAN 10",
+      "VLAN 100"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is het verschil tussen een access-poort en een trunk-poort?",
+    "options": [
+      "Een access-poort ondersteunt meerdere VLANs; een trunk-poort slechts één",
+      "Een access-poort ondersteunt slechts één VLAN; een trunk-poort meerdere VLANs",
+      "Er is geen verschil",
+      "Een trunk-poort is altijd draadloos"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Welk commando maak je een VLAN aan op een Cisco switch?",
+    "options": [
+      "create vlan 10",
+      "vlan 10",
+      "interface vlan 10",
+      "set vlan 10"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Welk commando stel je een poort in als access-poort voor VLAN 10?",
+    "options": [
+      "switchport access vlan 10",
+      "switchport trunk vlan 10",
+      "interface vlan 10",
+      "vlan access 10"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Welke twee commando's zijn nodig om een poort als access-poort in VLAN 10 in te stellen?",
+    "options": [
+      "switchport mode access → switchport access vlan 10",
+      "switchport mode trunk → switchport access vlan 10",
+      "interface vlan 10 → no shutdown",
+      "vlan 10 → switchport"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Welk commando stel je een poort in als trunk-poort?",
+    "options": [
+      "switchport mode access",
+      "switchport mode trunk",
+      "switchport trunk allowed",
+      "switchport vlan trunk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Welk commando toont de VLAN-configuratie op een Cisco switch?",
+    "options": [
+      "show vlan",
+      "show vlan brief",
+      "show interfaces vlan",
+      "show ip vlan"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is inter-VLAN routing?",
+    "options": [
+      "Routing tussen subnetten in hetzelfde VLAN",
+      "Communicatie tussen apparaten in verschillende VLANs via een router of L3-switch",
+      "Routing via Wi-Fi",
+      "VLAN-beheer via SSH"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is 'router-on-a-stick'?",
+    "options": [
+      "Een router met meerdere fysieke interfaces per VLAN",
+      "Inter-VLAN routing via één fysieke routerinterface met subinterfaces per VLAN",
+      "Een switch die routing doet",
+      "Een draadloze router die VLANs beheert"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Inter-VLAN routing"
+  },
+  {
+    "question": "Welk commando maak je een subinterface aan voor VLAN 11 op interface gi0/0/0?",
+    "options": [
+      "interface gi0/0/0.11",
+      "subinterface gi0/0/0 vlan 11",
+      "interface vlan 11",
+      "vlan 11 interface gi0/0/0"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 3: Inter-VLAN routing"
+  },
+  {
+    "question": "Welk commando koppel je een subinterface aan VLAN 11 met dot1Q encapsulatie?",
+    "options": [
+      "vlan 11 dot1q",
+      "encapsulation dot1Q 11",
+      "switchport trunk vlan 11",
+      "dot1q encap 11"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Inter-VLAN routing"
+  },
+  {
+    "question": "Welke route staat in de routing-tabel voor rechtstreeks verbonden netwerken?",
+    "options": [
+      "R",
+      "S",
+      "C",
+      "O"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: Routing"
+  },
+  {
+    "question": "Welke letter staat in de routing-tabel voor netwerken geleerd via RIP?",
+    "options": [
+      "C",
+      "S",
+      "R",
+      "O"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: Routing"
+  },
+  {
+    "question": "Welk commando start RIP op een Cisco router?",
+    "options": [
+      "ip routing rip",
+      "router rip",
+      "enable rip",
+      "rip routing start"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: RIP"
+  },
+  {
+    "question": "Welke RIP versie wordt aanbevolen (met no auto-summary en VLSM-ondersteuning)?",
+    "options": [
+      "RIP versie 1",
+      "RIP versie 2",
+      "RIP versie 3",
+      "RIPng"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: RIP"
+  },
+  {
+    "question": "Welk commando toont de routing-tabel op een Cisco router?",
+    "options": [
+      "show interfaces",
+      "show ip arp",
+      "show ip route",
+      "show running-config"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: Routing"
+  },
+  {
+    "question": "Wat doet het commando 'no auto-summary' bij RIP versie 2?",
+    "options": [
+      "Schakelt automatische configuratie uit",
+      "Voorkomt dat RIP routes automatisch samenvoegt naar class-gebaseerde grenzen (essentieel voor VLSM)",
+      "Verwijdert alle statische routes",
+      "Zet automatisch adverteren uit"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: RIP"
+  },
+  {
+    "question": "Welk commando voeg je een netwerk toe aan RIP-advertering?",
+    "options": [
+      "advertise network 192.168.1.0",
+      "network 192.168.1.0",
+      "rip network 192.168.1.0",
+      "add network 192.168.1.0"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: RIP"
+  },
+  {
+    "question": "Wat is het doel van een default gateway op een pc?",
+    "options": [
+      "Het IP-adres van de dichtstbijzijnde switch",
+      "Het IP-adres van de router waarnaar pakketten worden gestuurd voor externe communicatie",
+      "Het DNS-serveradres",
+      "Het DHCP-serveradres"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Routing"
+  },
+  {
+    "question": "Wat is SSH?",
+    "options": [
+      "Een onversleuteld remote-toegangsprotocol",
+      "Een versleuteld remote-toegangsprotocol (veilig alternatief voor Telnet)",
+      "Een routingprotocol",
+      "Een VLAN-beheersprotocol"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Welke stappen zijn nodig om SSH in te stellen op een Cisco-apparaat?",
+    "options": [
+      "Alleen een wachtwoord instellen",
+      "Hostname, ip domain-name, username aanmaken, crypto key generate rsa",
+      "SSH is standaard actief, niets te configureren",
+      "Alleen aaa new-model instellen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Welk commando genereer je RSA-sleutels voor SSH op Cisco IOS?",
+    "options": [
+      "ssh key generate",
+      "crypto key generate rsa",
+      "generate rsa key",
+      "ip ssh keygen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Welke sleutellengte (bits) wordt aanbevolen voor SSH op Cisco?",
+    "options": [
+      "512",
+      "1024",
+      "2048",
+      "4096"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Wat doet het commando 'no ip domain-lookup'?",
+    "options": [
+      "Schakelt DHCP uit",
+      "Voorkomt dat de router bij een typfout probeert een DNS-naam op te lossen (voorkomt lange vertraging)",
+      "Verwijdert het IP-adres van de interface",
+      "Blokkeert alle DNS-verkeer"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Configuratie"
+  },
+  {
+    "question": "Wat doet 'logging synchronous' onder line console 0?",
+    "options": [
+      "Stuurt logs naar een externe server",
+      "Voorkomt dat systemmeldingen je invoer onderbreken",
+      "Versleutelt de consoleverbinding",
+      "Verhoogt de logsnelheid"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Configuratie"
+  },
+  {
+    "question": "Welk commando stel je een banner in op een Cisco-apparaat?",
+    "options": [
+      "motd banner 'tekst'",
+      "banner motd 'tekst'",
+      "set banner 'tekst'",
+      "message 'tekst'"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Configuratie"
+  },
+  {
+    "question": "Wat is DHCP?",
+    "options": [
+      "Een protocol dat MAC-adressen omzet naar IP-adressen",
+      "Een protocol dat automatisch IP-adressen, subnetmaskers en gateways toewijst aan hosts",
+      "Een routingprotocol voor dynamische routes",
+      "Een versleutelingsprotocol voor VPN"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: DHCP"
+  },
+  {
+    "question": "Welk commando sluit je een reeks IP-adressen uit van DHCP-uitgifte?",
+    "options": [
+      "ip dhcp exclude 10.0.0.1 10.0.0.10",
+      "ip dhcp excluded-address 10.0.0.1 10.0.0.10",
+      "dhcp exclude 10.0.0.1 10.0.0.10",
+      "no dhcp address 10.0.0.1 10.0.0.10"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: DHCP"
+  },
+  {
+    "question": "Welk commando maak je een DHCP-pool aan genaamd 'LAN_A'?",
+    "options": [
+      "ip dhcp create LAN_A",
+      "dhcp pool LAN_A",
+      "ip dhcp pool LAN_A",
+      "create dhcp LAN_A"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: DHCP"
+  },
+  {
+    "question": "Welke DHCP-commando's stel je in binnen een DHCP-pool?",
+    "options": [
+      "network, default-router, dns-server",
+      "ip address, gateway, dns",
+      "subnet, router, nameserver",
+      "network, ip-helper, gateway"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 5: DHCP"
+  },
+  {
+    "question": "Wat is het transportlaagprotocol dat verbindingsgericht is en betrouwbaarheid garandeert?",
+    "options": [
+      "UDP",
+      "TCP",
+      "ICMP",
+      "ARP"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Transportlaag"
+  },
+  {
+    "question": "Wat is het transportlaagprotocol dat verbindingsloos is en sneller maar minder betrouwbaar?",
+    "options": [
+      "TCP",
+      "ICMP",
+      "UDP",
+      "IP"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: Transportlaag"
+  },
+  {
+    "question": "Welke protocollen maken gebruik van UDP? (kies het beste antwoord)",
+    "options": [
+      "HTTP, FTP, SSH",
+      "DNS, DHCP, streaming",
+      "SMTP, POP3, IMAP",
+      "Telnet, SSH, FTP"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Transportlaag"
+  },
+  {
+    "question": "Wat is de TCP three-way handshake?",
+    "options": [
+      "SYN → SYN-ACK → ACK",
+      "ACK → SYN → FIN",
+      "SYN → ACK → FIN",
+      "HELLO → HELLO-ACK → OPEN"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 6: TCP"
+  },
+  {
+    "question": "Hoeveel velden heeft een UDP-header?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: UDP"
+  },
+  {
+    "question": "Op welke poort werkt SMTP?",
+    "options": [
+      "25",
+      "53",
+      "80",
+      "110"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 6: Protocollen"
+  },
+  {
+    "question": "Op welke poort werkt POP3?",
+    "options": [
+      "25",
+      "53",
+      "80",
+      "110"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 6: Protocollen"
+  },
+  {
+    "question": "Op welke poort werkt DNS?",
+    "options": [
+      "25",
+      "53",
+      "80",
+      "443"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Protocollen"
+  },
+  {
+    "question": "Op welke poort werkt HTTP?",
+    "options": [
+      "21",
+      "22",
+      "80",
+      "443"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: Protocollen"
+  },
+  {
+    "question": "Op welke poort werkt FTP (data)?",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 6: Protocollen"
+  },
+  {
+    "question": "Op welke poort werkt FTP (control)?",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Protocollen"
+  },
+  {
+    "question": "Op welke poort werkt SSH?",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: Protocollen"
+  },
+  {
+    "question": "Op welke poort werkt Telnet?",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 6: Protocollen"
+  },
+  {
+    "question": "Wat is DNS?",
+    "options": [
+      "Een protocol dat IP-adressen omzet naar MAC-adressen",
+      "Een protocol dat domeinnamen omzet naar IP-adressen",
+      "Een protocol dat DHCP-adressen beheert",
+      "Een routing-protocol"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: DNS"
+  },
+  {
+    "question": "Welk Windows-commando test je een DNS-server?",
+    "options": [
+      "ping",
+      "tracert",
+      "nslookup",
+      "netstat"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: DNS"
+  },
+  {
+    "question": "Welk Linux-commando gebruik je als alternatief voor nslookup bij DNS-tests?",
+    "options": [
+      "host",
+      "dig",
+      "resolve",
+      "dns-check"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: DNS"
+  },
+  {
+    "question": "Wat is het voordeel van TCP ten opzichte van UDP?",
+    "options": [
+      "TCP is sneller",
+      "TCP gebruikt minder bandbreedte",
+      "TCP garandeert betrouwbare, geordende levering via bevestigingen en herverzendings-mechanisme",
+      "TCP heeft minder overhead"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: TCP vs UDP"
+  },
+  {
+    "question": "Wat is het voordeel van UDP ten opzichte van TCP?",
+    "options": [
+      "UDP garandeert levering",
+      "UDP is betrouwbaarder",
+      "UDP heeft minder overhead en is sneller, geschikt voor tijdgevoelige toepassingen",
+      "UDP gebruikt versleuteling"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: TCP vs UDP"
+  },
+  {
+    "question": "Kun je met FTP (plaintext) het wachtwoord terugvinden in een Wireshark-capture?",
+    "options": [
+      "Nee, FTP versleutelt altijd wachtwoorden",
+      "Ja, FTP stuurt wachtwoorden in plaintext en zijn zichtbaar in Wireshark",
+      "Alleen als je admin-rechten hebt",
+      "Nee, Wireshark kan FTP niet decoderen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Beveiliging / FTP"
+  },
+  {
+    "question": "Wat is CDP (Cisco Discovery Protocol)?",
+    "options": [
+      "Een routingprotocol voor Cisco-apparaten",
+      "Een Cisco-eigendomsprotocol dat informatie over direct verbonden Cisco-apparaten vertoont",
+      "Een protocol voor VLAN-beheer",
+      "Een protocol voor het configureren van SSH"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP/LLDP"
+  },
+  {
+    "question": "Welk commando toont direct verbonden neighbors via CDP?",
+    "options": [
+      "show lldp neighbors",
+      "show cdp neighbors",
+      "show interfaces neighbors",
+      "show ip neighbors"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP/LLDP"
+  },
+  {
+    "question": "Wat is LLDP (Link Layer Discovery Protocol)?",
+    "options": [
+      "Een Cisco-eigendoms protocol",
+      "Een fabrikant-onafhankelijke versie van CDP (IEEE 802.1AB)",
+      "Een routingprotocol",
+      "Een switchingprotocol voor VLANs"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP/LLDP"
+  },
+  {
+    "question": "Welk commando zet LLDP aan op een Cisco-apparaat?",
+    "options": [
+      "lldp enable",
+      "lldp run",
+      "enable lldp",
+      "set lldp on"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP/LLDP"
+  },
+  {
+    "question": "Welk commando zet LLDP-transmit aan op een interface?",
+    "options": [
+      "lldp send",
+      "lldp transmit",
+      "lldp enable transmit",
+      "interface lldp out"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP/LLDP"
+  },
+  {
+    "question": "Welk commando geeft gedetailleerde CDP-informatie inclusief IP-adressen van neighbors?",
+    "options": [
+      "show cdp neighbors",
+      "show cdp neighbors detail",
+      "show cdp detail",
+      "show cdp full"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP/LLDP"
+  },
+  {
+    "question": "Welk commando toont de IOS-versie en hardware-info van een Cisco-apparaat?",
+    "options": [
+      "show ip interface brief",
+      "show run",
+      "show version",
+      "show ip route"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 7: Verificatie"
+  },
+  {
+    "question": "Wat doet het commando 'interface range gi1/0/3 - 4'?",
+    "options": [
+      "Toont de status van poorten 3 en 4",
+      "Selecteert meerdere interfaces tegelijkertijd voor configuratie",
+      "Stelt een IP-adres in op interfaces 3 en 4",
+      "Verwijdert interfaces 3 en 4 uit de configuratie"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switch configuratie"
+  },
+  {
+    "question": "Welk commando wis je de startup-config op een Cisco-apparaat?",
+    "options": [
+      "delete startup-config",
+      "erase nvram:",
+      "clear startup",
+      "remove startup-config"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Configuratiebeheer"
+  },
+  {
+    "question": "Welk commando wis je de VLAN-database op een Cisco switch?",
+    "options": [
+      "erase vlan",
+      "delete vlan.dat",
+      "clear vlan database",
+      "no vlan all"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Switch"
+  },
+  {
+    "question": "Wat betekent het als een interface de status 'administratively down' heeft?",
+    "options": [
+      "De kabel is niet aangesloten",
+      "De interface is handmatig uitgeschakeld (no shutdown is nodig)",
+      "Er is een hardwareprobleem",
+      "De interface heeft geen IP-adres"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Interface problemen"
+  },
+  {
+    "question": "Welk commando zet een interface aan in Cisco IOS?",
+    "options": [
+      "interface up",
+      "enable interface",
+      "no shutdown",
+      "set interface active"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Algemeen: Interfaces"
+  },
+  {
+    "question": "Wat is het verschil tussen een L2-switch en een L3-switch (multilayer switch)?",
+    "options": [
+      "L2 switches zijn sneller",
+      "Een L3-switch kan zowel op OSI-laag 2 als laag 3 beslissingen nemen (kan ook routeren)",
+      "L2-switches ondersteunen meer VLANs",
+      "Er is geen functioneel verschil"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Switches"
+  },
+  {
+    "question": "Welk commando geeft een interface een beschrijving?",
+    "options": [
+      "name Naar_Router",
+      "description Naar_Router",
+      "label Naar_Router",
+      "comment Naar_Router"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Interfaces"
+  },
+  {
+    "question": "Wat is het formaat van een MAC-adres?",
+    "options": [
+      "32 bits, vier decimale getallen gescheiden door punten",
+      "48 bits, zes hexadecimale paren gescheiden door koppeltekens of dubbele punten",
+      "64 bits, acht hexadecimale groepen",
+      "128 bits, zestien hexadecimale paren"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: MAC-adressen"
+  },
+  {
+    "question": "Wat is het verschil tussen een MAC-adres en een IP-adres?",
+    "options": [
+      "Een MAC-adres is logisch en een IP-adres is fysiek",
+      "Een MAC-adres is fysiek (hardwaregebonden, laag 2); een IP-adres is logisch (laag 3, toewijsbaar)",
+      "Ze zijn identiek qua functie",
+      "MAC-adressen worden alleen gebruikt in WAN-netwerken"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Adressering"
+  },
+  {
+    "question": "Wat is een 'runt frame' in Ethernet?",
+    "options": [
+      "Een frame groter dan 1518 bytes",
+      "Een frame kleiner dan 64 bytes (ook wel collision fragment)",
+      "Een frame met een onjuiste checksum",
+      "Een frame zonder bestemmingsadres"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Ethernet"
+  },
+  {
+    "question": "Hoe bereken je het aantal subnetten bij subnetting?",
+    "options": [
+      "2^(aantal geleende bits)",
+      "2^(aantal geleende bits) - 2",
+      "2^(aantal hostbits)",
+      "2^(aantal hostbits) - 2"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Hoe bereken je het aantal bruikbare hosts per subnet?",
+    "options": [
+      "2^(aantal hostbits)",
+      "2^(aantal hostbits) - 1",
+      "2^(aantal hostbits) - 2",
+      "2^(aantal subnetbits) - 2"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Welk commando stel je een IP-adres in op een router-interface?",
+    "options": [
+      "set ip 192.168.1.1 255.255.255.0",
+      "ip address 192.168.1.1 255.255.255.0",
+      "interface ip 192.168.1.1/24",
+      "assign ip 192.168.1.1 mask 255.255.255.0"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Router configuratie"
+  },
+  {
+    "question": "Wat is een VTY-lijn op een Cisco-apparaat?",
+    "options": [
+      "Een fysieke console-poort",
+      "Een virtuele terminallijn die remote toegang via Telnet of SSH mogelijk maakt",
+      "Een seriële WAN-interface",
+      "Een loopback-interface"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: CLI-toegang"
+  },
+  {
+    "question": "Hoeveel VTY-lijnen ondersteunt een Cisco switch typisch?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: CLI-toegang"
+  },
+  {
+    "question": "Welk commando configureer je VTY-lijnen 0 tot 15?",
+    "options": [
+      "line vty 0 15",
+      "vty line 0 15",
+      "interface vty 0 15",
+      "remote line 0 15"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 1: CLI-toegang"
+  },
+  {
+    "question": "Wat doet het commando 'show run'?",
+    "options": [
+      "Toont de opgeslagen startup-configuratie",
+      "Toont de huidige actieve configuratie in RAM",
+      "Toont alle routes in de routing-tabel",
+      "Start het apparaat opnieuw op"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Configuratiebeheer"
+  },
+  {
+    "question": "Wat is het doel van een MOTD-banner?",
+    "options": [
+      "Automatisch inloggen instellen",
+      "Een waarschuwingsbericht tonen aan iedereen die inlogt op het apparaat",
+      "De hostnaam weergeven",
+      "Verkeer filteren"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Beveiliging"
+  },
+  {
+    "question": "Welk type kabel gebruik je voor een seriële WAN-verbinding tussen twee routers in een Cisco-lab?",
+    "options": [
+      "UTP straight-through",
+      "UTP crossover",
+      "Serieel (DCE/DTE) kabel",
+      "Fiber optic"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Kabels"
+  },
+  {
+    "question": "Wat is het commando om een statische route in te stellen?",
+    "options": [
+      "router static 192.168.2.0 255.255.255.0 10.0.0.1",
+      "ip route 192.168.2.0 255.255.255.0 10.0.0.1",
+      "static route 192.168.2.0/24 10.0.0.1",
+      "route add 192.168.2.0 255.255.255.0 via 10.0.0.1"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Routing"
+  },
+  {
+    "question": "Wat is de functie van encapsulation dot1Q bij inter-VLAN routing?",
+    "options": [
+      "Versleutelt het VLAN-verkeer",
+      "Geeft aan dat de subinterface VLAN-tagged frames verwerkt voor het opgegeven VLAN-ID",
+      "Maakt de trunk-poort aan",
+      "Voegt een VLAN toe aan de switch"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Inter-VLAN routing"
+  },
+  {
+    "question": "Wat is het commando om intervlan routing te testen via ping vanuit privileged EXEC mode?",
+    "options": [
+      "test ping 192.168.1.1",
+      "ping 192.168.1.1",
+      "do ping 192.168.1.1",
+      "icmp echo 192.168.1.1"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Verificatie"
+  },
+  {
+    "question": "Welk commando gebruik je om te pingen vanuit een configuratie-modus (conf t)?",
+    "options": [
+      "ping 192.168.1.1",
+      "exec ping 192.168.1.1",
+      "do ping 192.168.1.1",
+      "run ping 192.168.1.1"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Algemeen: CLI"
+  },
+  {
+    "question": "Wat zijn de privé IPv4-bereiken?",
+    "options": [
+      "10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16",
+      "10.0.0.0/8, 172.0.0.0/8, 192.0.0.0/8",
+      "100.0.0.0/8, 172.16.0.0/16, 192.168.0.0/24",
+      "10.0.0.0/16, 172.16.0.0/16, 192.168.0.0/16"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2: IPv4 adressering"
+  },
+  {
+    "question": "Wat is het /20 subnetmasker in decimale notatie?",
+    "options": [
+      "255.255.0.0",
+      "255.255.240.0",
+      "255.255.248.0",
+      "255.255.255.0"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Subnetting"
+  },
+  {
+    "question": "Wat is het /19 subnetmasker in decimale notatie?",
+    "options": [
+      "255.255.192.0",
+      "255.255.224.0",
+      "255.255.240.0",
+      "255.255.248.0"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Subnetting"
+  },
+  {
+    "question": "Wat is het /28 subnetmasker in decimale notatie?",
+    "options": [
+      "255.255.255.224",
+      "255.255.255.240",
+      "255.255.255.248",
+      "255.255.255.252"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Hoeveel bruikbare hosts heeft een /28-subnet?",
+    "options": [
+      "6",
+      "14",
+      "30",
+      "62"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Welk commando stel je een SVI in op VLAN 1 met IP 192.168.1.2?",
+    "options": [
+      "ip address vlan1 192.168.1.2",
+      "interface vlan 1 → ip address 192.168.1.2 255.255.255.0 → no shutdown",
+      "vlan 1 → set ip 192.168.1.2",
+      "interface gi0/0 → ip address 192.168.1.2"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: SVI"
+  },
+  {
+    "question": "Welk commando stel je de default gateway in op een switch?",
+    "options": [
+      "ip gateway 192.168.1.1",
+      "ip default-gateway 192.168.1.1",
+      "route gateway 192.168.1.1",
+      "set gateway 192.168.1.1"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Switch"
+  },
+  {
+    "question": "Wat is de maximale framegrootte van een standaard Ethernet frame?",
+    "options": [
+      "512 bytes",
+      "1024 bytes",
+      "1518 bytes",
+      "9000 bytes"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Ethernet"
+  },
+  {
+    "question": "Wat is de berichtgrootte die bij Ethernet als maximaal geldt voor normale data (payload)?",
+    "options": [
+      "512 bytes",
+      "1500 bytes",
+      "2048 bytes",
+      "9000 bytes"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Communicatie"
+  },
+  {
+    "question": "Wat doet SMTP?",
+    "options": [
+      "Ontvangt e-mails van een mailserver",
+      "Verzendt e-mails",
+      "Beheert DNS-records",
+      "Versleutelt webverkeer"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: E-mail protocollen"
+  },
+  {
+    "question": "Wat doet POP3?",
+    "options": [
+      "Verzendt e-mails",
+      "Ontvangt e-mails van een mailserver naar de client",
+      "Beheert routeringsprotocollen",
+      "Distribueert IP-adressen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: E-mail protocollen"
+  },
+  {
+    "question": "Wat is het EHLO-commando in SMTP?",
+    "options": [
+      "Beëindigt een SMTP-sessie",
+      "Opent een SMTP-sessie en vraagt de servermogelijkheden op (uitgebreide versie van HELO)",
+      "Verzendt de e-mailboodschap",
+      "Authenticeert de gebruiker"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: SMTP"
+  },
+  {
+    "question": "Met welk Telnet-commando maak je verbinding met SMTP-poort 25?",
+    "options": [
+      "telnet server 25",
+      "telnet Eagle-server.example.com 25",
+      "connect smtp Eagle-server",
+      "smtp connect 25 Eagle-server"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: SMTP / Telnet"
+  },
+  {
+    "question": "Wat is het Wireshark-filter om alleen SYN-pakketten te tonen?",
+    "options": [
+      "tcp.flags == 0x002",
+      "tcp.flags.syn == 1",
+      "tcp.syn == true",
+      "filter syn only"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Wireshark"
+  },
+  {
+    "question": "In een Wireshark TCP-capture: welke flags zijn actief in het eerste frame van de three-way handshake?",
+    "options": [
+      "ACK",
+      "SYN",
+      "SYN-ACK",
+      "FIN-ACK"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: TCP"
+  },
+  {
+    "question": "In een Wireshark TCP-capture: welke flags zijn actief in het tweede frame van de three-way handshake?",
+    "options": [
+      "SYN",
+      "ACK",
+      "SYN-ACK",
+      "FIN"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: TCP"
+  },
+  {
+    "question": "Wat is het doel van het sequence number in TCP?",
+    "options": [
+      "Het identificeert de afzender",
+      "Het houdt de volgorde van segmenten bij zodat de ontvanger ze correct kan samenvoegen",
+      "Het versleutelt de data",
+      "Het geeft de poort aan"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: TCP"
+  },
+  {
+    "question": "Wat is de window size in TCP?",
+    "options": [
+      "De maximale framegrootte",
+      "De hoeveelheid data die de afzender mag sturen voor een bevestiging vereist is (flow control)",
+      "De TTL-waarde van het pakket",
+      "Het subnetmasker"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: TCP"
+  },
+  {
+    "question": "Welk Wireshark-filter gebruik je voor DNS-verkeer?",
+    "options": [
+      "udp.port == 53",
+      "dns",
+      "filter dns only",
+      "protocol == dns"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Wireshark"
+  },
+  {
+    "question": "Waarom is het destination MAC-adres in een DNS-aanvraag naar de gateway en niet naar de DNS-server zelf?",
+    "options": [
+      "Omdat DNS altijd broadcast is",
+      "Omdat MAC-adressen alleen lokaal geldig zijn; voor externe communicatie gaat het verkeer naar de default gateway (router)",
+      "Omdat de switch het adres aanpast",
+      "Omdat ARP het adres wijzigt"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Netwerk/Datalink adressering"
+  },
+  {
+    "question": "Wat is het commando om een loopback-interface aan te maken op een Cisco router?",
+    "options": [
+      "create loopback 1",
+      "interface loopback 1",
+      "loopback interface 1",
+      "ip loopback 1"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP/LLDP"
+  },
+  {
+    "question": "Welk commando toont de MAC-adrestabel op een Cisco switch?",
+    "options": [
+      "show arp",
+      "show mac-address-table",
+      "show ip arp",
+      "show mac table"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Switch"
+  },
+  {
+    "question": "Wat is een collision domain?",
+    "options": [
+      "Een groep apparaten die hetzelfde VLAN delen",
+      "Een netwerksegment waarbinnen twee gelijktijdig gezonden frames kunnen botsen",
+      "Een subnet",
+      "Een broadcast domain"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Ethernet"
+  },
+  {
+    "question": "Hoe verdeelt een switch collision domains?",
+    "options": [
+      "Elke switch heeft één collision domain",
+      "Elke poort op een switch vormt een apart collision domain",
+      "VLANs vormen collision domains",
+      "Collision domains worden verdeeld door routers, niet switches"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Switch"
+  },
+  {
+    "question": "Wat verdeelt broadcast domains?",
+    "options": [
+      "Switches",
+      "Hubs",
+      "Routers (en VLANs)",
+      "Access points"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Routing"
+  },
+  {
+    "question": "Welk commando toont de trunk-status op een Cisco switch?",
+    "options": [
+      "show vlan",
+      "show interfaces trunk",
+      "show trunk status",
+      "show switchport trunk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is de functie van TTL (Time To Live) in een IPv4-pakket?",
+    "options": [
+      "Geeft de verbindingstijd aan",
+      "Beperkt de levensduur van een pakket; elke router verlaagt TTL met 1, bij 0 wordt het pakket weggegooid",
+      "Geeft de prioriteit van het pakket aan",
+      "Bepaalt de maximale framegrootte"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4 header"
+  },
+  {
+    "question": "Welk veld in de IPv4-header geeft het bovenliggend protocol aan (bijv. TCP=6, UDP=17)?",
+    "options": [
+      "Version",
+      "DS/ToS",
+      "Protocol",
+      "TTL"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: IPv4 header"
+  },
+  {
+    "question": "Welk commando verwijder je een IP-adres van een interface?",
+    "options": [
+      "no ip address",
+      "delete ip address",
+      "clear ip address",
+      "remove ip"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Algemeen: Interfaces"
+  },
+  {
+    "question": "Wat is het commando 'aaa new-model' nodig voor bij SSH?",
+    "options": [
+      "Het stelt de SSH-versie in",
+      "Het schakelt AAA-authenticatie in, soms vereist door bepaalde IOS-versies om SSH correct te laten werken",
+      "Het genereert RSA-sleutels",
+      "Het stel het domein in voor SSH"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Welke twee types poorten bestaan op een Cisco switch?",
+    "options": [
+      "Active en passive poorten",
+      "Access en trunk poorten",
+      "Layer2 en Layer3 poorten",
+      "Router en switch poorten"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is inter-VLAN routing via een L3-switch (multilayer switch)?",
+    "options": [
+      "Hetzelfde als router-on-a-stick",
+      "Routing tussen VLANs via SVI-interfaces op de switch zonder externe router",
+      "Routing via een loopback interface",
+      "Routing via een extern firewall-apparaat"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: L3 switch"
+  },
+  {
+    "question": "Welk commando activeert IP-routing op een L3-switch?",
+    "options": [
+      "enable routing",
+      "ip routing",
+      "router enable",
+      "switchport ip route"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: L3 switch"
+  },
+  {
+    "question": "Welke drie stappen zijn nodig voor inter-VLAN routing op een L3-switch?",
+    "options": [
+      "VLANs aanmaken, SVI configureren, ip routing inschakelen",
+      "VLANs aanmaken, trunk instellen, NAT configureren",
+      "SVI aanmaken, RIP starten, ping testen",
+      "Interface configureren, DHCP instellen, routing starten"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 5: L3 switch"
+  },
+  {
+    "question": "Wat is het subnetmasker /16 in decimale notatie?",
+    "options": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.128.0"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Welk private IP-bereik heeft /8 prefix?",
+    "options": [
+      "192.168.0.0",
+      "172.16.0.0",
+      "10.0.0.0",
+      "169.254.0.0"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: IPv4"
+  },
+  {
+    "question": "Welk private IP-bereik heeft /12 prefix?",
+    "options": [
+      "10.0.0.0",
+      "172.16.0.0",
+      "192.168.0.0",
+      "169.254.0.0"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4"
+  },
+  {
+    "question": "Wat is het commando om te controleren of SSH geconfigureerd is op een Cisco-apparaat?",
+    "options": [
+      "show ssh",
+      "show ip ssh",
+      "show crypto key",
+      "show security ssh"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Welke encapsulatie gebruikt WAN op laag 2 (in tegenstelling tot LAN/Ethernet)?",
+    "options": [
+      "Ethernet",
+      "Iets anders dan Ethernet (bijv. PPP, HDLC, Frame Relay, MPLS)",
+      "Wi-Fi",
+      "Token Ring"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: WAN"
+  },
+  {
+    "question": "Wat is het Cisco IOS commando om een gebruiker aan te maken voor SSH?",
+    "options": [
+      "create user cisco password cisco",
+      "username cisco password cisco",
+      "user cisco secret cisco",
+      "add user cisco"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Wat toont het commando 'show cdp neighbors' niet, maar 'show cdp neighbors detail' wel?",
+    "options": [
+      "Hostnaam van neighbors",
+      "Lokale en remote interfaces",
+      "IP-adressen van neighbors",
+      "Capability-codes"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 7: CDP"
+  },
+  {
+    "question": "Wat is de betekenis van 'B' bij LLDP-capabilities?",
+    "options": [
+      "Bridge (switch)",
+      "Border router",
+      "Broadcast device",
+      "Backup device"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 7: LLDP"
+  },
+  {
+    "question": "Welk commando controleer je met welke interface twee routers via serieel zijn verbonden?",
+    "options": [
+      "show interfaces serial",
+      "show ip int brief",
+      "show cdp neighbors",
+      "show serial connections"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Interfaces"
+  },
+  {
+    "question": "Wat is encapsulatie in netwerken?",
+    "options": [
+      "Het versleutelen van data",
+      "Het toevoegen van protocol-headers aan data terwijl het door de OSI-lagen naar beneden gaat",
+      "Het samenvoegen van meerdere pakketten",
+      "Het verwijderen van headers bij ontvangst"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: OSI-model"
+  },
+  {
+    "question": "Wat is de-encapsulatie?",
+    "options": [
+      "Het toevoegen van headers",
+      "Het verwijderen van protocol-headers terwijl data omhoog gaat door de OSI-lagen bij ontvangst",
+      "Het comprimeren van data",
+      "Het routeren van pakketten"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: OSI-model"
+  },
+  {
+    "question": "Hoe converteer je decimaal 152 naar binair?",
+    "options": [
+      "10011000",
+      "10010000",
+      "11001000",
+      "10011100"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2: Binair rekenen"
+  },
+  {
+    "question": "Wat is de decimale waarde van binair 01011101?",
+    "options": [
+      "83",
+      "93",
+      "118",
+      "125"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Binair rekenen"
+  },
+  {
+    "question": "Welk Cisco IOS-modus gebruik je voor het configureren van een routeringsprotocol?",
+    "options": [
+      "User EXEC mode",
+      "Privileged EXEC mode",
+      "Global configuration mode",
+      "Router configuration mode"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 1: IOS-modi"
+  },
+  {
+    "question": "Welk Cisco IOS commando ga je terug naar privileged EXEC mode vanuit een configuratiemodus?",
+    "options": [
+      "exit",
+      "end (of Ctrl-Z)",
+      "logout",
+      "quit"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: IOS-modi"
+  },
+  {
+    "question": "Wat is het commando om RIP te beëindigen/te verlaten in Cisco IOS?",
+    "options": [
+      "exit",
+      "end",
+      "quit",
+      "close rip"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 3: RIP"
+  },
+  {
+    "question": "Welk commando controleer je of alle interfaces 'up/up' zijn?",
+    "options": [
+      "show run",
+      "show ip route",
+      "show ip interface brief",
+      "show version"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Algemeen: Verificatie"
+  },
+  {
+    "question": "Bij router-on-a-stick: welke interface van de router moet je aanzetten maar GEEN IP geven?",
+    "options": [
+      "De subinterface (bijv. gi0/0.11)",
+      "De loopback interface",
+      "De fysieke interface (bijv. gi0/0) – die zet je aan met 'no sh' maar geeft geen IP",
+      "De SVI"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 4: Inter-VLAN routing"
+  },
+  {
+    "question": "Welke poorten worden typisch als trunk-poorten gebruikt op een Cisco switch (in de labs)?",
+    "options": [
+      "Poorten 1 en 2",
+      "Poorten 23 en 24",
+      "Poorten 11 en 12",
+      "Alle poorten"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is de aanbevolen manier om te controleren of RIP correct werkt?",
+    "options": [
+      "show ip rip",
+      "show ip route (kijk naar R-routes voor ontvangen RIP-routes)",
+      "debug rip",
+      "ping rip"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: RIP"
+  },
+  {
+    "question": "Welk commando wis je alleen de startup-config (alternatief)?",
+    "options": [
+      "erase startup-config",
+      "delete nvram",
+      "clear startup",
+      "format nvram"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Algemeen: Configuratiebeheer"
+  },
+  {
+    "question": "Wat is het doel van 'ip dhcp excluded-address' bij DHCP-configuratie?",
+    "options": [
+      "Verwijdert DHCP-leases",
+      "Zorgt dat bepaalde adressen (bijv. voor routers en servers) niet uitgedeeld worden via DHCP",
+      "Blokkeert DHCP-verzoeken van specifieke clients",
+      "Stelt de DHCP-leaseperiode in"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: DHCP"
+  },
+  {
+    "question": "Welk commando toont actieve DHCP-leases op een Cisco router?",
+    "options": [
+      "show dhcp leases",
+      "show ip dhcp binding",
+      "show dhcp clients",
+      "show ip dhcp pool"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: DHCP"
+  },
+  {
+    "question": "Wat is het protocol dat zorgt voor automatische IP-configuratie zonder DHCP (bij geen server)?",
+    "options": [
+      "BOOTP",
+      "APIPA / Link-Local (169.254.x.x)",
+      "RARP",
+      "ICMP"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4"
+  },
+  {
+    "question": "Welk commando toont de spanning-tree status op een switch?",
+    "options": [
+      "show spanning-tree",
+      "show stp status",
+      "show tree",
+      "show layer2 loop"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Algemeen: Switch"
+  },
+  {
+    "question": "Wat is het IPv6-prefix dat typisch gebruikt wordt voor LAN-interfaces bij de opdrachten?",
+    "options": [
+      "/48",
+      "/56",
+      "/64",
+      "/128"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: IPv6"
+  },
+  {
+    "question": "Bij de labs: welke IPv6-range wordt gebruikt als basis voor subnetten (voorbeeld uit les)?",
+    "options": [
+      "2001:ABCD:1234::/48",
+      "fe80::/10",
+      "fc00::/7",
+      "2001:db8::/32"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 3: IPv6"
+  },
+  {
+    "question": "Welk commando enable je LLDP ontvangen op een interface?",
+    "options": [
+      "lldp receive",
+      "lldp recieve",
+      "lldp input enable",
+      "lldp on receive"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: LLDP"
+  },
+  {
+    "question": "Welk commando toont de LLDP neighbors?",
+    "options": [
+      "show lldp detail",
+      "show lldp neighbors",
+      "show neighbors lldp",
+      "show lldp table"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: LLDP"
+  },
+  {
+    "question": "Wat betekent het als een interface 'up/down' is (interface up, line protocol down)?",
+    "options": [
+      "Kabel is niet aangesloten",
+      "Mogelijk encapsulatie-mismatch, de andere kant is error-disabled, of een hardwareprobleem",
+      "Interface is handmatig uitgeschakeld",
+      "Er is geen IP-adres geconfigureerd"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Interface troubleshooting"
+  },
+  {
+    "question": "Welk commando toont alle geconfigureerde VTY-instellingen in de running-config?",
+    "options": [
+      "show line vty",
+      "show run (zoek naar 'line vty' sectie)",
+      "show vty config",
+      "show access vty"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Configuratie"
+  },
+  {
+    "question": "Wat is 'segmentering' in de context van datatransmissie?",
+    "options": [
+      "Het versleutelen van data in segmenten",
+      "Het opdelen van grote berichten in kleinere stukken voor verzending",
+      "Het samenvoegen van meerdere pakketten",
+      "Het comprimeren van data"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Communicatie"
+  },
+  {
+    "question": "Welk commando toont de status van CDP op globaal niveau?",
+    "options": [
+      "show cdp",
+      "show cdp status",
+      "show protocols cdp",
+      "debug cdp"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 7: CDP"
+  },
+  {
+    "question": "Welk commando schakel je CDP uit op een interface?",
+    "options": [
+      "no cdp",
+      "no cdp enable",
+      "cdp disable",
+      "interface no cdp"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP"
+  },
+  {
+    "question": "Hoe leert een switch MAC-adressen (Step 1 – Learn)?",
+    "options": [
+      "Door het bestemmings-MAC-adres te lezen",
+      "Door het bron-MAC-adres van elk inkomend frame te lezen en op te slaan in de MAC-adrestabel",
+      "Door ARP-verzoeken te onderscheppen",
+      "Via een statische configuratie door de beheerder"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Wat doet een switch als het bestemmings-MAC-adres NIET in de MAC-adrestabel staat (Step 2 – Forward)?",
+    "options": [
+      "Het frame wordt gedropt",
+      "Het frame wordt teruggestuurd naar de afzender",
+      "Het frame wordt geflooded naar alle poorten behalve de poort waarop het ontvangen werd",
+      "Het frame wordt opgeslagen totdat het adres bekend is"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Wat doet een switch als het bestemmings-MAC-adres WEL in de MAC-adrestabel staat?",
+    "options": [
+      "Het frame wordt geflooded naar alle poorten",
+      "Het frame wordt doorgestuurd naar de specifieke poort die bij dat MAC-adres hoort",
+      "Het frame wordt gedropt",
+      "Het frame wordt naar de router gestuurd"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Wat is de CAM-tabel (Content Addressable Memory) op een switch?",
+    "options": [
+      "Een tabel met IP-adressen en routes",
+      "De MAC-adrestabel die de switch gebruikt om te bepalen via welke poort frames doorgestuurd worden",
+      "Een tabel met VLAN-configuraties",
+      "Een tabel met ARP-vertalingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Na hoeveel minuten zonder activiteit verwijdert een switch een MAC-adres uit de MAC-adrestabel?",
+    "options": [
+      "1 minuut",
+      "5 minuten",
+      "15 minuten",
+      "30 minuten"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Wat is een broadcast domain?",
+    "options": [
+      "Een netwerksegment waarbinnen twee frames kunnen botsen",
+      "Het bereik van het netwerk waarbinnen een broadcast-frame kan worden ontvangen door alle apparaten",
+      "Alleen het VLAN van de router",
+      "Een groep switches in hetzelfde rack"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Wat segmenteert BEIDE collision domains EN broadcast domains?",
+    "options": [
+      "Hub",
+      "Switch",
+      "Router",
+      "Access point"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Hoe helpt een switch bij het verminderen van netwerkcongestie? (kies het meest complete antwoord)",
+    "options": [
+      "Door alle frames te blokkeren",
+      "Door LAN te segmenteren in collision domains, full-duplex te bieden, hoge poortdichtheid en snelle switching",
+      "Door broadcasts te verwijderen",
+      "Door verkeer te versleutelen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Wat is een 'native VLAN' op een trunk-poort?",
+    "options": [
+      "Het VLAN voor managementverkeer",
+      "Het VLAN waarvan frames NIET getagd worden op de trunk; standaard VLAN 1 op Cisco",
+      "Het eerste VLAN aangemaakt op de switch",
+      "Het VLAN met de hoogste prioriteit"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is een 'management VLAN'?",
+    "options": [
+      "Het VLAN voor eindgebruikers",
+      "Het VLAN dat een IP-adres krijgt om de switch remote te beheren",
+      "Het VLAN voor serververkeer",
+      "Het native VLAN"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is een 'data VLAN'?",
+    "options": [
+      "Een VLAN voor beheerverkeer",
+      "Een VLAN voor ongetagd verkeer",
+      "Een VLAN dat gebruikersgegenereerd verkeer draagt en het netwerk in gebruikersgroepen verdeelt",
+      "Het default VLAN"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Welk VLAN-nummerbereik zijn de 'normale' VLANs op Cisco Catalyst switches?",
+    "options": [
+      "1–100",
+      "1–1005",
+      "1006–4096",
+      "1–4096"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Welk VLAN-nummerbereik zijn de 'extended' VLANs op Cisco Catalyst switches?",
+    "options": [
+      "1–1005",
+      "1006–4096",
+      "100–999",
+      "2000–4096"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Waar worden normale VLAN-configuraties (1–1005) opgeslagen op een Cisco switch?",
+    "options": [
+      "RAM (running-config)",
+      "NVRAM (startup-config)",
+      "Flash (vlan.dat)",
+      "ROM"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Welk commando verwijder je een specifiek VLAN (bijv. VLAN 10) van een Cisco switch?",
+    "options": [
+      "delete vlan 10",
+      "no vlan 10",
+      "remove vlan 10",
+      "clear vlan 10"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is frame tagging bij VLAN-trunking?",
+    "options": [
+      "Het versleutelen van frames op trunk-poorten",
+      "Het toevoegen van een VLAN-identificatieheader aan frames zodat de ontvangende switch weet tot welk VLAN het frame behoort",
+      "Het samenvoegen van meerdere frames",
+      "Het blokkeren van frames uit onbekende VLANs"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Welk trunk-protocol wordt gebruikt door Cisco IOS (IEEE standaard)?",
+    "options": [
+      "ISL",
+      "DTP",
+      "802.1Q",
+      "VTP"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is DTP (Dynamic Trunking Protocol)?",
+    "options": [
+      "Een routingprotocol voor VLANs",
+      "Een Cisco-eigen protocol dat automatisch trunk-links onderhandelt tussen switches",
+      "Een protocol voor VLAN-beheer via SSH",
+      "Een protocol voor IPv6 routing"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: DTP"
+  },
+  {
+    "question": "Wat is de standaard DTP-modus op Cisco Catalyst 2960/2950 switches?",
+    "options": [
+      "trunk",
+      "access",
+      "dynamic-auto",
+      "dynamic-desirable"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: DTP"
+  },
+  {
+    "question": "Met welk commando schakel je DTP-onderhandeling UIT op een interface?",
+    "options": [
+      "no dtp",
+      "switchport nonegotiate",
+      "dtp disable",
+      "switchport mode static"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: DTP"
+  },
+  {
+    "question": "Welk commando toont de huidige DTP-modus van een interface?",
+    "options": [
+      "show dtp",
+      "show dtp interface",
+      "show switchport dtp",
+      "show interface dtp"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: DTP"
+  },
+  {
+    "question": "Wat is legacy inter-VLAN routing?",
+    "options": [
+      "Routing via één subinterface",
+      "Elke VLAN verbonden met een aparte fysieke routerinterface",
+      "Routing via een L3-switch",
+      "Routing via een loopback interface"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Inter-VLAN routing"
+  },
+  {
+    "question": "Wat zijn de drie methoden voor inter-VLAN routing?",
+    "options": [
+      "Static, Dynamic, Automatic",
+      "Legacy (aparte interfaces), Router-on-a-stick, L3-switch (multilayer)",
+      "RIP, OSPF, BGP",
+      "Access, Trunk, Hybrid"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Inter-VLAN routing"
+  },
+  {
+    "question": "Wat is een 'routed port' op een L3-switch?",
+    "options": [
+      "Een trunk-poort die meerdere VLANs verwerkt",
+      "Een switchpoort die wordt omgezet naar een L3-interface, vergelijkbaar met een routerinterface",
+      "Een access-poort voor routerverkeer",
+      "Een SVI-interface"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: L3-switch"
+  },
+  {
+    "question": "Welke 6 troubleshooting-methodologieën worden behandeld in de cursus?",
+    "options": [
+      "Ping, Traceroute, Wireshark, Netstat, ARP, CDP",
+      "Top-Down, Bottom-Up, Divide-and-Conquer, Follow the Path, Compare Configs, Swap Components",
+      "Layer1, Layer2, Layer3, Layer4, Layer7, Physical",
+      "Static, Dynamic, Manual, Auto, Compare, Reset"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is de Top-Down troubleshooting methodologie?",
+    "options": [
+      "Beginnen bij de fysieke laag (laag 1) en omhoog werken",
+      "Beginnen bij de applicatielaag (laag 7) en naar beneden werken naar de fysieke laag",
+      "Het netwerk opdelen in kleinere delen",
+      "Configuraties vergelijken met een bekende goede configuratie"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is de Bottom-Up troubleshooting methodologie?",
+    "options": [
+      "Beginnen bij de applicatielaag",
+      "Beginnen bij de fysieke laag (laag 1) en omhoog werken naar de applicatielaag",
+      "Het volgen van het datapad",
+      "Componenten vervangen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is de Divide-and-Conquer troubleshooting methodologie?",
+    "options": [
+      "Beginnen bij laag 7 en naar beneden werken",
+      "Het netwerk opsplitsen in kleinere beheersbare delen om het probleemgebied te lokaliseren",
+      "Configuraties vergelijken",
+      "Hardware vervangen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is de 'Follow the Path' troubleshooting methodologie?",
+    "options": [
+      "Beginnen bij de fysieke laag",
+      "Het pad van datapakketten door het netwerk volgen om het probleemgebied te lokaliseren",
+      "Het netwerk opsplitsen in secties",
+      "Configuraties vergelijken met een bekende goede toestand"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is de 'Compare Configs' troubleshooting methodologie?",
+    "options": [
+      "Hardware componenten verwisselen",
+      "De huidige configuratie vergelijken met een bekende goede configuratie om verschillen te identificeren",
+      "Het datapad volgen",
+      "Beginnen bij de applicatielaag"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Welke tools gebruik je bij netwerk troubleshooting? (kies het meest complete antwoord)",
+    "options": [
+      "Alleen ping",
+      "Ping, ipconfig/ifconfig, traceroute/tracert, Wireshark, netstat, show-commando's op routers/switches",
+      "Alleen Wireshark",
+      "Alleen show ip route"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat doet het commando 'traceroute' (of 'tracert' op Windows)?",
+    "options": [
+      "Test de verbinding naar één hop",
+      "Volgt het pad van pakketten naar een doelhost en toont elke tussenliggende hop",
+      "Toont de routing-tabel",
+      "Verwijdert routes uit de routing-tabel"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat betekent een '.' (punt) in de ping-output van Cisco IOS?",
+    "options": [
+      "Succesvolle ontvangst van ICMP echo-reply",
+      "Time-out: de wachttijd voor een ICMP echo-reply is verstreken",
+      "ICMP unreachable ontvangen",
+      "Pakket gedropped door firewall"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat betekent '!' (uitroepteken) in de ping-output van Cisco IOS?",
+    "options": [
+      "Foutmelding",
+      "ICMP echo-reply succesvol ontvangen",
+      "Time-out",
+      "Verbinding geweigerd"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat betekent 'U' in de ping-output van Cisco IOS?",
+    "options": [
+      "Onbekende host",
+      "ICMP unreachable bericht ontvangen",
+      "Succesvolle ping",
+      "Time-out"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat doet het commando 'netstat'?",
+    "options": [
+      "Toont de routing-tabel van een router",
+      "Toont netwerkverbindingen, routing-tabellen, interface-statistieken en openstaande TCP/UDP-poorten",
+      "Toont MAC-adressen",
+      "Test DNS-resolutie"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat toont 'ipconfig /all' op Windows?",
+    "options": [
+      "Alleen het IP-adres",
+      "Uitgebreide netwerkconfiguratie inclusief IP, subnetmasker, default gateway, DNS-server en MAC-adres",
+      "De routing-tabel",
+      "Alleen de actieve verbindingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is het nut van het commando 'show interfaces' op een Cisco-apparaat?",
+    "options": [
+      "Toont alleen IP-adressen",
+      "Toont gedetailleerde interfacestatus inclusief foutmeldingen, pakkettellers en encapsulatie-info",
+      "Toont de routing-tabel",
+      "Toont de MAC-adrestabel"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is een belangrijk troubleshooting-principe bij het zoeken naar storingen?",
+    "options": [
+      "Verander zoveel mogelijk instellingen tegelijk voor snelheid",
+      "Verander telkens slechts één instelling tegelijk en zet terug als het probleem niet opgelost is",
+      "Begin altijd bij laag 7",
+      "Vervang altijd eerst hardware"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is een 'socket' in netwerken?",
+    "options": [
+      "Een fysieke aansluiting op een switch",
+      "De combinatie van bron-IP + bronpoort OF bestemming-IP + bestemmingspoort",
+      "Een UDP-datagram",
+      "Een MAC-adres gecombineerd met een VLAN-ID"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Transportlaag"
+  },
+  {
+    "question": "Wat is het doel van poortnummers in de transportlaag?",
+    "options": [
+      "Om apparaten te identificeren op het netwerk",
+      "Om meerdere gelijktijdige gesprekken tussen toepassingen te onderscheiden op hetzelfde apparaat",
+      "Om subnetmaskers te berekenen",
+      "Om MAC-adressen te koppelen aan IP-adressen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Transportlaag"
+  },
+  {
+    "question": "Welk poortnummerbereik zijn de 'well-known ports'?",
+    "options": [
+      "0–255",
+      "0–1023",
+      "1024–49151",
+      "49152–65535"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Transportlaag"
+  },
+  {
+    "question": "Wat is een bronpoort (source port) in TCP/UDP?",
+    "options": [
+      "Altijd een vaste poort zoals 80 of 443",
+      "Een dynamisch gekozen poort door het verzendende apparaat om de gesprekken bij te houden",
+      "De poort van de server",
+      "Hetzelfde als de bestemmingspoort"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Transportlaag"
+  },
+  {
+    "question": "Wat is de functie van de presentatielaag (OSI laag 6)?",
+    "options": [
+      "Transporteert data betrouwbaar",
+      "Formatteert data, comprimeert data en versleutelt/ontsleutelt data voor overdracht",
+      "Beheert sessies tussen applicaties",
+      "Routeert pakketten"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: OSI-model"
+  },
+  {
+    "question": "Wat is de functie van de sessielaag (OSI laag 5)?",
+    "options": [
+      "Versleutelt data",
+      "Maakt, onderhoudt en beëindigt dialogen (sessies) tussen bron- en bestemmingsapplicaties",
+      "Zorgt voor betrouwbare datatransport",
+      "Routeert pakketten naar het juiste netwerk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: OSI-model"
+  },
+  {
+    "question": "Wat is de functie van de applicatielaag (OSI laag 7)?",
+    "options": [
+      "Encapsuleert data in frames",
+      "Zorgt voor de interface tussen netwerksoftware en de eindgebruiker; bevat protocollen voor process-to-process communicatie",
+      "Transporteert segmenten betrouwbaar",
+      "Zet domeinnamen om naar IP-adressen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: OSI-model"
+  },
+  {
+    "question": "Wat is TCP 'flow control'?",
+    "options": [
+      "Het blokkeren van ongewenst verkeer",
+      "Het regelen van de hoeveelheid data die wordt verzonden zodat de ontvanger niet overbelast raakt, via de window size",
+      "Het versleutelen van data-overdracht",
+      "Het segmenteren van grote bestanden"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: TCP"
+  },
+  {
+    "question": "Wat is de MSS (Maximum Segment Size) in TCP?",
+    "options": [
+      "De maximale framegrootte op laag 2",
+      "De maximale hoeveelheid data die het bestemmingsapparaat in één TCP-segment kan ontvangen",
+      "De maximale subnetgrootte",
+      "De maximale MTU van een interface"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: TCP"
+  },
+  {
+    "question": "Wat is TCP een 'stateful protocol'?",
+    "options": [
+      "TCP versleutelt de sessie",
+      "TCP houdt de toestand van de communicatiesessie bij door te registreren welke informatie is verzonden en bevestigd",
+      "TCP maakt gebruik van broadcast",
+      "TCP werkt zonder verbinding"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: TCP"
+  },
+  {
+    "question": "Wat is UDP een 'stateless protocol'?",
+    "options": [
+      "UDP houdt de status van sessies bij",
+      "Noch de zender noch de ontvanger is verplicht de staat van de communicatiesessie bij te houden",
+      "UDP versleutelt de sessiestatus",
+      "UDP bevestigt altijd ontvangen data"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: UDP"
+  },
+  {
+    "question": "Wat zijn de vier velden van een UDP-header?",
+    "options": [
+      "Source Port, Destination Port, Sequence Number, Checksum",
+      "Source Port, Destination Port, Length, Checksum",
+      "Source IP, Destination IP, Port, TTL",
+      "Source Port, Destination Port, Flags, Data"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: UDP"
+  },
+  {
+    "question": "Welk protocol is geschikt voor toepassingen waar snelheid belangrijker is dan betrouwbaarheid (bijv. streaming, DNS)?",
+    "options": [
+      "TCP",
+      "UDP",
+      "ICMP",
+      "ARP"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Transportlaag"
+  },
+  {
+    "question": "Welk protocol is geschikt voor toepassingen die gegarandeerde en geordende levering vereisen (bijv. FTP, HTTP, e-mail)?",
+    "options": [
+      "UDP",
+      "ICMP",
+      "TCP",
+      "ARP"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Transportlaag"
+  },
+  {
+    "question": "Op welke TCP-poort werkt Telnet?",
+    "options": [
+      "22",
+      "23",
+      "25",
+      "80"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Protocollen"
+  },
+  {
+    "question": "Wat is het verschil tussen Telnet en SSH qua beveiliging?",
+    "options": [
+      "Telnet is veiliger dan SSH",
+      "Telnet stuurt alles inclusief wachtwoorden in plaintext; SSH versleutelt zowel authenticatie als data",
+      "Ze zijn even veilig",
+      "SSH stuurt wachtwoorden in plaintext maar data versleuteld"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Beveiliging"
+  },
+  {
+    "question": "Wat is RTT (Round Trip Time) bij traceroute?",
+    "options": [
+      "De totale transfertijd van een bestand",
+      "De tijd die een pakket nodig heeft om van de bron naar de bestemming en terug te reizen",
+      "De TTL-waarde van een pakket",
+      "De maximale transmissiesnelheid"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is IPv4 TTL en IPv6 Hop Limit?",
+    "options": [
+      "De maximale afstand in meters",
+      "Een teller die bij elke router met 1 wordt verlaagd; bij 0 wordt het pakket weggegooid (voorkomt eindeloze lussen)",
+      "De maximale transmissiesnelheid",
+      "De levensduur van een DHCP-lease"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: IPv4/IPv6"
+  },
+  {
+    "question": "Wat is het loopback-test IP-adres (ping 127.0.0.1)?",
+    "options": [
+      "Test de verbinding met de default gateway",
+      "Test de interne TCP/IP-stack van het eigen apparaat",
+      "Test de verbinding met de DNS-server",
+      "Test de verbinding met het internet"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Welk commando toont welke protocollen actief zijn op een Cisco-apparaat?",
+    "options": [
+      "show ip route",
+      "show version",
+      "show protocols",
+      "show ip interface brief"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Verificatie"
+  },
+  {
+    "question": "Wat toont 'show arp' op een Cisco-apparaat?",
+    "options": [
+      "De routing-tabel",
+      "De lijst van bekende hosts op lokale Ethernet LANs (IP naar MAC vertalingen)",
+      "De MAC-adrestabel van de switch",
+      "De CDP-neighbors"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Verificatie"
+  },
+  {
+    "question": "Wat zijn de vier functies van de netwerklaag (OSI laag 3)?",
+    "options": [
+      "Framing, MAC-adressering, foutdetectie, media access control",
+      "Adressering van eindapparaten, encapsulatie, routing, de-encapsulatie",
+      "Segmentering, flow control, foutherstel, sessies",
+      "Signalering, codering, bandbreedte, latentie"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Netwerklaag"
+  },
+  {
+    "question": "Wat zijn de karakteristieken van IP (Internet Protocol)?",
+    "options": [
+      "Verbindingsgericht, betrouwbaar, gegarandeerde levering",
+      "Verbindingsloos, best-effort levering, medieonafhankelijk",
+      "Verbindingsgericht, geordende levering, flow control",
+      "Broadcast-gebaseerd, stateful, met bevestigingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Netwerklaag"
+  },
+  {
+    "question": "Welke twee IP-adressen staan in een IP-pakket?",
+    "options": [
+      "Bron-MAC en bestemming-MAC",
+      "Bron-IP (adres verzendend apparaat) en bestemming-IP (adres ontvangend apparaat)",
+      "Bron-IP en default gateway IP",
+      "Bron-poort en bestemmingspoort"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IP-pakket"
+  },
+  {
+    "question": "Wat is het IPv4 Version-veld in de packet header?",
+    "options": [
+      "0010 (decimaal 2)",
+      "0100 (decimaal 4)",
+      "0110 (decimaal 6)",
+      "1000 (decimaal 8)"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4 header"
+  },
+  {
+    "question": "Wat is het DS-veld (Differentiated Services) in de IPv4-header?",
+    "options": [
+      "Het versienummer van het pakket",
+      "Bepaalt de prioriteit van het pakket voor QoS",
+      "De levensduur van het pakket",
+      "Het bovenliggend protocol"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4 header"
+  },
+  {
+    "question": "Welk getal staat in het Protocol-veld van een IPv4-header voor TCP?",
+    "options": [
+      "6",
+      "17",
+      "1",
+      "89"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2: IPv4 header"
+  },
+  {
+    "question": "Welk getal staat in het Protocol-veld van een IPv4-header voor UDP?",
+    "options": [
+      "6",
+      "17",
+      "1",
+      "89"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4 header"
+  },
+  {
+    "question": "Wat is het classful IPv4 adresklasse A bereik?",
+    "options": [
+      "0.0.0.0 – 127.255.255.255",
+      "128.0.0.0 – 191.255.255.255",
+      "192.0.0.0 – 223.255.255.255",
+      "224.0.0.0 – 239.255.255.255"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2: IPv4 adressering"
+  },
+  {
+    "question": "Welk subnetmasker hoort standaard bij een klasse C netwerk?",
+    "options": [
+      "255.0.0.0 (/8)",
+      "255.255.0.0 (/16)",
+      "255.255.255.0 (/24)",
+      "255.255.255.128 (/25)"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: IPv4 adressering"
+  },
+  {
+    "question": "Wat zijn TEST-NET adressen in IPv4?",
+    "options": [
+      "169.254.0.0/16 – automatisch toegewezen adressen",
+      "192.0.2.0/24 – gereserveerd voor documentatie en voorbeelden in labs",
+      "127.0.0.0/8 – loopback adressen",
+      "100.64.0.0/10 – carrier-grade NAT adressen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: IPv4 speciale adressen"
+  },
+  {
+    "question": "Waarom gebruik je een /30 subnetmasker voor point-to-point WAN-verbindingen tussen routers?",
+    "options": [
+      "Omdat /30 de meeste hosts biedt",
+      "Omdat een /30 precies 2 bruikbare hostadressen heeft, wat voldoende is voor twee routers en geen adressen verspilt",
+      "Omdat /30 verplicht is door het routingprotocol",
+      "Omdat /30 betere beveiliging biedt"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Wat is CIDR (Classless Inter-Domain Routing) notatie?",
+    "options": [
+      "Decimale notatie van het subnetmasker (bijv. 255.255.255.0)",
+      "Slash-notatie die het aantal netwerk-bits aangeeft (bijv. /24)",
+      "Een routingprotocol",
+      "Een IPv6-adresseringsschema"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Hoe bereken je subnetten met VLSM, welke volgorde gebruik je?",
+    "options": [
+      "Klein naar groot",
+      "Willekeurig",
+      "Groot naar klein: begin altijd met het grootste subnet, dan de volgende, etc.",
+      "Alfabetisch op locatienaam"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: VLSM"
+  },
+  {
+    "question": "Bij een subnetberekening: wat is het netwerkadres van 172.16.32.0/20?",
+    "options": [
+      "172.16.0.0",
+      "172.16.32.0",
+      "172.16.48.0",
+      "172.16.16.0"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Subnetting"
+  },
+  {
+    "question": "Hoeveel bruikbare hostadressen heeft een /20-subnet?",
+    "options": [
+      "512",
+      "1022",
+      "4094",
+      "2046"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 3: Subnetting"
+  },
+  {
+    "question": "Wat is het subnetmasker /8 in decimale notatie?",
+    "options": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.128.0.0"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Welk gereedschap gebruik je in de labs om de console-verbinding te maken met een Cisco-apparaat?",
+    "options": [
+      "Wireshark",
+      "PuTTY, Tera Term of MobaXterm via serieel/COM-poort",
+      "Cisco ASDM",
+      "Packet Tracer"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Lab"
+  },
+  {
+    "question": "Waarom zet je de netwerkkaart verbonden met het internet (schoolnetwerk) UIT in de labs?",
+    "options": [
+      "Om bandbreedte te besparen",
+      "Om te voorkomen dat je meerdere default gateways krijgt, wat problemen kan geven met routering",
+      "Omdat internet niet nodig is voor de opdrachten",
+      "Om virusinfectie te voorkomen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Lab"
+  },
+  {
+    "question": "Welke wachtwoorden worden standaard gebruikt in de HU-labs op netwerkhardware?",
+    "options": [
+      "admin en password",
+      "cisco en class",
+      "user en enable",
+      "root en toor"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Lab"
+  },
+  {
+    "question": "Waarom mag je de Cisco wizard (setup-modus) NIET gebruiken in de labs?",
+    "options": [
+      "De wizard werkt niet op de gebruikte hardware",
+      "Je kunt per ongeluk instellingen aan of uitzetten die je later problemen geven; handmatige CLI-configuratie geeft meer controle en kennis",
+      "De wizard is alleen voor gevorderde gebruikers",
+      "De wizard overschrijft de IOS-software"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Lab"
+  },
+  {
+    "question": "Wat is Cisco Packet Tracer?",
+    "options": [
+      "Een netwerk-analyse tool zoals Wireshark",
+      "Een netwerk-simulatietool van Cisco waarmee je netwerken kunt oefenen zonder fysieke hardware",
+      "Een routingprotocol configuratietool",
+      "Een VLAN-beheertool"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Lab"
+  },
+  {
+    "question": "Wat betekent de melding 'Request timed out' bij een ping?",
+    "options": [
+      "De host bestaat niet",
+      "De host is bereikbaar maar blokkeert pings",
+      "De wachttijd voor ICMP echo-reply is verstreken; mogelijke oorzaken: geen route, firewall, onjuiste gateway",
+      "De DNS-server is niet bereikbaar"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is een veelvoorkomende oorzaak van 'Request timed out' bij ping in het lab?",
+    "options": [
+      "Onjuiste SSH-configuratie",
+      "Windows Firewall blokkeert ICMP, of onjuiste default gateway of IP-instellingen",
+      "Het VLAN is niet aangemaakt",
+      "De switch is uitgeschakeld"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Welke show-commando's worden standaard aanbevolen voor troubleshooting op Cisco? (meest complete antwoord)",
+    "options": [
+      "Alleen show run en show version",
+      "show running-config, show interfaces, show ip interface, show arp, show ip route, show protocols, show version",
+      "Alleen show ip route en show ip int brief",
+      "Alleen ping en traceroute"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Wat is het voordeel van een L3-switch ten opzichte van router-on-a-stick voor inter-VLAN routing?",
+    "options": [
+      "L3-switch is goedkoper",
+      "L3-switch gebruikt hardware-gebaseerde switching voor hogere verwerkingssnelheden en vermijdt het knelpunt van één fysieke link",
+      "L3-switch ondersteunt meer VLANs",
+      "L3-switch heeft ingebouwde firewall"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: L3-switch"
+  },
+  {
+    "question": "Welk commando geef je een VLAN een naam op een Cisco switch?",
+    "options": [
+      "vlan 10 name Eindgebruikers",
+      "vlan 10 → name Eindgebruikers",
+      "name vlan 10 Eindgebruikers",
+      "vlan-name 10 Eindgebruikers"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat toont het commando 'show vlan brief'?",
+    "options": [
+      "Alleen VLAN-namen",
+      "VLAN-ID's, namen en de poorten toegewezen aan elk VLAN",
+      "Alleen trunk-poorten",
+      "De VLAN-database in flash"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is Wireshark?",
+    "options": [
+      "Een routerconfiguratie-tool",
+      "Een netwerkprotocol-analysetool die netwerkverkeer vastlegt en analyseert (packet capture)",
+      "Een VLAN-configuratietool",
+      "Een IP-adresbeheertool"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Wireshark"
+  },
+  {
+    "question": "Welk Wireshark-filter gebruik je voor FTP-verkeer?",
+    "options": [
+      "tcp.port == 21",
+      "ftp and ftp-data",
+      "protocol ftp",
+      "filter port 21"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Wireshark"
+  },
+  {
+    "question": "Wat is het QUIC-protocol?",
+    "options": [
+      "Een snel routingprotocol",
+      "Een steeds populairder wordend transportlaagprotocol (alternatief voor TCP), ontwikkeld door Google",
+      "Een vervanger voor ARP",
+      "Een IPv6-migratieprotocol"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Transportlaag"
+  },
+  {
+    "question": "Wat is RTP (Real-time Transport Protocol)?",
+    "options": [
+      "Een routingprotocol",
+      "Een transportprotocol voor het verzenden van audio en video (real-time media)",
+      "Een alternatief voor DHCP",
+      "Een beveiligingsprotocol voor VPN"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Transportlaag"
+  },
+  {
+    "question": "Wat is een Cisco-set in het HU-lab?",
+    "options": [
+      "Één router en één switch",
+      "Twee desktopcomputers per lab",
+      "Een set van vier routers en vier switches die bij een labopstelling horen",
+      "Een rack met uitsluitend L3-switches"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 1: Lab"
+  },
+  {
+    "question": "Welk labcommando verwijder je de VLAN-database voor een schone reset van de switch?",
+    "options": [
+      "erase vlan.dat",
+      "delete vlan.dat",
+      "clear vlan database",
+      "no vlan all"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Lab reset"
+  },
+  {
+    "question": "Welke stappen voer je uit voor een volledige fabrieksinstellingenreset van een Cisco switch?",
+    "options": [
+      "Alleen erase startup-config",
+      "Alle datakabels loskoppelen, erase startup-config, delete vlan.dat, reload",
+      "Alleen reload",
+      "erase nvram en reload"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Lab reset"
+  },
+  {
+    "question": "Waarom is het belangrijk om de netwerktekening nauwkeurig in te vullen?",
+    "options": [
+      "Alleen voor het inleveren van de opdracht",
+      "Het voorkomt fouten bij aansluiten, helpt bij troubleshooting en maakt het netwerk begrijpelijk",
+      "Het is optioneel, alleen voor gevorderde studenten",
+      "Alleen nodig bij complexe VLAN-configuraties"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Lab"
+  },
+  {
+    "question": "Wat is het IP-adres van de 'Eagle-server' dat gebruikt wordt als DNS-server in de TCP/UDP opdracht?",
+    "options": [
+      "192.168.1.1",
+      "Geen vast adres; bepaald via de netwerktekening – de Eagle-server is de meest logische keuze",
+      "8.8.8.8",
+      "127.0.0.1"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: DNS"
+  },
+  {
+    "question": "Wat is een 'POD' in de context van de HU netwerklabs?",
+    "options": [
+      "Een type routerinterface",
+      "Een set van twee poorten op de switch die als één werkeenheid per team wordt gebruikt",
+      "Een VLAN-nummering systeem",
+      "Een Cisco-eigen naam voor een subnet"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Lab"
+  },
+  {
+    "question": "Welk commando gebruik je om een gebruiker aan te maken voor SSH-authenticatie op Cisco IOS?",
+    "options": [
+      "add user cisco password class",
+      "username cisco password class",
+      "create user cisco secret class",
+      "ip ssh user cisco password class"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Bij welke RIP-versie MOET je 'no auto-summary' gebruiken bij VLSM-netwerken?",
+    "options": [
+      "RIP versie 1",
+      "RIP versie 2",
+      "Beide versies",
+      "Geen van beide"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: RIP"
+  },
+  {
+    "question": "Wat is een mogelijke oorzaak als na het instellen van RIP de R-routes NIET verschijnen in 'show ip route'?",
+    "options": [
+      "Te weinig RAM geheugen",
+      "Verkeerd geconfigureerde netwerkadressen in RIP, interfaces niet 'up', of subnetmasker-mismatch",
+      "Te hoge TTL-waarde",
+      "Onjuist hostname"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Troubleshooting RIP"
+  },
+  {
+    "question": "Wat is het nut van het commando 'do' voor een show-commando terwijl je in configuratiemodus bent?",
+    "options": [
+      "Sla de configuratie op",
+      "Voer een privileged EXEC-commando uit terwijl je in configuratiemodus bent",
+      "Verwijder de huidige configuratieregel",
+      "Ga terug naar user EXEC mode"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: CLI"
+  },
+  {
+    "question": "Wat is het commando om CDP uit te zetten op het hele apparaat (globaal)?",
+    "options": [
+      "no cdp enable",
+      "no cdp run",
+      "cdp disable",
+      "no cdp global"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP"
+  },
+  {
+    "question": "Welke informatie geeft CDP over een neighbor-apparaat? (kies meest compleet antwoord)",
+    "options": [
+      "Alleen hostnaam",
+      "Hostnaam, netwerkadressen, poortidentificatie, capabilities-lijst, hardware platform",
+      "Alleen IP-adres en poort",
+      "Alleen de hardware-versie"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP"
+  },
+  {
+    "question": "Welk commando toont extended ping opties op een Cisco router?",
+    "options": [
+      "ping extended",
+      "ping (zonder argument, dan Enter – vraagt om uitgebreide opties)",
+      "ping /extended",
+      "extended-ping"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Verificatie"
+  },
+  {
+    "question": "Wat is het verschil tussen FastEthernet (100Mbps) en GigabitEthernet (1000Mbps) op een switch?",
+    "options": [
+      "Alleen de kabelkleur verschilt",
+      "GigabitEthernet is 10x sneller dan FastEthernet",
+      "FastEthernet ondersteunt meer VLANs",
+      "GigabitEthernet kan geen trunk zijn"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Interfaces"
+  },
+  {
+    "question": "In het troubleshooting-voorbeeld: R2 heeft IP 192.168.1.200/28, R1 heeft IP 192.168.1.1/29. Waarom kunnen ze niet communiceren?",
+    "options": [
+      "Ze zitten in verschillende AS-nummers",
+      "Ze hebben verschillende subnetmaskers op dezelfde link, waardoor ze in verschillende subnetten zitten",
+      "RIP is niet geconfigureerd",
+      "De interfaces staan op shutdown"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Welk commando verwijdert een IP-adres van een Cisco router-interface?",
+    "options": [
+      "delete ip address",
+      "no ip address",
+      "clear ip address",
+      "ip address none"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Interfaces"
+  },
+  {
+    "question": "Waarom zijn VLANs voordelig voor beveiliging?",
+    "options": [
+      "VLANs versleutelen verkeer automatisch",
+      "Apparaten in verschillende VLANs kunnen niet direct met elkaar communiceren zonder een router, wat segmentatie en isolatie biedt",
+      "VLANs verbergen MAC-adressen",
+      "VLANs voorkomen ARP-spoofing automatisch"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is de T568A en T568B standaard?",
+    "options": [
+      "Twee versies van het IPv4-adresseringsschema",
+      "De twee bekabelingsstandaarden voor de pinout van RJ-45 connectoren in UTP-kabels",
+      "Twee subnetberekeningsstandaarden",
+      "Twee versies van het 802.11 Wi-Fi protocol"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Kabels"
+  },
+  {
+    "question": "Een straight-through kabel heeft beide uiteinden met dezelfde standaard. Welke?",
+    "options": [
+      "Één T568A en één T568B",
+      "Beide T568A of beide T568B",
+      "Één T568A en één rollover",
+      "Beide rollover"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Kabels"
+  },
+  {
+    "question": "Een crossover kabel heeft de uiteinden met welke combinatie?",
+    "options": [
+      "Beide T568A",
+      "Beide T568B",
+      "Één T568A en één T568B",
+      "Beide rollover"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Kabels"
+  },
+  {
+    "question": "Welk type kabel gebruik je voor een router-naar-router verbinding via Ethernet (zonder Auto-MDIX)?",
+    "options": [
+      "Straight-through",
+      "Rollover",
+      "Crossover",
+      "Coaxiaal"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 2: Kabels"
+  },
+  {
+    "question": "Wanneer gebruik je een straight-through kabel? (naar OSI-laag)",
+    "options": [
+      "Twee apparaten op dezelfde OSI-laag",
+      "Twee apparaten op verschillende OSI-lagen (bijv. PC naar switch, switch naar router)",
+      "Altijd bij Wi-Fi verbindingen",
+      "Alleen bij seriële interfaces"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Kabels"
+  },
+  {
+    "question": "Wat is het WiMAX (IEEE 802.16) protocol?",
+    "options": [
+      "Een Bluetooth-standaard voor korte afstanden",
+      "Een draadloze standaard met point-to-multipoint topologie voor draadloze breedbandtoegang",
+      "Een standaard voor IoT met laag vermogen",
+      "Een standaard voor Wi-Fi in gebouwen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Draadloos"
+  },
+  {
+    "question": "Wat is Zigbee (IEEE 802.15.4)?",
+    "options": [
+      "Een Wi-Fi standaard voor gebouwen",
+      "Een draadloos protocol met lage datasnelheid en laag vermogen, geschikt voor IoT-omgevingen",
+      "Een standaard voor mobiele netwerken",
+      "Een Cisco-eigen routingprotocol voor draadloos"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Draadloos"
+  },
+  {
+    "question": "Hoe ver reikt een Bluetooth-verbinding (IEEE 802.15)?",
+    "options": [
+      "1 tot 10 meter",
+      "1 tot 100 meter",
+      "100 tot 1000 meter",
+      "Tot 10 km"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Draadloos"
+  },
+  {
+    "question": "Waaruit bestaat een MAC-adres structureel?",
+    "options": [
+      "Twee gelijke helften van 24 bits elk",
+      "Een OUI (Organizational Unique Identifier, 24 bits, fabrikant) en een uniek apparaatdeel (24 bits)",
+      "Een netwerk-ID en een host-ID van elk 24 bits",
+      "Een VLAN-deel en een poort-deel"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: MAC-adressen"
+  },
+  {
+    "question": "Wat is een OUI (Organizational Unique Identifier)?",
+    "options": [
+      "Het unieke apparaatdeel van een MAC-adres",
+      "De eerste 24 bits van een MAC-adres die de hardwarefabrikant identificeren",
+      "Een IPv6-prefix voor link-local adressen",
+      "Een Cisco-eigen VLAN-identificator"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: MAC-adressen"
+  },
+  {
+    "question": "Welk commando toont het MAC-adres van een Windows-pc samen met alle netwerkinformatie?",
+    "options": [
+      "ipconfig",
+      "ipconfig /all",
+      "arp -a",
+      "netstat -r"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: MAC-adressen"
+  },
+  {
+    "question": "Welk commando toont het MAC-adres van een Cisco router-interface?",
+    "options": [
+      "show ip arp",
+      "show interfaces (toont het hardware-adres/MAC per interface)",
+      "show mac-address-table",
+      "show version"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: MAC-adressen"
+  },
+  {
+    "question": "Waarom kan er aan één switchpoort meerdere MAC-adressen gekoppeld zijn?",
+    "options": [
+      "Dat is onmogelijk; elke poort heeft altijd precies één MAC-adres",
+      "Als er een hub of een andere switch op die poort is aangesloten, kunnen meerdere apparaten (en dus meerdere MAC-adressen) via die poort bereikbaar zijn",
+      "Omdat de switch fout geconfigureerd is",
+      "Alleen bij trunk-poorten is dit mogelijk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Welk commando leeg je de MAC-adrestabel op een Cisco switch?",
+    "options": [
+      "delete mac-address-table",
+      "clear mac-address-table",
+      "erase mac-table",
+      "no mac-address-table"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Welk commando leeg je de ARP-cache op een Windows-pc?",
+    "options": [
+      "arp -a",
+      "arp -d *",
+      "clear arp",
+      "ipconfig /flusharns"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: ARP"
+  },
+  {
+    "question": "Welk commando toont de ARP-cache op een Windows-pc?",
+    "options": [
+      "arp -d",
+      "arp -a",
+      "arp -s",
+      "arp -n"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: ARP"
+  },
+  {
+    "question": "Waarom is het MAC-adres van de ontvanger 00:00:00:00:00:00 in een ARP Request?",
+    "options": [
+      "Omdat de switch het adres nog niet kent",
+      "Omdat het doel van het ARP-verzoek juist is om het MAC-adres van de ontvanger te ACHTERHALEN — het is nog onbekend",
+      "Omdat het een broadcast-frame is",
+      "Omdat ARP alleen IP-adressen gebruikt"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: ARP"
+  },
+  {
+    "question": "Wat zie je in een Wireshark ARP-capture als de ontvanger antwoordt (ARP Reply)?",
+    "options": [
+      "Who has <IP> tell <IP>",
+      "<IP-adres> is at <MAC-adres> — de ontvanger antwoordt met zijn MAC-adres",
+      "Een broadcast naar FF:FF:FF:FF:FF:FF",
+      "Een TCP SYN-pakket"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: ARP"
+  },
+  {
+    "question": "Welk hexadecimaal protocol-type wordt gebruikt voor ARP in een Ethernet frame?",
+    "options": [
+      "0x0800",
+      "0x0806",
+      "0x86DD",
+      "0x8100"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: ARP"
+  },
+  {
+    "question": "Wat is de FCS (Frame Check Sequence) in een Ethernet frame?",
+    "options": [
+      "Het eerste veld van een frame dat de start aangeeft",
+      "Een foutendetectieveld aan het einde van het frame waarmee de ontvanger kan controleren of het frame onbeschadigd is ontvangen",
+      "Het VLAN-tag veld",
+      "Het veld dat het bovenliggende protocol aangeeft"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Ethernet"
+  },
+  {
+    "question": "Wat zijn de velden van een Ethernet II frame? (globale volgorde)",
+    "options": [
+      "Source MAC, Destination MAC, Data, FCS",
+      "Preamble/SFD, Destination MAC, Source MAC, Type/Length, Data, FCS",
+      "IP-header, TCP-header, Data, Checksum",
+      "VLAN-tag, Source MAC, Destination MAC, Data"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Ethernet"
+  },
+  {
+    "question": "Waarom bestaat het broadcast MAC-adres (FF:FF:FF:FF:FF:FF) uit allemaal F'en?",
+    "options": [
+      "Omdat F de ASCII-code voor 'forward' is",
+      "Omdat in hexadecimaal FF = binair 11111111; alle bits op 1 betekent broadcast naar alle apparaten",
+      "Omdat Cisco dit standaard heeft vastgesteld",
+      "Omdat F staat voor 'flood'"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Ethernet"
+  },
+  {
+    "question": "Welk commando toont de routeringstabel op een Windows-pc?",
+    "options": [
+      "netstat -r of route print",
+      "ipconfig /route",
+      "show ip route",
+      "tracert /route"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 2: Routing"
+  },
+  {
+    "question": "Wat is een 'persistent route' in de Windows routeringstabel?",
+    "options": [
+      "Een route die tijdelijk is en verdwijnt na reboot",
+      "Een statische route die permanent is opgeslagen en na een herstart behouden blijft",
+      "Een route geleerd via RIP",
+      "De default gateway"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Routing"
+  },
+  {
+    "question": "Hoe stuur je een continue (oneindige) ping op een Windows-pc?",
+    "options": [
+      "ping 192.168.1.1 /c",
+      "ping 192.168.1.1 -t",
+      "ping 192.168.1.1 -i",
+      "ping 192.168.1.1 /loop"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Welk commando stel je in dat VTY-lijnen alleen SSH accepteren (geen Telnet)?",
+    "options": [
+      "vty ssh only",
+      "transport input ssh",
+      "no telnet allow",
+      "ssh vty enable"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Wat doet 'login local' onder de VTY-lijnen?",
+    "options": [
+      "Stelt een lokaal wachtwoord in zonder gebruikersnaam",
+      "Vereist authenticatie via de lokale gebruikersdatabase (username/password aangemaakt met het username-commando)",
+      "Schakelt VTY-toegang uit",
+      "Stelt automatisch inloggen in"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Wat doet 'username cisco privilege 15 secret class' op een Cisco apparaat?",
+    "options": [
+      "Maakt een gebruiker aan met alleen read-only toegang",
+      "Maakt een gebruiker 'cisco' aan met het hoogste privilege-niveau (15 = volledig beheer) en wachtwoord 'class'",
+      "Stelt het enable-wachtwoord in",
+      "Maakt een DHCP-gebruiker aan"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Wat is privilege level 15 op een Cisco apparaat?",
+    "options": [
+      "Het laagste toegangsniveau (read-only)",
+      "Het hoogste toegangsniveau, vergelijkbaar met privileged EXEC mode (volledige toegang)",
+      "Alleen toegang tot show-commando's",
+      "Toegang tot configuratiemodus maar niet tot show-commando's"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Wat is de Wireshark ARP-filter die je moet typen om alleen ARP-frames te tonen?",
+    "options": [
+      "protocol == arp",
+      "arp",
+      "filter arp",
+      "show arp only"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Wireshark"
+  },
+  {
+    "question": "Welk commando op een Cisco switch toont de trunk-poorten?",
+    "options": [
+      "show vlan",
+      "show interfaces trunk",
+      "show trunk",
+      "show switchport trunk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wanneer moet je 'switchport trunk encapsulation dot1q' gebruiken voor een trunk?",
+    "options": [
+      "Altijd, op alle switches",
+      "Alleen op oudere switches die niet automatisch dot1Q selecteren als enige optie; nieuwere switches kennen dit commando niet",
+      "Alleen op L3-switches",
+      "Alleen als VLAN 1 de native VLAN is"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  },
+  {
+    "question": "Wat is het verschil tussen 'show ip int brief' en 'show interfaces'?",
+    "options": [
+      "Ze zijn identiek",
+      "'show ip int brief' geeft een compacte samenvatting van interfaces en IP-adressen; 'show interfaces' geeft uitgebreide details inclusief foutcounters per interface",
+      "'show interfaces' toont alleen IP-adressen",
+      "'show ip int brief' toont foutcounters"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Verificatie"
+  },
+  {
+    "question": "Wat is het ip-schema dat gebruikt wordt in de HU-labs voor IP-adressen op basis van VLAN-ID?",
+    "options": [
+      "192.168.<VLANID>.x /24",
+      "10.1.<VLANID>.x /24 — het VLAN-ID wordt als derde octet gebruikt",
+      "172.16.<VLANID>.x /24",
+      "10.<VLANID>.0.x /8"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IP-planning"
+  },
+  {
+    "question": "Hoe stel je op een Windows-pc in dat IPv6 automatisch wordt verkregen?",
+    "options": [
+      "ipconfig /ipv6auto",
+      "Via netwerkinstellingen → IPv6-properties → 'Obtain an IPv6 address automatically'",
+      "Via het commando ipv6 unicast-routing",
+      "IPv6 werkt altijd automatisch op Windows"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6"
+  },
+  {
+    "question": "Welk commando toont de IPv6-routing-tabel op een Cisco router?",
+    "options": [
+      "show ip route ipv6",
+      "show ipv6 route",
+      "show route ipv6",
+      "show ip ipv6 route"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6"
+  },
+  {
+    "question": "Hoe zet je RIPng aan op een specifieke interface op een Cisco router?",
+    "options": [
+      "router ipv6 rip 1 → network <interface>",
+      "interface <int> → ipv6 rip 1 enable",
+      "ipv6 rip enable interface <int>",
+      "rip ipv6 interface <int> start"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6 routing"
+  },
+  {
+    "question": "Welk commando start je RIPng globaal op een Cisco router?",
+    "options": [
+      "router rip version 6",
+      "ipv6 router rip 1",
+      "router ipv6 rip",
+      "ipv6 rip global 1"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6 routing"
+  },
+  {
+    "question": "Wat is de IPv6 link-local adresprefix?",
+    "options": [
+      "2001::/16",
+      "fe80::/10",
+      "fc00::/7",
+      "ff00::/8"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: IPv6"
+  },
+  {
+    "question": "Welke subnetberekening gebruik je voor de WAN-link (point-to-point) tussen twee routers in de 'Simpel netwerk' opdracht?",
+    "options": [
+      "/24",
+      "/28",
+      "/30 — minimaal 2 bruikbare adressen, geen verspilling",
+      "/16"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 4: Subnetting"
+  },
+  {
+    "question": "In de 'Simpel netwerk' opdracht: welke IP-range wordt gebruikt voor beide LANs?",
+    "options": [
+      "192.168.1.0/24",
+      "145.201.32.64/26 — te verdelen in zes subnetten",
+      "10.0.0.0/8",
+      "172.16.0.0/16"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Simpel netwerk"
+  },
+  {
+    "question": "In de 'Simpel netwerk' opdracht: voor welk doel gebruik je de WAN-range 11.0.0.16/28?",
+    "options": [
+      "Voor de LAN-segmenten",
+      "Voor de seriële verbindingen tussen de routers (/30 subnetten)",
+      "Voor de loopback interfaces",
+      "Voor IPv6-adressen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Simpel netwerk"
+  },
+  {
+    "question": "In de 'Simpel netwerk' opdracht: wat is de IPv6-range die gebruikt wordt?",
+    "options": [
+      "2001:ABCD:1234::/48",
+      "2001:1:2::/48",
+      "fe80::/10",
+      "2001:db8::/32"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Simpel netwerk"
+  },
+  {
+    "question": "Welke domeinnaam wordt gebruikt bij SSH-configuratie in de 'Simpel netwerk' opdracht?",
+    "options": [
+      "bmc.beerenburg",
+      "hu.local",
+      "eilandwol.groep2.vs2g",
+      "example.com"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Simpel netwerk"
+  },
+  {
+    "question": "In de inter-VLAN routing opdracht (Berenburg): welke VLANs worden op Switch C aangemaakt?",
+    "options": [
+      "VLAN 10 en VLAN 20",
+      "VLAN 11 (fysio1) en VLAN 12 (huisarts1)",
+      "VLAN 26 en VLAN 27",
+      "VLAN 1 en VLAN 2"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Inter-VLAN opdracht"
+  },
+  {
+    "question": "In de inter-VLAN routing opdracht (Berenburg): welke domeinnaam gebruik je voor SSH?",
+    "options": [
+      "hu.local",
+      "bmc.beerenburg",
+      "cisco.local",
+      "netwerken.hu.nl"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Inter-VLAN opdracht"
+  },
+  {
+    "question": "Wat is de IPv4-range gebruikt in de inter-VLAN opdracht (Berenburg) voor subnetting?",
+    "options": [
+      "192.168.0.0/16",
+      "12.10.0.0/16",
+      "172.16.0.0/20",
+      "10.1.0.0/16"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Inter-VLAN opdracht"
+  },
+  {
+    "question": "In de VLSM/IPv6 opdracht: welke IPv4-range wordt gesplitst in minimaal 5 subnetten met elk ≥50 hosts?",
+    "options": [
+      "192.168.0.0/24",
+      "172.16.32.0/20",
+      "10.0.0.0/8",
+      "145.201.32.64/26"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Subnetting opdracht"
+  },
+  {
+    "question": "In de VLSM/IPv6 opdracht: welke IPv6-range wordt gebruikt voor subnetting?",
+    "options": [
+      "2001:1:2::/48",
+      "2001:ABCD:1234::/48",
+      "fe80::/10",
+      "2001:A:B::/48"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Subnetting opdracht"
+  },
+  {
+    "question": "In de troubleshooting opdracht probleem 1: R1 kan niet pingen naar 20.1.1.1 en 20.2.2.2. Wat is de meest waarschijnlijke oorzaak?",
+    "options": [
+      "SSH is niet geconfigureerd",
+      "R2 adverteert de verkeerde netwerken in RIP (192.168.100.0 in plaats van 192.168.1.0) waardoor R1 de R2-netwerken niet leert",
+      "De seriële interface staat op shutdown",
+      "De loopback interfaces ontbreken"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting opdracht"
+  },
+  {
+    "question": "In troubleshooting probleem 3: de interface tussen R1 en R2 gaat niet aan. Wat is één van de drie fouten?",
+    "options": [
+      "RIP versie is verkeerd",
+      "R1 heeft 'no shutdown' niet op de seriële interface — de interface staat administratively down",
+      "Het subnetmasker is te groot",
+      "De hostnaam is onjuist"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting opdracht"
+  },
+  {
+    "question": "Wat is de RIP-fout in troubleshooting probleem 3 bij R1?",
+    "options": [
+      "version 2 ontbreekt",
+      "R1 adverteert '110.0.0.0' in RIP in plaats van '11.0.0.0' — het netwerk klopt niet",
+      "no auto-summary ontbreekt",
+      "Het loopback-netwerk is niet geconfigureerd"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting opdracht"
+  },
+  {
+    "question": "Wat is de betekenis van 'ingress' en 'egress' bij switching?",
+    "options": [
+      "Ingress = frame verlaat de switch; egress = frame komt de switch binnen",
+      "Ingress = frame komt de switch binnen via een poort; egress = frame verlaat de switch via een poort",
+      "Beide betekenen hetzelfde: dataoverdracht",
+      "Ingress = broadcast; egress = unicast"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Wat doet een switch met een broadcast-frame?",
+    "options": [
+      "Het frame wordt gedropt",
+      "Het frame wordt doorgestuurd naar alle poorten behalve de poort waarop het ontvangen werd",
+      "Het frame wordt alleen naar de router gestuurd",
+      "Het frame wordt opgeslagen in de MAC-tabel"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: Switching"
+  },
+  {
+    "question": "Wat is het verschil tussen een managed switch en een unmanaged switch?",
+    "options": [
+      "Een managed switch is altijd sneller",
+      "Een managed switch is configureerbaar (VLANs, SSH, etc.); een unmanaged switch werkt plug-and-play zonder configuratie",
+      "Een unmanaged switch ondersteunt meer poorten",
+      "Er is geen functioneel verschil"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Switches"
+  },
+  {
+    "question": "Welke twee Cisco switch-series zijn multilayer (L3) switches in het HU-lab?",
+    "options": [
+      "2950 en 2960",
+      "3560 en 3650",
+      "4500 en 6500",
+      "1900 en 2900"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Switches"
+  },
+  {
+    "question": "Welk commando schakel je Telnet IN naast SSH op de VTY-lijnen?",
+    "options": [
+      "transport input telnet ssh",
+      "allow telnet",
+      "enable telnet vty",
+      "vty input telnet"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 4: SSH"
+  },
+  {
+    "question": "Wat is het verschil tussen 'password' en 'secret' bij Cisco-wachtwoorden?",
+    "options": [
+      "Er is geen verschil",
+      "'password' slaat het wachtwoord op in zwakke of plaintext-vorm; 'secret' gebruikt MD5-hashing voor sterkere versleuteling",
+      "'secret' is alleen voor VTY-lijnen",
+      "'password' is voor enable en 'secret' voor console"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Beveiliging"
+  },
+  {
+    "question": "Waarom sla je de running-config NIET op als startup-config in de HU-labs (na de opdracht)?",
+    "options": [
+      "Omdat het niet werkt op de lab-hardware",
+      "Zodat de volgende groep studenten met een schone configuratie kan beginnen; de docenten resetten de hardware anders",
+      "Omdat het RAM dan vol raakt",
+      "Omdat startup-config geen configuraties ondersteunt"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Lab"
+  },
+  {
+    "question": "Wat toont 'show start' als er nog niets is opgeslagen (startup-config leeg)?",
+    "options": [
+      "Een foutmelding dat IOS corrupt is",
+      "De melding dat de startup-config leeg of niet aanwezig is (NVRAM empty/startup config not present)",
+      "Hetzelfde als show run",
+      "De fabrieksinstellingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Configuratiebeheer"
+  },
+  {
+    "question": "Wat is het commando om de configuratie van een Cisco router te bekijken terwijl je in configuratiemodus zit?",
+    "options": [
+      "show run",
+      "do show run",
+      "exit → show run",
+      "display running-config"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: CLI"
+  },
+  {
+    "question": "Welk commando reset je de startup-config op een oudere Cisco IOS versie (alternatief voor 'erase nvram:')?",
+    "options": [
+      "delete startup-config",
+      "erase startup-config",
+      "clear startup-config",
+      "no startup-config"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Configuratiebeheer"
+  },
+  {
+    "question": "Wat is het nut van MobaXterm in de HU-netlabs?",
+    "options": [
+      "Een VLAN-configuratietool",
+      "Een terminaltool voor console/SSH/Telnet-verbindingen met netwerkhardware, met de mogelijkheid om output op te slaan",
+      "Een packet-capture tool zoals Wireshark",
+      "Een IP-calculator"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Lab"
+  },
+  {
+    "question": "Hoeveel routers en switches zitten er in één 'set' in het HU-lab?",
+    "options": [
+      "2 routers en 2 switches",
+      "4 routers en 4 switches",
+      "1 router en 4 switches",
+      "3 routers en 3 switches"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Lab"
+  },
+  {
+    "question": "Welk physical interface-type heeft typisch 100 Mbps snelheid op een Cisco switch?",
+    "options": [
+      "GigabitEthernet",
+      "FastEthernet",
+      "TenGigabitEthernet",
+      "SerialEthernet"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 1: Interfaces"
+  },
+  {
+    "question": "Wat is de opdrachtnaam en het onderwerp van week 6 in de cursus?",
+    "options": [
+      "VLANs en trunking",
+      "Analyse UDP en TCP (Transportlaag) — met Wireshark analyse van e-mail, DNS, HTTP en FTP",
+      "Inter-VLAN routing met router-on-a-stick",
+      "IPv6 subnetting en RIPng"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Opdracht"
+  },
+  {
+    "question": "Welke twee protocollen analyseer je met Wireshark in de transportlaag-opdracht?",
+    "options": [
+      "RIP en OSPF",
+      "TCP en UDP",
+      "HTTP en HTTPS",
+      "ARP en ICMP"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Transportlaag"
+  },
+  {
+    "question": "Welke netwerktopologie wordt gebruikt in de week 7 CDP/LLDP-opdracht?",
+    "options": [
+      "Twee routers, twee switches, vier pc's",
+      "Twee pc's, één router en één switch — met een loopback interface op de router",
+      "Vier routers met seriële verbindingen",
+      "Een full-mesh van drie routers"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP/LLDP opdracht"
+  },
+  {
+    "question": "Welke IP-adressen worden in de CDP/LLDP-opdracht gebruikt voor de router-interfaces?",
+    "options": [
+      "192.168.1.1, 10.0.0.1, 172.16.1.1",
+      "fa/GI 0/0: 192.168.1.1/24, fa/GI 0/1: 209.165.200.1/24, LO1: 172.16.1.1/24",
+      "10.1.1.1, 10.1.2.1, 10.1.3.1",
+      "172.16.0.1, 172.16.1.1, 172.16.2.1"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: CDP/LLDP opdracht"
+  },
+  {
+    "question": "Welk Wireshark-filter gebruik je voor HTTP-verkeer?",
+    "options": [
+      "tcp.port == 80",
+      "http",
+      "protocol http",
+      "filter port 80"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Wireshark"
+  },
+  {
+    "question": "Hoe bereken je het aantal bits nodig voor een bepaald aantal hosts? (bijv. 105 hosts)",
+    "options": [
+      "2^n = aantal hosts",
+      "2^n - 2 ≥ aantal hosts; kies het kleinste n waarvoor dit klopt (bijv. 105 hosts → 2^7-2=126 → 7 bits)",
+      "n × 8 = aantal hosts",
+      "2^(n-1) ≥ aantal hosts"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 2: Subnetting"
+  },
+  {
+    "question": "Welk CCNA-curriculum dekt de stof van de netwerken-cursus bij HU? (modulenummers)",
+    "options": [
+      "Alleen CCNA 3",
+      "CCNA 1 modules 1, 2, 3, 5, 8, 11, 14, 15 en CCNA 2 modules 2, 3, 4",
+      "Alleen CCNA 2",
+      "CCNA 1 t/m CCNA 4 volledig"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Algemeen: Studiemateriaal"
+  },
+  {
+    "question": "Wat is de opdrachtnaam van week 5 die troubleshooting behandelt?",
+    "options": [
+      "Analyse UDP en TCP",
+      "Network Troubleshooting Methodologies (Netwerk Problemen oplossen)",
+      "Basis netwerk en Inter-VLAN routing",
+      "Simpel netwerk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Welke drie stappen zijn beschreven voor het systematisch oplossen van netwerkproblemen?",
+    "options": [
+      "Installeer, configureer, test",
+      "Identificatie van het probleem, isolatie van de bron, oplossen (herstel)",
+      "Ping, traceroute, Wireshark",
+      "Top-Down, Bottom-Up, Divide-and-Conquer"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Troubleshooting"
+  },
+  {
+    "question": "Welk commando toont welke interfaces in trunk-modus staan op een Cisco switch?",
+    "options": [
+      "show vlan",
+      "show interfaces trunk",
+      "show trunk status",
+      "show ip interface trunk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 3: VLANs"
+  }
+]
