@@ -1,17 +1,17 @@
 # BIPL Toets Oefening
 
-Een desktop-oefenprogramma voor de theorie van het **BIPL**-vak (Netwerken & Platformen, weken 1–4). Gebouwd met Python en Tkinter — geen externe packages nodig.
+Een desktop-oefenprogramma voor de theorie van het **BIPL**-vak (Netwerken & Platformen, weken 1–7). Gebouwd met Python en Tkinter — geen externe packages nodig.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
 ![Tkinter](https://img.shields.io/badge/GUI-Tkinter-lightgrey)
-![Vragen](https://img.shields.io/badge/Vragen-235-green)
+![Vragen](https://img.shields.io/badge/Vragen-411-green)
 ![Licentie](https://img.shields.io/badge/Licentie-MIT-yellow)
 
 ---
 
 ## Functies
 
-- **235 vragen** over alle stof van weken 1 t/m 4
+- **411 vragen** over alle stof van weken 1 t/m 7
 - **20 willekeurige vragen** per sessie uit de vragenbank
 - Antwoordopties worden **elke keer opnieuw geschud** — geen vaste posities onthouden
 - **Directe feedback** — juist antwoord groen, fout antwoord rood met het correcte antwoord zichtbaar
@@ -25,16 +25,15 @@ Een desktop-oefenprogramma voor de theorie van het **BIPL**-vak (Netwerken & Pla
 
 | Onderwerp | Vragen |
 |---|---|
-| Netwerken – Week 1 (OSI-model, Cisco IOS, CLI, LAN/WAN) | 37 |
-| Netwerken – Week 2 (IPv4, subnetting, VLSM, binair rekenen) | 24 |
-| Netwerken – Week 3 (Ethernet, ARP, switching, kabels) | 26 |
-| Platformen – Week 1 (Windows Server, Linux-distributies, LVM) | 23 |
-| Platformen – Week 2 (Linux-shell, redirection, Server Core) | 27 |
-| Platformen – Week 3 (Active Directory, gebruikers, CSVDE) | 31 |
-| Platformen – Week 3 Linux (gebruikersbeheer, sudo, /etc/shadow) | 18 |
-| Platformen – Week 4 (NTFS-permissies, ReFS, shares) | 17 |
-| Platformen – Week 4 Linux (bestandssystemen, LVM, chmod) | 32 |
-| **Totaal** | **235** |
+| Netwerken – Week 1 (OSI-model, Cisco IOS, CLI, LAN/WAN, lab, beveiliging) | 56 |
+| Netwerken – Week 2 (IPv4, subnetting, VLSM, Ethernet, ARP, kabels, fysieke laag) | 107 |
+| Netwerken – Week 3 (VLANs, trunking, DTP, switching, RIP, IPv6, inter-VLAN routing) | 80 |
+| Netwerken – Week 4 (SSH, router-on-a-stick, L3-switch, simpel netwerk opdracht) | 30 |
+| Netwerken – Week 5 (DHCP, transportlaag, TCP/UDP, troubleshooting, OSI lagen 5–7) | 56 |
+| Netwerken – Week 6 (TCP three-way handshake, UDP, DNS, SMTP, FTP, Wireshark) | 39 |
+| Netwerken – Week 7 (CDP, LLDP, show version, verificatie) | 18 |
+| Netwerken – Algemeen (CLI, interfaces, configuratiebeheer, verificatie) | 25 |
+| **Totaal** | **411** |
 
 ---
 
@@ -83,7 +82,7 @@ Maak een nieuw `.json`-bestand aan in de `questions/`-map. De bestandsnaam bepaa
 | Bestandsnaam | Knoptekst |
 |---|---|
 | `Netwerken-en-Platformen-Week-1-2-3-4.json` | Netwerken en Platformen Week 1 t/m 4 |
-| `Netwerken-en-Platformen-Week-4-7.json` | Netwerken en Platformen Week 4 t/m 7 |
+| `Netwerken-en-Platformen-Week-1-7.json` | Netwerken en Platformen Week 1 t/m 7 |
 | `Linux-Basics.json` | Linux Basics |
 
 Herstart het programma — de nieuwe knop verschijnt vanzelf.
