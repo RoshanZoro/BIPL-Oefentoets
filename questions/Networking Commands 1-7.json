@@ -1,0 +1,1729 @@
+[
+  {
+    "question": "Welk commando ga je van user EXEC mode naar privileged EXEC mode?",
+    "options": [
+      "conf t",
+      "enable",
+      "sudo",
+      "login"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welk commando ga je van privileged EXEC mode naar global configuration mode?",
+    "options": [
+      "enable",
+      "configure terminal",
+      "conf",
+      "global"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welk commando verlaat je een configuratiemodus en ga je terug naar privileged EXEC mode?",
+    "options": [
+      "exit",
+      "end",
+      "quit",
+      "back"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welk commando verlaat je één configuratieniveau (bijv. interface → global config)?",
+    "options": [
+      "end",
+      "back",
+      "exit",
+      "quit"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Je bent in global config mode en wilt een show-commando uitvoeren. Welk commando gebruik je?",
+    "options": [
+      "show ip int brief",
+      "run show ip int brief",
+      "do show ip int brief",
+      "exec show ip int brief"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welk commando stel je de hostnaam in op 'RouterA'?",
+    "options": [
+      "name RouterA",
+      "set hostname RouterA",
+      "hostname RouterA",
+      "host RouterA"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Basisconfiguratie"
+  },
+  {
+    "question": "Welk commando stel je het enable-wachtwoord in met sterke versleuteling?",
+    "options": [
+      "enable password cisco",
+      "enable secret cisco",
+      "password enable cisco",
+      "secret cisco"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Basisconfiguratie"
+  },
+  {
+    "question": "Welk commando stel je een wachtwoord in op de console-lijn?",
+    "options": [
+      "line console 0 → login → password cisco",
+      "console password cisco",
+      "line 0 → password cisco",
+      "set console password cisco"
+    ],
+    "correct": 0,
+    "topic": "Commando's – Basisconfiguratie"
+  },
+  {
+    "question": "Welk commando stel je een wachtwoord in op VTY-lijnen 0 t/m 15?",
+    "options": [
+      "vty 0 15 → password cisco → login",
+      "line vty 0 15 → password cisco → login",
+      "telnet 0 15 → password cisco",
+      "line remote 0 15 → password cisco"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Basisconfiguratie"
+  },
+  {
+    "question": "Welk commando versleutel je alle plaintext-wachtwoorden in de configuratie?",
+    "options": [
+      "encrypt passwords",
+      "service password-encryption",
+      "password encrypt all",
+      "enable encryption"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Basisconfiguratie"
+  },
+  {
+    "question": "Welk commando stel je een MOTD-banner in?",
+    "options": [
+      "message 'Verboden toegang!'",
+      "motd banner $Verboden toegang!$",
+      "banner motd $Verboden toegang!$",
+      "set banner Verboden toegang!"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Basisconfiguratie"
+  },
+  {
+    "question": "Welk commando schakel je DNS-naamomzetting uit (voorkomt vertraging bij typfouten)?",
+    "options": [
+      "no dns lookup",
+      "no ip domain-lookup",
+      "disable dns",
+      "ip domain-lookup off"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Basisconfiguratie"
+  },
+  {
+    "question": "Welk commando voorkomt dat systeemlogs je invoer onderbreken op de console?",
+    "options": [
+      "no logging console",
+      "line console 0 → logging synchronous",
+      "console quiet",
+      "no console output"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Basisconfiguratie"
+  },
+  {
+    "question": "Welk commando sla je de running-config op als startup-config?",
+    "options": [
+      "save",
+      "write startup",
+      "copy running-config startup-config",
+      "store config"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Configuratiebeheer"
+  },
+  {
+    "question": "Welk commando wis je de startup-config?",
+    "options": [
+      "delete startup-config",
+      "erase startup-config",
+      "clear startup",
+      "no startup-config"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Configuratiebeheer"
+  },
+  {
+    "question": "Welk commando wis je de VLAN-database van een switch?",
+    "options": [
+      "erase vlan.dat",
+      "delete vlan.dat",
+      "clear vlan all",
+      "no vlan database"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Configuratiebeheer"
+  },
+  {
+    "question": "Welk commando toon je de huidige actieve configuratie?",
+    "options": [
+      "show startup-config",
+      "show running-config",
+      "show config",
+      "display config"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je de opgeslagen configuratie (in NVRAM)?",
+    "options": [
+      "show running-config",
+      "show startup-config",
+      "show nvram",
+      "show saved-config"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je een beknopt overzicht van alle interfaces met hun IP en status?",
+    "options": [
+      "show interfaces",
+      "show ip interface brief",
+      "show ip int",
+      "show interface status"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je de volledige details van alle interfaces (inclusief foutcounters)?",
+    "options": [
+      "show ip interface brief",
+      "show interfaces",
+      "show ip int detail",
+      "show interface all"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je de routing-tabel?",
+    "options": [
+      "show ip arp",
+      "show route",
+      "show ip route",
+      "show routing-table"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je de ARP-tabel op een Cisco-apparaat?",
+    "options": [
+      "show arp-table",
+      "show ip arp",
+      "show mac-address-table",
+      "arp -a"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je de IOS-versie en hardware-informatie van een Cisco-apparaat?",
+    "options": [
+      "show ip interface brief",
+      "show running-config",
+      "show version",
+      "show system"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je de MAC-adrestabel op een Cisco switch?",
+    "options": [
+      "show arp",
+      "show ip arp",
+      "show mac-address-table",
+      "show mac-table"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je actieve CDP-neighbors?",
+    "options": [
+      "show lldp neighbors",
+      "show cdp neighbors",
+      "show neighbors",
+      "show cdp table"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je CDP-neighbors MET IP-adressen?",
+    "options": [
+      "show cdp neighbors",
+      "show cdp neighbors detail",
+      "show cdp ip",
+      "show cdp full"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je LLDP-neighbors?",
+    "options": [
+      "show cdp neighbors",
+      "show lldp neighbors",
+      "show neighbors lldp",
+      "show lldp table"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je welke VLAN's bestaan en welke poorten erbij horen?",
+    "options": [
+      "show interfaces trunk",
+      "show vlan brief",
+      "show switchport",
+      "show vlan database"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je welke poorten als trunk zijn ingesteld?",
+    "options": [
+      "show vlan",
+      "show interfaces trunk",
+      "show trunk",
+      "show switchport trunk"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je de IPv6-routing-tabel?",
+    "options": [
+      "show ip route",
+      "show route ipv6",
+      "show ipv6 route",
+      "show ipv6 table"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je of SSH geconfigureerd is op een Cisco-apparaat?",
+    "options": [
+      "show ssh",
+      "show ip ssh",
+      "show crypto ssh",
+      "show security ssh"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando selecteer je een interface, bijv. GigabitEthernet 0/0/0?",
+    "options": [
+      "select interface gi0/0/0",
+      "interface gi0/0/0",
+      "port gi0/0/0",
+      "open interface gi0/0/0"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welk commando zet je een interface AAN?",
+    "options": [
+      "enable",
+      "interface up",
+      "no shutdown",
+      "set active"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welk commando zet je een interface UIT?",
+    "options": [
+      "disable",
+      "shutdown",
+      "no active",
+      "interface down"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welk commando stel je een IPv4-adres in op een interface?",
+    "options": [
+      "set ip 192.168.1.1 255.255.255.0",
+      "ip address 192.168.1.1 255.255.255.0",
+      "address 192.168.1.1/24",
+      "ipv4 192.168.1.1 255.255.255.0"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welk commando stel je een IPv6-adres in op een interface?",
+    "options": [
+      "ip address 2001::1/64",
+      "ipv6 address 2001::1/64",
+      "set ipv6 2001::1/64",
+      "address ipv6 2001::1/64"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welk commando verwijder je het IP-adres van een interface?",
+    "options": [
+      "delete ip address",
+      "no ip address",
+      "clear ip address",
+      "remove ip"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welk commando geef je een interface een beschrijving, bijv. 'Naar_Router'?",
+    "options": [
+      "label Naar_Router",
+      "name Naar_Router",
+      "description Naar_Router",
+      "comment Naar_Router"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welk commando selecteer je meerdere interfaces tegelijk (bijv. gi1/0/1 t/m gi1/0/4)?",
+    "options": [
+      "interface gi1/0/1-4",
+      "interface range gi1/0/1 - 4",
+      "multi-interface gi1/0/1 4",
+      "select range gi1/0/1 gi1/0/4"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welk commando maak je een loopback-interface aan (bijv. loopback 1)?",
+    "options": [
+      "create loopback 1",
+      "loopback 1",
+      "interface loopback 1",
+      "ip loopback 1"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welk commando maak je een subinterface aan voor VLAN 11 op gi0/0/0?",
+    "options": [
+      "subinterface gi0/0/0 vlan 11",
+      "interface gi0/0/0.11",
+      "interface vlan 11",
+      "gi0/0/0 sub 11"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Inter-VLAN routing"
+  },
+  {
+    "question": "Welk commando koppel je dot1Q VLAN-tagging aan een subinterface voor VLAN 11?",
+    "options": [
+      "vlan 11 dot1q",
+      "trunk vlan 11",
+      "encapsulation dot1Q 11",
+      "dot1q encap 11"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Inter-VLAN routing"
+  },
+  {
+    "question": "Welk commando stel je een statische route in naar 192.168.2.0/24 via next-hop 10.0.0.1?",
+    "options": [
+      "static route 192.168.2.0 255.255.255.0 10.0.0.1",
+      "ip route 192.168.2.0 255.255.255.0 10.0.0.1",
+      "route add 192.168.2.0/24 10.0.0.1",
+      "router static 192.168.2.0 10.0.0.1"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Routing"
+  },
+  {
+    "question": "Welk commando start je RIP op een router?",
+    "options": [
+      "ip routing rip",
+      "router rip",
+      "enable rip",
+      "rip start"
+    ],
+    "correct": 1,
+    "topic": "Commando's – RIP"
+  },
+  {
+    "question": "Welk commando stel je RIP versie 2 in?",
+    "options": [
+      "rip version 2",
+      "version 2",
+      "set rip v2",
+      "ip rip version 2"
+    ],
+    "correct": 1,
+    "topic": "Commando's – RIP"
+  },
+  {
+    "question": "Welk commando schakel je automatische route-samenvatting uit in RIP?",
+    "options": [
+      "no summary",
+      "no auto-summary",
+      "disable summary",
+      "rip no-summary"
+    ],
+    "correct": 1,
+    "topic": "Commando's – RIP"
+  },
+  {
+    "question": "Welk commando adverteer je het netwerk 192.168.1.0 in RIP?",
+    "options": [
+      "advertise 192.168.1.0",
+      "network 192.168.1.0",
+      "rip network 192.168.1.0",
+      "add network 192.168.1.0"
+    ],
+    "correct": 1,
+    "topic": "Commando's – RIP"
+  },
+  {
+    "question": "Welk commando start je RIPng voor IPv6 op een router?",
+    "options": [
+      "router rip version 6",
+      "ipv6 router rip 1",
+      "router ipv6 rip 1",
+      "rip ipv6 start"
+    ],
+    "correct": 1,
+    "topic": "Commando's – RIP"
+  },
+  {
+    "question": "Welk commando schakel je RIPng in op een specifieke interface?",
+    "options": [
+      "router rip 1 enable",
+      "rip ipv6 enable",
+      "ipv6 rip 1 enable",
+      "enable ipv6 rip"
+    ],
+    "correct": 2,
+    "topic": "Commando's – RIP"
+  },
+  {
+    "question": "Welk commando schakel je IPv6-routering in op een router?",
+    "options": [
+      "ip routing ipv6",
+      "ipv6 unicast-routing",
+      "enable ipv6",
+      "router ipv6"
+    ],
+    "correct": 1,
+    "topic": "Commando's – IPv6"
+  },
+  {
+    "question": "Welk commando maak je een VLAN aan (bijv. VLAN 10)?",
+    "options": [
+      "create vlan 10",
+      "vlan 10",
+      "add vlan 10",
+      "switchport vlan 10"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando geef je een VLAN een naam (bijv. 'Eindgebruikers')?",
+    "options": [
+      "vlan 10 name Eindgebruikers",
+      "name Eindgebruikers",
+      "vlan-name 10 Eindgebruikers",
+      "set vlan 10 name Eindgebruikers"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando verwijder je een VLAN (bijv. VLAN 10)?",
+    "options": [
+      "delete vlan 10",
+      "no vlan 10",
+      "remove vlan 10",
+      "clear vlan 10"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welke twee commando's stel je een poort in als access-poort voor VLAN 10?",
+    "options": [
+      "switchport mode access → switchport access vlan 10",
+      "switchport trunk vlan 10",
+      "vlan 10 → access port",
+      "interface vlan 10 → no shutdown"
+    ],
+    "correct": 0,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando stel je een poort in als trunk-poort?",
+    "options": [
+      "switchport mode access",
+      "switchport mode trunk",
+      "trunk enable",
+      "vlan trunk on"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando schakel je DTP-onderhandeling uit op een poort?",
+    "options": [
+      "no dtp",
+      "switchport nonegotiate",
+      "dtp off",
+      "no switchport negotiate"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando configureer je een SVI op VLAN 1 met een IP-adres?",
+    "options": [
+      "ip address vlan1 192.168.1.2",
+      "interface vlan 1 → ip address 192.168.1.2 255.255.255.0 → no shutdown",
+      "vlan 1 → set ip 192.168.1.2",
+      "interface gi0/0 → vlan 1 → ip address 192.168.1.2"
+    ],
+    "correct": 1,
+    "topic": "Commando's – SVI / Switch"
+  },
+  {
+    "question": "Welk commando stel je de default gateway in op een switch?",
+    "options": [
+      "ip gateway 192.168.1.1",
+      "default-gateway 192.168.1.1",
+      "ip default-gateway 192.168.1.1",
+      "route gateway 192.168.1.1"
+    ],
+    "correct": 2,
+    "topic": "Commando's – SVI / Switch"
+  },
+  {
+    "question": "Welk commando leeg je de MAC-adrestabel op een Cisco switch?",
+    "options": [
+      "delete mac-address-table",
+      "clear mac-address-table",
+      "erase mac-table",
+      "no mac-address-table"
+    ],
+    "correct": 1,
+    "topic": "Commando's – SVI / Switch"
+  },
+  {
+    "question": "Welk commando schakel je IP-routing in op een L3-switch?",
+    "options": [
+      "enable routing",
+      "ip routing",
+      "router enable",
+      "switchport routing"
+    ],
+    "correct": 1,
+    "topic": "Commando's – L3-switch"
+  },
+  {
+    "question": "Welk commando configureer je SSH stap 1: domeinnaam instellen?",
+    "options": [
+      "domain-name hu.local",
+      "ip domain-name hu.local",
+      "set domain hu.local",
+      "hostname domain hu.local"
+    ],
+    "correct": 1,
+    "topic": "Commando's – SSH"
+  },
+  {
+    "question": "Welk commando maak je een lokale gebruiker aan voor SSH met privilege 15?",
+    "options": [
+      "add user cisco password class",
+      "username cisco privilege 15 secret class",
+      "create user cisco level 15 class",
+      "user cisco secret class"
+    ],
+    "correct": 1,
+    "topic": "Commando's – SSH"
+  },
+  {
+    "question": "Welk commando genereer je RSA-sleutels voor SSH?",
+    "options": [
+      "ssh keygen rsa",
+      "crypto key generate rsa",
+      "generate rsa key",
+      "ip ssh keygen"
+    ],
+    "correct": 1,
+    "topic": "Commando's – SSH"
+  },
+  {
+    "question": "Welk commando stel je in dat VTY-lijnen ALLEEN SSH accepteren?",
+    "options": [
+      "vty ssh only",
+      "no telnet",
+      "transport input ssh",
+      "ssh vty enable"
+    ],
+    "correct": 2,
+    "topic": "Commando's – SSH"
+  },
+  {
+    "question": "Welk commando gebruik je onder VTY zodat authenticatie via de lokale gebruikersdatabase verloopt?",
+    "options": [
+      "login",
+      "login local",
+      "auth local",
+      "local-login"
+    ],
+    "correct": 1,
+    "topic": "Commando's – SSH"
+  },
+  {
+    "question": "Welk commando activeer je AAA-authenticatie (soms nodig voor SSH)?",
+    "options": [
+      "aaa enable",
+      "aaa new-model",
+      "auth aaa start",
+      "enable aaa"
+    ],
+    "correct": 1,
+    "topic": "Commando's – SSH"
+  },
+  {
+    "question": "Welk commando configureer je DHCP: sluiten van adressen 192.168.1.1 t/m 192.168.1.10 uit?",
+    "options": [
+      "ip dhcp exclude 192.168.1.1 192.168.1.10",
+      "ip dhcp excluded-address 192.168.1.1 192.168.1.10",
+      "dhcp no-assign 192.168.1.1 192.168.1.10",
+      "no dhcp address 192.168.1.1 192.168.1.10"
+    ],
+    "correct": 1,
+    "topic": "Commando's – DHCP"
+  },
+  {
+    "question": "Welk commando maak je een DHCP-pool aan genaamd 'LAN_A'?",
+    "options": [
+      "dhcp pool LAN_A",
+      "ip dhcp pool LAN_A",
+      "create dhcp LAN_A",
+      "ip dhcp create LAN_A"
+    ],
+    "correct": 1,
+    "topic": "Commando's – DHCP"
+  },
+  {
+    "question": "Welk commando stel je het DHCP-netwerk in binnen een DHCP-pool?",
+    "options": [
+      "ip network 192.168.1.0 255.255.255.0",
+      "network 192.168.1.0 255.255.255.0",
+      "subnet 192.168.1.0 255.255.255.0",
+      "dhcp-range 192.168.1.0 255.255.255.0"
+    ],
+    "correct": 1,
+    "topic": "Commando's – DHCP"
+  },
+  {
+    "question": "Welk commando stel je de default router in binnen een DHCP-pool?",
+    "options": [
+      "gateway 192.168.1.1",
+      "default-router 192.168.1.1",
+      "ip-router 192.168.1.1",
+      "router 192.168.1.1"
+    ],
+    "correct": 1,
+    "topic": "Commando's – DHCP"
+  },
+  {
+    "question": "Welk commando stel je de DNS-server in binnen een DHCP-pool?",
+    "options": [
+      "nameserver 8.8.8.8",
+      "dns 8.8.8.8",
+      "dns-server 8.8.8.8",
+      "ip dns 8.8.8.8"
+    ],
+    "correct": 2,
+    "topic": "Commando's – DHCP"
+  },
+  {
+    "question": "Welk commando toon je actieve DHCP-leases op een Cisco router?",
+    "options": [
+      "show dhcp leases",
+      "show ip dhcp binding",
+      "show dhcp clients",
+      "show ip dhcp pool"
+    ],
+    "correct": 1,
+    "topic": "Commando's – DHCP"
+  },
+  {
+    "question": "Welk commando schakel je CDP in op een interface?",
+    "options": [
+      "cdp start",
+      "cdp enable",
+      "enable cdp",
+      "cdp on"
+    ],
+    "correct": 1,
+    "topic": "Commando's – CDP / LLDP"
+  },
+  {
+    "question": "Welk commando schakel je CDP UIT op het hele apparaat (globaal)?",
+    "options": [
+      "no cdp enable",
+      "no cdp run",
+      "cdp disable",
+      "disable cdp"
+    ],
+    "correct": 1,
+    "topic": "Commando's – CDP / LLDP"
+  },
+  {
+    "question": "Welk commando schakel je LLDP globaal in op een Cisco-apparaat?",
+    "options": [
+      "lldp enable",
+      "lldp run",
+      "enable lldp",
+      "set lldp on"
+    ],
+    "correct": 1,
+    "topic": "Commando's – CDP / LLDP"
+  },
+  {
+    "question": "Welk commando schakel je LLDP-transmit in op een interface?",
+    "options": [
+      "lldp send",
+      "lldp transmit",
+      "lldp out",
+      "transmit lldp"
+    ],
+    "correct": 1,
+    "topic": "Commando's – CDP / LLDP"
+  },
+  {
+    "question": "Welk commando schakel je LLDP-receive in op een interface?",
+    "options": [
+      "lldp receive",
+      "lldp recieve",
+      "lldp in",
+      "receive lldp"
+    ],
+    "correct": 1,
+    "topic": "Commando's – CDP / LLDP"
+  },
+  {
+    "question": "Welk Windows-commando toon je de netwerkconfiguratie (IP, mask, gateway, MAC)?",
+    "options": [
+      "ipconfig",
+      "ipconfig /all",
+      "netstat",
+      "arp -a"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk Windows-commando toon je de ARP-cache?",
+    "options": [
+      "arp -d",
+      "arp -s",
+      "arp -a",
+      "arp -n"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk Windows-commando leeg je de ARP-cache?",
+    "options": [
+      "arp -a",
+      "arp -clear",
+      "arp -d *",
+      "ipconfig /flusharns"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk Windows-commando stuur je een continue (oneindige) ping?",
+    "options": [
+      "ping 192.168.1.1 /loop",
+      "ping 192.168.1.1 -c",
+      "ping 192.168.1.1 -t",
+      "ping -i 192.168.1.1"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk Windows-commando toon je de routing-tabel van de pc?",
+    "options": [
+      "ipconfig /route",
+      "netstat -r of route print",
+      "show ip route",
+      "route -a"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk Windows-commando test je de DNS-resolutie?",
+    "options": [
+      "dig",
+      "dns-lookup",
+      "nslookup",
+      "resolve"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk Windows-commando volg je het pad van pakketten naar een host?",
+    "options": [
+      "ping -route",
+      "tracert",
+      "pathfinder",
+      "route trace"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk Linux-commando toon je de netwerkconfiguratie?",
+    "options": [
+      "ipconfig",
+      "ifconfig of ip address",
+      "netstat -i",
+      "route -n"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk Linux-commando test je de DNS-resolutie (uitgebreider dan nslookup)?",
+    "options": [
+      "nslookup",
+      "dns-test",
+      "dig",
+      "host-lookup"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk commando toon je openstaande TCP/UDP-poorten en actieve verbindingen?",
+    "options": [
+      "ipconfig /ports",
+      "show ports",
+      "netstat",
+      "port-scan"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Wat is de volledige volgorde voor de basisconfiguratie van een router/switch in het lab?",
+    "options": [
+      "hostname → enable secret → line console 0 (login + password) → line vty 0 15 (login + password) → service password-encryption → banner motd → no ip domain-lookup",
+      "ip address → no shutdown → enable → hostname",
+      "enable → conf t → ip address → no shutdown",
+      "hostname → ip address → ssh → vlan"
+    ],
+    "correct": 0,
+    "topic": "Commando's – Basisconfiguratie"
+  },
+  {
+    "question": "Wat is de volledige volgorde om router-on-a-stick te configureren voor VLAN 11 op gi0/0/0?",
+    "options": [
+      "interface gi0/0/0 → ip address → no shutdown",
+      "interface gi0/0/0 → no shutdown → interface gi0/0/0.11 → encapsulation dot1Q 11 → ip address ... → no shutdown",
+      "interface gi0/0/0.11 → vlan 11 → ip address",
+      "vlan 11 → interface gi0/0/0 → encapsulation dot1Q"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Inter-VLAN routing"
+  },
+  {
+    "question": "Wat is de volledige volgorde voor het instellen van RIP v2 op een router?",
+    "options": [
+      "router rip → version 2 → no auto-summary → network <netwerk1> → network <netwerk2>",
+      "ip rip → version 2 → advertise <netwerk>",
+      "rip start → v2 → no summary → add network",
+      "router rip → advertise all → no auto-summary"
+    ],
+    "correct": 0,
+    "topic": "Commando's – RIP"
+  },
+  {
+    "question": "Wat is de volledige volgorde om SSH te configureren op een router?",
+    "options": [
+      "ip domain-name ... → username ... privilege 15 secret ... → crypto key generate rsa → line vty 0 15 → transport input ssh → login local",
+      "ssh enable → crypto key → username → vty",
+      "hostname → crypto key → ssh on → vty login",
+      "username → ssh start → domain → vty login"
+    ],
+    "correct": 0,
+    "topic": "Commando's – SSH"
+  },
+  {
+    "question": "Wat is de volledige volgorde om een access-poort in te stellen voor VLAN 10?",
+    "options": [
+      "interface gi1/0/1 → vlan 10",
+      "interface gi1/0/1 → switchport mode access → switchport access vlan 10",
+      "vlan 10 → interface gi1/0/1 → access mode",
+      "interface gi1/0/1 → trunk → vlan 10"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Wat is de volledige volgorde om een trunk-poort in te stellen op gi1/0/24?",
+    "options": [
+      "interface gi1/0/24 → vlan all",
+      "interface gi1/0/24 → switchport mode trunk",
+      "interface gi1/0/24 → trunk → dot1q",
+      "vlan trunk → interface gi1/0/24"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando gebruik je om te controleren of de interfaces 'up/up' zijn NA het configureren?",
+    "options": [
+      "show run",
+      "show ip route",
+      "show ip interface brief",
+      "show version"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Na het configureren van RIP: welk commando controleer je of de routes geleerd zijn?",
+    "options": [
+      "show ip rip",
+      "show ip route (kijk naar R-routes)",
+      "show rip neighbors",
+      "debug ip rip"
+    ],
+    "correct": 1,
+    "topic": "Commando's – RIP"
+  },
+  {
+    "question": "Welk commando toon je de DTP-modus van een interface?",
+    "options": [
+      "show dtp",
+      "show dtp interface",
+      "show switchport dtp",
+      "show interface dtp"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk Wireshark-filter gebruik je om alleen ARP-frames te tonen?",
+    "options": [
+      "protocol == arp",
+      "arp",
+      "filter arp",
+      "show arp"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Wireshark"
+  },
+  {
+    "question": "Welk Wireshark-filter gebruik je om alleen DNS-verkeer te tonen?",
+    "options": [
+      "udp.port == 53",
+      "dns",
+      "filter dns",
+      "protocol dns"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Wireshark"
+  },
+  {
+    "question": "Welk Wireshark-filter gebruik je om alleen TCP SYN-pakketten te tonen?",
+    "options": [
+      "tcp.syn == 1",
+      "tcp.flags.syn == 1",
+      "tcp syn only",
+      "filter tcp.syn"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Wireshark"
+  },
+  {
+    "question": "Welk Wireshark-filter gebruik je voor FTP-verkeer?",
+    "options": [
+      "tcp.port == 21",
+      "ftp and ftp-data",
+      "protocol ftp",
+      "port 21"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Wireshark"
+  },
+  {
+    "question": "Welk Wireshark-filter gebruik je voor HTTP-verkeer?",
+    "options": [
+      "tcp.port == 80",
+      "http",
+      "protocol http",
+      "port 80 filter"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Wireshark"
+  },
+  {
+    "question": "Welk commando maak je via Telnet verbinding met een SMTP-server op poort 25?",
+    "options": [
+      "smtp connect server 25",
+      "telnet server.example.com 25",
+      "connect smtp 25 server.example.com",
+      "telnet 25 server.example.com"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Protocollen"
+  },
+  {
+    "question": "Welk commando ping je de interne TCP/IP-stack van je eigen apparaat?",
+    "options": [
+      "ping 0.0.0.0",
+      "ping localhost",
+      "ping 127.0.0.1",
+      "ping self"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Troubleshooting"
+  },
+  {
+    "question": "Welk commando voer je uit om te controleren of twee routers elkaars interfaces kunnen bereiken?",
+    "options": [
+      "traceroute",
+      "ping <IP van andere router>",
+      "show ip route",
+      "arp -a"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Troubleshooting"
+  },
+  {
+    "question": "Welke drie commando's voer je uit voor een volledige fabrieksinstellingenreset van een Cisco switch?",
+    "options": [
+      "erase nvram: → delete vlan.dat → reload",
+      "erase startup-config → delete vlan.dat → reload",
+      "reset factory → reload",
+      "no startup-config → no vlan.dat → reboot"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Configuratiebeheer"
+  },
+  {
+    "question": "Welk commando controleer je de VLAN-database op een switch na aanmaken van VLANs?",
+    "options": [
+      "show running-config",
+      "show vlan brief",
+      "show interfaces",
+      "show vlan database"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando verberg je de running-config wanneer je in conf t zit?",
+    "options": [
+      "show run",
+      "show running-config",
+      "do show run",
+      "exec show run"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welk commando stel je op Cisco IOS in dat een interface beschrijving 'Naar_Switch' krijgt?",
+    "options": [
+      "interface gi0/0 → label Naar_Switch",
+      "interface gi0/0 → description Naar_Switch",
+      "interface gi0/0 → name Naar_Switch",
+      "interface gi0/0 → comment Naar_Switch"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welk commando toon je alleen de trunk-interfaces op een switch?",
+    "options": [
+      "show vlan",
+      "show interfaces trunk",
+      "show trunk",
+      "show ip trunk"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando op Windows toon je welke poorten en verbindingen actief zijn?",
+    "options": [
+      "ipconfig /ports",
+      "show connections",
+      "netstat",
+      "port-list"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk commando verwijder je een statische route naar 192.168.2.0/24?",
+    "options": [
+      "delete ip route 192.168.2.0 255.255.255.0 10.0.0.1",
+      "no ip route 192.168.2.0 255.255.255.0 10.0.0.1",
+      "remove route 192.168.2.0",
+      "ip route remove 192.168.2.0"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Routing"
+  },
+  {
+    "question": "Welk commando toon je welke protocollen actief zijn op een Cisco-apparaat?",
+    "options": [
+      "show ip route",
+      "show version",
+      "show protocols",
+      "show ip interface brief"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je de Layer 3 informatie van één specifieke interface, bijv. gi0/0?",
+    "options": [
+      "show interfaces gi0/0",
+      "show ip interface gi0/0",
+      "show ip int brief gi0/0",
+      "show ip gi0/0 detail"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je de trunk-interfaces met hun toegestane VLANs?",
+    "options": [
+      "show vlan brief",
+      "show ip int trunk",
+      "show interfaces trunk",
+      "show trunk detail"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando toon je de VLAN-configuratie terwijl je in configuratiemodus zit?",
+    "options": [
+      "show vlan",
+      "do show vlan",
+      "exec show vlan",
+      "run show vlan"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welk commando verwijder je de VLAN-database via de flash (alternatief voor delete vlan.dat)?",
+    "options": [
+      "erase vlan",
+      "delete flash:vlan.dat",
+      "clear vlan database",
+      "no vlan all"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Configuratiebeheer"
+  },
+  {
+    "question": "Wat doet 'switchport mode dynamic desirable'?",
+    "options": [
+      "Zet de poort permanent in access-modus",
+      "Zet de poort permanent in trunk-modus",
+      "Laat de poort actief onderhandelen via DTP om een trunk te worden",
+      "Schakelt DTP volledig uit"
+    ],
+    "correct": 2,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Wat doet 'switchport mode dynamic auto'?",
+    "options": [
+      "Zet de poort permanent in trunk-modus",
+      "Laat de poort passief wachten op DTP-onderhandeling; wordt trunk als de andere kant trunk of desirable is",
+      "Schakelt automatisch over naar access-modus",
+      "Zet de poort in access-modus en schakelt DTP uit"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welke afkorting gebruik je voor 'show ip interface brief' in de Cisco CLI?",
+    "options": [
+      "sh ip int br",
+      "show int brief",
+      "sh interface",
+      "show ip br"
+    ],
+    "correct": 0,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welke afkorting gebruik je voor 'configure terminal'?",
+    "options": [
+      "conf",
+      "ct",
+      "conf t",
+      "config"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welke afkorting gebruik je voor 'no shutdown'?",
+    "options": [
+      "no sh",
+      "n shut",
+      "nosh",
+      "no s"
+    ],
+    "correct": 0,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welke afkorting gebruik je voor 'interface'?",
+    "options": [
+      "iface",
+      "int",
+      "if",
+      "intf"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Interfaces"
+  },
+  {
+    "question": "Welke afkorting gebruik je voor 'show running-config'?",
+    "options": [
+      "sh run",
+      "show run",
+      "sh rc",
+      "beide A en B zijn correct"
+    ],
+    "correct": 3,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Hoe controlleer je op een switch of de trunk-encapsulation dot1q al actief is voor je 'switchport mode trunk' invoert?",
+    "options": [
+      "show ip int brief",
+      "show interfaces trunk",
+      "show vlan brief",
+      "show interfaces gi1/0/24 switchport"
+    ],
+    "correct": 3,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando toon je de gedetailleerde switchport-instellingen van één poort?",
+    "options": [
+      "show vlan",
+      "show interfaces gi1/0/1 switchport",
+      "show ip interface gi1/0/1",
+      "show port gi1/0/1"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando herstart je een Cisco-apparaat?",
+    "options": [
+      "restart",
+      "reboot",
+      "reload",
+      "reset"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Configuratiebeheer"
+  },
+  {
+    "question": "Welk commando schakel je IPv6 routing specifiek in op een interface voor RIPng?",
+    "options": [
+      "ipv6 rip enable",
+      "ipv6 rip 1 enable",
+      "router ipv6 rip interface",
+      "enable ipv6 rip"
+    ],
+    "correct": 1,
+    "topic": "Commando's – IPv6"
+  },
+  {
+    "question": "Welk commando stel je een IPv6-adres in op een interface met het addres 2001:ABCD::1/64?",
+    "options": [
+      "ip address 2001:ABCD::1/64",
+      "ipv6 address 2001:ABCD::1/64",
+      "ipv6 add 2001:ABCD::1/64",
+      "Zowel B als C zijn correct in Cisco IOS"
+    ],
+    "correct": 3,
+    "topic": "Commando's – IPv6"
+  },
+  {
+    "question": "Welk commando stel je de domeinnaam in binnen een DHCP-pool (niet voor SSH)?",
+    "options": [
+      "ip domain-name bmc.local",
+      "domain-name bmc.local",
+      "set domain bmc.local",
+      "dhcp domain bmc.local"
+    ],
+    "correct": 1,
+    "topic": "Commando's – DHCP"
+  },
+  {
+    "question": "Welk commando toon je de running-config terwijl je in interface-configuratiemodus zit?",
+    "options": [
+      "show running-config",
+      "do show running-config",
+      "exec show run",
+      "display running-config"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welke twee commando's gebruik je achter elkaar om een SVI remote bereikbaar te maken via Telnet?",
+    "options": [
+      "interface vlan 1 → ip address ... → no shutdown → (op switch) line vty 0 15 → login → password cisco",
+      "vlan 1 → ip add ... → telnet enable",
+      "interface gi0/0 → ip address ... → telnet",
+      "line vty → ip address ... → interface vlan 1"
+    ],
+    "correct": 0,
+    "topic": "Commando's – SVI / Switch"
+  },
+  {
+    "question": "Welk commando controleer je op de router of RIP actief is en welke netwerken geadverteerd worden?",
+    "options": [
+      "show ip rip database",
+      "show ip protocols",
+      "show router rip",
+      "show rip status"
+    ],
+    "correct": 1,
+    "topic": "Commando's – RIP"
+  },
+  {
+    "question": "Welk commando toon je de CDP-informatie over het apparaat zelf (niet neighbors)?",
+    "options": [
+      "show cdp neighbors",
+      "show cdp",
+      "show cdp self",
+      "show cdp entry *"
+    ],
+    "correct": 1,
+    "topic": "Commando's – CDP / LLDP"
+  },
+  {
+    "question": "Met welk commando maak je een Telnet-verbinding naar een switch/router vanuit de PC (bijv. naar 192.168.1.2)?",
+    "options": [
+      "ssh 192.168.1.2",
+      "connect 192.168.1.2",
+      "telnet 192.168.1.2",
+      "remote 192.168.1.2"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Protocollen"
+  },
+  {
+    "question": "Welk commando verbreek je een Telnet-sessie op een Cisco-apparaat?",
+    "options": [
+      "quit",
+      "disconnect",
+      "exit",
+      "close"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Protocollen"
+  },
+  {
+    "question": "Op de router: welk commando toon je de actieve Telnet/SSH-sessies?",
+    "options": [
+      "show sessions",
+      "show users",
+      "show line",
+      "show connections"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Verificatie"
+  },
+  {
+    "question": "Welk commando stel je in dat de switch de encapsulatie voor trunking op dot1q zet (oudere switches)?",
+    "options": [
+      "trunk encapsulation dot1q",
+      "switchport trunk encapsulation dot1q",
+      "encapsulation dot1q trunk",
+      "vlan encapsulation dot1q"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando geef je een naam aan een VLAN direct in de vlan-configuratiemodus?",
+    "options": [
+      "vlan 10 name Servers",
+      "name Servers",
+      "vlan-name Servers",
+      "label Servers"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Wat typ je in de CLI als je niet meer weet welke opties beschikbaar zijn bij een commando?",
+    "options": [
+      "help",
+      "?",
+      "man",
+      "--help"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welke toets vul je een half ingevoerd commando automatisch aan in Cisco IOS?",
+    "options": [
+      "Enter",
+      "Spatiebalk",
+      "Tab",
+      "Ctrl-C"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welke toetscombinatie breek je een lopende ping of traceroute af in Cisco IOS?",
+    "options": [
+      "Ctrl-C",
+      "Ctrl-Z",
+      "Ctrl-Shift-6",
+      "Ctrl-X"
+    ],
+    "correct": 2,
+    "topic": "Commando's – Modi"
+  },
+  {
+    "question": "Welk commando toon je alle DHCP-conflicten op een Cisco router?",
+    "options": [
+      "show ip dhcp pool",
+      "show ip dhcp conflict",
+      "show dhcp errors",
+      "show ip dhcp binding"
+    ],
+    "correct": 1,
+    "topic": "Commando's – DHCP"
+  },
+  {
+    "question": "Welk commando verwijder je een DHCP-pool genaamd 'LAN_A'?",
+    "options": [
+      "delete dhcp pool LAN_A",
+      "no ip dhcp pool LAN_A",
+      "ip dhcp pool LAN_A delete",
+      "clear dhcp pool LAN_A"
+    ],
+    "correct": 1,
+    "topic": "Commando's – DHCP"
+  },
+  {
+    "question": "Welk commando schakel je DHCP volledig uit op een Cisco router?",
+    "options": [
+      "no dhcp",
+      "no service dhcp",
+      "ip dhcp disable",
+      "disable dhcp server"
+    ],
+    "correct": 1,
+    "topic": "Commando's – DHCP"
+  },
+  {
+    "question": "Welk commando verwijder je een specifieke statische route naar 10.0.0.0/8 via 192.168.1.1?",
+    "options": [
+      "delete ip route 10.0.0.0 255.0.0.0 192.168.1.1",
+      "no ip route 10.0.0.0 255.0.0.0 192.168.1.1",
+      "remove route 10.0.0.0",
+      "clear ip route 10.0.0.0"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Routing"
+  },
+  {
+    "question": "Welk commando voer je een ping uit vanuit een specifieke interface (extended ping) in Cisco IOS?",
+    "options": [
+      "ping 192.168.1.1 extended",
+      "ping (dan Enter, vervolgens de opties invullen)",
+      "extended-ping 192.168.1.1",
+      "ping source 192.168.1.1"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Troubleshooting"
+  },
+  {
+    "question": "Welk commando toon je de IPv6-neighbors (vergelijkbaar met ARP voor IPv6)?",
+    "options": [
+      "show ipv6 arp",
+      "show ipv6 neighbors",
+      "show ip arp ipv6",
+      "show ipv6 mac"
+    ],
+    "correct": 1,
+    "topic": "Commando's – IPv6"
+  },
+  {
+    "question": "Welk commando toon je alle geconfigureerde IPv6-interfaces op een router?",
+    "options": [
+      "show ip interface brief",
+      "show ipv6 interface brief",
+      "show ipv6 int",
+      "show interface ipv6"
+    ],
+    "correct": 1,
+    "topic": "Commando's – IPv6"
+  },
+  {
+    "question": "Welk commando stel je in dat een poort toegewezen wordt aan VLAN 20 (na switchport mode access)?",
+    "options": [
+      "vlan 20",
+      "switchport vlan 20",
+      "switchport access vlan 20",
+      "port vlan 20"
+    ],
+    "correct": 2,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando stel je de toegestane VLANs op een trunk-poort in (bijv. alleen VLAN 10 en 20)?",
+    "options": [
+      "switchport trunk vlan 10,20",
+      "switchport trunk allowed vlan 10,20",
+      "trunk vlan allow 10,20",
+      "vlan trunk 10,20"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando stel je het native VLAN in op een trunk-poort naar VLAN 99?",
+    "options": [
+      "switchport native vlan 99",
+      "switchport trunk native vlan 99",
+      "native vlan 99",
+      "trunk native 99"
+    ],
+    "correct": 1,
+    "topic": "Commando's – VLANs"
+  },
+  {
+    "question": "Welk commando verwijder je de RSA-sleutels op een Cisco-apparaat (bijv. om SSH te resetten)?",
+    "options": [
+      "no crypto key",
+      "crypto key zeroize rsa",
+      "delete rsa keys",
+      "no ssh keys"
+    ],
+    "correct": 1,
+    "topic": "Commando's – SSH"
+  },
+  {
+    "question": "Welk commando stel je de SSH-versie expliciet in op versie 2?",
+    "options": [
+      "ssh version 2",
+      "ip ssh version 2",
+      "crypto ssh version 2",
+      "set ssh v2"
+    ],
+    "correct": 1,
+    "topic": "Commando's – SSH"
+  },
+  {
+    "question": "Welk commando toon je een samenvatting van de CDP-global instellingen (timers, versie)?",
+    "options": [
+      "show cdp neighbors",
+      "show cdp",
+      "show cdp detail",
+      "show cdp status"
+    ],
+    "correct": 1,
+    "topic": "Commando's – CDP / LLDP"
+  },
+  {
+    "question": "Welk Windows-commando flush je de DNS-cache?",
+    "options": [
+      "ipconfig /release",
+      "ipconfig /flushdns",
+      "dns flush",
+      "clear dns"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk Windows-commando vraag je een nieuw IP-adres op via DHCP?",
+    "options": [
+      "ipconfig /flushdns",
+      "ipconfig /release → ipconfig /renew",
+      "dhcp renew",
+      "ipconfig /reset"
+    ],
+    "correct": 1,
+    "topic": "Commando's – Windows / PC"
+  },
+  {
+    "question": "Welk commando schakel je op een Cisco router CDPy UIT op een specifieke interface?",
+    "options": [
+      "no cdp run",
+      "no cdp enable",
+      "cdp disable",
+      "no cdp send"
+    ],
+    "correct": 1,
+    "topic": "Commando's – CDP / LLDP"
+  }
+]
