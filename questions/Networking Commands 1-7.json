@@ -1347,9 +1347,9 @@
       "sh run",
       "show run",
       "sh rc",
-      "beide A en B zijn correct"
+      "sh running"
     ],
-    "correct": 3,
+    "correct": 0,
     "topic": "Commando's – Verificatie"
   },
   {
@@ -1397,14 +1397,14 @@
     "topic": "Commando's – IPv6"
   },
   {
-    "question": "Welk commando stel je een IPv6-adres in op een interface met het addres 2001:ABCD::1/64?",
+    "question": "Welk commando stel je een IPv6-adres in op een interface met het adres 2001:ABCD::1/64?",
     "options": [
       "ip address 2001:ABCD::1/64",
       "ipv6 address 2001:ABCD::1/64",
       "ipv6 add 2001:ABCD::1/64",
-      "Zowel B als C zijn correct in Cisco IOS"
+      "set ipv6 2001:ABCD::1/64"
     ],
-    "correct": 3,
+    "correct": 1,
     "topic": "Commando's – IPv6"
   },
   {

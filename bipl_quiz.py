@@ -228,7 +228,8 @@ class QuizApp:
     # QUIZ LOGIC
     # ──────────────────────────────────────────────────────────────
     def _start_quiz(self, label, question_pool):
-        pool = list(question_pool)
+        self._full_pool   = list(question_pool)   # keep the full set for replays
+        pool = list(self._full_pool)
         random.shuffle(pool)
         self.questions    = pool[:self.NUM_QUESTIONS]
         self.active_label = label
@@ -627,7 +628,7 @@ class QuizApp:
 
         _make_btn(btn_row, "Opnieuw spelen  →",
                   self.ACCENT, "white", self.ACCENT_HV,
-                  lambda: self._start_quiz(self.active_label, self.questions))
+                  lambda: self._start_quiz(self.active_label, self._full_pool))
 
         _make_btn(btn_row, "Hoofdmenu",
                   self.BORDER, self.TEXT, "#C8D0E8",
