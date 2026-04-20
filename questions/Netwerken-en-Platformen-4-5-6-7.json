@@ -1,0 +1,3247 @@
+[
+  {
+    "question": "Hoeveel bits heeft een IPv4-adres en hoe zijn deze verdeeld?",
+    "options": [
+      "16 bits, verdeeld in twee octetten",
+      "32 bits, verdeeld in vier octetten",
+      "64 bits, verdeeld in acht octetten",
+      "128 bits, verdeeld in vier blokken"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat geeft het subnet mask aan bij een IPv4-adres?",
+    "options": [
+      "Het protocol dat gebruikt wordt op de transportlaag",
+      "Het netwerk- en hostgedeelte van een IP-adres",
+      "De maximale TTL-waarde van een pakket",
+      "Het MAC-adres van de netwerkkaart"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is het netwerkadres van 192.168.10.10/24?",
+    "options": [
+      "192.168.10.1",
+      "192.168.10.255",
+      "192.168.10.0",
+      "192.168.0.0"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is het broadcastadres van het netwerk 192.168.10.0/24?",
+    "options": [
+      "192.168.10.0",
+      "192.168.10.1",
+      "192.168.10.254",
+      "192.168.10.255"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Welke van de volgende adressen is een privé IPv4-adres?",
+    "options": [
+      "8.8.8.8",
+      "172.20.5.1",
+      "200.100.50.25",
+      "223.255.255.1"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is het loopback-adres in IPv4?",
+    "options": [
+      "192.168.0.1",
+      "169.254.0.1",
+      "127.0.0.1",
+      "10.0.0.1"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is het APIPA-adresbereik (link-local)?",
+    "options": [
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16",
+      "169.254.0.0/16"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Hoeveel bruikbare hostadressen heeft een /26 subnet?",
+    "options": [
+      "30",
+      "62",
+      "126",
+      "254"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is de formule voor het berekenen van het aantal bruikbare hostadressen in een subnet?",
+    "options": [
+      "2^n",
+      "2^n - 1",
+      "2^n - 2",
+      "2^(32-n) - 2"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is het voordeel van VLSM (Variable Length Subnet Mask) ten opzichte van een vaste subnetmaskerlengte?",
+    "options": [
+      "VLSM is sneller te configureren",
+      "VLSM maakt efficiënter gebruik van het adresruimte",
+      "VLSM ondersteunt alleen IPv6",
+      "VLSM vereist minder routers"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: VLSM"
+  },
+  {
+    "question": "Wat is de eerste stap bij het toepassen van VLSM?",
+    "options": [
+      "Bepaal het kleinste subnet",
+      "Sorteer de subnetten van groot naar klein",
+      "Wijs alle adressen willekeurig toe",
+      "Bepaal eerst de broadcastadressen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: VLSM"
+  },
+  {
+    "question": "Welke prefix heeft een subnet dat minimaal 105 hosts moet ondersteunen?",
+    "options": [
+      "/25",
+      "/26",
+      "/27",
+      "/28"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 4: VLSM"
+  },
+  {
+    "question": "Wat is het doel van ARP (Address Resolution Protocol)?",
+    "options": [
+      "IP-adressen omzetten naar domeinnamen",
+      "MAC-adressen omzetten naar IP-adressen",
+      "IPv4-adressen omzetten naar MAC-adressen",
+      "IPv6-adressen toewijzen aan apparaten"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Welk commando toont de ARP-tabel op een Cisco IOS-router?",
+    "options": [
+      "show mac address-table",
+      "show ip arp",
+      "arp -a",
+      "show interfaces"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat doet een switch als een bestemmings-MAC-adres NIET in de MAC-adrestabel staat?",
+    "options": [
+      "Het frame wordt weggegooid",
+      "Het frame wordt teruggestuurd naar de bron",
+      "Het frame wordt geflooed naar alle poorten behalve de bronpoort",
+      "Het frame wordt naar de default gateway gestuurd"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Switching"
+  },
+  {
+    "question": "Wat is een broadcast domain?",
+    "options": [
+      "Een gebied waar devices om hetzelfde medium moeten concurreren",
+      "Het bereik van het netwerk waar een broadcast-frame ontvangen kan worden",
+      "Een logische groep switches verbonden via een trunk",
+      "De set van poorten op één switch"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Switching"
+  },
+  {
+    "question": "Wat is CSMA/CD en waar wordt het gebruikt?",
+    "options": [
+      "Collision Avoidance, gebruikt bij Wi-Fi (802.11)",
+      "Collision Detection, gebruikt bij bedraad Ethernet",
+      "Carrier Sense, gebruikt bij Bluetooth",
+      "Channel Access, gebruikt bij WiMAX"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Ethernet"
+  },
+  {
+    "question": "Wat is het verschil tussen half-duplex en full-duplex?",
+    "options": [
+      "Half-duplex gebruikt coaxkabel, full-duplex UTP",
+      "Half-duplex: slechts één kant kan tegelijk zenden; full-duplex: beide kanten kunnen gelijktijdig zenden en ontvangen",
+      "Half-duplex werkt op Layer 3, full-duplex op Layer 2",
+      "Half-duplex ondersteunt geen VLANs"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Ethernet"
+  },
+  {
+    "question": "Wat is het standaard VLAN op een Cisco-switch?",
+    "options": [
+      "VLAN 0",
+      "VLAN 1",
+      "VLAN 10",
+      "VLAN 1001"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Wat is een trunk-poort bij VLANs?",
+    "options": [
+      "Een poort die alleen verkeer van één VLAN doorlaat",
+      "Een poort die verkeer van meerdere VLANs kan doorzenden",
+      "Een poort speciaal voor management-verkeer",
+      "Een poort die enkel broadcast-frames doorstuurt"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Welk protocol wordt gebruikt voor VLAN-tagging op een trunk-link?",
+    "options": [
+      "IEEE 802.3",
+      "IEEE 802.1Q",
+      "IEEE 802.11",
+      "IEEE 802.15"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Frames van welk VLAN worden NIET getagd op een 802.1Q trunk?",
+    "options": [
+      "Data VLAN",
+      "Management VLAN",
+      "Native VLAN",
+      "Voice VLAN"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Wat is inter-VLAN routing?",
+    "options": [
+      "Het samenvoegen van twee VLANs tot één broadcast domain",
+      "Het doorsturen van verkeer tussen VLANs via een router of Layer 3 switch",
+      "Het automatisch toewijzen van VLANs aan poorten",
+      "Het versleutelen van VLAN-verkeer op een trunk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Wat is het verschil tussen Router-on-a-Stick en legacy inter-VLAN routing?",
+    "options": [
+      "Legacy gebruikt subinterfaces, Router-on-a-Stick gebruikt aparte fysieke interfaces",
+      "Router-on-a-Stick gebruikt één fysieke interface met subinterfaces voor elk VLAN; legacy gebruikt aparte fysieke interfaces per VLAN",
+      "Er is geen verschil",
+      "Router-on-a-Stick werkt alleen met IPv6"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Wat is DTP (Dynamic Trunking Protocol)?",
+    "options": [
+      "Een open standaard voor VLAN-tagging",
+      "Een Cisco-eigen protocol dat trunk-links automatisch onderhandelt",
+      "Een protocol voor het dynamisch toewijzen van IP-adressen",
+      "Een encryptieprotocol voor trunks"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Welke zes troubleshooting-methodieken worden behandeld voor netwerkproblemen?",
+    "options": [
+      "Top-Down, Bottom-Up, Divide-and-Conquer, Follow the Path, Compare Configs, Swap Components",
+      "OSI, TCP/IP, Ping, Traceroute, Wireshark, Netstat",
+      "Identify, Isolate, Fix, Test, Document, Escalate",
+      "Physical, Logical, Routing, Switching, Application, Security"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Bij welke troubleshooting-methodiek begin je op de fysieke laag en werk je omhoog?",
+    "options": [
+      "Top-Down",
+      "Divide-and-Conquer",
+      "Bottom-Up",
+      "Follow the Path"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Welk tool gebruik je om te zien welke TCP/UDP poorten openstaan en actieve netwerkverbindingen te bekijken?",
+    "options": [
+      "ping",
+      "traceroute",
+      "netstat",
+      "ipconfig"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Welk Cisco IOS-commando toont een beknopt overzicht van alle interfaces en hun status?",
+    "options": [
+      "show ip route",
+      "show ip interface brief",
+      "show cdp neighbors",
+      "show vlan"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP/UDP & Show Commands"
+  },
+  {
+    "question": "Wat is de rol van de transportlaag?",
+    "options": [
+      "Fysieke verbinding tussen apparaten verzorgen",
+      "Logische communicatie tussen applicaties op verschillende hosts regelen",
+      "IP-adressen toewijzen aan apparaten",
+      "DNS-verzoeken afhandelen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Transportlaag"
+  },
+  {
+    "question": "Wat is een socket?",
+    "options": [
+      "Een fysieke netwerkpoort op een switch",
+      "De combinatie van een IP-adres en een poortnummer",
+      "Een type encryptiealgoritme",
+      "Een MAC-adres-tabelitem"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Transportlaag"
+  },
+  {
+    "question": "Wat is de Three-Way Handshake bij TCP?",
+    "options": [
+      "Een proces waarbij drie routers samenwerken om een pakket te routeren",
+      "SYN, SYN-ACK, ACK: het opzetten van een TCP-verbinding",
+      "Een verificatiemechanisme voor SSH-verbindingen",
+      "Het sluiten van een TCP-sessie in drie stappen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP"
+  },
+  {
+    "question": "Wat is het verschil tussen TCP en UDP?",
+    "options": [
+      "TCP is sneller dan UDP",
+      "UDP is verbindingsgericht, TCP is verbindingsloos",
+      "TCP biedt betrouwbare, geordende levering; UDP is snel maar zonder garanties",
+      "TCP werkt op Layer 2, UDP op Layer 3"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 7: TCP/UDP"
+  },
+  {
+    "question": "Op welke TCP-poort werkt SSH?",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "80"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: SSH"
+  },
+  {
+    "question": "Waarom heeft Telnet een beveiligingsrisico?",
+    "options": [
+      "Telnet werkt niet via TCP",
+      "Telnet versleutelt login en data niet – alles wordt als plaintext verstuurd",
+      "Telnet ondersteunt geen authenticatie",
+      "Telnet werkt alleen op poort 80"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: SSH/Telnet"
+  },
+  {
+    "question": "Wat toont het commando 'show cdp neighbors'?",
+    "options": [
+      "De routing-tabel van de router",
+      "Informatie over direct verbonden Cisco-apparaten",
+      "De MAC-adrestabel van de switch",
+      "Alle actieve TCP-verbindingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Show Commands"
+  },
+  {
+    "question": "Wat betekent '!' bij een ping op Cisco IOS?",
+    "options": [
+      "Er is een fout opgetreden",
+      "Het pakket kon de bestemming niet bereiken",
+      "Er is een ICMP echo reply ontvangen (succesvolle ping)",
+      "De TTL is verlopen"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 7: Connectiviteit testen"
+  },
+  {
+    "question": "Wat is een MBR-partitietabel en wat is een beperking ervan?",
+    "options": [
+      "MBR ondersteunt maximaal 128 partities en schijven tot 8 TB",
+      "MBR ondersteunt maximaal 4 primaire partities en schijven tot 2 TB",
+      "MBR werkt alleen met GPT-schijven",
+      "MBR staat voor Modern Block Record en vereist UEFI"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Linux Storage"
+  },
+  {
+    "question": "Wat is het verschil tussen MBR en GPT?",
+    "options": [
+      "GPT ondersteunt maar 4 partities; MBR is flexibeler",
+      "MBR is modern en GPT is verouderd",
+      "GPT ondersteunt 128+ partities, schijven groter dan 2 TB en heeft een backup-partitietabel",
+      "GPT werkt alleen met Linux"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 5: Linux Storage"
+  },
+  {
+    "question": "Wat doet RAID 1?",
+    "options": [
+      "Data wordt gestriped over meerdere schijven voor snelheid",
+      "Data wordt gespiegeld (gemirrord) op twee schijven",
+      "Data wordt met pariteit verdeeld over drie of meer schijven",
+      "Data wordt gecomprimeerd en opgeslagen op één schijf"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: RAID"
+  },
+  {
+    "question": "Hoeveel schijven kan RAID 5 verliezen zonder dataverlies?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: RAID"
+  },
+  {
+    "question": "Wat is het verschil tussen RAID 5 en RAID 6?",
+    "options": [
+      "RAID 5 gebruikt mirroring, RAID 6 striping",
+      "RAID 6 heeft twee pariteitsblokken en kan twee schijven verliezen; RAID 5 maar één",
+      "RAID 6 is sneller dan RAID 5 voor schrijfoperaties",
+      "Er is geen verschil"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: RAID"
+  },
+  {
+    "question": "Waarom is RAID GEEN backup?",
+    "options": [
+      "RAID slaat data op in de cloud",
+      "RAID beschermt niet tegen per ongeluk verwijderde bestanden of filesystemcorruptie – dit wordt ook gerepliceerd",
+      "RAID werkt alleen met tape drives",
+      "RAID-systemen kunnen niet extern worden uitgelezen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: RAID"
+  },
+  {
+    "question": "Wat is LVM (Logical Volume Management)?",
+    "options": [
+      "Een RAID-type specifiek voor Linux",
+      "Een extra abstractielaag onder het filesystem waarmee volumes flexibel beheerd kunnen worden",
+      "Een tool om schijven te partitioneren in Windows",
+      "Een backup-systeem voor virtuele machines"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: LVM"
+  },
+  {
+    "question": "Wat is de volgorde bij het instellen van LVM?",
+    "options": [
+      "lvcreate → vgcreate → pvcreate → mkfs",
+      "mkfs → pvcreate → vgcreate → lvcreate",
+      "pvcreate → vgcreate → lvcreate → mkfs",
+      "vgcreate → pvcreate → mkfs → lvcreate"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 5: LVM"
+  },
+  {
+    "question": "Welk commando maakt een ext4-filesystem aan op /dev/sdb1?",
+    "options": [
+      "format -t ext4 /dev/sdb1",
+      "mkfs -t ext4 /dev/sdb1",
+      "fdisk ext4 /dev/sdb1",
+      "mount ext4 /dev/sdb1"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Filesystems"
+  },
+  {
+    "question": "Wat is het verschil tussen een journaling en non-journaling filesystem?",
+    "options": [
+      "Journaling filesystems zijn altijd sneller",
+      "Journaling legt wijzigingen bij in een logboek voor sneller herstel na uitval; non-journaling doet dit niet",
+      "Non-journaling filesystems ondersteunen grotere bestanden",
+      "Er is geen praktisch verschil"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Filesystems"
+  },
+  {
+    "question": "Wat is het bestand /etc/fstab voor?",
+    "options": [
+      "Gebruikersaccounts beheren",
+      "Automatisch mounten van filesystems bij opstarten",
+      "RAID-configuratie opslaan",
+      "SSH-sleutels bewaren"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Filesystems"
+  },
+  {
+    "question": "Wat zijn de drie backupniveaus?",
+    "options": [
+      "Volledig, deels, incrementeel",
+      "Full, Differential, Incremental",
+      "Level 0, Level 1, Level 2",
+      "Dagelijks, wekelijks, maandelijks"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Backup"
+  },
+  {
+    "question": "Welke standaard NTFS-permissies bestaan er in Windows? (meest volledig antwoord)",
+    "options": [
+      "Read, Write, Execute",
+      "Full Control, Modify, Read & Execute, Read, Write, List Folder Contents",
+      "Allow, Deny, Inherit",
+      "Admin, User, Guest"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat heeft prioriteit in Windows: Deny of Allow?",
+    "options": [
+      "Allow heeft altijd prioriteit",
+      "Ze hebben gelijke prioriteit",
+      "Deny heeft standaard prioriteit over Allow",
+      "Het hangt af van het VLAN"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is een SID (Security Identifier) in Windows?",
+    "options": [
+      "Een 32-bit nummer dat een netwerkpakket identificeert",
+      "Een uniek 48-bit nummer dat een object (gebruiker, groep) identificeert",
+      "De encryptiesleutel voor BitLocker",
+      "Het serienummer van een Windows-licentie"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat gebeurt er met NTFS-permissies als je een bestand kopieert naar een andere partitie?",
+    "options": [
+      "De originele permissies blijven behouden",
+      "Het bestand krijgt de permissies van de doeldirectory",
+      "Het bestand verliest alle permissies",
+      "Het bestand krijgt Full Control voor Everyone"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is het numerieke getal voor de Linux-permissie 'rwxr-xr-x'?",
+    "options": [
+      "644",
+      "755",
+      "777",
+      "700"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat doet het 'setuid'-bit op een uitvoerbaar bestand in Linux?",
+    "options": [
+      "Het bestand wordt uitgevoerd als de ingelogde gebruiker",
+      "Het bestand wordt uitgevoerd met de rechten van de eigenaar van het bestand",
+      "Het bestand kan alleen door root worden uitgevoerd",
+      "Het bestand wordt verborgen voor andere gebruikers"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat doet het sticky bit op een directory in Linux?",
+    "options": [
+      "Bestanden in de directory kunnen alleen worden verwijderd door root, de eigenaar van het bestand of de eigenaar van de directory",
+      "De directory is alleen leesbaar voor root",
+      "Bestanden in de directory worden automatisch geëncrypt",
+      "De directory kan niet worden verplaatst"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is SELinux?",
+    "options": [
+      "Een firewalltool voor Linux",
+      "Een implementatie van Mandatory Access Control (MAC) voor Linux",
+      "Een encryptietool voor harde schijven",
+      "Een backup-systeem voor Linux-servers"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Welke drie SELinux-modi zijn er?",
+    "options": [
+      "Active, Passive, Off",
+      "Enforcing, Permissive, Disabled",
+      "Locked, Unlocked, Debug",
+      "Strict, Targeted, Minimal"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Welk commando lees de huidige SELinux-status uit?",
+    "options": [
+      "selinux --status",
+      "setenforce status",
+      "sestatus",
+      "getenforce --info"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Wat doet 'setenforce 0'?",
+    "options": [
+      "SELinux wordt uitgeschakeld (disabled)",
+      "SELinux gaat naar Permissive modus (logt overtredingen maar blokkeert niet)",
+      "SELinux gaat naar Enforcing modus",
+      "Alle SELinux-policies worden verwijderd"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Welk commando past de SELinux file context handmatig aan?",
+    "options": [
+      "secontext",
+      "chcon",
+      "semanage",
+      "restorecon"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Wat is SSH (Secure Shell)?",
+    "options": [
+      "Een onversleuteld remote-loginprotocol op poort 23",
+      "Een versleuteld protocol voor remote login, bestandsoverdracht en tunneling op poort 22",
+      "Een protocol voor het delen van bestanden via SMB",
+      "Een webprotocol voor veilige HTTPS-verbindingen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Waar worden de publieke sleutels van geautoriseerde SSH-gebruikers opgeslagen op de server?",
+    "options": [
+      "/etc/ssh/sshd_config",
+      "~/.ssh/known_hosts",
+      "~/.ssh/authorized_keys",
+      "/etc/ssh/ssh_config"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Wat is SSH port forwarding?",
+    "options": [
+      "Het wijzigen van de standaard SSH-poort naar een andere poort",
+      "TCP-verkeer tunnelen over een versleuteld SSH-kanaal",
+      "Het doorsturen van SSH-verbindingen naar een andere server",
+      "Het blokkeren van Telnet-verkeer via SSH"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Welk commando genereert een SSH-sleutelpaar?",
+    "options": [
+      "ssh-copy-id",
+      "ssh-agent",
+      "ssh-keygen",
+      "ssh-add"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Wat is PAM (Pluggable Authentication Modules)?",
+    "options": [
+      "Een encryptiestandaard voor SSH-verbindingen",
+      "Een authenticatieframework dat een laag vormt tussen gebruikers/applicaties en de authenticatiemethode",
+      "Een firewall-module voor Linux",
+      "Een tool voor het beheren van Linux-gebruikers"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: PAM"
+  },
+  {
+    "question": "Waar staan de PAM-configuratiebestanden per programma?",
+    "options": [
+      "/etc/security/",
+      "/etc/pam.conf",
+      "/etc/pam.d/<program_name>",
+      "/usr/lib/pam/"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 6: PAM"
+  },
+  {
+    "question": "Wat is HTTP en op welke poort werkt het standaard?",
+    "options": [
+      "HyperText Transfer Protocol op TCP-poort 443",
+      "HyperText Transfer Protocol op TCP-poort 80",
+      "Host Transfer Protocol op UDP-poort 80",
+      "HyperText Transmission Protocol op TCP-poort 8080"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat betekent HTTP-statuscode 404?",
+    "options": [
+      "Succes – de pagina is gevonden",
+      "Redirect – de pagina is verplaatst",
+      "Client error – de gevraagde resource is niet gevonden",
+      "Server error – interne serverfout"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Welke HTTP-statuscoderange geeft aan dat alles succesvol is verlopen?",
+    "options": [
+      "1xx",
+      "2xx",
+      "3xx",
+      "4xx"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat is een reverse proxy?",
+    "options": [
+      "Een proxy die verkeer van buiten naar binnen afhandelt voor webservers",
+      "Een proxy die intern gebruikers naar buiten stuurt",
+      "Een DNS-server die domeinnamen omzet",
+      "Een load balancer zonder cachingfunctie"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Welk commando installeert de Apache webserver op Rocky Linux?",
+    "options": [
+      "apt install apache2",
+      "yum install nginx",
+      "dnf install httpd",
+      "rpm -i apache"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat is SMB (Server Message Block)?",
+    "options": [
+      "Een protocol voor versleutelde SSH-verbindingen",
+      "Een protocol voor gedeelde toegang tot bestanden en printers in een netwerk",
+      "Een mailprotocol voor het versturen van berichten",
+      "Een DNS-protocol voor naamresolutie"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Op welke TCP-poort werkt SMB in moderne Windows-versies?",
+    "options": [
+      "139",
+      "143",
+      "445",
+      "137"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Wat is Samba?",
+    "options": [
+      "Een Windows-only bestandsdelingssoftware",
+      "Een reverse-engineered open-source implementatie van SMB voor Linux/Unix",
+      "Een RAID-managementtool voor Linux",
+      "Een Active Directory-alternatief voor Windows"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Wat is de hoofdconfiguratiefile van Samba?",
+    "options": [
+      "/etc/smb/config",
+      "/etc/samba/samba.conf",
+      "/etc/samba/smb.conf",
+      "/usr/share/samba/smb.conf"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Waarom werkt Samba niet 'out of the box' met SELinux?",
+    "options": [
+      "Samba ondersteunt SELinux niet",
+      "SELinux blokkeert Samba-verkeer op de firewall",
+      "SELinux weet niet op voorhand welke directories gedeeld worden, dus de juiste context moet handmatig worden ingesteld",
+      "Samba vereist dat SELinux uitgeschakeld is"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 7: SMB & SELinux"
+  },
+  {
+    "question": "Welk commando stel je de SELinux-context in voor een Samba-share directory?",
+    "options": [
+      "semanage samba_share /path",
+      "chcon -t samba_share_t /path",
+      "restorecon -t smb /path",
+      "setfacl --samba /path"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB & SELinux"
+  },
+  {
+    "question": "Wat is het AGDLP-principe in Windows?",
+    "options": [
+      "Account, Global group, Domain Local group, Permissions: gebruikers in global groups plaatsen en die in domain local groups voor permissies",
+      "Account, Group, Domain, Logon, Policy",
+      "Admin Group Directory Local Permissions",
+      "Een methode om SELinux-policies in Windows toe te passen"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 6: Windows Permissies"
+  },
+  {
+    "question": "Wat is Copy on Write (CoW) in de context van filesystems?",
+    "options": [
+      "Een methode waarbij bestanden worden gekopieerd bij elke schrijfoperatie naar tape",
+      "Een techniek waarbij gewijzigde data in nieuwe blokken wordt geschreven zonder de originelen te overschrijven, waarna de directory wordt bijgewerkt",
+      "Een RAID-techniek om data te spiegelen",
+      "Een backup-strategie waarbij alleen gewijzigde bestanden worden gekopieerd"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Filesystems"
+  },
+  {
+    "question": "Welke drie SMB-daemons draaien op een Linux-Samba-server?",
+    "options": [
+      "httpd, smbd, ftpd",
+      "smbd, nmbd, winbindd",
+      "samba, netbios, winbind",
+      "smbd, sssd, nmbd"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Wat doet het commando 'testparm' bij Samba?",
+    "options": [
+      "Het test de netwerkverbinding met een SMB-server",
+      "Het controleert /etc/samba/smb.conf op fouten en toont de resulterende shares",
+      "Het test of Samba-poorten open zijn in de firewall",
+      "Het verifieert de Samba-gebruikersdatabase"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Welke vier basisoperaties voert de netwerklaag (Layer 3) uit?",
+    "options": [
+      "Encapsulation, Routing, Switching, Bridging",
+      "Addressing, Encapsulation, Routing, De-encapsulation",
+      "Fragmentatie, Compressie, Routing, Checksums",
+      "ARP, DNS, DHCP, NAT"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is de functie van het TTL-veld in een IPv4-pakketheader?",
+    "options": [
+      "Het geeft de prioriteit van het pakket aan",
+      "Het beperkt de levensduur van een pakket om oneindige loops te voorkomen",
+      "Het identificeert het bovenliggende protocol (bijv. TCP)",
+      "Het geeft de totale pakketgrootte aan"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat geeft het 'Protocol'-veld in een IPv4-pakketheader aan?",
+    "options": [
+      "De versie van het IP-protocol",
+      "Het bovenliggende laagprotocol dat in het pakket zit, zoals TCP of UDP",
+      "De prioriteit van het pakket",
+      "De levensduur van het pakket"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is de prefix length (/24) en hoe wordt deze bepaald?",
+    "options": [
+      "Het aantal bits in het hostgedeelte van het adres",
+      "Het aantal bits dat op 1 staat in het subnetmasker, geschreven met een schuine streep",
+      "De klasse van het IP-adres",
+      "Het aantal subnetten in een netwerk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat zijn de drie privé IPv4-adresbereiken?",
+    "options": [
+      "10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16",
+      "10.0.0.0/8, 172.0.0.0/8, 192.168.0.0/24",
+      "10.0.0.0/16, 172.16.0.0/16, 192.168.0.0/16",
+      "127.0.0.0/8, 169.254.0.0/16, 192.0.2.0/24"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat zijn TEST-NET adressen (192.0.2.0/24) voor?",
+    "options": [
+      "Interne bedrijfsnetwerken",
+      "Testdoeleinden, documentatie en netwerkcursussen – niet voor productieverkeer",
+      "Loopback-tests op de lokale machine",
+      "Automatisch toegewezen adressen bij geen DHCP"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is de default gateway en waarvoor wordt deze gebruikt?",
+    "options": [
+      "Het IP-adres van de DNS-server in het netwerk",
+      "Het IP-adres van de routerinterface op hetzelfde netwerk, gebruikt om pakketten naar andere netwerken te sturen",
+      "Het broadcast-adres van het lokale subnet",
+      "Het eerste bruikbare hostadres in een subnet"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat zijn de drie redenen om een netwerk te subnetten?",
+    "options": [
+      "Snelheid, veiligheid, kosten",
+      "Locatie, groep/functie, apparaattype",
+      "Routing, switching, bridging",
+      "IPv4, IPv6, dual-stack"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is classful addressing?",
+    "options": [
+      "Een moderne methode waarbij het subnetmasker vrij gekozen kan worden",
+      "Een verouderd systeem waarbij adressen in vaste klassen (A, B, C, D, E) zijn ingedeeld op basis van de eerste bits",
+      "Een methode om IPv6-adressen in te delen",
+      "De CIDR-notatie voor subnetmaskers"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Welk binair getal hoort bij het decimale getal 152?",
+    "options": [
+      "1001 0101",
+      "1001 1000",
+      "1010 1000",
+      "1000 1001"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Hoeveel subnetten levert het toevoegen van 2 subnetbits op bij classless subnetting?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is een PDU (Protocol Data Unit) en hoe heet het op de transportlaag?",
+    "options": [
+      "De vorm van data op een bepaalde laag; op de transportlaag heet het een Frame",
+      "De vorm van data op een bepaalde laag; op de transportlaag heet het een Segment",
+      "Een IP-pakket op de netwerklaag",
+      "Een bit op de fysieke laag"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Hoe worden PDU's op de verschillende lagen van het OSI-model genoemd?",
+    "options": [
+      "Data, Packet, Frame, Bit, Segment",
+      "Data (applicatie), Segment (transport), Pakket (netwerk), Frame (datalink), Bit (fysiek)",
+      "Frame (applicatie), Segment (transport), Pakket (netwerk), Bit (fysiek)",
+      "Alle lagen gebruiken de term 'pakket'"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat is het verschil tussen een MAC-adres en een IP-adres?",
+    "options": [
+      "MAC-adres is 32 bits, IP-adres is 48 bits",
+      "MAC-adres is fysiek en verandert niet; IP-adres is logisch en gebaseerd op locatie",
+      "IP-adres is fysiek ingebrand; MAC-adres is door de beheerder toegewezen",
+      "Er is geen verschil, beide identificeren een apparaat uniek"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat zijn de twee sublagen van de datalinklaag (Layer 2)?",
+    "options": [
+      "Physical en Logical",
+      "LLC (Logical Link Control) en MAC (Media Access Control)",
+      "Transport en Network",
+      "Ethernet en Wi-Fi"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat is de minimale en maximale grootte van een Ethernet-frame?",
+    "options": [
+      "32 bytes minimaal, 1500 bytes maximaal",
+      "64 bytes minimaal, 1518 bytes maximaal",
+      "48 bytes minimaal, 2048 bytes maximaal",
+      "128 bytes minimaal, 9000 bytes maximaal"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat is een 'runt frame' in Ethernet?",
+    "options": [
+      "Een frame groter dan 1518 bytes",
+      "Een fragment of frame kleiner dan 64 bytes (ook wel 'collision fragment')",
+      "Een frame met een FCS-fout",
+      "Een frame zonder VLAN-tag"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Met welke hexadecimale waarde begint een multicast MAC-adres?",
+    "options": [
+      "FF-FF-FF-FF-FF-FF",
+      "00-00-5E",
+      "01-00-5E",
+      "00-01-00"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat is het broadcast MAC-adres in Ethernet?",
+    "options": [
+      "00-00-00-00-00-00",
+      "01-00-5E-00-00-00",
+      "FF-FF-FF-FF-FF-FF",
+      "00-00-FF-FF-FF-FF"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Hoe leert een switch MAC-adressen en hoe lang worden ze bewaard?",
+    "options": [
+      "De switch leert adressen uit het bestemmingsadres; timeout is 10 minuten",
+      "De switch leert adressen uit het bronpadres; de timeout is standaard 5 minuten",
+      "MAC-adressen worden handmatig ingevoerd; ze verlopen nooit",
+      "De switch vraagt MAC-adressen op via ARP; timeout is 1 minuut"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Switching"
+  },
+  {
+    "question": "Wat is een collision domain?",
+    "options": [
+      "Het bereik van een broadcast-frame",
+      "Een segment waar apparaten moeten concurreren om hetzelfde medium te gebruiken",
+      "Een VLAN-groep van switches",
+      "De maximale afstand tussen twee switches"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Switching"
+  },
+  {
+    "question": "Welk type UTP-kabel gebruik je om een host aan een switch te koppelen?",
+    "options": [
+      "Crossover-kabel",
+      "Rollover-kabel",
+      "Straight-through kabel",
+      "Coaxkabel"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Waarvoor wordt een rollover-kabel (consolekabel) gebruikt?",
+    "options": [
+      "Om twee switches direct te verbinden",
+      "Om een host via de seriële poort op de consolepoort van een router of switch aan te sluiten",
+      "Om fiber en UTP te combineren",
+      "Om twee routers direct te verbinden"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat is CSMA/CA en waar wordt het gebruikt?",
+    "options": [
+      "Collision Avoidance, gebruikt bij bedraad Ethernet (802.3)",
+      "Collision Avoidance, gebruikt bij draadloos netwerken (802.11 Wi-Fi)",
+      "Collision Detection, gebruikt bij Bluetooth",
+      "Carrier Sense, gebruikt bij coaxkabel netwerken"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat zijn voordelen van fiber optic kabelverbindingen ten opzichte van UTP?",
+    "options": [
+      "Goedkoper en makkelijker te installeren",
+      "Langere afstanden, minder attenuatie en immuun voor EMI/RFI",
+      "Hogere maximale kabellengte van 100 meter",
+      "Ondersteunt geen full-duplex"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat zijn de normale VLAN-range nummers op een Cisco Catalyst-switch?",
+    "options": [
+      "VLAN 1 t/m 4094",
+      "VLAN 1 t/m 1005 (opgeslagen in vlan.dat in flash)",
+      "VLAN 1006 t/m 4096 (opgeslagen in de running-config)",
+      "VLAN 1 t/m 255"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Waar worden extended range VLANs (1006-4096) opgeslagen op een Cisco-switch?",
+    "options": [
+      "In vlan.dat op flash",
+      "In de running-configuration (en via copy naar NVRAM)",
+      "In het BIOS van de switch",
+      "Op een externe TFTP-server"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Hoe verwijder je de VLAN-configuratie volledig van een Cisco-switch?",
+    "options": [
+      "no vlan all",
+      "erase flash:vlan.dat gevolgd door een reload",
+      "switchport mode access vlan 1",
+      "delete running-config"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Wat is een SVI (Switched Virtual Interface) bij een Layer 3-switch?",
+    "options": [
+      "Een fysieke poort die als routerpoort fungeert",
+      "Een virtuele interface per VLAN waarmee de Layer 3-switch inter-VLAN routing kan uitvoeren",
+      "Een aparte management-interface voor SSH-toegang",
+      "Een trunk-interface op een Layer 2-switch"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Welke DTP-combinatie resulteert in een access-link (geen trunk)?",
+    "options": [
+      "Dynamic Auto + Dynamic Auto",
+      "Dynamic Auto + Trunk",
+      "Dynamic Desirable + Trunk",
+      "Trunk + Trunk"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Welke troubleshooting-methodiek begin je bij de applicatielaag en ga je naar beneden?",
+    "options": [
+      "Bottom-Up",
+      "Divide-and-Conquer",
+      "Top-Down",
+      "Follow the Path"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Wat doet de Divide-and-Conquer troubleshooting-methodiek?",
+    "options": [
+      "Begint bij de fysieke laag en werkt omhoog",
+      "Begint bij de applicatielaag en werkt omlaag",
+      "Splitst het netwerk op in kleinere delen om het probleemgebied te isoleren",
+      "Vergelijkt de huidige configuratie met een bekende goede configuratie"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Wat is de 'Follow the Path'-methodiek?",
+    "options": [
+      "Het vervangen van hardwarecomponenten om de defecte te vinden",
+      "Het volgen van het datapad door het netwerk om het probleemgebied te lokaliseren",
+      "Het vergelijken van configuraties van twee routers",
+      "Het stap voor stap doorlopen van alle OSI-lagen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Waarvoor gebruik je traceroute/tracert bij troubleshooting?",
+    "options": [
+      "Om actieve TCP-verbindingen te bekijken",
+      "Om de route van pakketten te volgen en te zien waar de verbinding stopt",
+      "Om de MAC-adrestabel van een switch te bekijken",
+      "Om DNS-queries te testen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Wat is Wireshark en wanneer gebruik je het?",
+    "options": [
+      "Een ping-tool voor het testen van basisverbindingen",
+      "Een netwerkprotocol-analysetool voor het vastleggen en analyseren van netwerkverkeer, meestal bij complexere storingen",
+      "Een tool om VLAN-configuraties te vergelijken",
+      "Een tool om routing-tabellen te bekijken"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Welk Cisco IOS show-commando toont de Layer 3 routing-tabel?",
+    "options": [
+      "show interfaces",
+      "show ip interface brief",
+      "show ip route",
+      "show vlan"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Wat zijn de bekende poortnummers (well-known ports) voor FTP, SSH, Telnet, HTTP en HTTPS?",
+    "options": [
+      "FTP=20/21, SSH=22, Telnet=23, HTTP=80, HTTPS=443",
+      "FTP=21, SSH=22, Telnet=25, HTTP=8080, HTTPS=443",
+      "FTP=22, SSH=23, Telnet=21, HTTP=80, HTTPS=8443",
+      "FTP=20, SSH=22, Telnet=23, HTTP=443, HTTPS=80"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 7: Transportlaag"
+  },
+  {
+    "question": "Wat zijn de drie port number groups en hun ranges?",
+    "options": [
+      "Well-known (0-1023), Registered (1024-49151), Dynamic/Private (49152-65535)",
+      "System (0-255), User (256-32767), Dynamic (32768-65535)",
+      "Reserved (0-1023), Standard (1024-9999), Ephemeral (10000-65535)",
+      "Low (0-1023), Medium (1024-32767), High (32768-65535)"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 7: Transportlaag"
+  },
+  {
+    "question": "Wat is TCP flow control en hoe werkt het?",
+    "options": [
+      "Flow control versleutelt TCP-verbindingen",
+      "Flow control regelt de hoeveelheid data die verstuurd kan worden vóór een bevestiging via de window size",
+      "Flow control voorkomt dat pakketten in de verkeerde volgorde aankomen",
+      "Flow control verdeelt TCP-segmenten over meerdere verbindingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP"
+  },
+  {
+    "question": "Wat is de MSS (Maximum Segment Size) bij TCP?",
+    "options": [
+      "De maximale grootte van een TCP-header",
+      "De maximale hoeveelheid data die het bestemmingsapparaat per segment kan ontvangen",
+      "De maximale window size van een TCP-sessie",
+      "Het maximale aantal TCP-verbindingen tegelijk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP"
+  },
+  {
+    "question": "Wat is een kenmerk van UDP als 'stateless protocol'?",
+    "options": [
+      "UDP houdt de toestand van een sessie bij via sequence nummers",
+      "UDP vereist een three-way handshake voor elke verbinding",
+      "Noch zender noch ontvanger hoeft de sessiestatus bij te houden; betrouwbaarheid is de verantwoordelijkheid van de applicatie",
+      "UDP garandeert geordende aflevering van datagrammen"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 7: TCP/UDP"
+  },
+  {
+    "question": "Welke toepassingen gebruiken typisch UDP in plaats van TCP?",
+    "options": [
+      "E-mail en bestandsoverdracht",
+      "Streaming video, DNS-queries en VoIP waarbij snelheid belangrijker is dan garantie",
+      "Webpagina's ophalen (HTTP) en SSH",
+      "Grote bestandsdownloads en databaseverbindingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP/UDP"
+  },
+  {
+    "question": "Wat zijn de drie primaire functies van de presentatielaag (Layer 6)?",
+    "options": [
+      "Routing, adressering, fragmentatie",
+      "Formatteren/presenteren van data, compressie en encryptie/decryptie",
+      "Sessie opzetten, bijhouden en afsluiten",
+      "Foutdetectie, flow control en toegangsbeheer"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP/UDP"
+  },
+  {
+    "question": "Wat is de functie van de sessielaag (Layer 5)?",
+    "options": [
+      "Het versleutelen van data voor veilige overdracht",
+      "Dialogen aanmaken en bijhouden tussen bron- en bestemmingsapplicaties",
+      "IP-adressen omzetten naar MAC-adressen",
+      "Pakketten routeren tussen netwerken"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP/UDP"
+  },
+  {
+    "question": "Welk Cisco IOS-commando toont de huidige configuratie die actief in het geheugen staat?",
+    "options": [
+      "show startup-config",
+      "show running-config",
+      "show version",
+      "show flash"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Show Commands"
+  },
+  {
+    "question": "Wat toont het commando 'show version' op een Cisco-apparaat?",
+    "options": [
+      "De routing-tabel",
+      "Geheugen, interfaces, licenties en IOS-versie van het apparaat",
+      "De ARP-tabel",
+      "Alle actieve VLANs"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Show Commands"
+  },
+  {
+    "question": "Wat geeft '.' aan bij een extended ping op Cisco IOS?",
+    "options": [
+      "Ontvangst van een ICMP echo reply",
+      "De TTL is verlopen terwijl gewacht werd op een ICMP echo reply",
+      "Een ICMP unreachable bericht is ontvangen",
+      "De verbinding is succesvol opgezet"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Connectiviteit testen"
+  },
+  {
+    "question": "Wat is Round Trip Time (RTT) bij traceroute?",
+    "options": [
+      "Het aantal hops naar de bestemming",
+      "De tijd die een pakket nodig heeft om van bron naar bestemming en terug te reizen",
+      "De TTL-waarde die verminderd wordt per hop",
+      "De maximale venstergrootte van TCP"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Connectiviteit testen"
+  },
+  {
+    "question": "Wat zijn major- en minor-nummers van Linux-devices?",
+    "options": [
+      "Major = type device/driver (kernel-module), minor = specifieke instantie van dat device",
+      "Major = partitienummer, minor = schijfnummer",
+      "Major = lees/schrijf permissies, minor = eigenaarsnummer",
+      "Major = RAID-level, minor = aantal schijven"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 5: Linux Storage"
+  },
+  {
+    "question": "Wat is JBOD (Just a Bunch of Disks)?",
+    "options": [
+      "Een RAID-level met spiegeling van alle schijven",
+      "Eén filesystem dat over meerdere schijven is uitgespreid zonder redundantie – als één schijf uitvalt is alles weg",
+      "Een type RAID met pariteit over drie schijven",
+      "Een LVM-configuratie zonder volume groups"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: RAID"
+  },
+  {
+    "question": "Wat is RAID 0 en wat is het grote nadeel?",
+    "options": [
+      "RAID 0 is striping over meerdere schijven voor snelheid; nadeel is dat bij uitval van één schijf alle data verloren gaat",
+      "RAID 0 is mirroring; nadeel is dat het duur is",
+      "RAID 0 is pariteitsopslag; nadeel is hoge CPU-belasting",
+      "RAID 0 heeft geen nadelen"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 5: RAID"
+  },
+  {
+    "question": "Wat zijn de voordelen van RAID 10 (1+0)?",
+    "options": [
+      "Goedkoop en bootable zonder speciale controller",
+      "Zowel grote als kleine I/O-opdrachten zijn snel; meerdere schijfuitvallen zijn mogelijk zolang niet beide schijven van dezelfde mirror-set falen",
+      "Minimaal 3 schijven nodig en hoge CPU-belasting",
+      "Maximale opslagruimte gelijk aan de som van alle schijven"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: RAID"
+  },
+  {
+    "question": "Welk Linux-commando gebruik je om een nieuw RAID-array aan te maken en te beheren?",
+    "options": [
+      "lvcreate",
+      "mdadm",
+      "fdisk",
+      "vgcreate"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: RAID"
+  },
+  {
+    "question": "Wat is het verschil tussen een hard link en een symbolic link in Linux?",
+    "options": [
+      "Hard link: extra directory-entry naar hetzelfde inode binnen één volume; symbolic link: verwijzing op naam die over volumes heen kan gaan",
+      "Hard link kan over volumes heen gaan; symbolic link alleen binnen hetzelfde volume",
+      "Beide types werken hetzelfde, alleen de naam verschilt",
+      "Hard links werken alleen voor directories, symbolic links voor bestanden"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 5: Filesystems"
+  },
+  {
+    "question": "Wat is een LVM-snapshot?",
+    "options": [
+      "Een volledige kopie van een logical volume op een tweede schijf",
+      "Een momentopname van een logical volume via Copy-on-Write, zonder extra opslagkosten op het moment van aanmaken",
+      "Een incremental backup van een volume group",
+      "Een read-only kopie van een physical volume"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: LVM"
+  },
+  {
+    "question": "Welke twee commando's gebruik je om een logical volume en het bijbehorende ext4-filesystem te vergroten?",
+    "options": [
+      "vgextend en vgdisplay",
+      "pvcreate en vgcreate",
+      "lvextend en resize2fs",
+      "lvcreate en mkfs"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 5: LVM"
+  },
+  {
+    "question": "Wat doet het backup-commando 'dump' in Linux?",
+    "options": [
+      "Maakt een backup op bestandsniveau, ook over meerdere filesystems heen",
+      "Maakt een backup op inode-niveau van het gehele filesystem; kan geen gedeeltelijke backups van een filesystem maken",
+      "Synchroniseert bestanden tussen twee systemen via SSH",
+      "Maakt een byte-voor-byte kopie van een schijf of partitie"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Backup"
+  },
+  {
+    "question": "Wat zijn de voordelen van 'tar' als backup-tool ten opzichte van 'dump'?",
+    "options": [
+      "tar werkt op inode-niveau en is daardoor sneller",
+      "tar werkt op bestandsniveau, kan backups maken over meerdere filesystems en ondersteunt compressie (gzip, bzip2, xz)",
+      "tar ondersteunt geen incrementele backups",
+      "tar is alleen geschikt voor tape-backups"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Backup"
+  },
+  {
+    "question": "Wat is het verschil tussen een differential en een incremental backup?",
+    "options": [
+      "Differential = alle wijzigingen t.o.v. de laatste full backup; incremental = alle wijzigingen t.o.v. de laatste full óf incremental backup",
+      "Differential = alle wijzigingen t.o.v. gisteren; incremental = alle wijzigingen t.o.v. vorige week",
+      "Er is geen verschil",
+      "Differential = volledige backup; incremental = gedeeltelijke backup"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 5: Backup"
+  },
+  {
+    "question": "Welk commando toont alle beschikbare blokdevices en hun partitiestructuur in Linux?",
+    "options": [
+      "fdisk -l",
+      "lsblk",
+      "df -h",
+      "parted --list"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Linux Storage"
+  },
+  {
+    "question": "Wat is het verschil tussen share permissions en NTFS permissions bij netwerktoegang?",
+    "options": [
+      "Share permissions zijn altijd strenger dan NTFS permissions",
+      "Bij netwerktoegang geldt de meest restrictieve combinatie van share permissions en NTFS permissions",
+      "NTFS permissions gelden alleen lokaal; share permissions gelden altijd",
+      "Ze zijn identiek en het maakt niet uit welke je instelt"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat zijn 'cumulative permissions' in Windows?",
+    "options": [
+      "De laagste permissie van alle groepen wint",
+      "Permissies worden opgeteld: als een gebruiker via meerdere groepen permissies heeft, gelden alle Allow-permissies samen",
+      "Alleen de rechtstreeks toegewezen permissies tellen mee",
+      "Inherited permissions overschrijven altijd expliciete permissies"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is een ACE (Access Control Entry) in Windows?",
+    "options": [
+      "Het totale overzicht van alle permissies op een object",
+      "Een individuele regel in een ACL die aangeeft welke toegang een specifieke principal (gebruiker/groep) heeft",
+      "De beveiligingsidentificator van een gebruiker",
+      "Een groepsbeleidsobject in Active Directory"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is een GUID in Windows?",
+    "options": [
+      "Een 48-bit nummer dat een netwerkadapter identificeert",
+      "Een 128-bit globaal uniek nummer dat objecten in Active Directory identificeert",
+      "De Windows-licentiecodes voor activering",
+      "Een hash van het gebruikerswachtwoord"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat gebeurt er met NTFS-permissies als je een bestand verplaatst BINNEN dezelfde partitie?",
+    "options": [
+      "Het bestand krijgt de permissies van de doeldirectory",
+      "De originele permissies blijven behouden",
+      "Het bestand verliest alle permissies",
+      "Alleen inherited permissions blijven behouden"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Welke commando's gebruik je in Linux om respectievelijk de eigenaar, de groep en de permissies van een bestand te wijzigen?",
+    "options": [
+      "chown, chgrp, chmod",
+      "chmod, chown, chgrp",
+      "setuid, setgid, sticky",
+      "ls, stat, file"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat doet het setgid-bit op een directory in Linux?",
+    "options": [
+      "Bestanden in de directory kunnen alleen door root worden verwijderd",
+      "Nieuwe bestanden in de directory krijgen de groep van de directory in plaats van de standaardgroep van de gebruiker",
+      "De directory kan alleen worden gelezen door de groepseigenaar",
+      "Uitvoerbare bestanden draaien met root-rechten"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is Kerberos en hoe verhoudt het zich tot PAM?",
+    "options": [
+      "Kerberos is een ACL-framework; PAM is een specifiek authenticatieprotocol",
+      "Kerberos is een specifieke authenticatiemethode die een derde partij (KDC) gebruikt; PAM is een authenticatieframework dat Kerberos kan aanroepen",
+      "Ze zijn identiek en uitwisselbaar",
+      "PAM is verouderd en Kerberos heeft het volledig vervangen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is het verschil tussen SELinux 'targeted' en 'strict' policy?",
+    "options": [
+      "Targeted beschermt alleen een subset van kwetsbare resources; strict beschermt alle processen",
+      "Targeted blokkeert alles; strict logt alleen maar blokkeert niet",
+      "Strict is de standaard op Rocky Linux; targeted is optioneel",
+      "Er is geen functioneel verschil"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Welk commando bekijk je de SELinux-context van bestanden?",
+    "options": [
+      "ls -la",
+      "ls -Z",
+      "stat --selinux",
+      "secontext -l"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Wat doet het commando 'restorecon' bij SELinux?",
+    "options": [
+      "Het stelt een nieuwe SELinux-context in op basis van gebruikersinvoer",
+      "Het herstelt de SELinux file context naar de standaardwaarde zoals gedefinieerd in de policy",
+      "Het herstart de SELinux-daemon",
+      "Het converteert permissive naar enforcing modus"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Waarvoor gebruik je 'audit2allow' bij SELinux?",
+    "options": [
+      "Om SELinux volledig uit te schakelen",
+      "Om SELinux audit-logregels te vertalen naar suggesties voor aangepaste policies",
+      "Om bestanden te versleutelen met SELinux-keys",
+      "Om booleans in te stellen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Welk bestand op de SSH-client slaat de public keys op van eerder verbonden servers?",
+    "options": [
+      "~/.ssh/authorized_keys",
+      "~/.ssh/known_hosts",
+      "/etc/ssh/ssh_config",
+      "~/.ssh/id_ecdsa.pub"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Welk configuratiebestand regelt de OpenSSH server-instellingen (zoals poort, authenticatiemethodes)?",
+    "options": [
+      "~/.ssh/config",
+      "/etc/ssh/ssh_config",
+      "/etc/ssh/sshd_config",
+      "/etc/openssh/server.conf"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Wat doet de ssh-agent?",
+    "options": [
+      "De ssh-agent genereert nieuwe sleutelparen",
+      "De ssh-agent slaat gedecodeerde privésleutels in cache op zodat je niet steeds je passphrase hoeft in te voeren",
+      "De ssh-agent versleutelt het verkeer over de SSH-verbinding",
+      "De ssh-agent beheert de known_hosts lijst"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Welke commando's gebruik je voor bestandsoverdracht via SSH?",
+    "options": [
+      "ftp en sftp",
+      "scp en sftp",
+      "rsync en scp alleen",
+      "wget en curl"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Wat zijn de vier PAM module-types?",
+    "options": [
+      "login, logout, su, sudo",
+      "auth, account, session, password",
+      "required, requisite, sufficient, optional",
+      "pam_unix, pam_env, pam_limits, pam_deny"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: PAM"
+  },
+  {
+    "question": "Wat is het verschil tussen de PAM control-flags 'required' en 'requisite'?",
+    "options": [
+      "Ze zijn identiek in werking",
+      "Required: falen stopt de module-stack NIET direct (rest wordt nog verwerkt, maar authenticatie mislukt uiteindelijk); requisite: falen stopt de stack direct",
+      "Requisite: falen stopt de module-stack niet; required: stopt direct",
+      "Required is alleen voor auth modules; requisite voor account modules"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: PAM"
+  },
+  {
+    "question": "Wat betekent dat HTTP 'stateless' is?",
+    "options": [
+      "HTTP versleutelt geen verbindingen",
+      "De HTTP-server hoeft geen informatie over eerdere requests of gebruikers bij te houden; elke request is onafhankelijk",
+      "HTTP heeft geen sessie-mechanisme",
+      "HTTP gebruikt UDP in plaats van TCP"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat introduceerde HTTP 1.1 t.o.v. HTTP 1.0?",
+    "options": [
+      "HTTP 1.1 introduceerde encryptie (HTTPS)",
+      "HTTP 1.1 introduceerde keep-alive: hergebruik van TCP-verbindingen, wat latency vermindert",
+      "HTTP 1.1 introduceerde de GET-methode",
+      "HTTP 1.1 introduceerde virtual hosting"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Welke HTTP-methoden worden behandeld in de slides?",
+    "options": [
+      "GET, POST, DELETE",
+      "SEND, RECEIVE, DELETE",
+      "GET, PUT, PATCH, HEAD",
+      "FETCH, PUSH, PULL"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Op welke poort werkt HTTPS standaard?",
+    "options": [
+      "80",
+      "8080",
+      "443",
+      "8443"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat zijn de drie authenticatiemethoden voor HTTP, van slechtst naar best?",
+    "options": [
+      "Digest, Basic, Client certificaten",
+      "Basic (slechtst), Digest (beter), Client certificaten (best)",
+      "Client certificaten (slechtst), Basic (beter), Digest (best)",
+      "Basic, Client certificaten, Digest"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat zijn Virtual Hosts in Apache en waarvoor worden ze gebruikt?",
+    "options": [
+      "Virtuele machines die Apache draaien",
+      "Een mechanisme waarbij één webserver meerdere websites met verschillende domeinnamen kan hosten via Host Headers",
+      "Load balancers die verkeer verdelen over meerdere Apache-servers",
+      "Aparte Apache-instanties voor elke poort"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "In welke directory staan de Apache virtuele host configuratiebestanden op Rocky Linux?",
+    "options": [
+      "/etc/apache2/sites-available/",
+      "/etc/httpd/conf.d/",
+      "/var/www/html/",
+      "/usr/share/httpd/"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat doet 'systemctl enable --now httpd'?",
+    "options": [
+      "Installeert Apache",
+      "Start Apache én zorgt dat het automatisch start bij opstarten (in één commando)",
+      "Herlaadt de Apache-configuratie zonder te herstarten",
+      "Toont de status van de Apache-service"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Op welke poorten werkt SMB via NetBIOS (de oudere methode)?",
+    "options": [
+      "TCP 445 en UDP 443",
+      "UDP 137, UDP 138, TCP 137, TCP 139",
+      "TCP 139 en TCP 445",
+      "UDP 53 en TCP 139"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Wat zijn de verbeteringen in SMB 3.0 ten opzichte van eerdere versies?",
+    "options": [
+      "SMB 3.0 introduceerde pipelining",
+      "SMB 3.0 introduceerde end-to-end encryptie",
+      "SMB 3.0 introduceerde een ander locking-mechanisme",
+      "SMB 3.0 introduceerde NetBIOS-ondersteuning"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Wat doet 'browseable = no' in een Samba-share configuratie?",
+    "options": [
+      "De share is niet toegankelijk voor niemand",
+      "De share is onzichtbaar bij het browsen door het netwerk, maar nog steeds toegankelijk als je het pad weet",
+      "Anonieme toegang wordt uitgeschakeld",
+      "De share wordt alleen lokaal beschikbaar gesteld"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Welk PowerShell-commando maak je een nieuwe SMB-share aan op Windows Server?",
+    "options": [
+      "Add-SmbShare",
+      "New-SmbShare",
+      "Create-Share",
+      "Set-SmbShare"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Welke SELinux-context moet je instellen voor bestanden die via Apache (httpd) geserveerd worden?",
+    "options": [
+      "samba_share_t",
+      "httpd_sys_content_t",
+      "var_log_t",
+      "user_home_t"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB & SELinux"
+  },
+  {
+    "question": "Hoe maak je een SELinux file context definitief (persistent over een relabel) met semanage?",
+    "options": [
+      "sudo chcon -t httpd_sys_content_t -R /pad",
+      "sudo semanage fcontext -a -t httpd_sys_content_t '/pad(/.*)?'  gevolgd door restorecon",
+      "sudo setenforce context /pad",
+      "sudo sestatus --apply /pad"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB & SELinux"
+  },
+  {
+    "question": "Hoe installeer je IIS via PowerShell op Windows Server?",
+    "options": [
+      "Install-WindowsFeature IIS",
+      "import-module servermanager; add-windowsfeature Web-Server, Web-WebServer, Web-Security, Web-Filtering -IncludeManagementTools",
+      "dism /enable-feature /featurename:IIS",
+      "winrm install iis"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "IPv4-adressen zijn 32 bits lang. Hoe zijn deze bits verdeeld?",
+    "options": [
+      "In twee delen van 16 bits gescheiden door een dubbele punt",
+      "In vier octetten van 8 bits gescheiden door een punt",
+      "In acht groepen van 4 bits",
+      "In zestien groepen van 2 bits"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat zijn de drie kenmerken van IP (characteristics of IP)?",
+    "options": [
+      "Verbindingsgericht, betrouwbaar, mediagevoelig",
+      "Verbindingsloos (connectionless), best-effort levering, media-onafhankelijk",
+      "Stateful, gegarandeerde levering, encryptie ingebouwd",
+      "Unicast-only, vaste headergrootte, geen fragmentatie"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is de definitie van het netwerkadres van een subnet?",
+    "options": [
+      "Het eerste adres dat aan een host toegewezen kan worden",
+      "Het adres waarbij alle hostbits 0 zijn",
+      "Het adres waarbij alle hostbits 1 zijn",
+      "Het adres van de default gateway"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+  },
+  {
+    "question": "Wat is encapsulatie in netwerken?",
+    "options": [
+      "Het verwijderen van headers bij ontvangst van data",
+      "Het toevoegen van protocol-informatie (headers/trailers) aan data bij elke laag bij het versturen",
+      "Het omzetten van IP-adressen naar MAC-adressen",
+      "Het comprimeren van data voor verzending"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat zijn de twee sublayers van de Data Link laag en hun functies?",
+    "options": [
+      "Physical en Logical; Physical stuurt bits, Logical adresseert frames",
+      "LLC (Logical Link Control) communiceert met hogere lagen; MAC regelt data-encapsulatie en media-toegang",
+      "Transport en Network; Transport segmenteert, Network routeert",
+      "Encoding en Signaling; Encoding zet bits om, Signaling verstuurt signalen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat zijn de velden in een Ethernet-frame (van voor naar achter)?",
+    "options": [
+      "IP-header, TCP-header, Data, FCS",
+      "Preamble, Destination MAC, Source MAC, Type/Length, Data, FCS",
+      "Source IP, Destination IP, TTL, Protocol, Data",
+      "VLAN-tag, Source MAC, Destination MAC, Data, CRC"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat is de minimale en maximale geldig Ethernet-framegrootte?",
+    "options": [
+      "32 – 1500 bytes",
+      "64 – 1518 bytes",
+      "48 – 1500 bytes",
+      "128 – 9000 bytes"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat is een unicast MAC-adres?",
+    "options": [
+      "Een adres dat naar alle apparaten in het netwerk stuurt",
+      "Een adres gericht aan één specifiek apparaat",
+      "Een adres dat begint met 01-00-5E",
+      "Het adres FF-FF-FF-FF-FF-FF"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Welk commando toont de ARP-tabel op een Windows-pc?",
+    "options": [
+      "show ip arp",
+      "ipconfig /arp",
+      "arp -a",
+      "netstat -arp"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat zijn bandwidth, throughput en goodput?",
+    "options": [
+      "Bandwidth = maximale capaciteit van een medium; throughput = werkelijke overdrachtssnelheid; goodput = nuttige data (throughput minus overhead)",
+      "Bandwidth = werkelijke snelheid; throughput = maximale snelheid; goodput = snelheid na compressie",
+      "Alle drie zijn synoniemen voor de dataoverdrachtsnelheid",
+      "Bandwidth geldt voor fysiek; throughput voor logisch; goodput voor applicatielaag"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Welke UTP-kabeltypen zijn er en wanneer gebruik je een crossover-kabel?",
+    "options": [
+      "Straight-through (host→switch), crossover (host↔host of switch↔switch of router↔router), rollover (console)",
+      "Straight-through voor alles; crossover alleen voor fiber",
+      "Rollover voor alles behalve console-verbindingen",
+      "Crossover voor host→switch; straight-through voor switch→switch"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat is Auto-MDIX?",
+    "options": [
+      "Een protocol dat automatisch VLAN-trunks configureert",
+      "Een switchfunctie die automatisch het kabeltype detecteert en de interface dienovereenkomstig configureert",
+      "Een methode om duplex-instellingen automatisch te onderhandelen",
+      "Een DTP-modus waarbij de switch automatisch een trunk vormt"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+  },
+  {
+    "question": "Wat zijn de twee stappen van het switch 'learn and forward'-proces?",
+    "options": [
+      "Stap 1: controleer VLAN-tag; Stap 2: stuur naar trunk-poort",
+      "Stap 1: leer het bronMAC-adres (voeg toe of reset timer naar 5 min); Stap 2: zoek bestemmingsMAC op en stuur gericht door (of flood als onbekend)",
+      "Stap 1: controleer FCS op fouten; Stap 2: geef frame door aan netwerklaag",
+      "Stap 1: ontcijfer VLAN-tag; Stap 2: stuur naar default gateway"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Switching"
+  },
+  {
+    "question": "Hoelang bewaart een switch een MAC-adres in de CAM-tabel standaard voordat het verloopt?",
+    "options": [
+      "1 minuut",
+      "5 minuten",
+      "10 minuten",
+      "30 minuten"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: Switching"
+  },
+  {
+    "question": "Wanneer flooded een switch een frame naar alle poorten (behalve de bronpoort)?",
+    "options": [
+      "Altijd, bij elk ontvangen frame",
+      "Alleen bij broadcast-frames",
+      "Wanneer het bestemmingsMAC-adres niet in de MAC-adrestabel staat",
+      "Wanneer het frame een VLAN-tag heeft"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Switching"
+  },
+  {
+    "question": "Wat segmenteert zowel collision domains als broadcast domains?",
+    "options": [
+      "Hub",
+      "Switch",
+      "Router",
+      "Repeater"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: Switching"
+  },
+  {
+    "question": "Wat is de definitie van een VLAN?",
+    "options": [
+      "Een fysieke verbinding tussen twee switches",
+      "Een logische partitie van een netwerk; één VLAN = één broadcast domain, onafhankelijk van fysieke locatie",
+      "Een encryptietunnel tussen twee netwerksegmenten",
+      "Een protocol voor het uitwisselen van routinginformatie"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Welke zes voordelen van VLANs worden in de slides beschreven?",
+    "options": [
+      "Kleiner broadcast domain, betere beveiliging, betere IT-efficiëntie, lagere kosten, betere prestaties, eenvoudiger beheer",
+      "Snellere routing, meer poorten, hogere bandbreedte, goedkopere hardware, IPv6-support, encryptie",
+      "Meer VLANs, grotere subnetten, redundantie, load balancing, QoS, monitoring",
+      "Hogere snelheid, lagere latency, meer adressen, betere logging, failover, schaalbaarheid"
+    ],
+    "correct": 0,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Wat zijn de vier VLAN-types die in de slides worden besproken?",
+    "options": [
+      "Tagged, untagged, native, management",
+      "Default VLAN (1), data VLAN, native VLAN, management VLAN",
+      "Access, trunk, hybrid, monitor",
+      "Unicast, multicast, broadcast, management"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Frames van welk VLAN worden NIET getagd op een 802.1Q trunk-link?",
+    "options": [
+      "Data VLAN",
+      "Management VLAN",
+      "Native VLAN",
+      "Voice VLAN"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Wat zijn de vier DTP-interface modi op een Cisco-switch?",
+    "options": [
+      "On, Off, Auto, Manual",
+      "Access, Dynamic Auto, Dynamic Desirable, Trunk",
+      "Tagged, Untagged, Native, Hybrid",
+      "Forwarding, Blocking, Learning, Listening"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Welk commando activeer je op een Layer 3-switch om inter-VLAN routing mogelijk te maken?",
+    "options": [
+      "router ospf 1",
+      "ip routing",
+      "switchport mode routed",
+      "interface vlan 1"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Welke troubleshooting-methodiek begint bij de applicatielaag en werkt naar beneden via het OSI-model?",
+    "options": [
+      "Bottom-Up",
+      "Follow the Path",
+      "Top-Down",
+      "Divide-and-Conquer"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Welke troubleshooting-methodiek begint bij de fysieke laag (Layer 1) en werkt omhoog?",
+    "options": [
+      "Top-Down",
+      "Divide-and-Conquer",
+      "Follow the Path",
+      "Bottom-Up"
+    ],
+    "correct": 3,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Wat doet de 'Compare Configs'-methodiek bij troubleshooting?",
+    "options": [
+      "Vervangt hardwarecomponenten één voor één",
+      "Vergelijkt de huidige configuratie met een bekende goede configuratie om verschillen te identificeren",
+      "Volgt het datapad door het netwerk",
+      "Deelt het netwerk op in kleinere segmenten"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Wat doet de 'Swap Components'-methodiek?",
+    "options": [
+      "Vergelijkt twee configuratiebestanden",
+      "Vervangt hardwarecomponenten om de defecte component te identificeren",
+      "Volgt pakketten hop voor hop door het netwerk",
+      "Deelt het probleemnetwerk op in lagen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Welk commando/tool geeft netwerkconfiguratie-instellingen weer (IP-adres, subnetmasker, default GW, DNS)?",
+    "options": [
+      "netstat",
+      "traceroute",
+      "ipconfig / ifconfig / ip address",
+      "show ip route"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Wat zijn de drie stappen van de troubleshooting-conclusie (identificatie, isolatie, oplossing)?",
+    "options": [
+      "1: Ping testen, 2: Traceroute uitvoeren, 3: Kabel vervangen",
+      "1: Identificeer het probleem via monitoring; 2: Isoleer de oorzaak door tests uit te voeren; 3: Los het op via herstelprocedures",
+      "1: Herstart het apparaat, 2: Controleer de logs, 3: Bel de leverancier",
+      "1: Top-Down analyse, 2: Bottom-Up analyse, 3: Divide-and-Conquer"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Wat toont 'show ip route' op een Cisco-router?",
+    "options": [
+      "De MAC-adrestabel van de router",
+      "De Layer 3 routing-tabel met bekende netwerken en next-hop adressen",
+      "Alle actieve interfaces en hun IP-adressen",
+      "De ARP-tabel van de router"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 6: Troubleshooting"
+  },
+  {
+    "question": "Wat is het verschil tussen een source port en een destination port?",
+    "options": [
+      "Source port identificeert de server-applicatie; destination port is dynamisch gekozen door de client",
+      "Source port is dynamisch gekozen door de verzender om een gesprek te identificeren; destination port identificeert de applicatie/service op de server",
+      "Ze zijn identiek en uitwisselbaar",
+      "Source port is altijd poort 80; destination port is altijd boven 1024"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Transportlaag"
+  },
+  {
+    "question": "Welk commando/tool gebruik je om TCP/UDP-verbindingen en open poorten te bekijken?",
+    "options": [
+      "ping",
+      "traceroute",
+      "netstat",
+      "ipconfig"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 7: Transportlaag"
+  },
+  {
+    "question": "TCP is een 'stateful protocol'. Wat betekent dat?",
+    "options": [
+      "TCP versleutelt alle data die verstuurd wordt",
+      "TCP houdt de toestand van de communicatiesessie bij — welke data verstuurd is en welke bevestigd is",
+      "TCP heeft geen verbinding nodig voor datatransport",
+      "TCP garandeert dat pakketten in willekeurige volgorde aankomen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP"
+  },
+  {
+    "question": "Welke vier services levert TCP naast basisfuncties (segmentatie/reassembly)?",
+    "options": [
+      "Routing, adressering, fragmentatie, compressie",
+      "Sessie opzetten, betrouwbare levering, geordende levering, flow control",
+      "Encryptie, authenticatie, compressie, tunneling",
+      "Multicast, broadcast, unicast, anycast"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP"
+  },
+  {
+    "question": "Waarvoor worden sequence numbers in TCP gebruikt?",
+    "options": [
+      "Om de bronpoort te identificeren",
+      "Om data in de juiste volgorde te reassembleren en verloren segmenten te detecteren",
+      "Om de window size te berekenen",
+      "Om de TTL bij te houden"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP"
+  },
+  {
+    "question": "Wat gebeurt er bij TCP als een segment verloren gaat (data loss & retransmission)?",
+    "options": [
+      "De verbinding wordt direct verbroken",
+      "Het verloren segment wordt opnieuw verstuurd na een timeout; de ontvanger bevestigt alleen wat correct is ontvangen",
+      "UDP wordt automatisch gebruikt als fallback",
+      "Het pakket wordt genegeerd en de applicatie moet opnieuw beginnen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP"
+  },
+  {
+    "question": "Hoe werkt TCP flow control via de window size?",
+    "options": [
+      "De window size bepaalt de maximale TTL van een pakket",
+      "De window size bepaalt hoeveel bytes verstuurd mogen worden vóór een bevestiging (ACK) nodig is",
+      "De window size bepaalt de maximale pakketgrootte op het netwerk",
+      "De window size bepaalt het maximale aantal TCP-verbindingen tegelijk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP"
+  },
+  {
+    "question": "UDP heeft geen sequence nummers. Wat is het gevolg?",
+    "options": [
+      "UDP kan data niet versturen",
+      "Datagrammen worden gewoon in ontvangst-volgorde geassembleerd; de applicatie moet zelf de juiste volgorde bepalen indien nodig",
+      "UDP garandeert geordende levering via een eigen mechanisme",
+      "UDP vraagt automatisch opnieuw als een pakket verloren gaat"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP/UDP"
+  },
+  {
+    "question": "Welke velden bevat een UDP-header (4 velden)?",
+    "options": [
+      "Source port, destination port, sequence number, checksum",
+      "Source port, destination port, length, checksum",
+      "Source IP, destination IP, port, TTL",
+      "Source port, destination port, window size, urgent pointer"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: TCP/UDP"
+  },
+  {
+    "question": "SSH op Cisco: op welke TCP-poort werkt SSH en waarom is het veiliger dan Telnet?",
+    "options": [
+      "SSH werkt op poort 23 en is veiliger omdat het sneller is",
+      "SSH werkt op poort 22 en biedt sterke encryptie voor zowel authenticatie als datatransport; Telnet stuurt alles als plaintext",
+      "SSH werkt op poort 443 en gebruikt hetzelfde protocol als HTTPS",
+      "SSH werkt op poort 22 maar is alleen veiliger voor het wachtwoord, niet voor de data"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: SSH"
+  },
+  {
+    "question": "Wat betekent 'U' bij de ping-output op Cisco IOS?",
+    "options": [
+      "Ontvangst van een succesvolle echo reply",
+      "Timeout – geen antwoord ontvangen",
+      "Er is een ICMP 'unreachable' bericht ontvangen",
+      "De verbinding is onbetrouwbaar (unreliable)"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 7: Connectiviteit testen"
+  },
+  {
+    "question": "Wat toont 'show interfaces' op een Cisco-apparaat?",
+    "options": [
+      "Alleen de IP-adressen van interfaces",
+      "De interfacestatus én eventuele foutmeldingen",
+      "De routing-tabel",
+      "Alle bekende hosts in het ARP-netwerk"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Show Commands"
+  },
+  {
+    "question": "Wat toont 'show arp' op een Cisco-apparaat?",
+    "options": [
+      "De routing-tabel",
+      "De lijst van bekende hosts op de lokale Ethernet-LANs (IP → MAC-mappings)",
+      "De MAC-adrestabel van de switch",
+      "Alle actieve TCP-verbindingen"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Show Commands"
+  },
+  {
+    "question": "Wat toont 'show protocols' op een Cisco-apparaat?",
+    "options": [
+      "Alle geconfigureerde VLAN's",
+      "Welke protocollen operationeel zijn",
+      "De volledige startup-configuratie",
+      "De STP-topologie"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 7: Show Commands"
+  },
+  {
+    "question": "Wat zijn de basiscomponenten van een Linux storage-systeem (van laag naar hoog)?",
+    "options": [
+      "Kernel → driver → bestand → applicatie",
+      "Schijf/partitie → RAID array → Volume Group → Logical Volume → Filesystem → Swap",
+      "SSD → HDD → NVMe → SAN → NAS",
+      "Blocks → Sectors → Tracks → Cylinders → Platters"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Linux Storage"
+  },
+  {
+    "question": "Welke tools gebruik je om partities aan te maken en te beheren in Linux?",
+    "options": [
+      "mkfs, mount, umount",
+      "fdisk, parted, gparted (en lsblk om te bekijken)",
+      "pvcreate, vgcreate, lvcreate",
+      "mdadm, lvm, raid"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Linux Storage"
+  },
+  {
+    "question": "Wat zijn de drie MBR-partitietypes en hun beperkingen?",
+    "options": [
+      "Primary (max 4, bootbaar), Extended (max 1, bevat logische partities), Logical (in extended, niet bootbaar); max schijfgrootte 2 TB",
+      "Primary (max 8), Extended (max 4), Logical (onbeperkt); max schijfgrootte 8 TB",
+      "System, Data, Recovery; geen beperkingen in grootte",
+      "Boot, Root, Swap; max 4 partities totaal"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 5: Linux Storage"
+  },
+  {
+    "question": "Wat zijn de voordelen van GPT ten opzichte van MBR?",
+    "options": [
+      "GPT werkt op oudere BIOS-systemen; MBR vereist UEFI",
+      "GPT: 128+ partities, schijven > 2 TB, backup partitietabel aan einde schijf, protective MBR voor compatibiliteit",
+      "GPT is sneller maar ondersteunt minder partities",
+      "GPT is alleen beschikbaar op Windows; MBR op Linux"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Linux Storage"
+  },
+  {
+    "question": "Waarom is een goedkope hardware RAID-controller slechter dan een software RAID-oplossing?",
+    "options": [
+      "Goedkope controllers zijn altijd sneller maar minder betrouwbaar",
+      "De meeste verwerking gaat nog steeds via de CPU, en bij uitval van de controller is de data onbereikbaar terwijl vervangende controllers van andere merken vaak niet compatibel zijn",
+      "Software RAID gebruikt meer schijfruimte voor pariteit",
+      "Hardware RAID ondersteunt geen RAID 5 of 6"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: RAID"
+  },
+  {
+    "question": "Welk commando gebruik je om een RAID-array aan te maken in Linux?",
+    "options": [
+      "lvcreate --raid",
+      "mdadm --create",
+      "fdisk --raid",
+      "vgcreate --raid"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: RAID"
+  },
+  {
+    "question": "Wat zijn de drie onderdelen van LVM en hun rol?",
+    "options": [
+      "Disk, Partition, Filesystem",
+      "Physical Volume (PV): de fysieke opslag; Volume Group (VG): verzameling PVs; Logical Volume (LV): partitie-achtig stuk uit een VG waarop je een filesystem maakt",
+      "RAID array, Volume, Mount point",
+      "Block device, inode, directory"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: LVM"
+  },
+  {
+    "question": "Wat is de correcte volgorde voor het opzetten van LVM?",
+    "options": [
+      "vgcreate → pvcreate → lvcreate → mkfs",
+      "mkfs → lvcreate → vgcreate → pvcreate",
+      "pvcreate → vgcreate → lvcreate → mkfs",
+      "lvcreate → vgcreate → pvcreate → mkfs"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 5: LVM"
+  },
+  {
+    "question": "Wat is een voordeel van LVM ten opzichte van traditionele partities?",
+    "options": [
+      "LVM is sneller dan directe schijfpartities",
+      "Logical Volumes kunnen online vergroot worden, over meerdere schijven spangen en snapshots ondersteunen",
+      "LVM vervangt RAID volledig",
+      "LVM werkt alleen met ext4 filesystems"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: LVM"
+  },
+  {
+    "question": "Hoe vergroot je een Logical Volume én het bijbehorende ext4-filesystem online?",
+    "options": [
+      "pvresize gevolgd door vgextend",
+      "lvextend om het LV te vergroten, gevolgd door resize2fs om het filesystem uit te breiden",
+      "mkfs opnieuw uitvoeren op het LV",
+      "umount → lvresize → mount"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: LVM"
+  },
+  {
+    "question": "Hoe voeg je extra opslagruimte toe aan een bestaande Volume Group?",
+    "options": [
+      "lvcreate --extend",
+      "vgextend <vgnaam> <nieuw_physical_volume>",
+      "pvextend <vgnaam>",
+      "mkfs.ext4 op het nieuwe physical volume"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: LVM"
+  },
+  {
+    "question": "Welk commando gebruik je om een ext4-filesystem aan te maken op een logical volume?",
+    "options": [
+      "format -t ext4 /dev/vg/lv",
+      "mkfs -t ext4 /dev/mapper/vg-lv (of mkfs.ext4)",
+      "fdisk --mkfs ext4 /dev/vg/lv",
+      "mount -t ext4 /dev/vg/lv /mountpoint"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Filesystems"
+  },
+  {
+    "question": "Wat zijn de filesystem-generaties zoals behandeld in de slides (0 t/m 5)?",
+    "options": [
+      "0: tape/punch cards (geen FS), 1: bestanden, 2: bestanden+mappen, 3: eigendom+permissies, 4: journaling, 5: next-gen (CoW, checksums, self-healing RAID)",
+      "0: FAT, 1: NTFS, 2: ext2, 3: ext3, 4: ext4, 5: ZFS",
+      "0: geen FS, 1: FAT16, 2: FAT32, 3: NTFS, 4: ext4, 5: Btrfs",
+      "0: papier, 1: magnetisch, 2: optisch, 3: SSD, 4: NVMe, 5: cloud"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 5: Filesystems"
+  },
+  {
+    "question": "Welke features heeft een next-generation filesystem (generatie 5) zoals ZFS of Btrfs?",
+    "options": [
+      "Sneller lezen, goedkoper, eenvoudiger beheer",
+      "Ingebouwd volume management, checksums per block, self-healing RAID, atomische CoW-snapshots, asynchrone replicatie",
+      "Maximale compatibiliteit met oudere systemen",
+      "Kleinere bestandsgrootte door ingebouwde compressie"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Filesystems"
+  },
+  {
+    "question": "Wat is rsync en waarvoor wordt het gebruikt als backup-tool?",
+    "options": [
+      "rsync is een database-backup tool die SQL-dumps maakt",
+      "rsync synchroniseert bestanden en directories (ook over SSH) en ondersteunt incrementele kopieën; Apple's Time Machine gebruikt het",
+      "rsync is een archivertool vergelijkbaar met tar maar sneller",
+      "rsync is alleen beschikbaar op Windows"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 5: Backup"
+  },
+  {
+    "question": "Wat zijn de zes standaard NTFS-permissies in Windows?",
+    "options": [
+      "Read, Write, Execute, Delete, Modify, Admin",
+      "Full Control, Modify, Read & Execute, Read, Write, List Folder Contents",
+      "Allow, Deny, Inherit, Explicit, Cumulative, Effective",
+      "Owner, Group, Other, Sticky, SetUID, SetGID"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is inheritance bij NTFS-permissies en hoe werkt het?",
+    "options": [
+      "Permissies worden automatisch verwijderd bij verplaatsen van bestanden",
+      "Objecten erven standaard de permissies van hun parent-container; inheritance kan per object worden aangepast",
+      "Alle gebruikers erven de permissies van de Administrator",
+      "Inheritance werkt alleen voor groepen, niet voor individuele gebruikers"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat zijn 'effective permissions' in Windows?",
+    "options": [
+      "De permissies die een gebruiker heeft op basis van zijn direct toegewezen rechten",
+      "De daadwerkelijke permissies die gelden na optelling van alle Allow-permissies minus Deny-permissies uit alle groepen",
+      "De permissies van de Administrator-groep",
+      "De laagste permissie uit alle groepslidmaatschappen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Hoe werkt de prioriteitsvolgorde van Allow en Deny in Windows? (explicit vs inherited)",
+    "options": [
+      "Inherited deny > Explicit deny > Explicit allow > Inherited allow",
+      "Explicit deny > Explicit allow > Inherited deny > Inherited allow",
+      "Allow wint altijd van Deny",
+      "Inherited allow > Explicit deny"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is de standaard share-permissie op een nieuw aangemaakte Windows-share?",
+    "options": [
+      "Full Control voor Everyone",
+      "Read voor Everyone",
+      "Modify voor Authenticated Users",
+      "No access voor Everyone"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is de SID-structuur in Windows en wat stellen de componenten voor?",
+    "options": [
+      "S-R-X-Y: S=SID indicator, R=revision level, X=identifier authority, Y=subauthority waarden",
+      "S-domain-username-ridnumber zonder verdere structuur",
+      "Een 128-bit waarde bestaande uit timestamp en machine-ID",
+      "Een hexadecimale hash van de gebruikersnaam en het wachtwoord"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Hoe lang is een SID en wie genereert lokale SIDs?",
+    "options": [
+      "32-bit, gegenereerd door de DHCP-server",
+      "48-bit, gegenereerd door de Local Security Authority (LSA)",
+      "128-bit, gegenereerd door Active Directory",
+      "64-bit, gegenereerd door de Windows Installer"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is een GUID in Windows Active Directory en hoe lang is het?",
+    "options": [
+      "Een 48-bit nummer dat een netwerkadapter identificeert",
+      "Een 128-bit globaal uniek nummer opgeslagen in de Global Catalog dat AD-objecten identificeert",
+      "Een 32-bit serienummer van de Windows-licentie",
+      "Een 64-bit tijdstempel van de objectaanmaakdatum"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is SIDHistory en waarvoor wordt het gebruikt?",
+    "options": [
+      "Een log van alle aanmeldingen van een gebruiker",
+      "Een attribuut dat oude SIDs bewaart zodat toegang tot resources behouden blijft na een domeinmigratie",
+      "Een back-up van alle SIDs in het domein",
+      "De geschiedenis van wachtwoordwijzigingen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Hoe maak je een fileshare op Windows Server Core via de commandoregel?",
+    "options": [
+      "net share naam=pad",
+      "mkdir voor de map, dan New-SMBShare (PowerShell) + NTFS-permissies via set-acl",
+      "explorer.exe → rechtermuisklik → delen",
+      "mkshare /path /name"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is de betekenis van r, w en x op een Linux-bestand vs. een directory?",
+    "options": [
+      "r/w/x hebben dezelfde betekenis voor bestanden en directories",
+      "Bestand: r=inhoud lezen, w=inhoud wijzigen, x=uitvoeren; Directory: r=inhoud opvragen (ls), w=bestanden aanmaken/verwijderen, x=cd naar directory",
+      "Directory: r=uitvoeren, w=lezen, x=schrijven",
+      "r=root toegang, w=write-only, x=execute-only"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat zijn de octale gewichten van Linux-permissiebits?",
+    "options": [
+      "r=1, w=2, x=4",
+      "r=4, w=2, x=1",
+      "r=8, w=4, x=2",
+      "r=3, w=2, x=1"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat toont 'ls -l' in Linux en hoe lees je de permissies?",
+    "options": [
+      "ls -l toont alleen bestandsgroottes",
+      "ls -l toont type+permissies, linkcount, eigenaar, groep, grootte, datum en naam; bijv. -rw-r--r-- = eigenaar rw, groep r, others r",
+      "ls -l toont alleen de eigenaar en groep",
+      "ls -l toont de SELinux-context van bestanden"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat doen de commando's chown, chgrp en chmod in Linux?",
+    "options": [
+      "chown=permissies wijzigen, chgrp=eigenaar wijzigen, chmod=groep wijzigen",
+      "chown=eigenaar wijzigen, chgrp=groep wijzigen, chmod=permissies wijzigen",
+      "Alle drie wijzigen permissies maar op verschillende lagen",
+      "chown en chgrp zijn hetzelfde commando met andere opties"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat zijn de beperkingen van het standaard Unix/Linux ACL-model (zoals beschreven in 'Extensions to standard ACL')?",
+    "options": [
+      "Het ondersteunt geen bestandspermissies",
+      "Root is een single point of failure; geen mogelijkheid om twee gewone gebruikers toegang tot één specifiek bestand te geven; beperkte auditing/logging; geen fijnmazige netwerkbeveiliging",
+      "Het werkt niet samen met SELinux",
+      "Het ondersteunt geen groepen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: Systeembeveiliging"
+  },
+  {
+    "question": "Wat is MAC (Mandatory Access Control) en hoe verschilt het van DAC?",
+    "options": [
+      "MAC en DAC zijn identiek",
+      "Bij MAC kunnen gebruikers NIET zelf toegang verlenen tot beschermde resources – alleen de security administrator (root) heeft die mogelijkheid; bij DAC kan de eigenaar zelf rechten toekennen",
+      "MAC is voor netwerktoegang; DAC voor bestandssysteemtoegang",
+      "MAC gebruikt wachtwoorden; DAC gebruikt certificaten"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Wat is RBAC (Role-Based Access Control) in de context van SELinux?",
+    "options": [
+      "Een systeem waarbij toegang wordt bepaald door het MAC-adres van het apparaat",
+      "Een toegangsmodel vergelijkbaar met groepen, waarbij rechten worden toegekend op basis van de rol van een gebruiker of proces",
+      "Een Cisco-protocol voor netwerktoegangscontrole",
+      "Een Windows-specifiek systeem voor AD-objectrechten"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Welke drie SELinux-modi zijn er en wat doen ze?",
+    "options": [
+      "On/Off/Debug",
+      "Enforcing (blokkeert en logt overtredingen), Permissive (logt alleen, blokkeert niet), Disabled (SELinux volledig uit)",
+      "Strict/Targeted/Minimal",
+      "Active/Passive/Learning"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Wat toont het commando 'sestatus' en welke informatie staat erin?",
+    "options": [
+      "Alleen of SELinux aan of uit staat",
+      "SELinux status (enabled/disabled), mount punt, root directory, geladen policy, huidige modus en modus uit config, MLS-status",
+      "Alle SELinux-booleans en hun waarden",
+      "Een lijst van geblokkeerde acties in het audit-log"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Welk commando vraagt de huidige SELinux enforcement-modus op (één woord output)?",
+    "options": [
+      "sestatus",
+      "setenforce",
+      "getenforce",
+      "selinux --status"
+    ],
+    "correct": 2,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Wat doet 'semanage boolean -l' bij SELinux?",
+    "options": [
+      "Stelt een SELinux-boolean in op aan of uit",
+      "Geeft een overzicht van alle SELinux-booleans met hun huidige waarde, standaardwaarde en omschrijving",
+      "Verwijdert alle aangepaste booleans",
+      "Laadt de SELinux-policy opnieuw"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Wat is het verschil tussen scontext en tcontext in SELinux?",
+    "options": [
+      "Beide verwijzen naar hetzelfde concept",
+      "scontext = security context van het proces dat een actie uitvoert; tcontext = target context van het object (bestand/resource) waarop de actie wordt uitgevoerd",
+      "scontext is voor bestanden; tcontext is voor processen",
+      "scontext is voor SELinux; tcontext is voor AppArmor"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Welk commando bekijk je de SELinux-context van bestanden in een directory?",
+    "options": [
+      "ls -la",
+      "ls -lZ",
+      "stat --context",
+      "secontext -l"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SELinux"
+  },
+  {
+    "question": "Wat is de basisyntaxis voor SSH-gebruik als client?",
+    "options": [
+      "ssh host@username [command]",
+      "ssh [options] [username@]host [command]",
+      "ssh -connect username:host",
+      "ssh --remote username host"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Wat gebeurt er bij de eerste SSH-verbinding met een server (key verification)?",
+    "options": [
+      "De verbinding wordt direct geweigerd totdat de sleutel handmatig is toegevoegd",
+      "De server stuurt zijn public key; de gebruiker moet de fingerprint controleren en accepteren ('yes' typen); de sleutel wordt opgeslagen in ~/.ssh/known_hosts",
+      "SSH maakt automatisch een versleuteld kanaal zonder verificatie",
+      "De client stuurt zijn public key naar de server voor verificatie"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Wat is SSH public key authenticatie en hoe zet je het op?",
+    "options": [
+      "Je genereert een sleutelpaar met ssh-keygen; de privésleutel blijft bij jou; de publieke sleutel zet je op de server in ~/.ssh/authorized_keys",
+      "Je stuurt je wachtwoord versleuteld naar de server",
+      "Je genereert een sleutelpaar en geeft BEIDE sleutels aan de server",
+      "De server genereert een sleutelpaar voor jou"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Wat is key forwarding bij SSH en waarom moet je voorzichtig zijn?",
+    "options": [
+      "Het automatisch vernieuwen van SSH-sleutels na verloop van tijd",
+      "Het doorsturen van je ssh-agent authenticatie via een SSH-verbinding naar een volgende server; alleen gebruiken op vertrouwde servers",
+      "Het kopiëren van SSH-sleutels naar andere gebruikers",
+      "Het exporteren van SSH-sleutels naar een andere machine"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Welk bestand configureert de OpenSSH-server (poort, authenticatiemethodes, root login)?",
+    "options": [
+      "~/.ssh/config",
+      "/etc/ssh/sshd_config",
+      "/etc/openssh/server.conf",
+      "/etc/ssh/ssh_config"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Wat is SSH SSHFP en hoe wordt het gebruikt?",
+    "options": [
+      "Een SSH-sleuteltype voor extra veiligheid",
+      "Een DNS-record (type SSHFP) dat de server public key fingerprint bevat, zodat SSH die automatisch kan verifiëren",
+      "Een SSH-extensie voor bestandsoverdracht",
+      "Een methode om SSH-wachtwoorden te hashen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Welk commando kopieer je een bestand veilig via SSH van een server naar lokaal?",
+    "options": [
+      "ftp server.school.test ./file",
+      "scp server.school.test:./file .",
+      "rsync --ssh server:/file .",
+      "wget ssh://server/file"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: SSH"
+  },
+  {
+    "question": "Wat is PAM architectureel gezien (hoe werkt het technisch)?",
+    "options": [
+      "PAM is een kernel-module die direct ingebouwd is in de Linux-kernel",
+      "PAM bestaat uit authenticatieroutines in een shared library die door andere programma's aangeroepen kan worden; het vormt een laag tussen gebruikers/applicaties en de authenticatiemethode",
+      "PAM is een apart authenticatieproces dat als daemon draait",
+      "PAM is een configuratiebestand dat wachtwoorden opslaat"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: PAM"
+  },
+  {
+    "question": "Wat zijn de vier PAM module-types en hun functie?",
+    "options": [
+      "login, logout, su, sudo",
+      "auth (authenticatie), account (accountbeperkingen), session (sessie-setup/teardown), password (wachtwoordwijziging)",
+      "required, requisite, sufficient, optional",
+      "pam_unix, pam_env, pam_limits, pam_deny"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: PAM"
+  },
+  {
+    "question": "Wat doen de PAM control-flags 'required', 'requisite', 'sufficient' en 'optional'?",
+    "options": [
+      "Ze zijn allemaal hetzelfde: de stack stopt bij falen",
+      "required: falen = uiteindelijk mislukken maar rest loopt door; requisite: falen = direct stoppen; sufficient: succes = direct stoppen (als geen eerder required faalde); optional: resultaat telt nauwelijks mee",
+      "sufficient: altijd vereist; optional: soms vereist; required: nooit vereist",
+      "Ze bepalen de volgorde van module-uitvoering"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: PAM"
+  },
+  {
+    "question": "Welk commando gebruik je om PAM-profielen te beheren op moderne Linux-systemen?",
+    "options": [
+      "pamconfig",
+      "authselect",
+      "pam-admin",
+      "pam_setup"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: PAM"
+  },
+  {
+    "question": "In welke directory staan de PAM-configuratiebestanden per programma?",
+    "options": [
+      "/etc/pam.conf",
+      "/etc/pam.d/<programmanaam>",
+      "/etc/security/pam/",
+      "/usr/lib/pam.d/"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 6: PAM"
+  },
+  {
+    "question": "Wat is HTTP en wat is het basisprincipe?",
+    "options": [
+      "Een versleuteld protocol voor bestandsoverdracht op poort 21",
+      "HyperText Transfer Protocol: een applicatieprotocol op basis van request (client) – response (server) over TCP poort 80 (of 443 voor HTTPS)",
+      "Een protocol voor e-mailcommunicatie tussen servers",
+      "Een protocol voor het synchroniseren van tijd tussen servers"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Hoe werkte HTTP 1.0 qua verbindingsbeheer en wat veranderde er in HTTP 1.1?",
+    "options": [
+      "HTTP 1.0 hield verbindingen open; HTTP 1.1 sloot ze na elk request",
+      "HTTP 1.0 sloot de TCP-verbinding na elk request/response paar; HTTP 1.1 introduceerde keep-alive zodat verbindingen hergebruikt worden (minder latency)",
+      "Er was geen verschil in verbindingsbeheer",
+      "HTTP 1.1 introduceerde encryptie; HTTP 1.0 was onversleuteld"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat zijn de HTTP-methoden en hun gebruik?",
+    "options": [
+      "SEND (data versturen), RECEIVE (data ontvangen), DELETE (verwijderen)",
+      "GET (resource opvragen), POST (data versturen naar server), DELETE (resource verwijderen)",
+      "FETCH (ophalen), PUSH (versturen), PULL (ophalen)",
+      "READ, WRITE, EXECUTE"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Hoe is een HTTP-request opgebouwd?",
+    "options": [
+      "Alleen een URL en een wachtwoord",
+      "Method/URL/Protocol op de eerste regel, gevolgd door headers, een verplichte lege regel en optioneel een body",
+      "IP-adres, poort, en payload",
+      "JSON-object met method, url en headers"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat zijn de HTTP-statuscodegroepen (1xx t/m 5xx)?",
+    "options": [
+      "1xx=Fout, 2xx=Redirect, 3xx=Succes, 4xx=Info, 5xx=Server",
+      "1xx=Informatie, 2xx=Succes, 3xx=Redirect, 4xx=Client-fout, 5xx=Server-fout",
+      "1xx=Verbinding, 2xx=Authenticatie, 3xx=Autorisatie, 4xx=Data, 5xx=Einde",
+      "1xx=OK, 2xx=Redirect, 3xx=Fout, 4xx=Timeout, 5xx=Crash"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat betekenen HTTP-statuscodes 200, 301, 404 en 500?",
+    "options": [
+      "200=Fout, 301=Succes, 404=Redirect, 500=Niet gevonden",
+      "200=OK (succes), 301=Moved Permanently (redirect), 404=Not Found (client-fout), 500=Internal Server Error (server-fout)",
+      "200=Redirect, 301=OK, 404=Server Error, 500=Not Found",
+      "200=Verbinding gemaakt, 301=Data ontvangen, 404=Verbinding verbroken, 500=Timeout"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat zijn voorbeelden van HTTP user agents (clients)?",
+    "options": [
+      "Apache, Nginx, IIS",
+      "Webbrowsers, mobiele apps, curl, wget, Python http.client",
+      "DNS-servers, DHCP-servers, FTP-clients",
+      "Alleen webbrowsers"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat is HTTPS en hoe wordt de verbinding beveiligd?",
+    "options": [
+      "HTTPS gebruikt UDP in plaats van TCP voor snelheid",
+      "HTTPS is HTTP over een versleuteld kanaal (TLS/SSL) op poort 443; de server authenticeert zich via een server-certificaat",
+      "HTTPS versleutelt alleen het wachtwoord, niet de data",
+      "HTTPS is hetzelfde als HTTP maar op poort 8080"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat zijn de stappen om Apache te installeren en te starten op Rocky Linux?",
+    "options": [
+      "apt install apache2 → systemctl start apache2",
+      "dnf install httpd → firewall-cmd --add-service=http → firewall-cmd --add-service=https → firewall-cmd --runtime-to-permanent → systemctl enable --now httpd",
+      "yum install nginx → service nginx start",
+      "rpm -i httpd → service httpd start"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Waarom is 'firewall-cmd --runtime-to-permanent' vergelijkbaar met 'copy running-config startup-config' in Cisco IOS?",
+    "options": [
+      "Ze voeren allebei een systeem-herstart uit",
+      "Beide slaan de tijdelijke/actieve configuratie op als permanente configuratie zodat die na herstart bewaard blijft",
+      "Ze versleutelen allebei de configuratie",
+      "Ze valideren allebei de configuratie op fouten"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat is de structuur van een Apache VirtualHost-configuratieblok?",
+    "options": [
+      "<Server *:80> ServerName ... DocumentRoot ... </Server>",
+      "<VirtualHost *:80> ServerName www.voorbeeld.nl; ServerAlias voorbeeld.nl; DocumentRoot /var/www/voorbeeld </VirtualHost>",
+      "[VirtualHost] ServerName=www.voorbeeld.nl DocumentRoot=/var/www/voorbeeld",
+      "virtualhost { server_name www.voorbeeld.nl; root /var/www/voorbeeld; }"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: HTTP"
+  },
+  {
+    "question": "Wat is SMB en waarvoor wordt het gebruikt?",
+    "options": [
+      "Server Message Block: een protocol voor gedeelde toegang tot bestanden en printers in een netwerk",
+      "Secure Message Broker: een protocol voor versleutelde berichtuitwisseling",
+      "Simple Mail Block: een e-mailprotocol voor interne netwerken",
+      "Switch Management Block: een protocol voor switchbeheer"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Op welke poorten werkt SMB in moderne Windows-omgevingen versus de oudere NetBIOS-methode?",
+    "options": [
+      "Modern: TCP 139; NetBIOS: TCP 445",
+      "Modern: TCP 445; NetBIOS: UDP 137, UDP 138, TCP 137, TCP 139",
+      "Modern: UDP 445; NetBIOS: TCP 80",
+      "Modern en NetBIOS gebruiken allebei TCP 445"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Wat is CIFS en wat is de relatie met SMB?",
+    "options": [
+      "CIFS is een nieuwere versie van SMB, geïntroduceerd in 2010",
+      "CIFS (Common Internet File System) was de naam voor een versie van SMB die in 1996 uitkwam",
+      "CIFS is een Linux-specifiek alternatief voor SMB",
+      "CIFS en SMB zijn twee volledig verschillende protocollen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Wat is het Samba-project en waarom bestaat het?",
+    "options": [
+      "Samba is een Microsoft-tool voor Linux-beheer",
+      "Samba is een open-source reverse-engineered implementatie van SMB/CIFS voor Linux/Unix, inclusief Active Directory-functionaliteit",
+      "Samba is een grafische bestandsbeheerder voor Linux",
+      "Samba is een cloudopslagdienst vergelijkbaar met Dropbox"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Wat zijn de drie Samba-daemons en hun specifieke functies?",
+    "options": [
+      "httpd (webserver), smbd (mail), nmbd (DNS)",
+      "smbd (file & printer sharing), nmbd (NetBIOS naamresolutie & network browsing), winbindd (Linux-authenticatie tegen Windows-domein)",
+      "sambad (alles), winbindd (Windows), linuxd (Linux)",
+      "nfsd (NFS), smbd (SMB), ftpd (FTP)"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Hoe installeer je Samba op Rocky Linux?",
+    "options": [
+      "apt install samba",
+      "dnf install samba\\* (installeert alle Samba-pakketten inclusief smbd, nmbd en winbindd)",
+      "yum install smb-server",
+      "rpm -i samba.rpm"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Wat zijn de vier secties in smb.conf?",
+    "options": [
+      "[server], [clients], [network], [security]",
+      "[global] (globale config), [homes] (home-dirs), [printers] (gedeelde printers), [sharenaam] (eigen shares)",
+      "[smb], [nmb], [winbind], [dns]",
+      "[users], [groups], [permissions], [shares]"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Waarvoor gebruik je 'smbpasswd' bij Samba?",
+    "options": [
+      "Om de Samba-configuratie te testen",
+      "Om een Samba-gebruikerswachtwoord in te stellen (Samba beheert een eigen wachtwoorddatabase los van Linux-accounts)",
+      "Om de Samba-service te herstarten",
+      "Om shares te beveiligen met encryptie"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Wat zijn de verbeteringen per SMB-versie (2.0, 2.1, 3.0)?",
+    "options": [
+      "2.0=NetBIOS support, 2.1=encryptie, 3.0=pipelining",
+      "2.0=pipelining, 2.1=ander locking-mechanisme, 3.0=end-to-end encryptie",
+      "2.0=TCP 445, 2.1=UDP 137, 3.0=TLS",
+      "2.0=Linux support, 2.1=Mac support, 3.0=iOS support"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB/Samba"
+  },
+  {
+    "question": "Waarom werkt HTTP via /var/www wél out-of-the-box met SELinux, maar Samba niet?",
+    "options": [
+      "SELinux is standaard uitgeschakeld voor HTTP maar ingeschakeld voor Samba",
+      "Voor Apache zijn in het systeem/RPM-package al de juiste SELinux-contexts aangemaakt voor /var/www; voor Samba is niet voorspelbaar welke directories gedeeld worden, dus moet je zelf chcon of semanage instellen",
+      "Apache gebruikt een ander poortnummer dat SELinux automatisch toestaat",
+      "Samba heeft speciale SELinux-permissies nodig die alleen root kan instellen"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB & SELinux"
+  },
+  {
+    "question": "Hoe pas je de SELinux-context aan van een directory zodat Apache er bestanden uit kan serveren?",
+    "options": [
+      "setenforce 0 (SELinux uitzetten)",
+      "sudo chcon -t httpd_sys_content_t -R /pad/naar/webroot",
+      "chmod 777 /pad/naar/webroot",
+      "semanage boolean -on httpd_read_all"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB & SELinux"
+  },
+  {
+    "question": "Hoe overname je de SELinux-context van /var/www voor een andere directory?",
+    "options": [
+      "cp --selinux /var/www /pad",
+      "sudo chcon --reference=/var/www -R /pad/naar/dir",
+      "semanage copy /var/www /pad",
+      "restorecon --copy /var/www /pad"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB & SELinux"
+  },
+  {
+    "question": "Wat is het verschil tussen 'chcon' en 'semanage fcontext' voor SELinux-contexts?",
+    "options": [
+      "Ze zijn identiek in werking",
+      "chcon is tijdelijk (gaat verloren bij relabel); semanage fcontext -a maakt de context definitief persistent en wordt pas actief na restorecon",
+      "semanage werkt alleen op bestanden; chcon ook op directories",
+      "chcon werkt alleen als SELinux in permissive modus staat"
+    ],
+    "correct": 1,
+    "topic": "Platformen – Week 7: SMB & SELinux"
+  },
+  {
+    "question": "Wat is de normale VLAN-range op een Cisco Catalyst-switch en waar wordt die opgeslagen?",
+    "options": [
+      "VLAN 1-4094, opgeslagen in de running-config",
+      "VLAN 1-1005 (normaal), opgeslagen in vlan.dat op flash; VLAN 1006-4096 (extended) in de running-config",
+      "VLAN 1-255, opgeslagen in NVRAM",
+      "VLAN 1-1024, opgeslagen in het BIOS van de switch"
+    ],
+    "correct": 1,
+    "topic": "Netwerken – Week 5: VLANs"
+  },
+  {
+    "question": "Wat betekent '.' (punt) in de ping-output op Cisco IOS?",
+    "options": [
+      "Ontvangst van een ICMP echo reply",
+      "Een ICMP unreachable bericht is ontvangen",
+      "De timer is verlopen terwijl gewacht werd op een ICMP echo reply (timeout)",
+      "De verbinding is succesvol"
+    ],
+    "correct": 2,
+    "topic": "Netwerken – Week 7: Connectiviteit testen"
+  },
+  {
+    "question": "Wat zijn de zes generaties filesystems (0 t/m 5) zoals behandeld in de slides?",
+    "options": [
+      "0: gaten in papier/cassette (geen FS), 1: bestanden, 2: bestanden + mappen, 3: eigendom + permissies, 4: journaling, 5: next-gen (CoW, checksums, self-healing RAID, snapshots)",
+      "0: FAT, 1: FAT32, 2: NTFS, 3: ext2, 4: ext4, 5: ZFS/Btrfs",
+      "0: geen bestandssysteem, 1: FAT16, 2: FAT32, 3: NTFS, 4: ext3, 5: ext4",
+      "0: papieren archief, 1: punchcard, 2: tape, 3: HDD, 4: SSD, 5: NVMe"
+    ],
+    "correct": 0,
+    "topic": "Platformen – Week 5: Filesystems"
+  }
+]

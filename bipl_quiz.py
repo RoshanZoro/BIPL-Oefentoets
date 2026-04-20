@@ -92,13 +92,17 @@ class QuizApp:
         self.root.minsize(820, 600)
         self.root.configure(bg=self.BG)
 
-        self.questions      = []
-        self.active_label   = ""
-        self.current        = 0
-        self.score          = 0
-        self.answered       = False
-        self.option_buttons = []
-        self.results        = []
+        self.questions           = []
+        self.active_label        = ""
+        self.current             = 0
+        self.score               = 0
+        self.answered_flags      = [False]
+        self.option_buttons      = []   # list of slots; each slot = list of (row, badge, lbl)
+        self.results             = []
+        self.questions_per_screen = 1
+        self._shuffled_options   = []   # list of shuffled-option lists, one per slot
+
+        self.dual_mode_var = tk.BooleanVar(value=False)
 
         self._setup_styles()
         self._build_welcome()
@@ -181,6 +185,24 @@ class QuizApp:
 
         tk.Frame(body, bg=self.BORDER, height=1).pack(fill="x", pady=18)
 
+        # ── Dual-question checkbox ────────────────────────────────
+        chk_row = tk.Frame(body, bg=self.CARD)
+        chk_row.pack(fill="x", pady=(0, 14))
+
+        chk = tk.Checkbutton(
+            chk_row,
+            text="  2 vragen tegelijk weergeven",
+            variable=self.dual_mode_var,
+            font=("Segoe UI", 11),
+            bg=self.CARD, fg=self.TEXT,
+            activebackground=self.CARD,
+            activeforeground=self.TEXT,
+            selectcolor=self.CARD,
+            relief="flat",
+            cursor="hand2",
+        )
+        chk.pack(side="left")
+
         # ── One button per question set ──────────────────────────
         for label, questions in question_sets:
             q_count = len(questions)
@@ -228,13 +250,13 @@ class QuizApp:
     # QUIZ LOGIC
     # ──────────────────────────────────────────────────────────────
     def _start_quiz(self, label, question_pool):
+        self.questions_per_screen = 2 if self.dual_mode_var.get() else 1
         pool = list(question_pool)
         random.shuffle(pool)
         self.questions    = pool[:self.NUM_QUESTIONS]
         self.active_label = label
         self.current      = 0
         self.score        = 0
-        self.answered     = False
         self.results      = []
         self._build_quiz_ui()
         self._load_question()
@@ -292,71 +314,123 @@ class QuizApp:
         pad = tk.Frame(self._quiz_inner, bg=self.BG)
         pad.pack(fill="x", padx=30, pady=20)
 
-        # Topic badge
-        self.lbl_topic = tk.Label(pad, text="",
-                                  font=("Segoe UI", 9, "bold"),
-                                  bg=self.ACCENT, fg="white",
-                                  padx=10, pady=4)
-        self.lbl_topic.pack(anchor="w", pady=(0, 10))
-
-        # Question card
-        qcard = tk.Frame(pad, bg=self.CARD,
-                         highlightthickness=1,
-                         highlightbackground=self.BORDER)
-        qcard.pack(fill="x")
-        tk.Frame(qcard, bg=self.ACCENT, width=5).pack(side="left", fill="y")
-        self.lbl_question = tk.Label(
-            qcard, text="", wraplength=800,
-            font=("Segoe UI", 13), bg=self.CARD, fg=self.TEXT,
-            justify="left", padx=20, pady=20)
-        self.lbl_question.pack(fill="x", expand=True)
-
-        # Answer options
-        self.opts_pad = tk.Frame(pad, bg=self.BG)
-        self.opts_pad.pack(fill="x", pady=(12, 0))
-
+        # ── Build one panel per question slot ────────────────────
+        self.lbl_topic      = []
+        self.lbl_question   = []
+        self.lbl_feedback   = []
         self.option_buttons = []
-        for i in range(4):
-            row = tk.Frame(self.opts_pad, bg=self.CARD,
-                           highlightthickness=1,
-                           highlightbackground=self.BORDER,
-                           cursor="hand2")
-            row.pack(fill="x", pady=5)
 
-            badge = tk.Label(row, text=chr(65 + i),
-                             font=("Segoe UI", 11, "bold"),
-                             bg=self.BORDER, fg=self.SUBTEXT,
-                             width=3, pady=14)
-            badge.pack(side="left", fill="y")
+        if self.questions_per_screen == 2:
+            # Side-by-side container — each column gets half the width
+            questions_row = tk.Frame(pad, bg=self.BG)
+            questions_row.pack(fill="x")
+            panel_parents = []
+            for slot in range(2):
+                col = tk.Frame(questions_row, bg=self.BG)
+                col.pack(side="left", expand=True, fill="both",
+                         padx=(0, 8) if slot == 0 else (8, 0))
+                panel_parents.append(col)
 
-            lbl = tk.Label(row, text="",
-                           font=("Segoe UI", 11),
-                           bg=self.CARD, fg=self.TEXT,
-                           anchor="w", justify="left",
-                           wraplength=750, padx=14, pady=14)
-            lbl.pack(side="left", fill="x", expand=True)
+            # Labels whose wraplength must scale with panel width
+            self._dual_q_labels   = []
+            self._dual_f_labels   = []
+            self._dual_opt_labels = []
 
-            for widget in (row, badge, lbl):
-                widget.bind("<Button-1>",
-                            lambda e, idx=i: self._select_answer(idx))
-                widget.bind("<Enter>",
-                            lambda e, r=row, b=badge, lb=lbl:
-                                self._opt_hover(r, b, lb, True))
-                widget.bind("<Leave>",
-                            lambda e, r=row, b=badge, lb=lbl:
-                                self._opt_hover(r, b, lb, False))
+            def _on_resize(event):
+                panel_w = max(event.width // 2 - 30, 80)
+                for _lq in self._dual_q_labels:
+                    _lq.config(wraplength=panel_w)
+                for _lf in self._dual_f_labels:
+                    _lf.config(wraplength=panel_w)
+                for _opt_list in self._dual_opt_labels:
+                    for _ol in _opt_list:
+                        _ol.config(wraplength=max(panel_w - 60, 50))
 
-            self.option_buttons.append((row, badge, lbl))
+            questions_row.bind("<Configure>", _on_resize)
+        else:
+            panel_parents = [pad]
 
-        # Feedback bar
-        self.lbl_feedback = tk.Label(
-            pad, text="",
-            font=("Segoe UI", 11, "bold"),
-            bg=self.BG, fg=self.TEXT,
-            wraplength=860, justify="left", pady=6)
-        self.lbl_feedback.pack(anchor="w", pady=(10, 0))
+        for slot in range(self.questions_per_screen):
+            parent = panel_parents[slot]
 
-        # Next button — Frame+Label for consistent colour on macOS
+            # Topic badge
+            lbl_topic = tk.Label(parent, text="",
+                                 font=("Segoe UI", 9, "bold"),
+                                 bg=self.ACCENT, fg="white",
+                                 padx=10, pady=4)
+            lbl_topic.pack(anchor="w", pady=(0, 10))
+            self.lbl_topic.append(lbl_topic)
+
+            # Question card
+            qcard = tk.Frame(parent, bg=self.CARD,
+                             highlightthickness=1,
+                             highlightbackground=self.BORDER)
+            qcard.pack(fill="x")
+            tk.Frame(qcard, bg=self.ACCENT, width=5).pack(side="left", fill="y")
+            lbl_question = tk.Label(
+                qcard, text="", wraplength=800,
+                font=("Segoe UI", 13), bg=self.CARD, fg=self.TEXT,
+                justify="left", padx=20, pady=20)
+            lbl_question.pack(fill="x", expand=True)
+            self.lbl_question.append(lbl_question)
+            if self.questions_per_screen == 2:
+                self._dual_q_labels.append(lbl_question)
+
+            # Answer options
+            opts_pad = tk.Frame(parent, bg=self.BG)
+            opts_pad.pack(fill="x", pady=(12, 0))
+
+            slot_buttons = []
+            slot_opt_labels = []
+            for i in range(4):
+                row = tk.Frame(opts_pad, bg=self.CARD,
+                               highlightthickness=1,
+                               highlightbackground=self.BORDER,
+                               cursor="hand2")
+                row.pack(fill="x", pady=5)
+
+                badge = tk.Label(row, text=chr(65 + i),
+                                 font=("Segoe UI", 11, "bold"),
+                                 bg=self.BORDER, fg=self.SUBTEXT,
+                                 width=3, pady=14)
+                badge.pack(side="left", fill="y")
+
+                lbl = tk.Label(row, text="",
+                               font=("Segoe UI", 11),
+                               bg=self.CARD, fg=self.TEXT,
+                               anchor="w", justify="left",
+                               wraplength=750, padx=14, pady=14)
+                lbl.pack(side="left", fill="x", expand=True)
+                slot_opt_labels.append(lbl)
+
+                for widget in (row, badge, lbl):
+                    widget.bind("<Button-1>",
+                                lambda e, idx=i, s=slot: self._select_answer(idx, s))
+                    widget.bind("<Enter>",
+                                lambda e, r=row, b=badge, lb=lbl:
+                                    self._opt_hover(r, b, lb, True))
+                    widget.bind("<Leave>",
+                                lambda e, r=row, b=badge, lb=lbl:
+                                    self._opt_hover(r, b, lb, False))
+
+                slot_buttons.append((row, badge, lbl))
+
+            self.option_buttons.append(slot_buttons)
+            if self.questions_per_screen == 2:
+                self._dual_opt_labels.append(slot_opt_labels)
+
+            # Feedback bar
+            lbl_feedback = tk.Label(
+                parent, text="",
+                font=("Segoe UI", 11, "bold"),
+                bg=self.BG, fg=self.TEXT,
+                wraplength=860, justify="left", pady=6)
+            lbl_feedback.pack(anchor="w", pady=(10, 0))
+            self.lbl_feedback.append(lbl_feedback)
+            if self.questions_per_screen == 2:
+                self._dual_f_labels.append(lbl_feedback)
+
+        # ── Next button (shared, at the bottom) ──────────────────
         self._btn_next_frame = tk.Frame(pad, bg=self.BORDER, cursor="hand2")
         self._btn_next_frame.pack(anchor="e", pady=(14, 30))
 
@@ -400,58 +474,72 @@ class QuizApp:
                 lbl.config(bg=self.CARD)
 
     def _load_question(self):
-        q = self.questions[self.current]
-        q_text  = q["question"]
-        options = q["options"]
-        correct = q["correct"]
-        topic   = q.get("topic", "")
+        self.answered_flags    = [False] * self.questions_per_screen
+        self._shuffled_options = []
 
-        self.answered = False
-        n = self.current + 1
+        last_q_num = self.current + self.questions_per_screen
 
-        self.lbl_progress.config(text=f"Vraag {n} / {self.NUM_QUESTIONS}")
+        if self.questions_per_screen == 2:
+            progress_text = (
+                f"Vragen {self.current + 1}-{last_q_num} / {self.NUM_QUESTIONS}"
+            )
+        else:
+            progress_text = f"Vraag {self.current + 1} / {self.NUM_QUESTIONS}"
+
+        self.lbl_progress.config(text=progress_text)
         self.lbl_score.config(text=f"Score: {self.score}")
         self.progress_bar["value"] = self.current
-        self.lbl_topic.config(text=f"  {topic}  ")
-        self.lbl_question.config(text=q_text)
-        self.lbl_feedback.config(text="", bg=self.BG)
-        next_text = "Volgende vraag  →" if n < self.NUM_QUESTIONS else "Bekijk resultaten  →"
+
+        next_text = (
+            "Volgende vraag  →"
+            if last_q_num < self.NUM_QUESTIONS
+            else "Bekijk resultaten  →"
+        )
         self._set_next_btn(enabled=False, text=next_text)
 
-        # Shuffle options, keep track of original indices
-        indexed = list(enumerate(options))
-        random.shuffle(indexed)
-        self._shuffled_options = indexed
+        for slot in range(self.questions_per_screen):
+            q       = self.questions[self.current + slot]
+            q_text  = q["question"]
+            options = q["options"]
+            topic   = q.get("topic", "")
 
-        for i, (orig_idx, text) in enumerate(indexed):
-            row, badge, lbl = self.option_buttons[i]
-            row.config(bg=self.CARD, highlightbackground=self.BORDER,
-                       cursor="hand2")
-            badge.config(text=chr(65 + i), bg=self.BORDER, fg=self.SUBTEXT)
-            lbl.config(text=text, bg=self.CARD, fg=self.TEXT)
-            for widget in (row, badge, lbl):
-                widget.bind("<Button-1>",
-                            lambda e, idx=i: self._select_answer(idx))
+            self.lbl_topic[slot].config(text=f"  {topic}  ")
+            self.lbl_question[slot].config(text=q_text)
+            self.lbl_feedback[slot].config(text="", bg=self.BG)
+
+            indexed = list(enumerate(options))
+            random.shuffle(indexed)
+            self._shuffled_options.append(indexed)
+
+            for i, (orig_idx, text) in enumerate(indexed):
+                row, badge, lbl = self.option_buttons[slot][i]
+                row.config(bg=self.CARD, highlightbackground=self.BORDER,
+                           cursor="hand2")
+                badge.config(text=chr(65 + i), bg=self.BORDER, fg=self.SUBTEXT)
+                lbl.config(text=text, bg=self.CARD, fg=self.TEXT)
+                for widget in (row, badge, lbl):
+                    widget.bind("<Button-1>",
+                                lambda e, idx=i, s=slot: self._select_answer(idx, s))
 
         self._quiz_canvas.yview_moveto(0)
 
-    def _select_answer(self, idx):
-        if self.answered:
+    def _select_answer(self, idx, q_slot=0):
+        if self.answered_flags[q_slot]:
             return
-        self.answered = True
+        self.answered_flags[q_slot] = True
 
-        q       = self.questions[self.current]
+        q       = self.questions[self.current + q_slot]
         options = q["options"]
         correct = q["correct"]
 
         correct_shuffled = next(
-            i for i, (orig, _) in enumerate(self._shuffled_options)
+            i for i, (orig, _) in enumerate(self._shuffled_options[q_slot])
             if orig == correct)
 
         is_correct = (idx == correct_shuffled)
 
         def colour_opt(i, bg, badge_bg, badge_fg, text_fg):
-            row, badge, lbl = self.option_buttons[i]
+            row, badge, lbl = self.option_buttons[q_slot][i]
             row.config(bg=bg, highlightbackground=badge_bg, cursor="")
             badge.config(bg=badge_bg, fg=badge_fg)
             lbl.config(bg=bg, fg=text_fg)
@@ -463,13 +551,13 @@ class QuizApp:
         if is_correct:
             self.score += 1
             colour_opt(idx, self.CORRECT_BG, self.CORRECT, "white", self.CORRECT)
-            self.lbl_feedback.config(
+            self.lbl_feedback[q_slot].config(
                 text="  ✓  Correct!", fg=self.CORRECT, bg=self.CORRECT_BG)
         else:
             colour_opt(idx, self.WRONG_BG, self.WRONG, "white", self.WRONG)
             colour_opt(correct_shuffled,
                        self.CORRECT_BG, self.CORRECT, "white", self.CORRECT)
-            self.lbl_feedback.config(
+            self.lbl_feedback[q_slot].config(
                 text=f"  ✗  Fout.  Juist antwoord: {options[correct]}",
                 fg=self.WRONG, bg=self.WRONG_BG)
 
@@ -481,10 +569,13 @@ class QuizApp:
             "question":    q["question"],
             "topic":       q.get("topic", ""),
             "correct":     is_correct,
-            "your_answer": self._shuffled_options[idx][1],
+            "your_answer": self._shuffled_options[q_slot][idx][1],
             "right_answer": options[correct],
         })
-        self._set_next_btn(enabled=True)
+
+        # Enable "next" only once every slot on this screen is answered
+        if all(self.answered_flags):
+            self._set_next_btn(enabled=True)
 
     def _set_next_btn(self, enabled, text=None):
         """Enable or disable the next button and optionally update its text."""
@@ -499,7 +590,7 @@ class QuizApp:
             self.btn_next.config(bg=self.BORDER, fg=self.SUBTEXT)
 
     def _next_question(self):
-        self.current += 1
+        self.current += self.questions_per_screen
         if self.current >= self.NUM_QUESTIONS:
             self._show_results()
         else:
