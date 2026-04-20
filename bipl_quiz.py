@@ -251,7 +251,8 @@ class QuizApp:
     # ──────────────────────────────────────────────────────────────
     def _start_quiz(self, label, question_pool):
         self.questions_per_screen = 2 if self.dual_mode_var.get() else 1
-        pool = list(question_pool)
+        self._question_pool = list(question_pool)
+        pool = list(self._question_pool)
         random.shuffle(pool)
         self.questions    = pool[:self.NUM_QUESTIONS]
         self.active_label = label
@@ -718,7 +719,7 @@ class QuizApp:
 
         _make_btn(btn_row, "Opnieuw spelen  →",
                   self.ACCENT, "white", self.ACCENT_HV,
-                  lambda: self._start_quiz(self.active_label, self.questions))
+                  lambda: self._start_quiz(self.active_label, self._question_pool))
 
         _make_btn(btn_row, "Hoofdmenu",
                   self.BORDER, self.TEXT, "#C8D0E8",
