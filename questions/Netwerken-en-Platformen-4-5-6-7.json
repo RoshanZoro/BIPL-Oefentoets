@@ -7,8 +7,11 @@
       "64 bits, verdeeld in acht octetten",
       "128 bits, verdeeld in vier blokken"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat geeft het subnet mask aan bij een IPv4-adres?",
@@ -18,8 +21,11 @@
       "De maximale TTL-waarde van een pakket",
       "Het MAC-adres van de netwerkkaart"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is het netwerkadres van 192.168.10.10/24?",
@@ -29,8 +35,11 @@
       "192.168.10.0",
       "192.168.0.0"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is het broadcastadres van het netwerk 192.168.10.0/24?",
@@ -40,8 +49,11 @@
       "192.168.10.254",
       "192.168.10.255"
     ],
-    "correct": 3,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      3
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Welke van de volgende adressen is een privé IPv4-adres?",
@@ -51,8 +63,11 @@
       "200.100.50.25",
       "223.255.255.1"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is het loopback-adres in IPv4?",
@@ -62,8 +77,11 @@
       "127.0.0.1",
       "10.0.0.1"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is het APIPA-adresbereik (link-local)?",
@@ -73,8 +91,11 @@
       "192.168.0.0/16",
       "169.254.0.0/16"
     ],
-    "correct": 3,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      3
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Hoeveel bruikbare hostadressen heeft een /26 subnet?",
@@ -84,8 +105,11 @@
       "126",
       "254"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is de formule voor het berekenen van het aantal bruikbare hostadressen in een subnet?",
@@ -95,8 +119,11 @@
       "2^n - 2",
       "2^(32-n) - 2"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is het voordeel van VLSM (Variable Length Subnet Mask) ten opzichte van een vaste subnetmaskerlengte?",
@@ -106,8 +133,11 @@
       "VLSM ondersteunt alleen IPv6",
       "VLSM vereist minder routers"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: VLSM"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: VLSM",
+    "dragging": false
   },
   {
     "question": "Wat is de eerste stap bij het toepassen van VLSM?",
@@ -117,8 +147,11 @@
       "Wijs alle adressen willekeurig toe",
       "Bepaal eerst de broadcastadressen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: VLSM"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: VLSM",
+    "dragging": false
   },
   {
     "question": "Welke prefix heeft een subnet dat minimaal 105 hosts moet ondersteunen?",
@@ -128,8 +161,11 @@
       "/27",
       "/28"
     ],
-    "correct": 0,
-    "topic": "Netwerken – Week 4: VLSM"
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 4: VLSM",
+    "dragging": false
   },
   {
     "question": "Wat is het doel van ARP (Address Resolution Protocol)?",
@@ -139,8 +175,11 @@
       "IPv4-adressen omzetten naar MAC-adressen",
       "IPv6-adressen toewijzen aan apparaten"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Welk commando toont de ARP-tabel op een Cisco IOS-router?",
@@ -150,8 +189,11 @@
       "arp -a",
       "show interfaces"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat doet een switch als een bestemmings-MAC-adres NIET in de MAC-adrestabel staat?",
@@ -161,8 +203,11 @@
       "Het frame wordt geflooed naar alle poorten behalve de bronpoort",
       "Het frame wordt naar de default gateway gestuurd"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 5: Switching"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: Switching",
+    "dragging": false
   },
   {
     "question": "Wat is een broadcast domain?",
@@ -172,8 +217,11 @@
       "Een logische groep switches verbonden via een trunk",
       "De set van poorten op één switch"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Switching"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Switching",
+    "dragging": false
   },
   {
     "question": "Wat is CSMA/CD en waar wordt het gebruikt?",
@@ -183,8 +231,11 @@
       "Carrier Sense, gebruikt bij Bluetooth",
       "Channel Access, gebruikt bij WiMAX"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen half-duplex en full-duplex?",
@@ -194,8 +245,11 @@
       "Half-duplex werkt op Layer 3, full-duplex op Layer 2",
       "Half-duplex ondersteunt geen VLANs"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat is het standaard VLAN op een Cisco-switch?",
@@ -205,8 +259,11 @@
       "VLAN 10",
       "VLAN 1001"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Wat is een trunk-poort bij VLANs?",
@@ -216,8 +273,11 @@
       "Een poort speciaal voor management-verkeer",
       "Een poort die enkel broadcast-frames doorstuurt"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Welk protocol wordt gebruikt voor VLAN-tagging op een trunk-link?",
@@ -227,8 +287,11 @@
       "IEEE 802.11",
       "IEEE 802.15"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Frames van welk VLAN worden NIET getagd op een 802.1Q trunk?",
@@ -238,8 +301,11 @@
       "Native VLAN",
       "Voice VLAN"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Wat is inter-VLAN routing?",
@@ -249,8 +315,11 @@
       "Het automatisch toewijzen van VLANs aan poorten",
       "Het versleutelen van VLAN-verkeer op een trunk"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen Router-on-a-Stick en legacy inter-VLAN routing?",
@@ -260,8 +329,11 @@
       "Er is geen verschil",
       "Router-on-a-Stick werkt alleen met IPv6"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Wat is DTP (Dynamic Trunking Protocol)?",
@@ -271,8 +343,11 @@
       "Een protocol voor het dynamisch toewijzen van IP-adressen",
       "Een encryptieprotocol voor trunks"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Welke zes troubleshooting-methodieken worden behandeld voor netwerkproblemen?",
@@ -282,8 +357,11 @@
       "Identify, Isolate, Fix, Test, Document, Escalate",
       "Physical, Logical, Routing, Switching, Application, Security"
     ],
-    "correct": 0,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": true
   },
   {
     "question": "Bij welke troubleshooting-methodiek begin je op de fysieke laag en werk je omhoog?",
@@ -293,8 +371,11 @@
       "Bottom-Up",
       "Follow the Path"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Welk tool gebruik je om te zien welke TCP/UDP poorten openstaan en actieve netwerkverbindingen te bekijken?",
@@ -304,8 +385,11 @@
       "netstat",
       "ipconfig"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Welk Cisco IOS-commando toont een beknopt overzicht van alle interfaces en hun status?",
@@ -315,8 +399,11 @@
       "show cdp neighbors",
       "show vlan"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP/UDP & Show Commands"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP/UDP & Show Commands",
+    "dragging": false
   },
   {
     "question": "Wat is de rol van de transportlaag?",
@@ -326,8 +413,11 @@
       "IP-adressen toewijzen aan apparaten",
       "DNS-verzoeken afhandelen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Transportlaag"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Transportlaag",
+    "dragging": false
   },
   {
     "question": "Wat is een socket?",
@@ -337,8 +427,11 @@
       "Een type encryptiealgoritme",
       "Een MAC-adres-tabelitem"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Transportlaag"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Transportlaag",
+    "dragging": false
   },
   {
     "question": "Wat is de Three-Way Handshake bij TCP?",
@@ -348,8 +441,11 @@
       "Een verificatiemechanisme voor SSH-verbindingen",
       "Het sluiten van een TCP-sessie in drie stappen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen TCP en UDP?",
@@ -359,8 +455,11 @@
       "TCP biedt betrouwbare, geordende levering; UDP is snel maar zonder garanties",
       "TCP werkt op Layer 2, UDP op Layer 3"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 7: TCP/UDP"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 7: TCP/UDP",
+    "dragging": false
   },
   {
     "question": "Op welke TCP-poort werkt SSH?",
@@ -370,8 +469,11 @@
       "23",
       "80"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: SSH",
+    "dragging": false
   },
   {
     "question": "Waarom heeft Telnet een beveiligingsrisico?",
@@ -381,8 +483,11 @@
       "Telnet ondersteunt geen authenticatie",
       "Telnet werkt alleen op poort 80"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: SSH/Telnet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: SSH/Telnet",
+    "dragging": false
   },
   {
     "question": "Wat toont het commando 'show cdp neighbors'?",
@@ -392,8 +497,11 @@
       "De MAC-adrestabel van de switch",
       "Alle actieve TCP-verbindingen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Show Commands"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Show Commands",
+    "dragging": false
   },
   {
     "question": "Wat betekent '!' bij een ping op Cisco IOS?",
@@ -403,8 +511,11 @@
       "Er is een ICMP echo reply ontvangen (succesvolle ping)",
       "De TTL is verlopen"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 7: Connectiviteit testen"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 7: Connectiviteit testen",
+    "dragging": false
   },
   {
     "question": "Wat is een MBR-partitietabel en wat is een beperking ervan?",
@@ -414,8 +525,11 @@
       "MBR werkt alleen met GPT-schijven",
       "MBR staat voor Modern Block Record en vereist UEFI"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Linux Storage"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Linux Storage",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen MBR en GPT?",
@@ -425,8 +539,11 @@
       "GPT ondersteunt 128+ partities, schijven groter dan 2 TB en heeft een backup-partitietabel",
       "GPT werkt alleen met Linux"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 5: Linux Storage"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 5: Linux Storage",
+    "dragging": false
   },
   {
     "question": "Wat doet RAID 1?",
@@ -436,8 +553,11 @@
       "Data wordt met pariteit verdeeld over drie of meer schijven",
       "Data wordt gecomprimeerd en opgeslagen op één schijf"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: RAID"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
   },
   {
     "question": "Hoeveel schijven kan RAID 5 verliezen zonder dataverlies?",
@@ -447,8 +567,11 @@
       "2",
       "3"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: RAID"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen RAID 5 en RAID 6?",
@@ -458,8 +581,11 @@
       "RAID 6 is sneller dan RAID 5 voor schrijfoperaties",
       "Er is geen verschil"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: RAID"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
   },
   {
     "question": "Waarom is RAID GEEN backup?",
@@ -469,8 +595,11 @@
       "RAID werkt alleen met tape drives",
       "RAID-systemen kunnen niet extern worden uitgelezen"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: RAID"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
   },
   {
     "question": "Wat is LVM (Logical Volume Management)?",
@@ -480,8 +609,11 @@
       "Een tool om schijven te partitioneren in Windows",
       "Een backup-systeem voor virtuele machines"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: LVM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": false
   },
   {
     "question": "Wat is de volgorde bij het instellen van LVM?",
@@ -491,8 +623,11 @@
       "pvcreate → vgcreate → lvcreate → mkfs",
       "vgcreate → pvcreate → mkfs → lvcreate"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 5: LVM"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": true
   },
   {
     "question": "Welk commando maakt een ext4-filesystem aan op /dev/sdb1?",
@@ -502,8 +637,11 @@
       "fdisk ext4 /dev/sdb1",
       "mount ext4 /dev/sdb1"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Filesystems"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen een journaling en non-journaling filesystem?",
@@ -513,8 +651,11 @@
       "Non-journaling filesystems ondersteunen grotere bestanden",
       "Er is geen praktisch verschil"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Filesystems"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
   },
   {
     "question": "Wat is het bestand /etc/fstab voor?",
@@ -524,8 +665,11 @@
       "RAID-configuratie opslaan",
       "SSH-sleutels bewaren"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Filesystems"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie backupniveaus?",
@@ -535,8 +679,11 @@
       "Level 0, Level 1, Level 2",
       "Dagelijks, wekelijks, maandelijks"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Backup"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Backup",
+    "dragging": false
   },
   {
     "question": "Welke standaard NTFS-permissies bestaan er in Windows? (meest volledig antwoord)",
@@ -546,8 +693,11 @@
       "Allow, Deny, Inherit",
       "Admin, User, Guest"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat heeft prioriteit in Windows: Deny of Allow?",
@@ -557,8 +707,11 @@
       "Deny heeft standaard prioriteit over Allow",
       "Het hangt af van het VLAN"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is een SID (Security Identifier) in Windows?",
@@ -568,8 +721,11 @@
       "De encryptiesleutel voor BitLocker",
       "Het serienummer van een Windows-licentie"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat gebeurt er met NTFS-permissies als je een bestand kopieert naar een andere partitie?",
@@ -579,8 +735,11 @@
       "Het bestand verliest alle permissies",
       "Het bestand krijgt Full Control voor Everyone"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is het numerieke getal voor de Linux-permissie 'rwxr-xr-x'?",
@@ -590,8 +749,11 @@
       "777",
       "700"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat doet het 'setuid'-bit op een uitvoerbaar bestand in Linux?",
@@ -601,8 +763,11 @@
       "Het bestand kan alleen door root worden uitgevoerd",
       "Het bestand wordt verborgen voor andere gebruikers"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat doet het sticky bit op een directory in Linux?",
@@ -612,8 +777,11 @@
       "Bestanden in de directory worden automatisch geëncrypt",
       "De directory kan niet worden verplaatst"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is SELinux?",
@@ -623,8 +791,11 @@
       "Een encryptietool voor harde schijven",
       "Een backup-systeem voor Linux-servers"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Welke drie SELinux-modi zijn er?",
@@ -634,8 +805,11 @@
       "Locked, Unlocked, Debug",
       "Strict, Targeted, Minimal"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": true
   },
   {
     "question": "Welk commando lees de huidige SELinux-status uit?",
@@ -645,8 +819,11 @@
       "sestatus",
       "getenforce --info"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Wat doet 'setenforce 0'?",
@@ -656,8 +833,11 @@
       "SELinux gaat naar Enforcing modus",
       "Alle SELinux-policies worden verwijderd"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Welk commando past de SELinux file context handmatig aan?",
@@ -667,8 +847,11 @@
       "semanage",
       "restorecon"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Wat is SSH (Secure Shell)?",
@@ -678,8 +861,11 @@
       "Een protocol voor het delen van bestanden via SMB",
       "Een webprotocol voor veilige HTTPS-verbindingen"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Waar worden de publieke sleutels van geautoriseerde SSH-gebruikers opgeslagen op de server?",
@@ -689,8 +875,11 @@
       "~/.ssh/authorized_keys",
       "/etc/ssh/ssh_config"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Wat is SSH port forwarding?",
@@ -700,8 +889,11 @@
       "Het doorsturen van SSH-verbindingen naar een andere server",
       "Het blokkeren van Telnet-verkeer via SSH"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Welk commando genereert een SSH-sleutelpaar?",
@@ -711,8 +903,11 @@
       "ssh-keygen",
       "ssh-add"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Wat is PAM (Pluggable Authentication Modules)?",
@@ -722,8 +917,11 @@
       "Een firewall-module voor Linux",
       "Een tool voor het beheren van Linux-gebruikers"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: PAM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: PAM",
+    "dragging": false
   },
   {
     "question": "Waar staan de PAM-configuratiebestanden per programma?",
@@ -733,8 +931,11 @@
       "/etc/pam.d/<program_name>",
       "/usr/lib/pam/"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 6: PAM"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 6: PAM",
+    "dragging": false
   },
   {
     "question": "Wat is HTTP en op welke poort werkt het standaard?",
@@ -744,8 +945,11 @@
       "Host Transfer Protocol op UDP-poort 80",
       "HyperText Transmission Protocol op TCP-poort 8080"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat betekent HTTP-statuscode 404?",
@@ -755,8 +959,11 @@
       "Client error – de gevraagde resource is niet gevonden",
       "Server error – interne serverfout"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Welke HTTP-statuscoderange geeft aan dat alles succesvol is verlopen?",
@@ -766,8 +973,11 @@
       "3xx",
       "4xx"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat is een reverse proxy?",
@@ -777,8 +987,11 @@
       "Een DNS-server die domeinnamen omzet",
       "Een load balancer zonder cachingfunctie"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Welk commando installeert de Apache webserver op Rocky Linux?",
@@ -788,8 +1001,11 @@
       "dnf install httpd",
       "rpm -i apache"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat is SMB (Server Message Block)?",
@@ -799,8 +1015,11 @@
       "Een mailprotocol voor het versturen van berichten",
       "Een DNS-protocol voor naamresolutie"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Op welke TCP-poort werkt SMB in moderne Windows-versies?",
@@ -810,8 +1029,11 @@
       "445",
       "137"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Wat is Samba?",
@@ -821,8 +1043,11 @@
       "Een RAID-managementtool voor Linux",
       "Een Active Directory-alternatief voor Windows"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Wat is de hoofdconfiguratiefile van Samba?",
@@ -832,8 +1057,11 @@
       "/etc/samba/smb.conf",
       "/usr/share/samba/smb.conf"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Waarom werkt Samba niet 'out of the box' met SELinux?",
@@ -843,8 +1071,11 @@
       "SELinux weet niet op voorhand welke directories gedeeld worden, dus de juiste context moet handmatig worden ingesteld",
       "Samba vereist dat SELinux uitgeschakeld is"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 7: SMB & SELinux"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 7: SMB & SELinux",
+    "dragging": false
   },
   {
     "question": "Welk commando stel je de SELinux-context in voor een Samba-share directory?",
@@ -854,8 +1085,11 @@
       "restorecon -t smb /path",
       "setfacl --samba /path"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB & SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB & SELinux",
+    "dragging": false
   },
   {
     "question": "Wat is het AGDLP-principe in Windows?",
@@ -865,8 +1099,11 @@
       "Admin Group Directory Local Permissions",
       "Een methode om SELinux-policies in Windows toe te passen"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 6: Windows Permissies"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 6: Windows Permissies",
+    "dragging": false
   },
   {
     "question": "Wat is Copy on Write (CoW) in de context van filesystems?",
@@ -876,8 +1113,11 @@
       "Een RAID-techniek om data te spiegelen",
       "Een backup-strategie waarbij alleen gewijzigde bestanden worden gekopieerd"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Filesystems"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
   },
   {
     "question": "Welke drie SMB-daemons draaien op een Linux-Samba-server?",
@@ -887,8 +1127,11 @@
       "samba, netbios, winbind",
       "smbd, sssd, nmbd"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Wat doet het commando 'testparm' bij Samba?",
@@ -898,8 +1141,11 @@
       "Het test of Samba-poorten open zijn in de firewall",
       "Het verifieert de Samba-gebruikersdatabase"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Welke vier basisoperaties voert de netwerklaag (Layer 3) uit?",
@@ -909,8 +1155,11 @@
       "Fragmentatie, Compressie, Routing, Checksums",
       "ARP, DNS, DHCP, NAT"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is de functie van het TTL-veld in een IPv4-pakketheader?",
@@ -920,8 +1169,11 @@
       "Het identificeert het bovenliggende protocol (bijv. TCP)",
       "Het geeft de totale pakketgrootte aan"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat geeft het 'Protocol'-veld in een IPv4-pakketheader aan?",
@@ -931,8 +1183,11 @@
       "De prioriteit van het pakket",
       "De levensduur van het pakket"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is de prefix length (/24) en hoe wordt deze bepaald?",
@@ -942,8 +1197,11 @@
       "De klasse van het IP-adres",
       "Het aantal subnetten in een netwerk"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie privé IPv4-adresbereiken?",
@@ -953,8 +1211,11 @@
       "10.0.0.0/16, 172.16.0.0/16, 192.168.0.0/16",
       "127.0.0.0/8, 169.254.0.0/16, 192.0.2.0/24"
     ],
-    "correct": 0,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat zijn TEST-NET adressen (192.0.2.0/24) voor?",
@@ -964,8 +1225,11 @@
       "Loopback-tests op de lokale machine",
       "Automatisch toegewezen adressen bij geen DHCP"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is de default gateway en waarvoor wordt deze gebruikt?",
@@ -975,8 +1239,11 @@
       "Het broadcast-adres van het lokale subnet",
       "Het eerste bruikbare hostadres in een subnet"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie redenen om een netwerk te subnetten?",
@@ -986,8 +1253,11 @@
       "Routing, switching, bridging",
       "IPv4, IPv6, dual-stack"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is classful addressing?",
@@ -997,8 +1267,11 @@
       "Een methode om IPv6-adressen in te delen",
       "De CIDR-notatie voor subnetmaskers"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Welk binair getal hoort bij het decimale getal 152?",
@@ -1008,8 +1281,11 @@
       "1010 1000",
       "1000 1001"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Hoeveel subnetten levert het toevoegen van 2 subnetbits op bij classless subnetting?",
@@ -1019,8 +1295,11 @@
       "6",
       "8"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is een PDU (Protocol Data Unit) en hoe heet het op de transportlaag?",
@@ -1030,8 +1309,11 @@
       "Een IP-pakket op de netwerklaag",
       "Een bit op de fysieke laag"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Hoe worden PDU's op de verschillende lagen van het OSI-model genoemd?",
@@ -1041,8 +1323,11 @@
       "Frame (applicatie), Segment (transport), Pakket (netwerk), Bit (fysiek)",
       "Alle lagen gebruiken de term 'pakket'"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen een MAC-adres en een IP-adres?",
@@ -1052,8 +1337,11 @@
       "IP-adres is fysiek ingebrand; MAC-adres is door de beheerder toegewezen",
       "Er is geen verschil, beide identificeren een apparaat uniek"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat zijn de twee sublagen van de datalinklaag (Layer 2)?",
@@ -1063,8 +1351,11 @@
       "Transport en Network",
       "Ethernet en Wi-Fi"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat is de minimale en maximale grootte van een Ethernet-frame?",
@@ -1074,8 +1365,11 @@
       "48 bytes minimaal, 2048 bytes maximaal",
       "128 bytes minimaal, 9000 bytes maximaal"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat is een 'runt frame' in Ethernet?",
@@ -1085,8 +1379,11 @@
       "Een frame met een FCS-fout",
       "Een frame zonder VLAN-tag"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Met welke hexadecimale waarde begint een multicast MAC-adres?",
@@ -1096,8 +1393,11 @@
       "01-00-5E",
       "00-01-00"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat is het broadcast MAC-adres in Ethernet?",
@@ -1107,8 +1407,11 @@
       "FF-FF-FF-FF-FF-FF",
       "00-00-FF-FF-FF-FF"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Hoe leert een switch MAC-adressen en hoe lang worden ze bewaard?",
@@ -1118,8 +1421,11 @@
       "MAC-adressen worden handmatig ingevoerd; ze verlopen nooit",
       "De switch vraagt MAC-adressen op via ARP; timeout is 1 minuut"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Switching"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Switching",
+    "dragging": false
   },
   {
     "question": "Wat is een collision domain?",
@@ -1129,8 +1435,11 @@
       "Een VLAN-groep van switches",
       "De maximale afstand tussen twee switches"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Switching"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Switching",
+    "dragging": false
   },
   {
     "question": "Welk type UTP-kabel gebruik je om een host aan een switch te koppelen?",
@@ -1140,8 +1449,11 @@
       "Straight-through kabel",
       "Coaxkabel"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Waarvoor wordt een rollover-kabel (consolekabel) gebruikt?",
@@ -1151,8 +1463,11 @@
       "Om fiber en UTP te combineren",
       "Om twee routers direct te verbinden"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat is CSMA/CA en waar wordt het gebruikt?",
@@ -1162,8 +1477,11 @@
       "Collision Detection, gebruikt bij Bluetooth",
       "Carrier Sense, gebruikt bij coaxkabel netwerken"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat zijn voordelen van fiber optic kabelverbindingen ten opzichte van UTP?",
@@ -1173,8 +1491,11 @@
       "Hogere maximale kabellengte van 100 meter",
       "Ondersteunt geen full-duplex"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat zijn de normale VLAN-range nummers op een Cisco Catalyst-switch?",
@@ -1184,8 +1505,11 @@
       "VLAN 1006 t/m 4096 (opgeslagen in de running-config)",
       "VLAN 1 t/m 255"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Waar worden extended range VLANs (1006-4096) opgeslagen op een Cisco-switch?",
@@ -1195,8 +1519,11 @@
       "In het BIOS van de switch",
       "Op een externe TFTP-server"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Hoe verwijder je de VLAN-configuratie volledig van een Cisco-switch?",
@@ -1206,8 +1533,11 @@
       "switchport mode access vlan 1",
       "delete running-config"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Wat is een SVI (Switched Virtual Interface) bij een Layer 3-switch?",
@@ -1217,8 +1547,11 @@
       "Een aparte management-interface voor SSH-toegang",
       "Een trunk-interface op een Layer 2-switch"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Welke DTP-combinatie resulteert in een access-link (geen trunk)?",
@@ -1228,8 +1561,11 @@
       "Dynamic Desirable + Trunk",
       "Trunk + Trunk"
     ],
-    "correct": 0,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Welke troubleshooting-methodiek begin je bij de applicatielaag en ga je naar beneden?",
@@ -1239,8 +1575,11 @@
       "Top-Down",
       "Follow the Path"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Wat doet de Divide-and-Conquer troubleshooting-methodiek?",
@@ -1250,8 +1589,11 @@
       "Splitst het netwerk op in kleinere delen om het probleemgebied te isoleren",
       "Vergelijkt de huidige configuratie met een bekende goede configuratie"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Wat is de 'Follow the Path'-methodiek?",
@@ -1261,8 +1603,11 @@
       "Het vergelijken van configuraties van twee routers",
       "Het stap voor stap doorlopen van alle OSI-lagen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Waarvoor gebruik je traceroute/tracert bij troubleshooting?",
@@ -1272,8 +1617,11 @@
       "Om de MAC-adrestabel van een switch te bekijken",
       "Om DNS-queries te testen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Wat is Wireshark en wanneer gebruik je het?",
@@ -1283,8 +1631,11 @@
       "Een tool om VLAN-configuraties te vergelijken",
       "Een tool om routing-tabellen te bekijken"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Welk Cisco IOS show-commando toont de Layer 3 routing-tabel?",
@@ -1294,8 +1645,11 @@
       "show ip route",
       "show vlan"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Wat zijn de bekende poortnummers (well-known ports) voor FTP, SSH, Telnet, HTTP en HTTPS?",
@@ -1305,8 +1659,11 @@
       "FTP=22, SSH=23, Telnet=21, HTTP=80, HTTPS=8443",
       "FTP=20, SSH=22, Telnet=23, HTTP=443, HTTPS=80"
     ],
-    "correct": 0,
-    "topic": "Netwerken – Week 7: Transportlaag"
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 7: Transportlaag",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie port number groups en hun ranges?",
@@ -1316,8 +1673,11 @@
       "Reserved (0-1023), Standard (1024-9999), Ephemeral (10000-65535)",
       "Low (0-1023), Medium (1024-32767), High (32768-65535)"
     ],
-    "correct": 0,
-    "topic": "Netwerken – Week 7: Transportlaag"
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 7: Transportlaag",
+    "dragging": false
   },
   {
     "question": "Wat is TCP flow control en hoe werkt het?",
@@ -1327,8 +1687,11 @@
       "Flow control voorkomt dat pakketten in de verkeerde volgorde aankomen",
       "Flow control verdeelt TCP-segmenten over meerdere verbindingen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP",
+    "dragging": false
   },
   {
     "question": "Wat is de MSS (Maximum Segment Size) bij TCP?",
@@ -1338,8 +1701,11 @@
       "De maximale window size van een TCP-sessie",
       "Het maximale aantal TCP-verbindingen tegelijk"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP",
+    "dragging": false
   },
   {
     "question": "Wat is een kenmerk van UDP als 'stateless protocol'?",
@@ -1349,8 +1715,11 @@
       "Noch zender noch ontvanger hoeft de sessiestatus bij te houden; betrouwbaarheid is de verantwoordelijkheid van de applicatie",
       "UDP garandeert geordende aflevering van datagrammen"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 7: TCP/UDP"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 7: TCP/UDP",
+    "dragging": false
   },
   {
     "question": "Welke toepassingen gebruiken typisch UDP in plaats van TCP?",
@@ -1360,8 +1729,11 @@
       "Webpagina's ophalen (HTTP) en SSH",
       "Grote bestandsdownloads en databaseverbindingen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP/UDP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP/UDP",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie primaire functies van de presentatielaag (Layer 6)?",
@@ -1371,8 +1743,11 @@
       "Sessie opzetten, bijhouden en afsluiten",
       "Foutdetectie, flow control en toegangsbeheer"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP/UDP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP/UDP",
+    "dragging": false
   },
   {
     "question": "Wat is de functie van de sessielaag (Layer 5)?",
@@ -1382,8 +1757,11 @@
       "IP-adressen omzetten naar MAC-adressen",
       "Pakketten routeren tussen netwerken"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP/UDP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP/UDP",
+    "dragging": false
   },
   {
     "question": "Welk Cisco IOS-commando toont de huidige configuratie die actief in het geheugen staat?",
@@ -1393,8 +1771,11 @@
       "show version",
       "show flash"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Show Commands"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Show Commands",
+    "dragging": false
   },
   {
     "question": "Wat toont het commando 'show version' op een Cisco-apparaat?",
@@ -1404,8 +1785,11 @@
       "De ARP-tabel",
       "Alle actieve VLANs"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Show Commands"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Show Commands",
+    "dragging": false
   },
   {
     "question": "Wat geeft '.' aan bij een extended ping op Cisco IOS?",
@@ -1415,8 +1799,11 @@
       "Een ICMP unreachable bericht is ontvangen",
       "De verbinding is succesvol opgezet"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Connectiviteit testen"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Connectiviteit testen",
+    "dragging": false
   },
   {
     "question": "Wat is Round Trip Time (RTT) bij traceroute?",
@@ -1426,8 +1813,11 @@
       "De TTL-waarde die verminderd wordt per hop",
       "De maximale venstergrootte van TCP"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Connectiviteit testen"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Connectiviteit testen",
+    "dragging": false
   },
   {
     "question": "Wat zijn major- en minor-nummers van Linux-devices?",
@@ -1437,8 +1827,11 @@
       "Major = lees/schrijf permissies, minor = eigenaarsnummer",
       "Major = RAID-level, minor = aantal schijven"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 5: Linux Storage"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 5: Linux Storage",
+    "dragging": false
   },
   {
     "question": "Wat is JBOD (Just a Bunch of Disks)?",
@@ -1448,8 +1841,11 @@
       "Een type RAID met pariteit over drie schijven",
       "Een LVM-configuratie zonder volume groups"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: RAID"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
   },
   {
     "question": "Wat is RAID 0 en wat is het grote nadeel?",
@@ -1459,8 +1855,11 @@
       "RAID 0 is pariteitsopslag; nadeel is hoge CPU-belasting",
       "RAID 0 heeft geen nadelen"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 5: RAID"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
   },
   {
     "question": "Wat zijn de voordelen van RAID 10 (1+0)?",
@@ -1470,8 +1869,11 @@
       "Minimaal 3 schijven nodig en hoge CPU-belasting",
       "Maximale opslagruimte gelijk aan de som van alle schijven"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: RAID"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
   },
   {
     "question": "Welk Linux-commando gebruik je om een nieuw RAID-array aan te maken en te beheren?",
@@ -1481,8 +1883,11 @@
       "fdisk",
       "vgcreate"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: RAID"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen een hard link en een symbolic link in Linux?",
@@ -1492,8 +1897,11 @@
       "Beide types werken hetzelfde, alleen de naam verschilt",
       "Hard links werken alleen voor directories, symbolic links voor bestanden"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 5: Filesystems"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
   },
   {
     "question": "Wat is een LVM-snapshot?",
@@ -1503,8 +1911,11 @@
       "Een incremental backup van een volume group",
       "Een read-only kopie van een physical volume"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: LVM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": false
   },
   {
     "question": "Welke twee commando's gebruik je om een logical volume en het bijbehorende ext4-filesystem te vergroten?",
@@ -1514,8 +1925,11 @@
       "lvextend en resize2fs",
       "lvcreate en mkfs"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 5: LVM"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": false
   },
   {
     "question": "Wat doet het backup-commando 'dump' in Linux?",
@@ -1525,8 +1939,11 @@
       "Synchroniseert bestanden tussen twee systemen via SSH",
       "Maakt een byte-voor-byte kopie van een schijf of partitie"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Backup"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Backup",
+    "dragging": false
   },
   {
     "question": "Wat zijn de voordelen van 'tar' als backup-tool ten opzichte van 'dump'?",
@@ -1536,8 +1953,11 @@
       "tar ondersteunt geen incrementele backups",
       "tar is alleen geschikt voor tape-backups"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Backup"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Backup",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen een differential en een incremental backup?",
@@ -1547,8 +1967,11 @@
       "Er is geen verschil",
       "Differential = volledige backup; incremental = gedeeltelijke backup"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 5: Backup"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 5: Backup",
+    "dragging": false
   },
   {
     "question": "Welk commando toont alle beschikbare blokdevices en hun partitiestructuur in Linux?",
@@ -1558,8 +1981,11 @@
       "df -h",
       "parted --list"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Linux Storage"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Linux Storage",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen share permissions en NTFS permissions bij netwerktoegang?",
@@ -1569,8 +1995,11 @@
       "NTFS permissions gelden alleen lokaal; share permissions gelden altijd",
       "Ze zijn identiek en het maakt niet uit welke je instelt"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat zijn 'cumulative permissions' in Windows?",
@@ -1580,8 +2009,11 @@
       "Alleen de rechtstreeks toegewezen permissies tellen mee",
       "Inherited permissions overschrijven altijd expliciete permissies"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is een ACE (Access Control Entry) in Windows?",
@@ -1591,8 +2023,11 @@
       "De beveiligingsidentificator van een gebruiker",
       "Een groepsbeleidsobject in Active Directory"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is een GUID in Windows?",
@@ -1602,8 +2037,11 @@
       "De Windows-licentiecodes voor activering",
       "Een hash van het gebruikerswachtwoord"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat gebeurt er met NTFS-permissies als je een bestand verplaatst BINNEN dezelfde partitie?",
@@ -1613,8 +2051,11 @@
       "Het bestand verliest alle permissies",
       "Alleen inherited permissions blijven behouden"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Welke commando's gebruik je in Linux om respectievelijk de eigenaar, de groep en de permissies van een bestand te wijzigen?",
@@ -1624,8 +2065,11 @@
       "setuid, setgid, sticky",
       "ls, stat, file"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat doet het setgid-bit op een directory in Linux?",
@@ -1635,8 +2079,11 @@
       "De directory kan alleen worden gelezen door de groepseigenaar",
       "Uitvoerbare bestanden draaien met root-rechten"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is Kerberos en hoe verhoudt het zich tot PAM?",
@@ -1646,8 +2093,11 @@
       "Ze zijn identiek en uitwisselbaar",
       "PAM is verouderd en Kerberos heeft het volledig vervangen"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen SELinux 'targeted' en 'strict' policy?",
@@ -1657,8 +2107,11 @@
       "Strict is de standaard op Rocky Linux; targeted is optioneel",
       "Er is geen functioneel verschil"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Welk commando bekijk je de SELinux-context van bestanden?",
@@ -1668,8 +2121,11 @@
       "stat --selinux",
       "secontext -l"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Wat doet het commando 'restorecon' bij SELinux?",
@@ -1679,8 +2135,11 @@
       "Het herstart de SELinux-daemon",
       "Het converteert permissive naar enforcing modus"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Waarvoor gebruik je 'audit2allow' bij SELinux?",
@@ -1690,8 +2149,11 @@
       "Om bestanden te versleutelen met SELinux-keys",
       "Om booleans in te stellen"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Welk bestand op de SSH-client slaat de public keys op van eerder verbonden servers?",
@@ -1701,8 +2163,11 @@
       "/etc/ssh/ssh_config",
       "~/.ssh/id_ecdsa.pub"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Welk configuratiebestand regelt de OpenSSH server-instellingen (zoals poort, authenticatiemethodes)?",
@@ -1712,8 +2177,11 @@
       "/etc/ssh/sshd_config",
       "/etc/openssh/server.conf"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Wat doet de ssh-agent?",
@@ -1723,8 +2191,11 @@
       "De ssh-agent versleutelt het verkeer over de SSH-verbinding",
       "De ssh-agent beheert de known_hosts lijst"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Welke commando's gebruik je voor bestandsoverdracht via SSH?",
@@ -1734,8 +2205,11 @@
       "rsync en scp alleen",
       "wget en curl"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Wat zijn de vier PAM module-types?",
@@ -1745,8 +2219,11 @@
       "required, requisite, sufficient, optional",
       "pam_unix, pam_env, pam_limits, pam_deny"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: PAM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: PAM",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen de PAM control-flags 'required' en 'requisite'?",
@@ -1756,8 +2233,11 @@
       "Requisite: falen stopt de module-stack niet; required: stopt direct",
       "Required is alleen voor auth modules; requisite voor account modules"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: PAM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: PAM",
+    "dragging": false
   },
   {
     "question": "Wat betekent dat HTTP 'stateless' is?",
@@ -1767,8 +2247,11 @@
       "HTTP heeft geen sessie-mechanisme",
       "HTTP gebruikt UDP in plaats van TCP"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat introduceerde HTTP 1.1 t.o.v. HTTP 1.0?",
@@ -1778,8 +2261,11 @@
       "HTTP 1.1 introduceerde de GET-methode",
       "HTTP 1.1 introduceerde virtual hosting"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Welke HTTP-methoden worden behandeld in de slides?",
@@ -1789,8 +2275,11 @@
       "GET, PUT, PATCH, HEAD",
       "FETCH, PUSH, PULL"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Op welke poort werkt HTTPS standaard?",
@@ -1800,8 +2289,11 @@
       "443",
       "8443"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie authenticatiemethoden voor HTTP, van slechtst naar best?",
@@ -1811,8 +2303,11 @@
       "Client certificaten (slechtst), Basic (beter), Digest (best)",
       "Basic, Client certificaten, Digest"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat zijn Virtual Hosts in Apache en waarvoor worden ze gebruikt?",
@@ -1822,8 +2317,11 @@
       "Load balancers die verkeer verdelen over meerdere Apache-servers",
       "Aparte Apache-instanties voor elke poort"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "In welke directory staan de Apache virtuele host configuratiebestanden op Rocky Linux?",
@@ -1833,8 +2331,11 @@
       "/var/www/html/",
       "/usr/share/httpd/"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat doet 'systemctl enable --now httpd'?",
@@ -1844,8 +2345,11 @@
       "Herlaadt de Apache-configuratie zonder te herstarten",
       "Toont de status van de Apache-service"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Op welke poorten werkt SMB via NetBIOS (de oudere methode)?",
@@ -1855,8 +2359,11 @@
       "TCP 139 en TCP 445",
       "UDP 53 en TCP 139"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Wat zijn de verbeteringen in SMB 3.0 ten opzichte van eerdere versies?",
@@ -1866,8 +2373,11 @@
       "SMB 3.0 introduceerde een ander locking-mechanisme",
       "SMB 3.0 introduceerde NetBIOS-ondersteuning"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Wat doet 'browseable = no' in een Samba-share configuratie?",
@@ -1877,8 +2387,11 @@
       "Anonieme toegang wordt uitgeschakeld",
       "De share wordt alleen lokaal beschikbaar gesteld"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Welk PowerShell-commando maak je een nieuwe SMB-share aan op Windows Server?",
@@ -1888,8 +2401,11 @@
       "Create-Share",
       "Set-SmbShare"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Welke SELinux-context moet je instellen voor bestanden die via Apache (httpd) geserveerd worden?",
@@ -1899,8 +2415,11 @@
       "var_log_t",
       "user_home_t"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB & SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB & SELinux",
+    "dragging": false
   },
   {
     "question": "Hoe maak je een SELinux file context definitief (persistent over een relabel) met semanage?",
@@ -1910,8 +2429,11 @@
       "sudo setenforce context /pad",
       "sudo sestatus --apply /pad"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB & SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB & SELinux",
+    "dragging": false
   },
   {
     "question": "Hoe installeer je IIS via PowerShell op Windows Server?",
@@ -1921,8 +2443,11 @@
       "dism /enable-feature /featurename:IIS",
       "winrm install iis"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "IPv4-adressen zijn 32 bits lang. Hoe zijn deze bits verdeeld?",
@@ -1932,8 +2457,11 @@
       "In acht groepen van 4 bits",
       "In zestien groepen van 2 bits"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie kenmerken van IP (characteristics of IP)?",
@@ -1943,8 +2471,11 @@
       "Stateful, gegarandeerde levering, encryptie ingebouwd",
       "Unicast-only, vaste headergrootte, geen fragmentatie"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is de definitie van het netwerkadres van een subnet?",
@@ -1954,8 +2485,11 @@
       "Het adres waarbij alle hostbits 1 zijn",
       "Het adres van de default gateway"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 4: Netwerklaag & IPv4"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
   },
   {
     "question": "Wat is encapsulatie in netwerken?",
@@ -1965,8 +2499,11 @@
       "Het omzetten van IP-adressen naar MAC-adressen",
       "Het comprimeren van data voor verzending"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat zijn de twee sublayers van de Data Link laag en hun functies?",
@@ -1976,8 +2513,11 @@
       "Transport en Network; Transport segmenteert, Network routeert",
       "Encoding en Signaling; Encoding zet bits om, Signaling verstuurt signalen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat zijn de velden in een Ethernet-frame (van voor naar achter)?",
@@ -1987,8 +2527,11 @@
       "Source IP, Destination IP, TTL, Protocol, Data",
       "VLAN-tag, Source MAC, Destination MAC, Data, CRC"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": true
   },
   {
     "question": "Wat is de minimale en maximale geldig Ethernet-framegrootte?",
@@ -1998,8 +2541,11 @@
       "48 – 1500 bytes",
       "128 – 9000 bytes"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat is een unicast MAC-adres?",
@@ -2009,8 +2555,11 @@
       "Een adres dat begint met 01-00-5E",
       "Het adres FF-FF-FF-FF-FF-FF"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Welk commando toont de ARP-tabel op een Windows-pc?",
@@ -2020,8 +2569,11 @@
       "arp -a",
       "netstat -arp"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat zijn bandwidth, throughput en goodput?",
@@ -2031,8 +2583,11 @@
       "Alle drie zijn synoniemen voor de dataoverdrachtsnelheid",
       "Bandwidth geldt voor fysiek; throughput voor logisch; goodput voor applicatielaag"
     ],
-    "correct": 0,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Welke UTP-kabeltypen zijn er en wanneer gebruik je een crossover-kabel?",
@@ -2042,8 +2597,11 @@
       "Rollover voor alles behalve console-verbindingen",
       "Crossover voor host→switch; straight-through voor switch→switch"
     ],
-    "correct": 0,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat is Auto-MDIX?",
@@ -2053,8 +2611,11 @@
       "Een methode om duplex-instellingen automatisch te onderhandelen",
       "Een DTP-modus waarbij de switch automatisch een trunk vormt"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Access-laag & Ethernet"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Access-laag & Ethernet",
+    "dragging": false
   },
   {
     "question": "Wat zijn de twee stappen van het switch 'learn and forward'-proces?",
@@ -2064,8 +2625,11 @@
       "Stap 1: controleer FCS op fouten; Stap 2: geef frame door aan netwerklaag",
       "Stap 1: ontcijfer VLAN-tag; Stap 2: stuur naar default gateway"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Switching"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Switching",
+    "dragging": false
   },
   {
     "question": "Hoelang bewaart een switch een MAC-adres in de CAM-tabel standaard voordat het verloopt?",
@@ -2075,8 +2639,11 @@
       "10 minuten",
       "30 minuten"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: Switching"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: Switching",
+    "dragging": false
   },
   {
     "question": "Wanneer flooded een switch een frame naar alle poorten (behalve de bronpoort)?",
@@ -2086,8 +2653,11 @@
       "Wanneer het bestemmingsMAC-adres niet in de MAC-adrestabel staat",
       "Wanneer het frame een VLAN-tag heeft"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 5: Switching"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: Switching",
+    "dragging": false
   },
   {
     "question": "Wat segmenteert zowel collision domains als broadcast domains?",
@@ -2097,8 +2667,11 @@
       "Router",
       "Repeater"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 5: Switching"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: Switching",
+    "dragging": false
   },
   {
     "question": "Wat is de definitie van een VLAN?",
@@ -2108,8 +2681,11 @@
       "Een encryptietunnel tussen twee netwerksegmenten",
       "Een protocol voor het uitwisselen van routinginformatie"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Welke zes voordelen van VLANs worden in de slides beschreven?",
@@ -2119,8 +2695,11 @@
       "Meer VLANs, grotere subnetten, redundantie, load balancing, QoS, monitoring",
       "Hogere snelheid, lagere latency, meer adressen, betere logging, failover, schaalbaarheid"
     ],
-    "correct": 0,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Wat zijn de vier VLAN-types die in de slides worden besproken?",
@@ -2130,8 +2709,11 @@
       "Access, trunk, hybrid, monitor",
       "Unicast, multicast, broadcast, management"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Frames van welk VLAN worden NIET getagd op een 802.1Q trunk-link?",
@@ -2141,8 +2723,11 @@
       "Native VLAN",
       "Voice VLAN"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Wat zijn de vier DTP-interface modi op een Cisco-switch?",
@@ -2152,8 +2737,11 @@
       "Tagged, Untagged, Native, Hybrid",
       "Forwarding, Blocking, Learning, Listening"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Welk commando activeer je op een Layer 3-switch om inter-VLAN routing mogelijk te maken?",
@@ -2163,8 +2751,11 @@
       "switchport mode routed",
       "interface vlan 1"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Welke troubleshooting-methodiek begint bij de applicatielaag en werkt naar beneden via het OSI-model?",
@@ -2174,8 +2765,11 @@
       "Top-Down",
       "Divide-and-Conquer"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Welke troubleshooting-methodiek begint bij de fysieke laag (Layer 1) en werkt omhoog?",
@@ -2185,8 +2779,11 @@
       "Follow the Path",
       "Bottom-Up"
     ],
-    "correct": 3,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      3
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Wat doet de 'Compare Configs'-methodiek bij troubleshooting?",
@@ -2196,8 +2793,11 @@
       "Volgt het datapad door het netwerk",
       "Deelt het netwerk op in kleinere segmenten"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Wat doet de 'Swap Components'-methodiek?",
@@ -2207,8 +2807,11 @@
       "Volgt pakketten hop voor hop door het netwerk",
       "Deelt het probleemnetwerk op in lagen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Welk commando/tool geeft netwerkconfiguratie-instellingen weer (IP-adres, subnetmasker, default GW, DNS)?",
@@ -2218,8 +2821,11 @@
       "ipconfig / ifconfig / ip address",
       "show ip route"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie stappen van de troubleshooting-conclusie (identificatie, isolatie, oplossing)?",
@@ -2229,8 +2835,11 @@
       "1: Herstart het apparaat, 2: Controleer de logs, 3: Bel de leverancier",
       "1: Top-Down analyse, 2: Bottom-Up analyse, 3: Divide-and-Conquer"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": true
   },
   {
     "question": "Wat toont 'show ip route' op een Cisco-router?",
@@ -2240,8 +2849,11 @@
       "Alle actieve interfaces en hun IP-adressen",
       "De ARP-tabel van de router"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 6: Troubleshooting"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen een source port en een destination port?",
@@ -2251,8 +2863,11 @@
       "Ze zijn identiek en uitwisselbaar",
       "Source port is altijd poort 80; destination port is altijd boven 1024"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Transportlaag"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Transportlaag",
+    "dragging": false
   },
   {
     "question": "Welk commando/tool gebruik je om TCP/UDP-verbindingen en open poorten te bekijken?",
@@ -2262,8 +2877,11 @@
       "netstat",
       "ipconfig"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 7: Transportlaag"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 7: Transportlaag",
+    "dragging": false
   },
   {
     "question": "TCP is een 'stateful protocol'. Wat betekent dat?",
@@ -2273,8 +2891,11 @@
       "TCP heeft geen verbinding nodig voor datatransport",
       "TCP garandeert dat pakketten in willekeurige volgorde aankomen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP",
+    "dragging": false
   },
   {
     "question": "Welke vier services levert TCP naast basisfuncties (segmentatie/reassembly)?",
@@ -2284,8 +2905,11 @@
       "Encryptie, authenticatie, compressie, tunneling",
       "Multicast, broadcast, unicast, anycast"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP",
+    "dragging": false
   },
   {
     "question": "Waarvoor worden sequence numbers in TCP gebruikt?",
@@ -2295,8 +2919,11 @@
       "Om de window size te berekenen",
       "Om de TTL bij te houden"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP",
+    "dragging": false
   },
   {
     "question": "Wat gebeurt er bij TCP als een segment verloren gaat (data loss & retransmission)?",
@@ -2306,8 +2933,11 @@
       "UDP wordt automatisch gebruikt als fallback",
       "Het pakket wordt genegeerd en de applicatie moet opnieuw beginnen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP",
+    "dragging": false
   },
   {
     "question": "Hoe werkt TCP flow control via de window size?",
@@ -2317,8 +2947,11 @@
       "De window size bepaalt de maximale pakketgrootte op het netwerk",
       "De window size bepaalt het maximale aantal TCP-verbindingen tegelijk"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP",
+    "dragging": false
   },
   {
     "question": "UDP heeft geen sequence nummers. Wat is het gevolg?",
@@ -2328,8 +2961,11 @@
       "UDP garandeert geordende levering via een eigen mechanisme",
       "UDP vraagt automatisch opnieuw als een pakket verloren gaat"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP/UDP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP/UDP",
+    "dragging": false
   },
   {
     "question": "Welke velden bevat een UDP-header (4 velden)?",
@@ -2339,8 +2975,11 @@
       "Source IP, destination IP, port, TTL",
       "Source port, destination port, window size, urgent pointer"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: TCP/UDP"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP/UDP",
+    "dragging": false
   },
   {
     "question": "SSH op Cisco: op welke TCP-poort werkt SSH en waarom is het veiliger dan Telnet?",
@@ -2350,8 +2989,11 @@
       "SSH werkt op poort 443 en gebruikt hetzelfde protocol als HTTPS",
       "SSH werkt op poort 22 maar is alleen veiliger voor het wachtwoord, niet voor de data"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: SSH",
+    "dragging": false
   },
   {
     "question": "Wat betekent 'U' bij de ping-output op Cisco IOS?",
@@ -2361,8 +3003,11 @@
       "Er is een ICMP 'unreachable' bericht ontvangen",
       "De verbinding is onbetrouwbaar (unreliable)"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 7: Connectiviteit testen"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 7: Connectiviteit testen",
+    "dragging": false
   },
   {
     "question": "Wat toont 'show interfaces' op een Cisco-apparaat?",
@@ -2372,8 +3017,11 @@
       "De routing-tabel",
       "Alle bekende hosts in het ARP-netwerk"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Show Commands"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Show Commands",
+    "dragging": false
   },
   {
     "question": "Wat toont 'show arp' op een Cisco-apparaat?",
@@ -2383,8 +3031,11 @@
       "De MAC-adrestabel van de switch",
       "Alle actieve TCP-verbindingen"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Show Commands"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Show Commands",
+    "dragging": false
   },
   {
     "question": "Wat toont 'show protocols' op een Cisco-apparaat?",
@@ -2394,8 +3045,11 @@
       "De volledige startup-configuratie",
       "De STP-topologie"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 7: Show Commands"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Show Commands",
+    "dragging": false
   },
   {
     "question": "Wat zijn de basiscomponenten van een Linux storage-systeem (van laag naar hoog)?",
@@ -2405,8 +3059,11 @@
       "SSD → HDD → NVMe → SAN → NAS",
       "Blocks → Sectors → Tracks → Cylinders → Platters"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Linux Storage"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Linux Storage",
+    "dragging": true
   },
   {
     "question": "Welke tools gebruik je om partities aan te maken en te beheren in Linux?",
@@ -2416,8 +3073,11 @@
       "pvcreate, vgcreate, lvcreate",
       "mdadm, lvm, raid"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Linux Storage"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Linux Storage",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie MBR-partitietypes en hun beperkingen?",
@@ -2427,8 +3087,11 @@
       "System, Data, Recovery; geen beperkingen in grootte",
       "Boot, Root, Swap; max 4 partities totaal"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 5: Linux Storage"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 5: Linux Storage",
+    "dragging": true
   },
   {
     "question": "Wat zijn de voordelen van GPT ten opzichte van MBR?",
@@ -2438,8 +3101,11 @@
       "GPT is sneller maar ondersteunt minder partities",
       "GPT is alleen beschikbaar op Windows; MBR op Linux"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Linux Storage"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Linux Storage",
+    "dragging": false
   },
   {
     "question": "Waarom is een goedkope hardware RAID-controller slechter dan een software RAID-oplossing?",
@@ -2449,8 +3115,11 @@
       "Software RAID gebruikt meer schijfruimte voor pariteit",
       "Hardware RAID ondersteunt geen RAID 5 of 6"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: RAID"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
   },
   {
     "question": "Welk commando gebruik je om een RAID-array aan te maken in Linux?",
@@ -2460,8 +3129,11 @@
       "fdisk --raid",
       "vgcreate --raid"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: RAID"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie onderdelen van LVM en hun rol?",
@@ -2471,8 +3143,11 @@
       "RAID array, Volume, Mount point",
       "Block device, inode, directory"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: LVM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": true
   },
   {
     "question": "Wat is de correcte volgorde voor het opzetten van LVM?",
@@ -2482,8 +3157,11 @@
       "pvcreate → vgcreate → lvcreate → mkfs",
       "lvcreate → vgcreate → pvcreate → mkfs"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 5: LVM"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": true
   },
   {
     "question": "Wat is een voordeel van LVM ten opzichte van traditionele partities?",
@@ -2493,8 +3171,11 @@
       "LVM vervangt RAID volledig",
       "LVM werkt alleen met ext4 filesystems"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: LVM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": false
   },
   {
     "question": "Hoe vergroot je een Logical Volume én het bijbehorende ext4-filesystem online?",
@@ -2504,8 +3185,11 @@
       "mkfs opnieuw uitvoeren op het LV",
       "umount → lvresize → mount"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: LVM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": false
   },
   {
     "question": "Hoe voeg je extra opslagruimte toe aan een bestaande Volume Group?",
@@ -2515,8 +3199,11 @@
       "pvextend <vgnaam>",
       "mkfs.ext4 op het nieuwe physical volume"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: LVM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": false
   },
   {
     "question": "Welk commando gebruik je om een ext4-filesystem aan te maken op een logical volume?",
@@ -2526,8 +3213,11 @@
       "fdisk --mkfs ext4 /dev/vg/lv",
       "mount -t ext4 /dev/vg/lv /mountpoint"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Filesystems"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
   },
   {
     "question": "Wat zijn de filesystem-generaties zoals behandeld in de slides (0 t/m 5)?",
@@ -2537,8 +3227,11 @@
       "0: geen FS, 1: FAT16, 2: FAT32, 3: NTFS, 4: ext4, 5: Btrfs",
       "0: papier, 1: magnetisch, 2: optisch, 3: SSD, 4: NVMe, 5: cloud"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 5: Filesystems"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
   },
   {
     "question": "Welke features heeft een next-generation filesystem (generatie 5) zoals ZFS of Btrfs?",
@@ -2548,8 +3241,11 @@
       "Maximale compatibiliteit met oudere systemen",
       "Kleinere bestandsgrootte door ingebouwde compressie"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Filesystems"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
   },
   {
     "question": "Wat is rsync en waarvoor wordt het gebruikt als backup-tool?",
@@ -2559,8 +3255,11 @@
       "rsync is een archivertool vergelijkbaar met tar maar sneller",
       "rsync is alleen beschikbaar op Windows"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 5: Backup"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Backup",
+    "dragging": false
   },
   {
     "question": "Wat zijn de zes standaard NTFS-permissies in Windows?",
@@ -2570,8 +3269,11 @@
       "Allow, Deny, Inherit, Explicit, Cumulative, Effective",
       "Owner, Group, Other, Sticky, SetUID, SetGID"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is inheritance bij NTFS-permissies en hoe werkt het?",
@@ -2581,8 +3283,11 @@
       "Alle gebruikers erven de permissies van de Administrator",
       "Inheritance werkt alleen voor groepen, niet voor individuele gebruikers"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat zijn 'effective permissions' in Windows?",
@@ -2592,8 +3297,11 @@
       "De permissies van de Administrator-groep",
       "De laagste permissie uit alle groepslidmaatschappen"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Hoe werkt de prioriteitsvolgorde van Allow en Deny in Windows? (explicit vs inherited)",
@@ -2603,8 +3311,11 @@
       "Allow wint altijd van Deny",
       "Inherited allow > Explicit deny"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": true
   },
   {
     "question": "Wat is de standaard share-permissie op een nieuw aangemaakte Windows-share?",
@@ -2614,8 +3325,11 @@
       "Modify voor Authenticated Users",
       "No access voor Everyone"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is de SID-structuur in Windows en wat stellen de componenten voor?",
@@ -2625,8 +3339,11 @@
       "Een 128-bit waarde bestaande uit timestamp en machine-ID",
       "Een hexadecimale hash van de gebruikersnaam en het wachtwoord"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Hoe lang is een SID en wie genereert lokale SIDs?",
@@ -2636,8 +3353,11 @@
       "128-bit, gegenereerd door Active Directory",
       "64-bit, gegenereerd door de Windows Installer"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is een GUID in Windows Active Directory en hoe lang is het?",
@@ -2647,8 +3367,11 @@
       "Een 32-bit serienummer van de Windows-licentie",
       "Een 64-bit tijdstempel van de objectaanmaakdatum"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is SIDHistory en waarvoor wordt het gebruikt?",
@@ -2658,8 +3381,11 @@
       "Een back-up van alle SIDs in het domein",
       "De geschiedenis van wachtwoordwijzigingen"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Hoe maak je een fileshare op Windows Server Core via de commandoregel?",
@@ -2669,8 +3395,11 @@
       "explorer.exe → rechtermuisklik → delen",
       "mkshare /path /name"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is de betekenis van r, w en x op een Linux-bestand vs. een directory?",
@@ -2680,8 +3409,11 @@
       "Directory: r=uitvoeren, w=lezen, x=schrijven",
       "r=root toegang, w=write-only, x=execute-only"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat zijn de octale gewichten van Linux-permissiebits?",
@@ -2691,8 +3423,11 @@
       "r=8, w=4, x=2",
       "r=3, w=2, x=1"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat toont 'ls -l' in Linux en hoe lees je de permissies?",
@@ -2702,8 +3437,11 @@
       "ls -l toont alleen de eigenaar en groep",
       "ls -l toont de SELinux-context van bestanden"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat doen de commando's chown, chgrp en chmod in Linux?",
@@ -2713,8 +3451,11 @@
       "Alle drie wijzigen permissies maar op verschillende lagen",
       "chown en chgrp zijn hetzelfde commando met andere opties"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat zijn de beperkingen van het standaard Unix/Linux ACL-model (zoals beschreven in 'Extensions to standard ACL')?",
@@ -2724,8 +3465,11 @@
       "Het werkt niet samen met SELinux",
       "Het ondersteunt geen groepen"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: Systeembeveiliging"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
   },
   {
     "question": "Wat is MAC (Mandatory Access Control) en hoe verschilt het van DAC?",
@@ -2735,8 +3479,11 @@
       "MAC is voor netwerktoegang; DAC voor bestandssysteemtoegang",
       "MAC gebruikt wachtwoorden; DAC gebruikt certificaten"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Wat is RBAC (Role-Based Access Control) in de context van SELinux?",
@@ -2746,8 +3493,11 @@
       "Een Cisco-protocol voor netwerktoegangscontrole",
       "Een Windows-specifiek systeem voor AD-objectrechten"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Welke drie SELinux-modi zijn er en wat doen ze?",
@@ -2757,8 +3507,11 @@
       "Strict/Targeted/Minimal",
       "Active/Passive/Learning"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": true
   },
   {
     "question": "Wat toont het commando 'sestatus' en welke informatie staat erin?",
@@ -2768,8 +3521,11 @@
       "Alle SELinux-booleans en hun waarden",
       "Een lijst van geblokkeerde acties in het audit-log"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Welk commando vraagt de huidige SELinux enforcement-modus op (één woord output)?",
@@ -2779,8 +3535,11 @@
       "getenforce",
       "selinux --status"
     ],
-    "correct": 2,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Wat doet 'semanage boolean -l' bij SELinux?",
@@ -2790,8 +3549,11 @@
       "Verwijdert alle aangepaste booleans",
       "Laadt de SELinux-policy opnieuw"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen scontext en tcontext in SELinux?",
@@ -2801,8 +3563,11 @@
       "scontext is voor bestanden; tcontext is voor processen",
       "scontext is voor SELinux; tcontext is voor AppArmor"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Welk commando bekijk je de SELinux-context van bestanden in een directory?",
@@ -2812,8 +3577,11 @@
       "stat --context",
       "secontext -l"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
   },
   {
     "question": "Wat is de basisyntaxis voor SSH-gebruik als client?",
@@ -2823,8 +3591,11 @@
       "ssh -connect username:host",
       "ssh --remote username host"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Wat gebeurt er bij de eerste SSH-verbinding met een server (key verification)?",
@@ -2834,8 +3605,11 @@
       "SSH maakt automatisch een versleuteld kanaal zonder verificatie",
       "De client stuurt zijn public key naar de server voor verificatie"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Wat is SSH public key authenticatie en hoe zet je het op?",
@@ -2845,8 +3619,11 @@
       "Je genereert een sleutelpaar en geeft BEIDE sleutels aan de server",
       "De server genereert een sleutelpaar voor jou"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Wat is key forwarding bij SSH en waarom moet je voorzichtig zijn?",
@@ -2856,8 +3633,11 @@
       "Het kopiëren van SSH-sleutels naar andere gebruikers",
       "Het exporteren van SSH-sleutels naar een andere machine"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Welk bestand configureert de OpenSSH-server (poort, authenticatiemethodes, root login)?",
@@ -2867,8 +3647,11 @@
       "/etc/openssh/server.conf",
       "/etc/ssh/ssh_config"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Wat is SSH SSHFP en hoe wordt het gebruikt?",
@@ -2878,8 +3661,11 @@
       "Een SSH-extensie voor bestandsoverdracht",
       "Een methode om SSH-wachtwoorden te hashen"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Welk commando kopieer je een bestand veilig via SSH van een server naar lokaal?",
@@ -2889,8 +3675,11 @@
       "rsync --ssh server:/file .",
       "wget ssh://server/file"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: SSH"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: SSH",
+    "dragging": false
   },
   {
     "question": "Wat is PAM architectureel gezien (hoe werkt het technisch)?",
@@ -2900,8 +3689,11 @@
       "PAM is een apart authenticatieproces dat als daemon draait",
       "PAM is een configuratiebestand dat wachtwoorden opslaat"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: PAM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: PAM",
+    "dragging": false
   },
   {
     "question": "Wat zijn de vier PAM module-types en hun functie?",
@@ -2911,8 +3703,11 @@
       "required, requisite, sufficient, optional",
       "pam_unix, pam_env, pam_limits, pam_deny"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: PAM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: PAM",
+    "dragging": false
   },
   {
     "question": "Wat doen de PAM control-flags 'required', 'requisite', 'sufficient' en 'optional'?",
@@ -2922,8 +3717,11 @@
       "sufficient: altijd vereist; optional: soms vereist; required: nooit vereist",
       "Ze bepalen de volgorde van module-uitvoering"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: PAM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: PAM",
+    "dragging": false
   },
   {
     "question": "Welk commando gebruik je om PAM-profielen te beheren op moderne Linux-systemen?",
@@ -2933,8 +3731,11 @@
       "pam-admin",
       "pam_setup"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: PAM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: PAM",
+    "dragging": false
   },
   {
     "question": "In welke directory staan de PAM-configuratiebestanden per programma?",
@@ -2944,8 +3745,11 @@
       "/etc/security/pam/",
       "/usr/lib/pam.d/"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 6: PAM"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: PAM",
+    "dragging": false
   },
   {
     "question": "Wat is HTTP en wat is het basisprincipe?",
@@ -2955,8 +3759,11 @@
       "Een protocol voor e-mailcommunicatie tussen servers",
       "Een protocol voor het synchroniseren van tijd tussen servers"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Hoe werkte HTTP 1.0 qua verbindingsbeheer en wat veranderde er in HTTP 1.1?",
@@ -2966,8 +3773,11 @@
       "Er was geen verschil in verbindingsbeheer",
       "HTTP 1.1 introduceerde encryptie; HTTP 1.0 was onversleuteld"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat zijn de HTTP-methoden en hun gebruik?",
@@ -2977,8 +3787,11 @@
       "FETCH (ophalen), PUSH (versturen), PULL (ophalen)",
       "READ, WRITE, EXECUTE"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Hoe is een HTTP-request opgebouwd?",
@@ -2988,8 +3801,11 @@
       "IP-adres, poort, en payload",
       "JSON-object met method, url en headers"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat zijn de HTTP-statuscodegroepen (1xx t/m 5xx)?",
@@ -2999,8 +3815,11 @@
       "1xx=Verbinding, 2xx=Authenticatie, 3xx=Autorisatie, 4xx=Data, 5xx=Einde",
       "1xx=OK, 2xx=Redirect, 3xx=Fout, 4xx=Timeout, 5xx=Crash"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat betekenen HTTP-statuscodes 200, 301, 404 en 500?",
@@ -3010,8 +3829,11 @@
       "200=Redirect, 301=OK, 404=Server Error, 500=Not Found",
       "200=Verbinding gemaakt, 301=Data ontvangen, 404=Verbinding verbroken, 500=Timeout"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat zijn voorbeelden van HTTP user agents (clients)?",
@@ -3021,8 +3843,11 @@
       "DNS-servers, DHCP-servers, FTP-clients",
       "Alleen webbrowsers"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat is HTTPS en hoe wordt de verbinding beveiligd?",
@@ -3032,8 +3857,11 @@
       "HTTPS versleutelt alleen het wachtwoord, niet de data",
       "HTTPS is hetzelfde als HTTP maar op poort 8080"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat zijn de stappen om Apache te installeren en te starten op Rocky Linux?",
@@ -3043,8 +3871,11 @@
       "yum install nginx → service nginx start",
       "rpm -i httpd → service httpd start"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Waarom is 'firewall-cmd --runtime-to-permanent' vergelijkbaar met 'copy running-config startup-config' in Cisco IOS?",
@@ -3054,8 +3885,11 @@
       "Ze versleutelen allebei de configuratie",
       "Ze valideren allebei de configuratie op fouten"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat is de structuur van een Apache VirtualHost-configuratieblok?",
@@ -3065,8 +3899,11 @@
       "[VirtualHost] ServerName=www.voorbeeld.nl DocumentRoot=/var/www/voorbeeld",
       "virtualhost { server_name www.voorbeeld.nl; root /var/www/voorbeeld; }"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: HTTP"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   },
   {
     "question": "Wat is SMB en waarvoor wordt het gebruikt?",
@@ -3076,8 +3913,11 @@
       "Simple Mail Block: een e-mailprotocol voor interne netwerken",
       "Switch Management Block: een protocol voor switchbeheer"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Op welke poorten werkt SMB in moderne Windows-omgevingen versus de oudere NetBIOS-methode?",
@@ -3087,8 +3927,11 @@
       "Modern: UDP 445; NetBIOS: TCP 80",
       "Modern en NetBIOS gebruiken allebei TCP 445"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Wat is CIFS en wat is de relatie met SMB?",
@@ -3098,8 +3941,11 @@
       "CIFS is een Linux-specifiek alternatief voor SMB",
       "CIFS en SMB zijn twee volledig verschillende protocollen"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Wat is het Samba-project en waarom bestaat het?",
@@ -3109,8 +3955,11 @@
       "Samba is een grafische bestandsbeheerder voor Linux",
       "Samba is een cloudopslagdienst vergelijkbaar met Dropbox"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Wat zijn de drie Samba-daemons en hun specifieke functies?",
@@ -3120,8 +3969,11 @@
       "sambad (alles), winbindd (Windows), linuxd (Linux)",
       "nfsd (NFS), smbd (SMB), ftpd (FTP)"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": true
   },
   {
     "question": "Hoe installeer je Samba op Rocky Linux?",
@@ -3131,8 +3983,11 @@
       "yum install smb-server",
       "rpm -i samba.rpm"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Wat zijn de vier secties in smb.conf?",
@@ -3142,8 +3997,11 @@
       "[smb], [nmb], [winbind], [dns]",
       "[users], [groups], [permissions], [shares]"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Waarvoor gebruik je 'smbpasswd' bij Samba?",
@@ -3153,8 +4011,11 @@
       "Om de Samba-service te herstarten",
       "Om shares te beveiligen met encryptie"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Wat zijn de verbeteringen per SMB-versie (2.0, 2.1, 3.0)?",
@@ -3164,8 +4025,11 @@
       "2.0=TCP 445, 2.1=UDP 137, 3.0=TLS",
       "2.0=Linux support, 2.1=Mac support, 3.0=iOS support"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB/Samba"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": false
   },
   {
     "question": "Waarom werkt HTTP via /var/www wél out-of-the-box met SELinux, maar Samba niet?",
@@ -3175,8 +4039,11 @@
       "Apache gebruikt een ander poortnummer dat SELinux automatisch toestaat",
       "Samba heeft speciale SELinux-permissies nodig die alleen root kan instellen"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB & SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB & SELinux",
+    "dragging": false
   },
   {
     "question": "Hoe pas je de SELinux-context aan van een directory zodat Apache er bestanden uit kan serveren?",
@@ -3186,8 +4053,11 @@
       "chmod 777 /pad/naar/webroot",
       "semanage boolean -on httpd_read_all"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB & SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB & SELinux",
+    "dragging": false
   },
   {
     "question": "Hoe overname je de SELinux-context van /var/www voor een andere directory?",
@@ -3197,8 +4067,11 @@
       "semanage copy /var/www /pad",
       "restorecon --copy /var/www /pad"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB & SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB & SELinux",
+    "dragging": false
   },
   {
     "question": "Wat is het verschil tussen 'chcon' en 'semanage fcontext' voor SELinux-contexts?",
@@ -3208,8 +4081,11 @@
       "semanage werkt alleen op bestanden; chcon ook op directories",
       "chcon werkt alleen als SELinux in permissive modus staat"
     ],
-    "correct": 1,
-    "topic": "Platformen – Week 7: SMB & SELinux"
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB & SELinux",
+    "dragging": false
   },
   {
     "question": "Wat is de normale VLAN-range op een Cisco Catalyst-switch en waar wordt die opgeslagen?",
@@ -3219,8 +4095,11 @@
       "VLAN 1-255, opgeslagen in NVRAM",
       "VLAN 1-1024, opgeslagen in het BIOS van de switch"
     ],
-    "correct": 1,
-    "topic": "Netwerken – Week 5: VLANs"
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
   },
   {
     "question": "Wat betekent '.' (punt) in de ping-output op Cisco IOS?",
@@ -3230,8 +4109,11 @@
       "De timer is verlopen terwijl gewacht werd op een ICMP echo reply (timeout)",
       "De verbinding is succesvol"
     ],
-    "correct": 2,
-    "topic": "Netwerken – Week 7: Connectiviteit testen"
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 7: Connectiviteit testen",
+    "dragging": false
   },
   {
     "question": "Wat zijn de zes generaties filesystems (0 t/m 5) zoals behandeld in de slides?",
@@ -3241,7 +4123,754 @@
       "0: geen bestandssysteem, 1: FAT16, 2: FAT32, 3: NTFS, 4: ext3, 5: ext4",
       "0: papieren archief, 1: punchcard, 2: tape, 3: HDD, 4: SSD, 5: NVMe"
     ],
-    "correct": 0,
-    "topic": "Platformen – Week 5: Filesystems"
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
+  },
+  {
+    "question": "In een netwerk worden adressen gebruikt binnen 172.31.5.0/24. De grootste subnetten staan vooraan. Wat is een geldige adressering voor LAN 1 (het grootste subnet)?",
+    "options": [
+      "172.31.5.64 /26",
+      "172.31.5.128 /27",
+      "172.31.5.128 /28",
+      "172.31.5.64 /27"
+    ],
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 4: VLSM",
+    "dragging": false
+  },
+  {
+    "question": "Wat is een geschikte EERSTE stap bij het troubleshooten van een mogelijk defecte netwerkinterface?",
+    "options": [
+      "Het controleren van de fysieke verbindingen en kabels.",
+      "Het direct vervangen van de netwerkinterface zonder verdere tests.",
+      "Het direct opnieuw installeren van het besturingssysteem.",
+      "Het upgraden van de netwerkinterface naar een nieuw model."
+    ],
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
+  },
+  {
+    "question": "Een client stuurt een TCP SYN met Sequence Number (SQN) 10. Wat doet de ontvanger (server) met dit signaal?",
+    "options": [
+      "De ontvanger stuurt een ACK en verlaagt de SQN-waarde met 1.",
+      "De ontvanger stuurt een ACK met SQN+1 (dus 11) én een eigen SYN-signaal.",
+      "De ontvanger stuurt een FIN en verlaagt de SQN-waarde met 1.",
+      "De ontvanger stuurt een FIN met SQN+1 (dus 11) én een eigen SYN-signaal."
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: TCP",
+    "dragging": false
+  },
+  {
+    "question": "Wat is GEEN reden om een SVI (Switched Virtual Interface) aan te maken?",
+    "options": [
+      "Om het collision domain te verkleinen.",
+      "Zorgen voor IP (laag 3) communicatie met de switch en remote beheermogelijkheden.",
+      "Om het gebruik van een routingprotocol mogelijk te maken.",
+      "Voor het creëren van een gateway voor een VLAN zodat communicatie tussen verschillende VLANs mogelijk is."
+    ],
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
+  },
+  {
+    "question": "Wat is het broadcastadres van subnet 192.168.10.128/26?",
+    "options": [
+      "192.168.10.63",
+      "192.168.10.255",
+      "192.168.10.191",
+      "192.168.10.127"
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
+  },
+  {
+    "question": "Wat is 192.168.1.32/27 voor een soort adres?",
+    "options": [
+      "Hostadres",
+      "Multicastadres",
+      "Broadcastadres",
+      "Netwerkadres"
+    ],
+    "correct": [
+      3
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
+  },
+  {
+    "question": "Welke bewering over VLANs is JUIST?",
+    "options": [
+      "Een VLAN heeft standaard de mogelijkheid om data gelijkmatig te verdelen (VLAN load-balancing).",
+      "Een VLAN is een broadcast domain.",
+      "Een VLAN (bijv. vlan 10) wordt aangemaakt met het commando: 'interface vlan 10'.",
+      "Een VLAN is eigendom van Cisco en komt alleen voor op Cisco-switches."
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
+  },
+  {
+    "question": "Welk type interface staat toe dat ONE fysieke interface tussen meerdere VLANs routeert?",
+    "options": [
+      "Subinterface",
+      "Loopback-interface",
+      "Toegangsinterface",
+      "Trunk-interface"
+    ],
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
+  },
+  {
+    "question": "Welke protocollen maken gebruik van UDP? (kies twee antwoorden)",
+    "options": [
+      "DNS",
+      "FTP",
+      "DHCP",
+      "SMTP",
+      "HTTP"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "topic": "Netwerken – Week 7: Transportlaag",
+    "dragging": true
+  },
+  {
+    "question": "Als je LVM gebruikt in combinatie met RAID, op welk niveau maak je dan je filesystems aan?",
+    "options": [
+      "Op een logical volume",
+      "Op een 'md' device",
+      "Op een partitie",
+      "Op een physical volume"
+    ],
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": false
+  },
+  {
+    "question": "Jan is lid van groep Inkoop (NTFS: lees+schrijf) en groep MT (NTFS: alleen lezen). Share-permissies zijn standaard gelaten. Jan lukt het niet om een bestand in de share te zetten. Wat is de meest waarschijnlijke reden?",
+    "options": [
+      "Jan is waarschijnlijk geen lid van de groep Authenticated Users.",
+      "De MT-groep heeft de meest restrictieve permissies; de tweede groep 'wint' en overschrijft de schrijfrechten.",
+      "Jan mag in de share alleen lezen omdat de standaard share-permissie alleen lezen (Read) toestaat.",
+      "De permissies die je aan een groep toekent zijn nooit geldig op een share."
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
+  },
+  {
+    "question": "Welke van de volgende URL's zijn GELDIG? (selecteer alle juiste antwoorden)",
+    "options": [
+      "http://www.example.com:8080/?lang=nl_NL",
+      "\\\\example.com\\fileshare",
+      "mailto:user@example.com",
+      "https://user:Pa$$w0rd@example.com/",
+      "http:/www.example.com/"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": true
+  },
+  {
+    "question": "Welke bewering over een journaling filesystem is JUIST?",
+    "options": [
+      "Een journaling filesystem is niet geschikt voor partities waar vooral veel van gelezen wordt.",
+      "Een journaling filesystem raakt minder snel beschadigd doordat het wijzigingen bijhoudt in een logbestand.",
+      "Een journaling filesystem raakt sneller beschadigd doordat het wijzigingen NIET bijhoudt in een logbestand.",
+      "Een journaling filesystem is niet geschikt voor partities waar vooral veel naar geschreven wordt."
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
+  },
+  {
+    "question": "In een bedrijf met twee subnetten (172.16.0.0/24 en 192.168.0.0/24) staat de DHCP-server alleen in het eerste subnet. Welke service/instelling is nodig zodat hosts in het tweede subnet ook een IP-adres krijgen?",
+    "options": [
+      "Een IP-to-DHCP tunnel",
+      "Een WINS-server",
+      "DHCP option 003",
+      "DHCP relay"
+    ],
+    "correct": [
+      3
+    ],
+    "topic": "Netwerken – Week 7: Transportlaag",
+    "dragging": false
+  },
+  {
+    "question": "Welk commando bestaat NIET en kan dus NIET gebruikt worden voor DNS-resolutie of -configuratie?",
+    "options": [
+      "dig www.klm.nl",
+      "nslookup www.klm.nl",
+      "resolve-name www.klm.nl",
+      "named-checkconf /etc/named.conf"
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 7: Show Commands",
+    "dragging": false
+  },
+  {
+    "question": "Welke beperking heeft het ReFS filesystem onder Windows?",
+    "options": [
+      "Je kunt van ReFS niet booten.",
+      "ReFS kan alleen worden gebruikt in combinatie met Active Directory.",
+      "Bestanden op ReFS kunnen alleen benaderd worden vanaf Windows Server 2012(R2)/2016 en Windows 10.",
+      "ReFS kan niet gebruikt worden als DNS of DHCP geïnstalleerd is, vanwege incompatibiliteit met UDP."
+    ],
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 5: Filesystems",
+    "dragging": false
+  },
+  {
+    "question": "Welke symbolische rechten horen bij de numerieke rechten 750?",
+    "options": [
+      "rwxrwx---",
+      "rwxr-x---",
+      "rw-r--r--",
+      "rwxr-xr-x"
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": true
+  },
+  {
+    "question": "Welke symbolische rechten horen bij de numerieke rechten 770?",
+    "options": [
+      "rwxrwx---",
+      "rwxr-x---",
+      "rw-r--r--",
+      "rwxr-xr-x"
+    ],
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": true
+  },
+  {
+    "question": "Welke symbolische rechten horen bij de numerieke rechten 644?",
+    "options": [
+      "rwxrwx---",
+      "rwxr-x---",
+      "rw-r--r--",
+      "rwxr-xr-x"
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": true
+  },
+  {
+    "question": "Welke symbolische rechten horen bij de numerieke rechten 755?",
+    "options": [
+      "rwxrwx---",
+      "rwxr-x---",
+      "rw-r--r--",
+      "rwxr-xr-x"
+    ],
+    "correct": [
+      3
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": true
+  },
+  {
+    "question": "Welke HTTP-authenticatiemethode is de ZWAKSTE voor clients die authenticeren bij een webserver?",
+    "options": [
+      "Basic authentication",
+      "Digest authentication",
+      "Certificates",
+      "OAuth 2.0"
+    ],
+    "correct": [
+      0
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": true
+  },
+  {
+    "question": "Welke HTTP-authenticatiemethode is de STERKSTE voor clients die authenticeren bij een webserver?",
+    "options": [
+      "Basic authentication",
+      "Digest authentication",
+      "Certificates",
+      "NTLM"
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": true
+  },
+  {
+    "question": "Wat is het netwerkadres van het subnet waartoe 10.0.0.130/25 behoort?",
+    "options": [
+      "10.0.0.0",
+      "10.0.0.128",
+      "10.0.0.192",
+      "10.0.0.254"
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
+  },
+  {
+    "question": "Hoeveel bruikbare hostadressen heeft een /28 subnet?",
+    "options": [
+      "14",
+      "16",
+      "30",
+      "32"
+    ],
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
+  },
+  {
+    "question": "Wat is het broadcastadres van subnet 172.16.4.0/22?",
+    "options": [
+      "172.16.4.255",
+      "172.16.5.255",
+      "172.16.7.255",
+      "172.16.8.255"
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
+  },
+  {
+    "question": "Een organisatie heeft het adres 192.168.1.0/24 en wil 6 subnetten met elk minimaal 25 hosts. Welke prefix is het kleinst passend?",
+    "options": [
+      "/25",
+      "/26",
+      "/27",
+      "/28"
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 4: VLSM",
+    "dragging": false
+  },
+  {
+    "question": "Wat is 172.31.5.255/24 voor type adres?",
+    "options": [
+      "Hostadres",
+      "Networkadres",
+      "Broadcastadres",
+      "Multicastadres"
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 4: Netwerklaag & IPv4",
+    "dragging": false
+  },
+  {
+    "question": "Je hebt het adresblok 10.10.0.0/24. Je wilt VLSM toepassen voor 3 subnetten: 60 hosts, 28 hosts en 12 hosts. Wat is het netwerk voor het kleinste subnet als je van links naar rechts toewijst?",
+    "options": [
+      "10.10.0.128/26",
+      "10.10.0.192/27",
+      "10.10.0.224/28",
+      "10.10.0.128/27"
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 4: VLSM",
+    "dragging": false
+  },
+  {
+    "question": "Welke uitspraak over het TCP three-way handshake is NIET correct?",
+    "options": [
+      "De client verstuurt als eerste een SYN-pakket.",
+      "De server antwoordt met een SYN-ACK.",
+      "De client sluit de verbinding af met een FIN na de handshake.",
+      "Na de handshake is er een betrouwbare, bidirectionele verbinding opgezet."
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 7: TCP",
+    "dragging": false
+  },
+  {
+    "question": "Welke van de volgende protocollen werkt NIET op de applicatielaag (Layer 7)?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "DNS",
+      "TCP"
+    ],
+    "correct": [
+      3
+    ],
+    "topic": "Netwerken – Week 7: Transportlaag",
+    "dragging": false
+  },
+  {
+    "question": "Wat is GEEN eigenschap van UDP?",
+    "options": [
+      "Verbindingsloos",
+      "Lage overhead",
+      "Geschikt voor real-time applicaties zoals VoIP",
+      "Gegarandeerde levering met bevestiging (ACK)"
+    ],
+    "correct": [
+      3
+    ],
+    "topic": "Netwerken – Week 7: TCP/UDP",
+    "dragging": false
+  },
+  {
+    "question": "Welke uitspraak over trunks en VLANs is ONJUIST?",
+    "options": [
+      "Een trunk-poort kan verkeer van meerdere VLANs tegelijk dragen.",
+      "802.1Q voegt een 4-byte tag toe aan het Ethernet-frame.",
+      "Op een trunk-poort worden frames van het native VLAN NIET getagd.",
+      "Access-poorten kunnen meerdere VLANs tegelijk dragen door 802.1Q tagging."
+    ],
+    "correct": [
+      3
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
+  },
+  {
+    "question": "Welke uitspraak over SELinux is ONJUIST?",
+    "options": [
+      "In enforcing-modus worden overtredingen gelogd én geblokkeerd.",
+      "In permissive-modus worden overtredingen alleen gelogd, niet geblokkeerd.",
+      "Het commando 'setenforce 0' schakelt SELinux volledig uit (disabled).",
+      "Met 'sestatus' kun je de huidige SELinux-modus opvragen."
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 6: SELinux",
+    "dragging": false
+  },
+  {
+    "question": "Welke uitspraak over RAID is ONJUIST?",
+    "options": [
+      "RAID 1 spiegelt data over twee schijven.",
+      "RAID 5 vereist minimaal 3 schijven.",
+      "RAID 0 biedt geen redundantie; als één schijf uitvalt gaat alle data verloren.",
+      "RAID is een volwaardige vervanging voor een backup."
+    ],
+    "correct": [
+      3
+    ],
+    "topic": "Platformen – Week 5: RAID",
+    "dragging": false
+  },
+  {
+    "question": "Welke bewering over LVM is NIET correct?",
+    "options": [
+      "Een Volume Group bestaat uit één of meer Physical Volumes.",
+      "Logical Volumes kunnen online vergroot worden zonder unmounting.",
+      "Physical Volumes kunnen alleen harde schijven zijn, geen RAID-arrays.",
+      "Met lvextend vergroot je een Logical Volume."
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": false
+  },
+  {
+    "question": "Een beheerder voert 'ping 127.0.0.1' uit op een server. De ping slaagt. Wat bewijst dit?",
+    "options": [
+      "De server heeft een werkende verbinding met het internet.",
+      "De TCP/IP stack op de lokale machine werkt correct.",
+      "De server kan communiceren met zijn default gateway.",
+      "De DNS-resolutie op de server werkt correct."
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
+  },
+  {
+    "question": "Een gebruiker kan websites openen via IP-adres maar niet via domeinnaam. Welk protocol/service is hoogstwaarschijnlijk het probleem?",
+    "options": [
+      "DHCP",
+      "DNS",
+      "HTTP",
+      "ARP"
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
+  },
+  {
+    "question": "Een beheerder voert op een Cisco-switch het commando 'show ip interface brief' uit. Interface Gi0/1 toont: 'down / down'. Wat betekent dit?",
+    "options": [
+      "De interface is geconfigureerd maar er is geen fysieke verbinding.",
+      "De interface is administratief uitgeschakeld met 'shutdown'.",
+      "Er is geen fysieke verbinding op Layer 1 (kabel los of ander fysiek probleem).",
+      "De interface heeft een onjuist IP-adres geconfigureerd."
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
+  },
+  {
+    "question": "Een beheerder voert 'show ip interface brief' uit. Interface Gi0/2 toont: 'administratively down / down'. Wat is de oorzaak?",
+    "options": [
+      "Er is geen kabel aangesloten.",
+      "De interface is met het commando 'shutdown' uitgeschakeld.",
+      "De interface heeft een duplex-mismatch.",
+      "Het IP-adres van de interface is incorrect."
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 6: Troubleshooting",
+    "dragging": false
+  },
+  {
+    "question": "Piet heeft op een Linux-systeem een bestand aangemaakt met permissies 640. Zijn groep is 'sysadmin'. Kan een andere gebruiker (lid van sysadmin) dit bestand uitvoeren?",
+    "options": [
+      "Ja, want de groep heeft lees- én schrijfrechten.",
+      "Nee, want 640 = rw-r----- : de groep heeft alleen leesrechten (r), geen execute (x).",
+      "Ja, want de eigenaar heeft 6 (rw) wat execute inhoudt.",
+      "Nee, want bestanden aangemaakt door andere gebruikers kunnen nooit uitgevoerd worden."
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 6: Systeembeveiliging",
+    "dragging": false
+  },
+  {
+    "question": "Een webserver op Rocky Linux serveert bestanden uit /srv/www. Na een relabel (restorecon -R /) zijn de bestanden niet meer bereikbaar. Wat is de oorzaak?",
+    "options": [
+      "De firewall blokkeert poort 80 na een relabel.",
+      "restorecon heeft de tijdelijke chcon-context teruggezet naar de standaard (geen httpd_sys_content_t), waardoor SELinux de toegang blokkeert.",
+      "Apache crasht altijd na een restorecon.",
+      "De bestanden zijn verwijderd door het relabel-proces."
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 7: SMB & SELinux",
+    "dragging": false
+  },
+  {
+    "question": "Een Samba-share is geconfigureerd maar Windows-clients kunnen er niet bij. SELinux staat in enforcing-modus. Wat is de meest waarschijnlijke eerste stap om het probleem op te lossen?",
+    "options": [
+      "Samba opnieuw installeren.",
+      "De firewall uitzetten.",
+      "De juiste SELinux-context instellen op de share-directory met chcon -t samba_share_t.",
+      "Windows-clients toevoegen aan het domein."
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 7: SMB & SELinux",
+    "dragging": false
+  },
+  {
+    "question": "Een beheerder wil een LVM logical volume uitbreiden van 10GB naar 15GB zonder het systeem te herstarten. Welke volgorde van commando's is correct?",
+    "options": [
+      "umount → lvcreate → mkfs → mount",
+      "lvextend -L 15G /dev/vg/lv → resize2fs /dev/vg/lv",
+      "vgextend vg /dev/sdc → pvcreate /dev/sdc",
+      "mkfs.ext4 /dev/vg/lv → lvextend -L 15G /dev/vg/lv"
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Platformen – Week 5: LVM",
+    "dragging": true
+  },
+  {
+    "question": "Welk Cisco IOS-commando configureer je een subinterface voor VLAN 20 met IP-adres 192.168.20.1/24?",
+    "options": [
+      "interface Gi0/0.20 → encapsulation dot1q 20 → ip address 192.168.20.1 255.255.255.0",
+      "interface vlan 20 → ip address 192.168.20.1 255.255.255.0",
+      "vlan 20 → ip address 192.168.20.1 255.255.255.0",
+      "interface Gi0/0 → vlan 20 → ip address 192.168.20.1 255.255.255.0"
+    ],
+    "correct": [
+      0
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
+  },
+  {
+    "question": "Welk Cisco IOS-commando wijs je poort Gi0/1 toe aan VLAN 10 als access-poort?",
+    "options": [
+      "vlan 10 port Gi0/1",
+      "interface Gi0/1 → switchport mode access → switchport access vlan 10",
+      "interface Gi0/1 → switchport mode trunk → switchport trunk allowed vlan 10",
+      "interface Gi0/1 → ip address vlan 10"
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
+  },
+  {
+    "question": "Met welk commando verwijder je op een Cisco-switch een VLAN permanent (inclusief de vlan.dat)?",
+    "options": [
+      "no vlan 10",
+      "delete vlan 10",
+      "erase flash:vlan.dat gevolgd door reload",
+      "switchport access vlan 1"
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Netwerken – Week 5: VLANs",
+    "dragging": false
+  },
+  {
+    "question": "Welk commando gebruik je op een Cisco-router om SSH versie 2 in te schakelen?",
+    "options": [
+      "enable ssh version 2",
+      "ip ssh version 2",
+      "ssh-server enable v2",
+      "crypto key generate rsa version 2"
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: SSH",
+    "dragging": false
+  },
+  {
+    "question": "Welk commando sla je op een Cisco-apparaat de actieve configuratie permanent op?",
+    "options": [
+      "save configuration",
+      "copy running-config startup-config",
+      "write startup",
+      "backup running-config"
+    ],
+    "correct": [
+      1
+    ],
+    "topic": "Netwerken – Week 7: Show Commands",
+    "dragging": false
+  },
+  {
+    "question": "Welke VIJF basis-services worden door SMB/CIFS geboden? (kies vijf antwoorden)",
+    "options": [
+      "File sharing",
+      "Web serving",
+      "Name resolution",
+      "Certificate management",
+      "Network printing",
+      "Authentication & authorization",
+      "Service announcement"
+    ],
+    "correct": [
+      0,
+      2,
+      4,
+      5,
+      6
+    ],
+    "topic": "Platformen – Week 7: SMB/Samba",
+    "dragging": true
+  },
+  {
+    "question": "Welke DRIE protocollen bevinden zich op de applicatielaag (Layer 7)? (kies drie antwoorden)",
+    "options": [
+      "FTP",
+      "HTTP",
+      "DNS",
+      "TCP",
+      "IP",
+      "ICMP"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "topic": "Netwerken – Week 7: Transportlaag",
+    "dragging": true
+  },
+  {
+    "question": "Wat is de correcte volgorde van de HTTP Basic authentication-methoden van zwakst naar sterkst?",
+    "options": [
+      "Certificates → Digest → Basic",
+      "Basic → Certificates → Digest",
+      "Basic → Digest → Certificates",
+      "Digest → Basic → Certificates"
+    ],
+    "correct": [
+      2
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": true
+  },
+  {
+    "question": "Welke URL is ONGELDIG (bevat een syntaxfout)?",
+    "options": [
+      "http://www.example.com:8080/?lang=nl_NL",
+      "mailto:user@example.com",
+      "https://user:Pa$$w0rd@example.com/",
+      "http:/www.example.com/"
+    ],
+    "correct": [
+      3
+    ],
+    "topic": "Platformen – Week 7: HTTP",
+    "dragging": false
   }
 ]

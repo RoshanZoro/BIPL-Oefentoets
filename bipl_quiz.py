@@ -10,7 +10,9 @@ import re
 # Questions live in a folder called "questions/" next to this file.
 # Each .json file is a list of objects:
 #   { "question": "...", "options": ["A","B","C","D"],
-#     "correct": 2, "topic": "..." }
+#     "correct": 2,           ← int  OR  list of ints  e.g. [0,2,4]
+#     "topic": "...",
+#     "dragging": true }      ← optional; renders drag-to-select UI
 #
 # Filename → button label conversion:
 #   Hyphens become spaces, digits stay as-is EXCEPT lone digits
@@ -23,11 +25,8 @@ QUESTIONS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "questi
 
 
 def filename_to_label(filename):
-    """Convert a JSON filename to a human-readable button label."""
-    name = os.path.splitext(filename)[0]       # strip .json
-    name = name.replace("-", " ")              # hyphens → spaces
-    # Collapse consecutive standalone numbers into "X t/m Y"
-    # e.g. "1 2 3" → "1 t/m 3",  "1 2" → "1 t/m 2"
+    name = os.path.splitext(filename)[0]
+    name = name.replace("-", " ")
     name = re.sub(
         r'\b(\d+)((?:\s+\d+)+)\b',
         lambda m: m.group(1) + " t/m " + m.group(0).split()[-1],
@@ -37,11 +36,6 @@ def filename_to_label(filename):
 
 
 def load_question_sets():
-    """
-    Scan the questions/ folder and return a sorted list of:
-        (label, questions_list)
-    Returns an empty list if the folder doesn't exist or is empty.
-    """
     sets = []
     if not os.path.isdir(QUESTIONS_DIR):
         return sets
@@ -53,10 +47,9 @@ def load_question_sets():
             with open(path, encoding="utf-8") as f:
                 data = json.load(f)
             if isinstance(data, list) and data:
-                label = filename_to_label(fname)
-                sets.append((label, data))
+                sets.append((filename_to_label(fname), data))
         except Exception:
-            pass          # silently skip malformed files
+            pass
     return sets
 
 
@@ -92,17 +85,23 @@ class QuizApp:
         self.root.minsize(820, 600)
         self.root.configure(bg=self.BG)
 
-        self.questions           = []
-        self.active_label        = ""
-        self.current             = 0
-        self.score               = 0
-        self.answered_flags      = [False]
-        self.option_buttons      = []   # list of slots; each slot = list of (row, badge, lbl)
-        self.results             = []
+        self.questions            = []
+        self._question_pool       = []
+        self.active_label         = ""
+        self.current              = 0
+        self.score                = 0
+        self._num_q               = self.NUM_QUESTIONS
+        self.answered_flags       = [False]
+        self.option_buttons       = []
+        self.results              = []
         self.questions_per_screen = 1
-        self._shuffled_options   = []   # list of shuffled-option lists, one per slot
+        self._shuffled_options    = []
+        self._multi_vars          = []
+        self._drag_states         = []
+        self._slot_buttons_full   = {}
 
         self.dual_mode_var = tk.BooleanVar(value=False)
+        self.all_q_var     = tk.BooleanVar(value=False)
 
         self._setup_styles()
         self._build_welcome()
@@ -128,22 +127,18 @@ class QuizApp:
     # ──────────────────────────────────────────────────────────────
     def _build_welcome(self):
         self._clear()
-
         question_sets = load_question_sets()
 
-        # Top navy strip
         tk.Frame(self.root, bg=self.SIDEBAR, height=8).pack(fill="x")
 
         outer = tk.Frame(self.root, bg=self.BG)
         outer.pack(expand=True)
 
-        # Card
         card = tk.Frame(outer, bg=self.CARD,
                         highlightthickness=1,
                         highlightbackground=self.BORDER)
         card.pack(padx=60, pady=30, ipadx=40, ipady=30)
 
-        # Card header strip
         hdr = tk.Frame(card, bg=self.SIDEBAR)
         hdr.pack(fill="x")
         tk.Label(hdr, text="BIPL  Toets Oefening",
@@ -155,7 +150,6 @@ class QuizApp:
         body.pack(padx=28, pady=20)
 
         if not question_sets:
-            # ── No JSON files found ──────────────────────────────
             tk.Label(body,
                      text="Geen vragensets gevonden.",
                      font=("Segoe UI", 13, "bold"),
@@ -168,7 +162,6 @@ class QuizApp:
                      justify="center").pack()
             return
 
-        # ── Info bullets ─────────────────────────────────────────
         tk.Label(body, text="Kies een toets om te oefenen:",
                  font=("Segoe UI", 12), bg=self.CARD,
                  fg=self.SUBTEXT).pack(pady=(0, 18))
@@ -185,32 +178,32 @@ class QuizApp:
 
         tk.Frame(body, bg=self.BORDER, height=1).pack(fill="x", pady=18)
 
-        # ── Dual-question checkbox ────────────────────────────────
-        chk_row = tk.Frame(body, bg=self.CARD)
-        chk_row.pack(fill="x", pady=(0, 14))
+        # ── Toggle options ────────────────────────────────────────
+        toggles_row = tk.Frame(body, bg=self.CARD)
+        toggles_row.pack(fill="x", pady=(0, 14))
 
-        chk = tk.Checkbutton(
-            chk_row,
-            text="  2 vragen tegelijk weergeven",
-            variable=self.dual_mode_var,
-            font=("Segoe UI", 11),
-            bg=self.CARD, fg=self.TEXT,
-            activebackground=self.CARD,
-            activeforeground=self.TEXT,
-            selectcolor=self.CARD,
-            relief="flat",
-            cursor="hand2",
-        )
-        chk.pack(side="left")
+        for text, var in (
+            ("2 vragen tegelijk weergeven", self.dual_mode_var),
+            ("Alle vragen (geen limiet van 20)", self.all_q_var),
+        ):
+            tk.Checkbutton(
+                toggles_row,
+                text=f"  {text}",
+                variable=var,
+                font=("Segoe UI", 11),
+                bg=self.CARD, fg=self.TEXT,
+                activebackground=self.CARD,
+                activeforeground=self.TEXT,
+                selectcolor=self.CARD,
+                relief="flat",
+                cursor="hand2",
+            ).pack(side="left", padx=(0, 24))
 
-        # ── One button per question set ──────────────────────────
+        # ── One button per question set ───────────────────────────
         for label, questions in question_sets:
-            q_count = len(questions)
             row = tk.Frame(body, bg=self.CARD)
             row.pack(fill="x", pady=5)
 
-            # Use a Frame+Label instead of tk.Button so bg colour
-            # renders correctly on macOS (which ignores Button bg).
             btn_frame = tk.Frame(row, bg=self.ACCENT, cursor="hand2")
             btn_frame.pack(side="left", fill="x", expand=True)
 
@@ -225,12 +218,10 @@ class QuizApp:
             btn_lbl.pack(fill="x")
 
             def _on_enter(e, f=btn_frame, l=btn_lbl):
-                f.config(bg=self.ACCENT_HV)
-                l.config(bg=self.ACCENT_HV)
+                f.config(bg=self.ACCENT_HV); l.config(bg=self.ACCENT_HV)
 
             def _on_leave(e, f=btn_frame, l=btn_lbl):
-                f.config(bg=self.ACCENT)
-                l.config(bg=self.ACCENT)
+                f.config(bg=self.ACCENT); l.config(bg=self.ACCENT)
 
             def _on_click(e, lbl=label, qs=questions):
                 self._start_quiz(lbl, qs)
@@ -241,7 +232,7 @@ class QuizApp:
                 widget.bind("<Button-1>", _on_click)
 
             tk.Label(row,
-                     text=f"{q_count} vragen",
+                     text=f"{len(questions)} vragen",
                      font=("Segoe UI", 10),
                      bg=self.CARD, fg=self.SUBTEXT,
                      padx=12).pack(side="left")
@@ -254,7 +245,8 @@ class QuizApp:
         self._question_pool = list(question_pool)
         pool = list(self._question_pool)
         random.shuffle(pool)
-        self.questions    = pool[:self.NUM_QUESTIONS]
+        self.questions    = pool if self.all_q_var.get() else pool[:self.NUM_QUESTIONS]
+        self._num_q       = len(self.questions)
         self.active_label = label
         self.current      = 0
         self.score        = 0
@@ -265,45 +257,37 @@ class QuizApp:
     def _build_quiz_ui(self):
         self._clear()
 
-        # ── Top bar ──────────────────────────────────────────────
         topbar = tk.Frame(self.root, bg=self.SIDEBAR)
         topbar.pack(fill="x")
-
         tk.Label(topbar, text=self.active_label,
                  font=("Segoe UI", 11, "bold"),
                  bg=self.SIDEBAR, fg=self.NAVY_TXT,
                  padx=20, pady=10).pack(side="left")
-
         self.lbl_score = tk.Label(topbar, text="",
                                   font=("Segoe UI", 11, "bold"),
-                                  bg=self.SIDEBAR, fg="#93C5FD",
-                                  padx=20)
+                                  bg=self.SIDEBAR, fg="#93C5FD", padx=20)
         self.lbl_score.pack(side="right")
-
         self.lbl_progress = tk.Label(topbar, text="",
                                      font=("Segoe UI", 10),
-                                     bg=self.SIDEBAR, fg="#93C5FD",
-                                     padx=6)
+                                     bg=self.SIDEBAR, fg="#93C5FD", padx=6)
         self.lbl_progress.pack(side="right")
 
-        # ── Progress bar ─────────────────────────────────────────
         self.progress_bar = ttk.Progressbar(
             self.root,
             style="Quiz.Horizontal.TProgressbar",
             mode="determinate",
-            maximum=self.NUM_QUESTIONS)
+            maximum=self._num_q)
         self.progress_bar.pack(fill="x")
 
-        # ── Scrollable content area ───────────────────────────────
         canvas = tk.Canvas(self.root, bg=self.BG, highlightthickness=0)
         scrollbar = ttk.Scrollbar(self.root, orient="vertical",
                                   command=canvas.yview,
                                   style="Thin.Vertical.TScrollbar")
-        self._quiz_inner = tk.Frame(canvas, bg=self.BG)
-        self._quiz_inner.bind(
+        self._scroll_inner = tk.Frame(canvas, bg=self.BG)
+        self._scroll_inner.bind(
             "<Configure>",
             lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
-        canvas.create_window((0, 0), window=self._quiz_inner, anchor="nw")
+        canvas.create_window((0, 0), window=self._scroll_inner, anchor="nw")
         canvas.configure(yscrollcommand=scrollbar.set)
         canvas.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
@@ -312,132 +296,98 @@ class QuizApp:
                             int(-1 * (e.delta / 120)), "units"))
         self._quiz_canvas = canvas
 
-        pad = tk.Frame(self._quiz_inner, bg=self.BG)
-        pad.pack(fill="x", padx=30, pady=20)
+        # Dynamic content area — rebuilt each question
+        self._questions_frame = tk.Frame(self._scroll_inner, bg=self.BG)
+        self._questions_frame.pack(fill="x", padx=30, pady=20)
 
-        # ── Build one panel per question slot ────────────────────
-        self.lbl_topic      = []
-        self.lbl_question   = []
-        self.lbl_feedback   = []
-        self.option_buttons = []
+    def _load_question(self):
+        for w in self._questions_frame.winfo_children():
+            w.destroy()
 
-        if self.questions_per_screen == 2:
-            # Side-by-side container — each column gets half the width
-            questions_row = tk.Frame(pad, bg=self.BG)
-            questions_row.pack(fill="x")
-            panel_parents = []
-            for slot in range(2):
-                col = tk.Frame(questions_row, bg=self.BG)
-                col.pack(side="left", expand=True, fill="both",
-                         padx=(0, 8) if slot == 0 else (8, 0))
-                panel_parents.append(col)
+        slots_on_page = min(self.questions_per_screen, self._num_q - self.current)
 
-            # Labels whose wraplength must scale with panel width
-            self._dual_q_labels   = []
-            self._dual_f_labels   = []
-            self._dual_opt_labels = []
+        self.answered_flags    = [False] * self.questions_per_screen
+        self._shuffled_options = [None]  * self.questions_per_screen
+        self._multi_vars       = [None]  * self.questions_per_screen
+        self._drag_states      = [None]  * self.questions_per_screen
+        self.option_buttons    = [[]     for _ in range(self.questions_per_screen)]
+        self._slot_buttons_full = {}
+        self.lbl_topic         = []
+        self.lbl_question      = []
+        self.lbl_feedback      = []
 
-            def _on_resize(event):
-                panel_w = max(event.width // 2 - 30, 80)
-                for _lq in self._dual_q_labels:
-                    _lq.config(wraplength=panel_w)
-                for _lf in self._dual_f_labels:
-                    _lf.config(wraplength=panel_w)
-                for _opt_list in self._dual_opt_labels:
-                    for _ol in _opt_list:
-                        _ol.config(wraplength=max(panel_w - 60, 50))
+        # Auto-answer padding slots (odd question count + dual mode)
+        for s in range(slots_on_page, self.questions_per_screen):
+            self.answered_flags[s] = True
 
-            questions_row.bind("<Configure>", _on_resize)
+        last_shown = self.current + slots_on_page
+        if self.questions_per_screen == 2 and slots_on_page == 2:
+            progress_text = f"Vragen {self.current + 1}-{last_shown} / {self._num_q}"
         else:
-            panel_parents = [pad]
+            progress_text = f"Vraag {self.current + 1} / {self._num_q}"
 
-        for slot in range(self.questions_per_screen):
-            parent = panel_parents[slot]
+        self.lbl_progress.config(text=progress_text)
+        self.lbl_score.config(text=f"Score: {self.score}")
+        self.progress_bar["value"] = self.current
+
+        next_text = (
+            "Bekijk resultaten  →" if last_shown >= self._num_q else "Volgende vraag  →"
+        )
+
+        # Layout: side-by-side only when truly 2 slots
+        if self.questions_per_screen == 2 and slots_on_page == 2:
+            q_row = tk.Frame(self._questions_frame, bg=self.BG)
+            q_row.pack(fill="x")
+            panel_parents = []
+            for s in range(2):
+                col = tk.Frame(q_row, bg=self.BG)
+                col.pack(side="left", expand=True, fill="both",
+                         padx=(0, 8) if s == 0 else (8, 0))
+                panel_parents.append(col)
+        else:
+            panel_parents = [self._questions_frame]
+
+        for slot in range(slots_on_page):
+            q      = self.questions[self.current + slot]
+            parent = panel_parents[slot] if slot < len(panel_parents) else panel_parents[0]
 
             # Topic badge
-            lbl_topic = tk.Label(parent, text="",
+            lbl_topic = tk.Label(parent, text=f"  {q.get('topic', '')}  ",
                                  font=("Segoe UI", 9, "bold"),
-                                 bg=self.ACCENT, fg="white",
-                                 padx=10, pady=4)
+                                 bg=self.ACCENT, fg="white", padx=10, pady=4)
             lbl_topic.pack(anchor="w", pady=(0, 10))
             self.lbl_topic.append(lbl_topic)
 
             # Question card
             qcard = tk.Frame(parent, bg=self.CARD,
-                             highlightthickness=1,
-                             highlightbackground=self.BORDER)
+                             highlightthickness=1, highlightbackground=self.BORDER)
             qcard.pack(fill="x")
             tk.Frame(qcard, bg=self.ACCENT, width=5).pack(side="left", fill="y")
-            lbl_question = tk.Label(
-                qcard, text="", wraplength=800,
-                font=("Segoe UI", 13), bg=self.CARD, fg=self.TEXT,
-                justify="left", padx=20, pady=20)
-            lbl_question.pack(fill="x", expand=True)
-            self.lbl_question.append(lbl_question)
-            if self.questions_per_screen == 2:
-                self._dual_q_labels.append(lbl_question)
+            lbl_q = tk.Label(qcard, text=q["question"], wraplength=800,
+                             font=("Segoe UI", 13), bg=self.CARD, fg=self.TEXT,
+                             justify="left", padx=20, pady=20)
+            lbl_q.pack(fill="x", expand=True)
+            self.lbl_question.append(lbl_q)
 
-            # Answer options
-            opts_pad = tk.Frame(parent, bg=self.BG)
-            opts_pad.pack(fill="x", pady=(12, 0))
-
-            slot_buttons = []
-            slot_opt_labels = []
-            for i in range(4):
-                row = tk.Frame(opts_pad, bg=self.CARD,
-                               highlightthickness=1,
-                               highlightbackground=self.BORDER,
-                               cursor="hand2")
-                row.pack(fill="x", pady=5)
-
-                badge = tk.Label(row, text=chr(65 + i),
-                                 font=("Segoe UI", 11, "bold"),
-                                 bg=self.BORDER, fg=self.SUBTEXT,
-                                 width=3, pady=14)
-                badge.pack(side="left", fill="y")
-
-                lbl = tk.Label(row, text="",
-                               font=("Segoe UI", 11),
-                               bg=self.CARD, fg=self.TEXT,
-                               anchor="w", justify="left",
-                               wraplength=750, padx=14, pady=14)
-                lbl.pack(side="left", fill="x", expand=True)
-                slot_opt_labels.append(lbl)
-
-                for widget in (row, badge, lbl):
-                    widget.bind("<Button-1>",
-                                lambda e, idx=i, s=slot: self._select_answer(idx, s))
-                    widget.bind("<Enter>",
-                                lambda e, r=row, b=badge, lb=lbl:
-                                    self._opt_hover(r, b, lb, True))
-                    widget.bind("<Leave>",
-                                lambda e, r=row, b=badge, lb=lbl:
-                                    self._opt_hover(r, b, lb, False))
-
-                slot_buttons.append((row, badge, lbl))
-
-            self.option_buttons.append(slot_buttons)
-            if self.questions_per_screen == 2:
-                self._dual_opt_labels.append(slot_opt_labels)
-
-            # Feedback bar
-            lbl_feedback = tk.Label(
-                parent, text="",
-                font=("Segoe UI", 11, "bold"),
-                bg=self.BG, fg=self.TEXT,
-                wraplength=860, justify="left", pady=6)
-            lbl_feedback.pack(anchor="w", pady=(10, 0))
+            lbl_feedback = tk.Label(parent, text="",
+                                    font=("Segoe UI", 11, "bold"),
+                                    bg=self.BG, fg=self.TEXT,
+                                    wraplength=860, justify="left", pady=6)
             self.lbl_feedback.append(lbl_feedback)
-            if self.questions_per_screen == 2:
-                self._dual_f_labels.append(lbl_feedback)
 
-        # ── Next button (shared, at the bottom) ──────────────────
-        self._btn_next_frame = tk.Frame(pad, bg=self.BORDER, cursor="hand2")
+            if q.get("dragging", False):
+                self._build_drag_slot(parent, slot, q, lbl_feedback)
+            elif isinstance(q.get("correct"), list):
+                self._build_multi_slot(parent, slot, q, lbl_feedback)
+            else:
+                self._build_single_slot(parent, slot, q, lbl_feedback)
+
+        # Next button
+        self._btn_next_frame = tk.Frame(self._questions_frame, bg=self.BORDER, cursor="hand2")
         self._btn_next_frame.pack(anchor="e", pady=(14, 30))
-
         self.btn_next = tk.Label(
             self._btn_next_frame,
-            text="Volgende vraag  →",
+            text=next_text,
             font=("Segoe UI", 12, "bold"),
             bg=self.BORDER, fg=self.SUBTEXT,
             padx=28, pady=12, cursor="hand2")
@@ -463,6 +413,269 @@ class QuizApp:
             w.bind("<Leave>", _next_leave)
             w.bind("<Button-1>", _next_click)
 
+        self._quiz_canvas.yview_moveto(0)
+
+    # ──────────────────────────────────────────────────────────────
+    # SLOT BUILDERS
+    # ──────────────────────────────────────────────────────────────
+
+    def _build_single_slot(self, parent, slot, q, lbl_feedback):
+        options = q["options"]
+        indexed = list(enumerate(options))
+        random.shuffle(indexed)
+        self._shuffled_options[slot] = indexed
+
+        opts_pad = tk.Frame(parent, bg=self.BG)
+        opts_pad.pack(fill="x", pady=(12, 0))
+
+        slot_buttons = []
+        for i, (orig_idx, text) in enumerate(indexed):
+            row = tk.Frame(opts_pad, bg=self.CARD,
+                           highlightthickness=1, highlightbackground=self.BORDER,
+                           cursor="hand2")
+            row.pack(fill="x", pady=5)
+
+            badge = tk.Label(row, text=chr(65 + i),
+                             font=("Segoe UI", 11, "bold"),
+                             bg=self.BORDER, fg=self.SUBTEXT,
+                             width=3, pady=14)
+            badge.pack(side="left", fill="y")
+
+            lbl = tk.Label(row, text=text,
+                           font=("Segoe UI", 11),
+                           bg=self.CARD, fg=self.TEXT,
+                           anchor="w", justify="left",
+                           wraplength=750, padx=14, pady=14)
+            lbl.pack(side="left", fill="x", expand=True)
+
+            for widget in (row, badge, lbl):
+                widget.bind("<Button-1>",
+                            lambda e, idx=i, s=slot: self._select_answer(idx, s))
+                widget.bind("<Enter>",
+                            lambda e, r=row, b=badge, lb=lbl:
+                                self._opt_hover(r, b, lb, True))
+                widget.bind("<Leave>",
+                            lambda e, r=row, b=badge, lb=lbl:
+                                self._opt_hover(r, b, lb, False))
+
+            slot_buttons.append((row, badge, lbl))
+
+        self.option_buttons[slot] = slot_buttons
+        lbl_feedback.pack(anchor="w", pady=(10, 0))
+
+    def _build_multi_slot(self, parent, slot, q, lbl_feedback):
+        options     = q["options"]
+        correct_set = set(q["correct"]) if isinstance(q["correct"], list) else {q["correct"]}
+        indexed     = list(enumerate(options))
+        random.shuffle(indexed)
+        self._shuffled_options[slot] = indexed
+
+        opts_pad = tk.Frame(parent, bg=self.BG)
+        opts_pad.pack(fill="x", pady=(12, 0))
+
+        n = len(correct_set)
+        tk.Label(opts_pad,
+                 text=f"Selecteer {n} antwoord{'en' if n > 1 else ''}:",
+                 font=("Segoe UI", 10, "italic"),
+                 bg=self.BG, fg=self.SUBTEXT).pack(anchor="w", pady=(0, 4))
+
+        vars_list   = []
+        slot_buttons = []
+
+        for i, (orig_idx, text) in enumerate(indexed):
+            var = tk.BooleanVar(value=False)
+            vars_list.append(var)
+
+            row = tk.Frame(opts_pad, bg=self.CARD,
+                           highlightthickness=1, highlightbackground=self.BORDER,
+                           cursor="hand2")
+            row.pack(fill="x", pady=5)
+
+            badge = tk.Label(row, text=chr(65 + i),
+                             font=("Segoe UI", 11, "bold"),
+                             bg=self.BORDER, fg=self.SUBTEXT,
+                             width=3, pady=14)
+            badge.pack(side="left", fill="y")
+
+            chk_lbl = tk.Label(row, text="☐",
+                               font=("Segoe UI", 15),
+                               bg=self.CARD, fg=self.SUBTEXT,
+                               padx=6, pady=14)
+            chk_lbl.pack(side="left")
+
+            lbl = tk.Label(row, text=text,
+                           font=("Segoe UI", 11),
+                           bg=self.CARD, fg=self.TEXT,
+                           anchor="w", justify="left",
+                           wraplength=700, padx=10, pady=14)
+            lbl.pack(side="left", fill="x", expand=True)
+
+            def _toggle(e, v=var, ci=chk_lbl, r=row, b=badge, lb=lbl, s=slot):
+                if self.answered_flags[s]:
+                    return
+                v.set(not v.get())
+                if v.get():
+                    ci.config(text="☑", fg=self.ACCENT)
+                    r.config(bg=self.OPT_HOVER, highlightbackground=self.ACCENT)
+                    b.config(bg=self.ACCENT, fg="white")
+                    lb.config(bg=self.OPT_HOVER)
+                else:
+                    ci.config(text="☐", fg=self.SUBTEXT)
+                    r.config(bg=self.CARD, highlightbackground=self.BORDER)
+                    b.config(bg=self.BORDER, fg=self.SUBTEXT)
+                    lb.config(bg=self.CARD)
+
+            for widget in (row, badge, chk_lbl, lbl):
+                widget.bind("<Button-1>", _toggle)
+
+            slot_buttons.append((row, badge, lbl, chk_lbl))
+
+        self._multi_vars[slot]            = vars_list
+        self._slot_buttons_full[slot]     = slot_buttons
+        self.option_buttons[slot]         = [(r, b, l) for r, b, l, _ in slot_buttons]
+
+        cf = tk.Frame(opts_pad, bg=self.ACCENT, cursor="hand2")
+        cf.pack(anchor="w", pady=(10, 0))
+        cl = tk.Label(cf, text="Bevestig antwoorden",
+                      font=("Segoe UI", 11, "bold"),
+                      bg=self.ACCENT, fg="white", padx=20, pady=8, cursor="hand2")
+        cl.pack()
+
+        def _confirm(e=None, s=slot, _q=q):
+            if not self.answered_flags[s]:
+                self._confirm_multi(s, _q)
+
+        for w in (cf, cl):
+            w.bind("<Button-1>", _confirm)
+            w.bind("<Enter>", lambda e, f=cf, lb=cl: (f.config(bg=self.ACCENT_HV), lb.config(bg=self.ACCENT_HV)))
+            w.bind("<Leave>", lambda e, f=cf, lb=cl: (f.config(bg=self.ACCENT), lb.config(bg=self.ACCENT)))
+
+        lbl_feedback.pack(anchor="w", pady=(10, 0))
+
+    def _build_drag_slot(self, parent, slot, q, lbl_feedback):
+        options     = q["options"]
+        indexed     = list(enumerate(options))
+        random.shuffle(indexed)
+        self._shuffled_options[slot] = indexed
+
+        correct_val = q["correct"]
+        correct_set = set(correct_val) if isinstance(correct_val, list) else {correct_val}
+        n           = len(correct_set)
+
+        tk.Label(parent,
+                 text=f"Sleep of klik de juiste optie{'s' if n > 1 else ''} naar rechts"
+                      f"  ({n} {'antwoorden' if n > 1 else 'antwoord'}):",
+                 font=("Segoe UI", 10, "italic"),
+                 bg=self.BG, fg=self.SUBTEXT).pack(anchor="w", pady=(8, 2))
+
+        outer = tk.Frame(parent, bg=self.BG)
+        outer.pack(fill="x", pady=(4, 0))
+
+        # Left panel
+        left_outer = tk.Frame(outer, bg=self.BORDER)
+        left_outer.pack(side="left", fill="both", expand=True, padx=(0, 4))
+        tk.Label(left_outer, text="  Beschikbare opties",
+                 font=("Segoe UI", 9, "bold"),
+                 bg=self.BORDER, fg=self.SUBTEXT,
+                 pady=5, anchor="w").pack(fill="x")
+        left_frame = tk.Frame(left_outer, bg=self.CARD)
+        left_frame.pack(fill="both", expand=True, padx=1, pady=(0, 1))
+
+        # Right panel
+        right_outer = tk.Frame(outer, bg=self.BORDER)
+        right_outer.pack(side="left", fill="both", expand=True, padx=(4, 0))
+        right_hdr = tk.Label(right_outer,
+                             text="  Jouw selectie  (klik om te verwijderen)",
+                             font=("Segoe UI", 9, "bold"),
+                             bg=self.BORDER, fg=self.SUBTEXT,
+                             pady=5, anchor="w")
+        right_hdr.pack(fill="x")
+        right_frame = tk.Frame(right_outer, bg=self.CARD)
+        right_frame.pack(fill="both", expand=True, padx=1, pady=(0, 1))
+
+        # State: orig_idx → {"text": str, "side": "left"|"right", "widget": Frame}
+        state = {}
+        self._drag_states[slot] = state
+
+        def _make_widget(frame, orig_idx, text, side):
+            is_left  = side == "left"
+            bg_c     = self.BORDER if is_left else self.ACCENT
+            fg_c     = self.TEXT   if is_left else "white"
+            arrow    = "→" if is_left else "✕"
+
+            f = tk.Frame(frame, bg=bg_c, cursor="hand2")
+            f.pack(fill="x", padx=4, pady=2)
+
+            lbl = tk.Label(f, text=f"  {text}",
+                           font=("Segoe UI", 10),
+                           bg=bg_c, fg=fg_c,
+                           wraplength=185, justify="left",
+                           padx=6, pady=7, anchor="w")
+            lbl.pack(side="left", fill="x", expand=True)
+
+            arr = tk.Label(f, text=arrow,
+                           font=("Segoe UI", 11, "bold"),
+                           bg=bg_c, fg=fg_c, padx=8, pady=7)
+            arr.pack(side="right")
+
+            hover_bg = "#C8D0E0" if is_left else self.ACCENT_HV
+
+            def _on_enter(e):
+                f.config(bg=hover_bg); lbl.config(bg=hover_bg); arr.config(bg=hover_bg)
+
+            def _on_leave(e):
+                f.config(bg=bg_c); lbl.config(bg=bg_c); arr.config(bg=bg_c)
+
+            def _on_click(e, oi=orig_idx, t=text, s=side):
+                if self.answered_flags[slot]:
+                    return
+                _move(oi, t, s)
+
+            for w in (f, lbl, arr):
+                w.bind("<Enter>", _on_enter)
+                w.bind("<Leave>", _on_leave)
+                w.bind("<Button-1>", _on_click)
+
+            return f
+
+        def _move(orig_idx, text, current_side):
+            if orig_idx in state and state[orig_idx]["widget"].winfo_exists():
+                state[orig_idx]["widget"].destroy()
+
+            if current_side == "left":
+                w = _make_widget(right_frame, orig_idx, text, "right")
+                state[orig_idx] = {"text": text, "side": "right", "widget": w}
+            else:
+                w = _make_widget(left_frame, orig_idx, text, "left")
+                state[orig_idx] = {"text": text, "side": "left", "widget": w}
+
+        for orig_idx, text in indexed:
+            w = _make_widget(left_frame, orig_idx, text, "left")
+            state[orig_idx] = {"text": text, "side": "left", "widget": w}
+
+        # Confirm button
+        cf = tk.Frame(parent, bg=self.ACCENT, cursor="hand2")
+        cf.pack(anchor="w", pady=(10, 0))
+        cl = tk.Label(cf, text="Bevestig antwoorden",
+                      font=("Segoe UI", 11, "bold"),
+                      bg=self.ACCENT, fg="white", padx=20, pady=8, cursor="hand2")
+        cl.pack()
+
+        def _confirm(e=None, s=slot, _q=q):
+            if not self.answered_flags[s]:
+                self._confirm_drag_answer(s, _q, right_outer, right_hdr)
+
+        for w in (cf, cl):
+            w.bind("<Button-1>", _confirm)
+            w.bind("<Enter>", lambda e, f=cf, lb=cl: (f.config(bg=self.ACCENT_HV), lb.config(bg=self.ACCENT_HV)))
+            w.bind("<Leave>", lambda e, f=cf, lb=cl: (f.config(bg=self.ACCENT), lb.config(bg=self.ACCENT)))
+
+        lbl_feedback.pack(anchor="w", pady=(10, 0))
+
+    # ──────────────────────────────────────────────────────────────
+    # ANSWER HANDLERS
+    # ──────────────────────────────────────────────────────────────
+
     def _opt_hover(self, row, badge, lbl, entering):
         if entering:
             row.config(highlightbackground=self.ACCENT, bg=self.OPT_HOVER)
@@ -473,56 +686,6 @@ class QuizApp:
                 row.config(highlightbackground=self.BORDER, bg=self.CARD)
                 badge.config(bg=self.BORDER, fg=self.SUBTEXT)
                 lbl.config(bg=self.CARD)
-
-    def _load_question(self):
-        self.answered_flags    = [False] * self.questions_per_screen
-        self._shuffled_options = []
-
-        last_q_num = self.current + self.questions_per_screen
-
-        if self.questions_per_screen == 2:
-            progress_text = (
-                f"Vragen {self.current + 1}-{last_q_num} / {self.NUM_QUESTIONS}"
-            )
-        else:
-            progress_text = f"Vraag {self.current + 1} / {self.NUM_QUESTIONS}"
-
-        self.lbl_progress.config(text=progress_text)
-        self.lbl_score.config(text=f"Score: {self.score}")
-        self.progress_bar["value"] = self.current
-
-        next_text = (
-            "Volgende vraag  →"
-            if last_q_num < self.NUM_QUESTIONS
-            else "Bekijk resultaten  →"
-        )
-        self._set_next_btn(enabled=False, text=next_text)
-
-        for slot in range(self.questions_per_screen):
-            q       = self.questions[self.current + slot]
-            q_text  = q["question"]
-            options = q["options"]
-            topic   = q.get("topic", "")
-
-            self.lbl_topic[slot].config(text=f"  {topic}  ")
-            self.lbl_question[slot].config(text=q_text)
-            self.lbl_feedback[slot].config(text="", bg=self.BG)
-
-            indexed = list(enumerate(options))
-            random.shuffle(indexed)
-            self._shuffled_options.append(indexed)
-
-            for i, (orig_idx, text) in enumerate(indexed):
-                row, badge, lbl = self.option_buttons[slot][i]
-                row.config(bg=self.CARD, highlightbackground=self.BORDER,
-                           cursor="hand2")
-                badge.config(text=chr(65 + i), bg=self.BORDER, fg=self.SUBTEXT)
-                lbl.config(text=text, bg=self.CARD, fg=self.TEXT)
-                for widget in (row, badge, lbl):
-                    widget.bind("<Button-1>",
-                                lambda e, idx=i, s=slot: self._select_answer(idx, s))
-
-        self._quiz_canvas.yview_moveto(0)
 
     def _select_answer(self, idx, q_slot=0):
         if self.answered_flags[q_slot]:
@@ -556,13 +719,12 @@ class QuizApp:
                 text="  ✓  Correct!", fg=self.CORRECT, bg=self.CORRECT_BG)
         else:
             colour_opt(idx, self.WRONG_BG, self.WRONG, "white", self.WRONG)
-            colour_opt(correct_shuffled,
-                       self.CORRECT_BG, self.CORRECT, "white", self.CORRECT)
+            colour_opt(correct_shuffled, self.CORRECT_BG, self.CORRECT, "white", self.CORRECT)
             self.lbl_feedback[q_slot].config(
                 text=f"  ✗  Fout.  Juist antwoord: {options[correct]}",
                 fg=self.WRONG, bg=self.WRONG_BG)
 
-        for i in range(4):
+        for i in range(len(self.option_buttons[q_slot])):
             if i != idx and i != correct_shuffled:
                 colour_opt(i, self.CARD, self.BORDER, self.SUBTEXT, self.SUBTEXT)
 
@@ -574,12 +736,139 @@ class QuizApp:
             "right_answer": options[correct],
         })
 
-        # Enable "next" only once every slot on this screen is answered
+        if all(self.answered_flags):
+            self._set_next_btn(enabled=True)
+
+    def _confirm_multi(self, slot, q):
+        self.answered_flags[slot] = True
+
+        correct_set = set(q["correct"]) if isinstance(q["correct"], list) else {q["correct"]}
+        indexed     = self._shuffled_options[slot]
+        vars_list   = self._multi_vars[slot]
+        slot_btns   = self._slot_buttons_full.get(slot, [])
+
+        selected_orig = {orig for i, (orig, _) in enumerate(indexed) if vars_list[i].get()}
+        is_correct    = (selected_orig == correct_set)
+        if is_correct:
+            self.score += 1
+
+        for i, (orig_idx, _) in enumerate(indexed):
+            if i >= len(slot_btns):
+                break
+            row, badge, lbl, chk = slot_btns[i]
+            is_sel = vars_list[i].get()
+            is_c   = orig_idx in correct_set
+
+            for widget in (row, badge, lbl, chk):
+                widget.unbind("<Button-1>")
+                widget.unbind("<Enter>")
+                widget.unbind("<Leave>")
+
+            if is_c:
+                row.config(bg=self.CORRECT_BG, highlightbackground=self.CORRECT, cursor="")
+                badge.config(bg=self.CORRECT, fg="white")
+                lbl.config(bg=self.CORRECT_BG, fg=self.CORRECT)
+                chk.config(text="☑", bg=self.CORRECT_BG, fg=self.CORRECT)
+            elif is_sel:
+                row.config(bg=self.WRONG_BG, highlightbackground=self.WRONG, cursor="")
+                badge.config(bg=self.WRONG, fg="white")
+                lbl.config(bg=self.WRONG_BG, fg=self.WRONG)
+                chk.config(text="☑", bg=self.WRONG_BG, fg=self.WRONG)
+            else:
+                row.config(bg=self.CARD, highlightbackground=self.BORDER, cursor="")
+                badge.config(bg=self.BORDER, fg=self.SUBTEXT)
+                lbl.config(bg=self.CARD, fg=self.SUBTEXT)
+                chk.config(text="☐", bg=self.CARD, fg=self.SUBTEXT)
+
+        if is_correct:
+            self.lbl_feedback[slot].config(
+                text="  ✓  Alle antwoorden correct!", fg=self.CORRECT, bg=self.CORRECT_BG)
+        else:
+            correct_texts = [q["options"][i] for i in sorted(correct_set)]
+            self.lbl_feedback[slot].config(
+                text=f"  ✗  Fout.  Juiste antwoorden: {', '.join(correct_texts)}",
+                fg=self.WRONG, bg=self.WRONG_BG)
+
+        your_answers  = [q["options"][orig] for i, (orig, _) in enumerate(indexed)
+                         if vars_list[i].get()]
+        right_answers = [q["options"][i] for i in sorted(correct_set)]
+        self.results.append({
+            "question":    q["question"],
+            "topic":       q.get("topic", ""),
+            "correct":     is_correct,
+            "your_answer": ", ".join(your_answers) or "(geen)",
+            "right_answer": ", ".join(right_answers),
+        })
+
+        if all(self.answered_flags):
+            self._set_next_btn(enabled=True)
+
+    def _confirm_drag_answer(self, slot, q, right_outer, right_hdr):
+        self.answered_flags[slot] = True
+        state = self._drag_states[slot]
+
+        correct_val   = q["correct"]
+        correct_set   = set(correct_val) if isinstance(correct_val, list) else {correct_val}
+        selected_orig = {oi for oi, info in state.items() if info["side"] == "right"}
+        is_correct    = (selected_orig == correct_set)
+
+        if is_correct:
+            self.score += 1
+
+        border_c = self.CORRECT if is_correct else self.WRONG
+        right_outer.config(bg=border_c)
+        right_hdr.config(bg=border_c, fg="white",
+                         text=f"  Jouw selectie  {'✓' if is_correct else '✗'}")
+
+        for oi, info in state.items():
+            w = info["widget"]
+            if not w.winfo_exists():
+                continue
+            in_correct = oi in correct_set
+            on_right   = info["side"] == "right"
+            if in_correct and on_right:
+                c = self.CORRECT
+            elif in_correct:        # missed — still on left
+                c = self.WARN
+            elif on_right:          # wrong item selected
+                c = self.WRONG
+            else:
+                c = self.SUBTEXT
+            try:
+                w.config(bg=c, cursor="")
+                for child in w.winfo_children():
+                    child.config(bg=c)
+                for widget in [w] + list(w.winfo_children()):
+                    widget.unbind("<Button-1>")
+                    widget.unbind("<Enter>")
+                    widget.unbind("<Leave>")
+            except Exception:
+                pass
+
+        if is_correct:
+            self.lbl_feedback[slot].config(
+                text="  ✓  Correct!", fg=self.CORRECT, bg=self.CORRECT_BG)
+        else:
+            correct_texts = [q["options"][i] for i in sorted(correct_set)]
+            self.lbl_feedback[slot].config(
+                text=f"  ✗  Fout.  Juiste antwoorden: {', '.join(correct_texts)}",
+                fg=self.WRONG, bg=self.WRONG_BG)
+
+        your_answers  = [q["options"][oi] for oi, info in sorted(state.items())
+                         if info["side"] == "right"]
+        right_answers = [q["options"][i] for i in sorted(correct_set)]
+        self.results.append({
+            "question":    q["question"],
+            "topic":       q.get("topic", ""),
+            "correct":     is_correct,
+            "your_answer": ", ".join(your_answers) or "(geen)",
+            "right_answer": ", ".join(right_answers),
+        })
+
         if all(self.answered_flags):
             self._set_next_btn(enabled=True)
 
     def _set_next_btn(self, enabled, text=None):
-        """Enable or disable the next button and optionally update its text."""
         self._btn_next_enabled = enabled
         if text:
             self.btn_next.config(text=text)
@@ -591,8 +880,9 @@ class QuizApp:
             self.btn_next.config(bg=self.BORDER, fg=self.SUBTEXT)
 
     def _next_question(self):
-        self.current += self.questions_per_screen
-        if self.current >= self.NUM_QUESTIONS:
+        slots_on_page = min(self.questions_per_screen, self._num_q - self.current)
+        self.current += slots_on_page
+        if self.current >= self._num_q:
             self._show_results()
         else:
             self._load_question()
@@ -603,14 +893,13 @@ class QuizApp:
     def _show_results(self):
         self._clear()
 
-        pct          = round(self.score / self.NUM_QUESTIONS * 100)
+        pct          = round(self.score / self._num_q * 100)
         passed       = pct >= 55
         result_color = self.CORRECT if passed else self.WRONG
         result_bg    = self.CORRECT_BG if passed else self.WRONG_BG
         emoji        = "🏆" if pct >= 80 else ("👍" if passed else "📝")
         status_text  = "Geslaagd!" if passed else "Niet geslaagd – blijf oefenen!"
 
-        # Header
         banner = tk.Frame(self.root, bg=self.SIDEBAR)
         banner.pack(fill="x")
         tk.Label(banner, text="Resultaten",
@@ -622,7 +911,6 @@ class QuizApp:
                  bg=self.SIDEBAR, fg="#93C5FD",
                  padx=20).pack(side="right")
 
-        # Score card
         score_outer = tk.Frame(self.root, bg=result_bg,
                                highlightthickness=1,
                                highlightbackground=result_color)
@@ -635,21 +923,19 @@ class QuizApp:
         right = tk.Frame(inner_s, bg=result_bg)
         right.pack(side="left")
         tk.Label(right,
-                 text=f"{self.score} / {self.NUM_QUESTIONS}   ({pct}%)",
+                 text=f"{self.score} / {self._num_q}   ({pct}%)",
                  font=("Segoe UI", 22, "bold"),
                  bg=result_bg, fg=result_color).pack(anchor="w")
         tk.Label(right, text=status_text,
                  font=("Segoe UI", 12),
                  bg=result_bg, fg=result_color).pack(anchor="w")
 
-        # Review header
         tk.Label(self.root,
                  text="Overzicht van jouw antwoorden",
                  font=("Segoe UI", 11, "bold"),
                  bg=self.BG, fg=self.TEXT).pack(
                      anchor="w", padx=30, pady=(16, 4))
 
-        # Scrollable answer list
         wrap = tk.Frame(self.root, bg=self.BG)
         wrap.pack(fill="both", expand=True, padx=30, pady=(0, 4))
 
@@ -674,8 +960,7 @@ class QuizApp:
             ico = "✓" if r["correct"] else "✗"
 
             row = tk.Frame(inner, bg=cbg,
-                           highlightthickness=1,
-                           highlightbackground=c)
+                           highlightthickness=1, highlightbackground=c)
             row.pack(fill="x", pady=3)
 
             tk.Label(row, text=ico,
@@ -702,13 +987,12 @@ class QuizApp:
                          font=("Segoe UI", 9),
                          bg=cbg, fg=self.CORRECT).pack(anchor="w")
 
-        # Action buttons — Frame+Label for consistent colour on macOS
         btn_row = tk.Frame(self.root, bg=self.BG)
         btn_row.pack(pady=14)
 
-        def _make_btn(parent, text, bg, fg, hover_bg, callback, side="left"):
+        def _make_btn(parent, text, bg, fg, hover_bg, callback):
             f = tk.Frame(parent, bg=bg, cursor="hand2")
-            f.pack(side=side, padx=8)
+            f.pack(side="left", padx=8)
             l = tk.Label(f, text=text, font=("Segoe UI", 12, "bold"),
                          bg=bg, fg=fg, padx=24, pady=11, cursor="hand2")
             l.pack()
