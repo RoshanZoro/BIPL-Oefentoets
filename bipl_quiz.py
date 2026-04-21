@@ -58,7 +58,7 @@ def load_question_sets():
 # ─────────────────────────────────────────────────────────────────
 
 class QuizApp:
-    NUM_QUESTIONS = 20
+    NUM_QUESTIONS = 40
 
     # ── Palette ──────────────────────────────────────────────────
     BG         = "#F4F6FB"
@@ -184,7 +184,7 @@ class QuizApp:
 
         for text, var in (
             ("2 vragen tegelijk weergeven", self.dual_mode_var),
-            ("Alle vragen (geen limiet van 20)", self.all_q_var),
+            ("Alle vragen (geen limiet van 40)", self.all_q_var),
         ):
             tk.Checkbutton(
                 toggles_row,
@@ -271,6 +271,15 @@ class QuizApp:
                                      font=("Segoe UI", 10),
                                      bg=self.SIDEBAR, fg="#93C5FD", padx=6)
         self.lbl_progress.pack(side="right")
+
+        menu_btn = tk.Label(topbar, text="  ← Menu  ",
+                            font=("Segoe UI", 10),
+                            bg=self.SIDEBAR, fg="#93C5FD",
+                            padx=10, pady=10, cursor="hand2")
+        menu_btn.pack(side="right")
+        menu_btn.bind("<Enter>", lambda e: menu_btn.config(fg="white"))
+        menu_btn.bind("<Leave>", lambda e: menu_btn.config(fg="#93C5FD"))
+        menu_btn.bind("<Button-1>", lambda e: self._build_welcome())
 
         self.progress_bar = ttk.Progressbar(
             self.root,
